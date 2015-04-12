@@ -4,7 +4,7 @@
  * Merge existing menus into an a11y-compliant off-canvas mobile menu.
  *
  * @version   0.1.0
- * @copyright 2015 Flagship Software, LLC;
+ * @copyright Copyright (c) 2015, WP Site Care, LLC
  * @license   MIT
  */
 (function( $, undefined ) {
