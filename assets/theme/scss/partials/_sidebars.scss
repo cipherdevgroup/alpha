@@ -1,0 +1,42 @@
+.sidebar {
+	font-size: $widget-font-size;
+
+	a {
+		color: $widget-link-color;
+
+		&:hover,
+		&:focus {
+			color: $widget-link-color-hover;
+		}
+	}
+
+	li {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	p:last-child,
+	ul > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.widget {
+		background-color: $widget-background-color;
+		border: 1px solid $base-border-color;
+		padding: $widget-padding;
+	}
+
+	.widget-title a {
+		color: $base-heading-color;
+	}
+
+	.widget_search {
+		padding: 10px;
+
+		.widget-title {
+			margin: 0;
+			padding: 15px 15px 0;
+		}
+	}
+}

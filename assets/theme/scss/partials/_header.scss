@@ -1,0 +1,68 @@
+.site-header {
+	background-color: $header-background-color;
+	border-bottom: 1px solid $header-border-color;
+	color: $header-font-color;
+	padding: 10px 0;
+
+	@include media($small-screen-up) {
+		padding: 15px 0;
+	}
+
+	@include media($medium-screen-up) {
+		padding: 25px 0;
+	}
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.site-branding {
+	display: inline-block;
+	float: none;
+	margin-right: 0;
+	width: auto;
+
+	@include media($medium-screen-up) {
+		@include span-columns(3);
+	}
+}
+
+.site-title {
+	font-family: $header-font-family;
+	font-size: $site-title-font-size;
+	font-weight: 600;
+	line-height: 1.2;
+	text-rendering: optimizeLegibility;
+
+	a,
+	a:hover,
+	a:focus {
+		color: $header-link-color;
+	}
+}
+
+.site-description {
+	color: $header-font-color;
+	font-family: $header-font-family;
+	font-size: $site-description-font-size;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+/* Header Right
+--------------------------------------------- */
+
+.header-right {
+	@include span-columns(9);
+	float: right;
+	text-align: right;
+
+	.widget {
+		margin: 0;
+	}
+}

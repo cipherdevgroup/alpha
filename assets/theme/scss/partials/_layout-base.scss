@@ -1,0 +1,93 @@
+/* Site Containers
+--------------------------------------------- */
+
+.site-container {
+	position: relative;
+}
+
+.site-inner {
+	clear: both;
+	padding-top: 5%;
+	word-wrap: break-word;
+	word-break: normal;
+
+	@include media($smaller-screen-up) {
+		padding-top: $site-inner-padding;
+	}
+}
+
+.site-inner,
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $base-wrap-max-width;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	@include media($small-screen-up) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include media($medium-screen-up) {
+		max-width: $wrap-max-width-medium;
+	}
+
+	@include media($large-screen-up) {
+		max-width: $wrap-max-width-large;
+	}
+}
+
+/* Column Widths and Positions
+--------------------------------------------- */
+
+/* Content
+-------------------- */
+
+.layout-1c-narrow .content {
+	padding: 0;
+}
+
+@include media($medium-screen-up) {
+
+	.layout-1c-narrow .content {
+		@include pad(0 15%);
+	}
+
+	.layout-2c-l .content,
+	.layout-2c-r .content {
+		@include span-columns(8);
+	}
+
+	.layout-2c-r .content {
+		@include omega();
+		float: right;
+	}
+
+	/* Primary Sidebar
+	-------------------- */
+	.sidebar {
+		@include span-columns(4);
+	}
+
+	.layout-2c-l .sidebar {
+		@include omega();
+		float: right;
+	}
+
+	/* Secondary Sidebar
+	-------------------- */
+	.sidebar-secondary {
+		@include span-columns(2);
+	}
+
+	.content-sidebar-sidebar .sidebar-secondary {
+		@include omega();
+		float: right;
+	}
+}
+
+.layout-1c .sidebar,
+.layout-1c-narrow .sidebar {
+	display: none;
+}

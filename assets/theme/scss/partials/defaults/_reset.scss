@@ -1,0 +1,29 @@
+/* Box Sizing
+--------------------------------------------- */
+
+*,
+input[type="search"] {
+	box-sizing: border-box;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.author-box,
+.clearfix,
+.entry,
+.entry-content,
+.site-footer,
+.footer-widgets,
+.site-header,
+.pagination,
+.site-container,
+.site-inner,
+.wrap {
+	@include clearfix;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}

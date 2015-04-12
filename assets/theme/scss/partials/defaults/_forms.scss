@@ -1,0 +1,39 @@
+#{$all-text-inputs},
+select,
+textarea {
+	background-color: $input-background-color;
+	border: 1px solid $form-border-color;
+	border-radius: $base-border-radius;
+	box-shadow: $form-box-shadow;
+	color: $form-font-color;
+	font-size: $form-font-size;
+	font-weight: 400;
+	padding: 10px;
+	width: 100%;
+}
+
+#{$all-text-inputs-hover},
+textarea:hover {
+	border-color: $form-border-color-hover;
+}
+
+#{$all-text-inputs-focus},
+textarea:focus {
+	border-color: $form-border-color-focus;
+	box-shadow: $form-box-shadow-focus;
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+input {
+	@include placeholder {
+		color: $form-placeholder-color;
+		opacity: 1;
+		font-weight: 400;
+	}
+}

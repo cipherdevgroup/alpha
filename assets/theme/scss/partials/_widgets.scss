@@ -1,0 +1,49 @@
+.widget-title {
+	color: $base-font-color;
+	font-size: $widget-title-size;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.widget {
+	margin-bottom: $base-margin;
+	word-wrap: break-word;
+
+	ol > li {
+		list-style-position: inside;
+		list-style-type: decimal;
+		padding-left: 20px;
+		text-indent: -20px;
+	}
+
+	li li {
+		border: 0;
+		margin: 0 0 0 $base-margin;
+		padding: 0;
+	}
+}
+
+.widget_calendar table {
+	width: 100%;
+
+	td,
+	th {
+		text-align: center;
+	}
+}
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content {
+
+	.entry {
+		border-bottom: 2px solid $base-border-color;
+		margin-bottom: 20px;
+		padding: 0 0 24px;
+	}
+
+	.entry-title {
+		font-size: 20px;
+	}
+}

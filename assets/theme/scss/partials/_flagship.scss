@@ -1,0 +1,95 @@
+/* Author Boxes
+--------------------------------------------- */
+
+.author-box {
+	background: $author-box-background-color;
+	border: 1px solid $author-box-border-color;
+	margin-bottom: $base-margin;
+	padding: $author-box-padding-small;
+	text-align: center;
+
+	@include media($small-screen-up) {
+		text-align: left;
+		padding: $author-box-padding;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.avatar {
+		margin: 0 auto $content-margin-small;
+		width: 100px;
+
+		@include media($small-screen-up) {
+			float: left;
+			margin-bottom: $content-margin;
+			margin-right: $content-margin;
+		}
+	}
+
+	.social-icons {
+		display: block;
+		margin: $content-margin-small 0;
+
+		@include media($small-screen-up) {
+			margin: $content-margin 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 5px 5px;
+		}
+
+		a {
+			color: $author-box-meta-link-color;
+		}
+
+		a:hover,
+		a:focus {
+			color: $author-box-meta-link-color-hover;
+		}
+	}
+}
+
+.author-box-title {
+	margin-bottom: 4px;
+
+	a {
+		color: $author-box-meta-link-color;
+	}
+
+	a:hover,
+	a:focus {
+		color: $author-box-meta-link-color-hover;
+	}
+}
+
+/* Typography Formats
+--------------------------------------------- */
+
+.dropcap {
+	float: left;
+	font-size: 300%;
+	line-height: 0.6;
+	margin: 0.7rem 0.5rem 0 0;
+}
+
+@include media($small-screen-up) {
+	.pull-quote {
+		max-width: 60%;
+
+		&.alignright {
+			border-left: 0;
+			border-right: 7px solid $blockquote-border-color;
+			margin: $base-margin 0 $base-margin 5%;
+			padding: 0 5% 0 0;
+		}
+	}
+}
+
+.intro-pagragraph {
+	border-bottom: 1px solid $intro-paragraph-border-color;
+	border-top: 1px solid $intro-paragraph-border-color;
+	padding: 20px 0;
+}

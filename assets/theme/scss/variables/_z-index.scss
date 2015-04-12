@@ -1,0 +1,25 @@
+// Adapted from Medium.com's z-index scale. Z-index values should always be
+// defined in _z-index.scss. This allows us to at a glance determine relative
+// layers of our theme and prevents bugs arising from arbitrary z-index values.
+// Do not edit the z-index scale! Only add application scoped z-index values.
+
+// https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
+
+// Z-Index Scale (private vars)
+// --------------------------------------------------
+$z-index-1:   100;
+$z-index-2:   200;
+$z-index-3:   300;
+$z-index-4:   400;
+$z-index-5:   500;
+$z-index-6:   600;
+$z-index-7:   700;
+$z-index-8:   800;
+$z-index-9:   900;
+$z-index-10: 1000;
+
+// Base Theme Z-Index Values
+// --------------------------------------------------
+$screen-reader-z-index: $z-index-1;
+$sub-menu-z-index:      $z-index-1;
+$menu-mobile-z-index:   $z-index-10;

@@ -1,0 +1,42 @@
+{
+  "name": "alpha",
+  "capitalname": "Alpha",
+  "version": "1.0.0",
+  "copyright": "2015",
+  "license": "GPL-2.0+",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/wpsitecare/alpha/issues"
+  },
+  "contributors": [
+    {
+      "name": "Robert Neu",
+      "url": "http://www.wpsitecare.com"
+    }
+  ],
+  "theme": {
+    "name": "Alpha",
+    "uri": "https://github.com/wpsitecare/alpha",
+    "description": "The most advanced WordPress Starter theme ever created. Built with Hybrid Core, Theme Hook Alliance, Bourbon, and Neat.",
+    "author": "WP Site Care",
+    "authoruri": "http://www.wpsitecare.com",
+    "tags": "white, light, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, 'seo-friendly', microformats, post-formats, sticky-post, translation-ready",
+    "license": "GPL-2.0+",
+    "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",
+    "textdomain": "alpha",
+    "domainpath": "/languages"
+  },
+  "pot": {
+    "reportmsgidbugsto": "Robert Neu <translations@wpsitecare.com>",
+    "lasttranslator": "Robert Neu <translations@wpsitecare.com>",
+    "languageteam": "Robert Neu <translations@wpsitecare.com>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpsitecare/alpha.git"
+  },
+  "devDependencies": {
+    "flagship-wp-theme-config": "FlagshipWP/flagship-wp-theme-config#0.2.0",
+    "load-flagship-grunt-config": "FlagshipWP/load-flagship-grunt-config#0.1.1"
+  }
+}

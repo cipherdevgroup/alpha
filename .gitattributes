@@ -1,0 +1,8 @@
+# Git will always convert line endings to LF on checkout.
+# You should use this for files that must keep LF endings, even on Windows.
+# See https://help.github.com/articles/dealing-with-line-endings/
+* text eol=lf
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary

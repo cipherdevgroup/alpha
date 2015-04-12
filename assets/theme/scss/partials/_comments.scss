@@ -1,0 +1,259 @@
+.comments-number {
+	margin-bottom: 15px;
+}
+
+.comment-container {
+	background-color: $comment-background-color;
+	margin-bottom: $base-margin;
+
+	@include media($small-screen-up) {
+		border: 1px solid $comment-border-color;
+	}
+}
+
+.comment {
+	position: relative;
+	padding-left: 40px;
+
+	@include media($small-screen-up) {
+		padding-left: 60px;
+	}
+
+	header {
+		background-color: $comment-header-background-color;
+		clear: both;
+		font-size: $medium-font-size;
+		padding: 5px;
+		position: relative;
+
+		@include media($small-screen-up) {
+			border-bottom: 1px solid $comment-border-color;
+			padding: 10px 20px;
+		}
+
+		&::before,
+		&::after {
+			border-color: transparent;
+			border-style: solid solid outset;
+			content: " ";
+			display: block;
+			height: 0;
+			left: -16px;
+			margin-top: -8px;
+			pointer-events: none;
+			position: absolute;
+			right: 100%;
+			top: 50%;
+			width: 0;
+		}
+
+		&::before {
+			border-right-color: transparent;
+			border-width: 8px;
+
+			@include media($small-screen-up) {
+				border-right-color: $comment-border-color;
+			}
+		}
+
+		&::after {
+			border-right-color: $comment-header-background-color;
+			border-width: 7px;
+			margin-top: -7px;
+			margin-left: 2px;
+			top: 50%;
+		}
+
+		cite {
+			margin-right: 5px;
+		}
+
+		.comment-edit-link {
+			margin-left: 5px;
+		}
+	}
+
+	.avatar {
+		position: absolute;
+		left: 0;
+		margin: 0;
+		width: 30px;
+
+		@include media($small-screen-up) {
+			width: 48px;
+		}
+	}
+
+	.comment {
+		border: 0;
+		margin-left: -40px;
+		margin-top: 20px;
+		padding-bottom: 0;
+
+		@include media($small-screen-up) {
+			margin-left: -30px;
+		}
+	}
+
+	.comment:last-child {
+		margin-bottom: 0;
+	}
+
+	footer {
+		@include media($small-screen-up) {
+			padding: 0 20px 20px;
+		}
+	}
+
+}
+
+.bypostauthor {
+	header {
+		background-color: $comment-author-header-background-color;
+
+		&::after {
+			border-right-color: $comment-author-header-background-color;
+		}
+	}
+}
+
+.comment-meta {
+
+	a {
+		color: $comment-meta-link-color;
+
+		&:hover,
+		&:focus {
+			color: $comment-meta-link-color-hover;
+		}
+	}
+}
+
+/* Comment Content
+--------------------------------------------- */
+.comment-content {
+	clear: both;
+	padding-top: 10px;
+
+	@include media($small-screen-up) {
+		padding: $comment-padding;
+	}
+
+	p,
+	> ol,
+	> ul,
+	> dl {
+		margin-bottom: $comment-margin-small;
+
+		@include media($small-screen-up) {
+			margin-bottom: $comment-margin;
+		}
+	}
+
+	ol,
+	ul {
+		margin-left: 20px;
+	}
+
+	li {
+		margin-bottom: 1%;
+	}
+
+	ol > li {
+		list-style-type: decimal;
+	}
+
+	ul > li {
+		list-style-type: disc;
+	}
+
+	li ol,
+	li ul {
+		margin-top: 1%;
+	}
+
+	blockquote {
+		border-left: 7px solid $blockquote-border-color;
+		margin: 4% 5% 4% 0;
+		padding: 0 0 0 5%;
+	}
+
+	table {
+		background: $comment-table-background-color;
+		border-collapse: separate;
+		border: 1px solid $table-border-color;
+		border-left: 0;
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	table th,
+	table td {
+		border-left: 1px solid $table-border-color;
+		border-top: 1px solid $table-border-color;
+		line-height: 1.2;
+		padding: 10px;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	table thead:first-child tr:first-child th,
+	table tbody:first-child tr:first-child th,
+	table tbody:first-child tr:first-child td {
+		border-top: 0 none;
+	}
+
+	code {
+		background: $code-background-color;
+		border: 1px solid $code-border-color;
+		color: $code-font-color;
+		padding: 2px 4px;
+	}
+}
+
+/* Pingbacks & Trackbacks
+--------------------------------------------- */
+.pingback,
+.trackback {
+	background-color: $comment-background-color;
+	border: 1px solid $comment-border-color;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+
+/* Comment Respond Form
+--------------------------------------------- */
+.comment-respond {
+	background-color: $comments-background-color;
+	border: 1px solid $comment-border-color;
+	margin-bottom: $base-margin;
+	padding: $comments-padding-small;
+
+	@include media($small-screen-up) {
+		padding: $comments-padding;
+	}
+
+	label {
+		display: block;
+	}
+
+	.submit {
+		display: block;
+		width: 100%;
+
+		@include media($small-screen-up) {
+			display: inline-block;
+			width: auto;
+		}
+	}
+}
+
+.form-allowed-tags {
+	background-color: $allowed-tags-background-color;
+	font-size: $medium-font-size;
+	padding: 10px;
+
+	@include media($small-screen-up) {
+		padding: 20px;
+	}
+}

@@ -1,0 +1,219 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "32506c480c62286dadb69ffab4b74e30",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-02-18 17:17:01"
+        },
+        {
+            "name": "flagshipwp/flagship-library",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlagshipWP/flagship-library.git",
+                "reference": "c88d898e26437a3d54c93a361c296b9cb2faf55e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/c88d898e26437a3d54c93a361c296b9cb2faf55e",
+                "reference": "c88d898e26437a3d54c93a361c296b9cb2faf55e",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Neu",
+                    "email": "rob@flagshipwp.com",
+                    "homepage": "https://flagshipwp.com"
+                }
+            ],
+            "description": "A helpful libray of functions and classes for Flagship themes.",
+            "homepage": "https://github.com/FlagshipWP/flagship-library",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-03-30 03:16:45"
+        },
+        {
+            "name": "justintadlock/hybrid-core",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justintadlock/hybrid-core.git",
+                "reference": "e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9",
+                "reference": "e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "hybrid.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Tadlock",
+                    "email": "justin@justintadlock.com",
+                    "homepage": "http://justintadlock.com"
+                }
+            ],
+            "description": "Hybrid Core WordPress theme framework",
+            "homepage": "http://themehybrid.com/hybrid-core",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-03-16 19:04:39"
+        },
+        {
+            "name": "zamoose/themehookalliance",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zamoose/themehookalliance.git",
+                "reference": "4f9979c658d55f51565674cbafa5b6040cb431c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/4f9979c658d55f51565674cbafa5b6040cb431c1",
+                "reference": "4f9979c658d55f51565674cbafa5b6040cb431c1",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Doug Stewart",
+                    "homepage": "http://literalbarrage.org"
+                }
+            ],
+            "description": "Theme Hook Alliance",
+            "homepage": "https://github.com/zamoose/themehookalliance",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-03-24 22:01:23"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "justintadlock/hybrid-core": 20,
+        "zamoose/themehookalliance": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

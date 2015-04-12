@@ -1,0 +1,9 @@
+// Global Border Radius
+//------------------------------------------------------------------------------
+$base-border-radius: 3px;
+$form-border-radius: $base-border-radius;
+
+// Global Shadows
+//------------------------------------------------------------------------------
+$form-box-shadow:       inset 0 1px 3px rgba(0, 0, 0, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);

@@ -1,0 +1,23 @@
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+dl {
+	margin: 0;
+	padding: 0;
+
+	dt {
+		font-weight: 600;
+		margin-top: 10px;
+	}
+
+	dd {
+		margin: 0;
+	}
+}

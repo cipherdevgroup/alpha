@@ -1,0 +1,27 @@
+{
+  "name": "wpsitecare/alpha",
+  "description": "The most advanced WordPress Starter theme ever created.",
+  "keywords": ["wordpress", "theme", "wpsitecare"],
+  "homepage": "http://www.wpsitecare.com",
+  "type": "wordpress-theme",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Robert Neu",
+      "email": "rob@wpsitecare.com",
+      "homepage": "http://www.wpsitecare.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/wpsitecare/alpha/issues"
+  },
+  "config": {
+    "vendor-dir": "assets/composer"
+  },
+  "require": {
+    "justintadlock/hybrid-core": "dev-dev",
+    "flagshipwp/flagship-library": "~1.4",
+    "zamoose/themehookalliance": "dev-master",
+    "composer/installers": "~1.0"
+  }
+}

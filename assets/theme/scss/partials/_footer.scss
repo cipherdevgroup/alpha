@@ -1,0 +1,23 @@
+.site-footer {
+	background-color: $footer-background-color;
+	color: $footer-font-color;
+	font-size: $footer-font-size;
+	text-align: center;
+	padding: $base-padding 0;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: $footer-link-color;
+
+		&:hover {
+			color: $footer-link-color-hover;
+		}
+	}
+
+	.wp-caption {
+		border: 1px solid $footer-border-color;
+	}
+}

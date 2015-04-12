@@ -1,0 +1,22 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: $base-margin;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid $table-border-color;
+}
+
+td,
+th {
+	border-top: 1px solid $table-border-color;
+	padding: 10px 0;
+	text-align: left;
+}
+
+th {
+	font-weight: 400;
+}

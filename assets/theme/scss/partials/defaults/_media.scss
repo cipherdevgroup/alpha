@@ -1,0 +1,141 @@
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+}
+
+a:hover img,
+a:focus img {
+	@include transition(opacity 0.2s ease-in-out);
+	opacity: 0.9;
+}
+
+.featured-content img,
+.gallery img {
+	width: auto;
+}
+
+/* Gallery
+--------------------------------------------- */
+
+.gallery {
+	@include outer-container;
+}
+
+.gallery-item {
+	line-height: 0;
+	list-style: none;
+	margin: 0 0 2.35765%;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-align: center;
+
+	@include media($small-screen-up) {
+
+		.gallery-columns-0 &,
+		.gallery-columns-1 &,
+		.gallery-col-0 &,
+		.gallery-col-1 & {
+			@include fill-parent();
+		}
+
+		// Awaiting https://github.com/thoughtbot/neat/issues/244 to be fixed
+		// @for $i from 2 through 9 {
+		// 	.gallery-columns-#{$i} &,
+		// 	.gallery-col-#{$i} & {
+		// 		@include span-columns((12 / $i));
+		// 		@include omega(#{$i}n);
+		// 	}
+		// }
+
+		.gallery-columns-2 &,
+		.gallery-col-2 & {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+
+		.gallery-columns-3 &,
+		.gallery-col-3 & {
+			@include span-columns(4);
+			@include omega(3n);
+		}
+
+		.gallery-columns-4 &,
+		.gallery-col-4 & {
+			@include span-columns(3);
+			@include omega(4n);
+		}
+
+		.gallery-columns-5 &,
+		.gallery-col-5 & {
+			@include span-columns(2.4);
+			@include omega(5n);
+		}
+
+		.gallery-columns-6 &,
+		.gallery-col-6 & {
+			@include span-columns(2);
+			@include omega(6n);
+		}
+
+		.gallery-columns-7 &,
+		.gallery-col-7 & {
+			@include span-columns(1.71);
+			@include omega(7n);
+		}
+
+		.gallery-columns-8 &,
+		.gallery-col-8 & {
+			@include span-columns(1.5);
+			@include omega(8n);
+		}
+
+		.gallery-columns-9 &,
+		.gallery-col-9 & {
+			@include span-columns(1.33);
+			@include omega(9n);
+		}
+	}
+
+	.gallery-caption {
+		@include transition(all, 0.2s ease-in-out);
+		background: transparentize($gallery-caption-background-color, 0.5);
+		color: $gallery-caption-font-color;
+		font-size: $gallery-caption-font-size;
+		line-height: 1.65;
+		max-height: 50%;
+		opacity: 0;
+		overflow: hidden;
+		padding: 10px;
+		position: absolute;
+		visibility: hidden;
+		width: 100%;
+	}
+
+	&:hover .gallery-caption {
+		@include transform(translate(0, -100%));
+		visibility: visible;
+		opacity: 1;
+	}
+
+}
+
+.gallery-icon a {
+	display: block;
+	line-height: 0;
+}
+
+.gallery-icon img {
+	width: 100%;
+	margin: 0 auto;
+}

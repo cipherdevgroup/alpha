@@ -1,0 +1,83 @@
+.footer-widgets {
+	background-color: $footer-widgets-background-color;
+	border-top: 1px solid $footer-widgets-border-color;
+	border-bottom: 1px solid $footer-widgets-border-color;
+	color: $footer-widgets-font-color;
+	font-size: $footer-widgets-font-size;
+	padding: $base-padding 0 10px;
+
+	.widget-title {
+		color: $footer-widgets-heading-color;
+	}
+
+	a {
+		color: $footer-widgets-link-color;
+
+		&:hover {
+			color: $footer-widgets-link-color-hover;
+		}
+	}
+
+	input {
+		border-color: $footer-widgets-border-color;
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button {
+		background-color: $footer-widgets-button-background-color;
+		color: $footer-widgets-button-font-color;
+	}
+
+	button:hover,
+	button:focus,
+	.button:hover,
+	.button:focus,
+	input[type="button"]:hover,
+	input[type="button"]:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus,
+	input[type="reset"]:hover,
+	input[type="reset"]:focus {
+		background-color: $footer-widgets-button-background-color-hover;
+		color: $footer-widgets-button-font-color-hover;
+	}
+
+	th,
+	td {
+		border-bottom-color: $footer-widgets-border-color;
+	}
+
+	li {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	p:last-child,
+	ul > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.entry {
+		margin-bottom: 10px;
+	}
+
+	.search-form button {
+		border-radius: $base-border-radius;
+		margin: 5px;
+	}
+}
+
+@include media($medium-screen-up) {
+	.footer-widgets-3 {
+		@include omega();
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		@include span-columns(4);
+	}
+}

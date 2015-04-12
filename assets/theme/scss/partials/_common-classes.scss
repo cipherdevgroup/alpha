@@ -1,0 +1,183 @@
+/* Hybrid Core
+--------------------------------------------- */
+
+.breadcrumbs {
+	font-size: $medium-font-size;
+	margin-bottom: 15px;
+
+	.sep {
+		padding: 0 4px;
+	}
+}
+
+.loop-meta {
+	margin-bottom: $base-margin;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.loop-title {
+	font-size: $loop-title-size;
+	font-weight: 600;
+}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+	display: block;
+	position: relative;
+
+	input[type=search] {
+		@include appearance(none);
+		font-size: $base-font-size;
+		padding: 10px;
+		margin: 0;
+		width: 100%;
+	}
+
+	button[type=submit] {
+		@include position(absolute, 0 0 0 null);
+		border: 1px solid $base-button-background-color;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		outline: none;
+		padding: 0 20px;
+
+		&::before {
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+}
+
+
+/* Post Password Form
+--------------------------------------------- */
+
+.post-password-form {
+
+	input {
+		display: block;
+		width: 100%;
+	}
+
+	input[type="password"] {
+		margin-bottom: 20px;
+	}
+}
+
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+	border-radius: $base-border-radius;
+	display: block;
+}
+
+@include media($smaller-screen-up) {
+	.alignleft .avatar {
+		margin-right: 24px;
+	}
+}
+
+/* WordPress
+--------------------------------------------- */
+
+.admin-bar {
+	.menu-mobile {
+		top: 46px;
+
+		@media screen and (min-width: 782px) { // Thanks WordPress.
+			top: 32px;
+		}
+	}
+}
+
+.menu-open {
+	#wpadminbar { // Thanks again WordPress.
+		position: fixed;
+	}
+}
+
+img.centered,
+.aligncenter,
+.alignleft,
+.alignright,
+img.alignnone,
+.alignnone {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto $content-margin-small;
+
+	@include media($small-screen-up) {
+		margin-bottom: $content-margin;
+	}
+}
+
+@include media($smaller-screen-up) {
+	.alignleft {
+		float: left;
+		text-align: left;
+	}
+
+	.alignright {
+		float: right;
+		text-align: right;
+
+		.avatar {
+			margin-left: 24px;
+		}
+	}
+
+	a.alignleft,
+	img.alignleft,
+	.wp-caption.alignleft {
+		margin: 0 24px $content-margin 0;
+	}
+
+	a.alignright,
+	img.alignright,
+	.wp-caption.alignright {
+		margin: 0 0 $content-margin 24px;
+	}
+}
+
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Screen Readers
+--------------------------------------------- */
+
+.off-screen,
+.screen-reader-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+.skip-link .screen-reader-text:focus {
+	clip: auto;
+	height: auto;
+	margin: 20px;
+	padding: 15px;
+	width: auto;
+	z-index: $screen-reader-z-index;
+}

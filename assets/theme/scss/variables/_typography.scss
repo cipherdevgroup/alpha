@@ -1,0 +1,82 @@
+// This file controls all base font styles for our theme. All font styles should
+// be defined in _typography.scss. This allows us to at a glance determine global
+// font styles of our theme and prevents arbitrary font style assignment.
+// Do not use the base theme font styles in the scss partial files! Set up your
+// theme's base font styles and then use scoped font values in your Sass partials.
+
+// Global Font Families
+//------------------------------------------------------------------------------
+$sans-serif:      Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-serif-alt:  Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif:           Georgia, Times, 'Times New Roman', serif;
+$monospace:       Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+
+// Base Font Families
+//------------------------------------------------------------------------------
+$base-font-family:        $sans-serif;
+$heading-font-family:     $sans-serif-alt;
+$blockquote-font-family:  $serif;
+
+// Base Font Sizes
+//------------------------------------------------------------------------------
+$base-font-size:        18px;
+$base-font-size-medium: floor(modular-scale(-1, $base-font-size, $major-second));
+$base-font-size-small:  floor(modular-scale(-2, $base-font-size, $major-second));
+$base-line-height:      1.625;
+$heading-line-height:   1.25;
+$medium-font-size:      rem(floor(modular-scale(-1, $base-font-size, $major-second)));
+$small-font-size:       rem(floor(modular-scale(-3, $base-font-size, $major-second)));
+$base-button-font-size: $medium-font-size;
+
+// Heading Font Properties
+//------------------------------------------------------------------------------
+$h1-font-size: rem(floor(modular-scale(6, $base-font-size, $major-second)));
+$h2-font-size: rem(floor(modular-scale(5, $base-font-size, $major-second)));
+$h3-font-size: rem(floor(modular-scale(4, $base-font-size, $major-second)));
+$h4-font-size: rem(floor(modular-scale(3, $base-font-size, $major-second)));
+$h5-font-size: rem(floor(modular-scale(2, $base-font-size, $major-second)));
+$h6-font-size: rem(floor(modular-scale(1, $base-font-size, $major-second)));
+
+$h1-font-size-small: rem(floor(modular-scale(5, $base-font-size, $major-second)));
+$h2-font-size-small: rem(floor(modular-scale(4, $base-font-size, $major-second)));
+$h3-font-size-small: rem(floor(modular-scale(3, $base-font-size, $major-second)));
+$h4-font-size-small: rem(floor(modular-scale(2, $base-font-size, $major-second)));
+$h5-font-size-small: rem(floor(modular-scale(1, $base-font-size, $major-second)));
+
+// Header Font Properties
+//------------------------------------------------------------------------------
+$header-font-family:         $heading-font-family;
+$site-title-font-size:       $h2-font-size;
+$site-description-font-size: rem(floor(modular-scale(-1, $base-font-size, $major-second)));
+
+// Loop Font Properties
+//------------------------------------------------------------------------------
+$loop-title-size: $h1-font-size;
+
+// Menu Font Properties
+//------------------------------------------------------------------------------
+$nav-font-size:         $medium-font-size;
+$subnav-font-size:      $small-font-size;
+$pagination-font-size:  $medium-font-size;
+$menu-button-font-size: floor(modular-scale(7, $base-font-size, $major-second));
+
+// Form Font Properties
+//------------------------------------------------------------------------------
+$form-font-size:   $base-font-size;
+$form-font-family: $base-font-family;
+
+// Entry Font Properties
+//------------------------------------------------------------------------------
+$gallery-caption-font-size: $small-font-size;
+$wp-caption-font-size:      $small-font-size;
+
+// Widget Font Properties
+//------------------------------------------------------------------------------
+$widget-title-size: $h6-font-size;
+$widget-font-size: $medium-font-size;
+$footer-widgets-font-size: $widget-font-size;
+
+
+// Footer Font Properties
+//------------------------------------------------------------------------------
+$footer-font-size: $medium-font-size;
