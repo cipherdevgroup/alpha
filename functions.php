@@ -55,19 +55,6 @@ function alpha_setup() {
 		'secondary' => _x( 'Secondary Menu', 'nav menu location', 'alpha' ),
 	) );
 
-	// https://developer.wordpress.org/themes/functionality/post-formats/
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'gallery',
-		'link',
-		'image',
-		'quote',
-		'status',
-		'video',
-		'audio',
-		'chat',
-	) );
-
 	// https://github.com/justintadlock/breadcrumb-trail
 	add_theme_support( 'breadcrumb-trail' );
 

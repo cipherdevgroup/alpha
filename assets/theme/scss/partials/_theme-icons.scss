@@ -25,7 +25,6 @@ a[href^="tel:"]::before,
 .post-edit-link::before,
 .entry-permalink::before,
 .post-format-link::before,
-.entry-terms::before,
 .image-sizes::before,
 .chat-author cite::before,
 
@@ -102,8 +101,7 @@ a[href^="tel:"]::before {
 
 /* Post Icons
 --------------------------------------------- */
-.entry-author a::before,
-.chat-author cite::before {
+.entry-author a::before {
 	content: $sic-person;
 }
 
@@ -131,49 +129,8 @@ a[href^="tel:"]::before {
 	content: $sic-folder;
 }
 
-.entry-terms.portfolio::before {
-	content: $sic-camera;
-}
-
-.format-standard .post-format-link::before {
-	content: $sic-book;
-}
-
-.format-aside .post-format-link::before {
-	content: $sic-aside;
-}
-
-.format-audio .post-format-link::before {
-	content: $sic-audio;
-}
-
-.format-chat .post-format-link::before {
-	content: $sic-chat;
-}
-
-.format-gallery .post-format-link::before {
+.image-sizes::before {
 	content: $sic-gallery;
-}
-
-.image-sizes::before,
-.format-image .post-format-link::before {
-	content: $sic-image;
-}
-
-.format-link .post-format-link::before {
-	content: $sic-link;
-}
-
-.format-quote .post-format-link::before {
-	content: $sic-quote;
-}
-
-.format-status .post-format-link::before {
-	content: $sic-status;
-}
-
-.format-video .post-format-link::before {
-	content: $sic-video;
 }
 
 /* Author Box Icons
