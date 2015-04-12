@@ -31,7 +31,7 @@
 
 				<?php tha_entry_after(); ?>
 
-				<?php flagship_post_navigation(); ?>
+				<?php sitecare_post_navigation(); ?>
 
 				<?php comments_template( '', true ); ?>
 

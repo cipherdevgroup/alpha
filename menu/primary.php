@@ -44,7 +44,7 @@
 
 			<?php
 			printf(	'<a class="button" href="%1$s">%2$s</a>',
-				flagship_get_customizer_link(  array(
+				sitecare_get_customizer_link(  array(
 					'focus_type'   => 'section',
 					'focus_target' => 'nav',
 				) ),

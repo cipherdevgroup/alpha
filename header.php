@@ -40,7 +40,7 @@
 				<?php tha_header_top(); ?>
 
 				<div <?php hybrid_attr( 'branding' ); ?>>
-					<?php flagship_the_logo(); ?>
+					<?php sitecare_the_logo(); ?>
 					<?php hybrid_site_title(); ?>
 					<?php hybrid_site_description(); ?>
 				</div><!-- #branding -->

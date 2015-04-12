@@ -26,7 +26,7 @@
 
 	<footer class="entry-footer">
 		<p class="entry-meta">
-			<?php flagship_entry_published(); ?>
+			<?php sitecare_entry_published(); ?>
 			<?php edit_post_link(); ?>
 		</p>
 	</footer><!-- .entry-footer -->

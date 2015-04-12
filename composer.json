@@ -1,6 +1,6 @@
 {
   "name": "wpsitecare/alpha",
-  "description": "The most advanced WordPress Starter theme ever created.",
+  "description": "The WP Site Care Starter theme.",
   "keywords": ["wordpress", "theme", "wpsitecare"],
   "homepage": "http://www.wpsitecare.com",
   "type": "wordpress-theme",
@@ -20,7 +20,7 @@
   },
   "require": {
     "justintadlock/hybrid-core": "dev-dev",
-    "flagshipwp/flagship-library": "~1.4",
+    "wpsitecare/sitecare-library": "~0.1",
     "zamoose/themehookalliance": "dev-master",
     "composer/installers": "~1.0"
   }

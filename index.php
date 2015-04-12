@@ -45,7 +45,7 @@
 
 				<?php if ( ! is_page() ): ?>
 
-					<?php flagship_post_navigation(); ?>
+					<?php sitecare_post_navigation(); ?>
 
 				<?php endif; ?>
 
@@ -53,7 +53,7 @@
 
 			<?php endwhile; ?>
 
-			<?php flagship_posts_navigation(); ?>
+			<?php sitecare_posts_navigation(); ?>
 
 		<?php else : ?>
 

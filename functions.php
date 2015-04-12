@@ -46,7 +46,7 @@ function alpha_setup() {
 	// http://themehybrid.com/docs/hybrid-core-styles
 	add_theme_support( 'hybrid-core-styles', array( 'style', 'google-fonts', ) );
 
-	// https://github.com/FlagshipWP/flagship-library/wiki/Flagship-Site-Logo
+	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Site-Logo
 	add_theme_support( 'site-logo' );
 
 	// https://developer.wordpress.org/themes/functionality/navigation-menus/
@@ -64,11 +64,11 @@ function alpha_setup() {
 	// http://themehybrid.com/docs/template-hierarchy
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
-	// https://github.com/FlagshipWP/flagship-library/wiki/Flagship-Author-Box
-	add_theme_support( 'flagship-author-box' );
+	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Author-Box
+	add_theme_support( 'sitecare-author-box' );
 
-	// https://github.com/FlagshipWP/flagship-library/wiki/Flagship-Footer-Widgets
-	add_theme_support( 'flagship-footer-widgets', 3 );
+	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Footer-Widgets
+	add_theme_support( 'sitecare-footer-widgets', 3 );
 }
 
 add_action( 'after_setup_theme', 'alpha_includes', 10 );
@@ -83,7 +83,7 @@ function alpha_includes() {
 	$includes_dir = trailingslashit( get_template_directory() ) . 'includes/';
 
 	// Load the main file in the Flagship library directory.
-	require_once $includes_dir . 'vendor/flagship-library/flagship-library.php';
+	require_once $includes_dir . 'vendor/sitecare-library/init.php';
 
 	// Load all PHP files in the vendor directory.
 	require_once $includes_dir . 'vendor/tha-theme-hooks.php';

@@ -35,7 +35,7 @@
 
 			<?php endwhile; ?>
 
-			<?php flagship_posts_navigation(); ?>
+			<?php sitecare_posts_navigation(); ?>
 
 		<?php else : ?>
 

@@ -10,8 +10,8 @@
  * @license     GPL-2.0+
  * @since       1.0.0
  */
-add_filter( 'wp_nav_menu_args', 'flagship_widget_menu_args' );
-add_filter( 'wp_nav_menu', 'flagship_header_menu_wrap' );
+add_filter( 'wp_nav_menu_args', 'sitecare_widget_menu_args' );
+add_filter( 'wp_nav_menu', 'sitecare_header_menu_wrap' );
 
 if ( is_active_sidebar( 'header-right' ) ) : ?>
 
@@ -30,7 +30,7 @@ if ( is_active_sidebar( 'header-right' ) ) : ?>
 
 			<?php
 			printf(	'<a class="button" href="%1$s">%2$s</a>',
-				flagship_get_customizer_link(),
+				sitecare_get_customizer_link(),
 				__( 'Customize Now', 'alpha' )
 			);
 			?>
@@ -42,5 +42,5 @@ if ( is_active_sidebar( 'header-right' ) ) : ?>
 
 endif;
 
-remove_filter( 'wp_nav_menu_args', 'flagship_widget_menu_args' );
-remove_filter( 'wp_nav_menu', 'flagship_header_menu_wrap' );
+remove_filter( 'wp_nav_menu_args', 'sitecare_widget_menu_args' );
+remove_filter( 'wp_nav_menu', 'sitecare_header_menu_wrap' );
