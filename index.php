@@ -27,7 +27,7 @@
 
 		<?php hybrid_get_menu( 'breadcrumbs' ); ?>
 
-		<?php if ( ! is_front_page() && ! is_home() && ! is_404() ) : ?>
+		<?php if ( ! is_singular() && ! is_home() ) : ?>
 
 			<?php get_template_part( 'content/parts/loop-meta' ); ?>
 
@@ -42,6 +42,14 @@
 				<?php hybrid_get_content_template(); ?>
 
 				<?php tha_entry_after(); ?>
+
+				<?php if ( ! is_page() ): ?>
+
+					<?php flagship_post_navigation(); ?>
+
+				<?php endif; ?>
+
+				<?php comments_template( '', true ); ?>
 
 			<?php endwhile; ?>
 
