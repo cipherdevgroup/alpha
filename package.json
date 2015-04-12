@@ -36,7 +36,7 @@
     "url": "https://github.com/wpsitecare/alpha.git"
   },
   "devDependencies": {
-    "flagship-wp-theme-config": "FlagshipWP/flagship-wp-theme-config#0.2.0",
-    "load-flagship-grunt-config": "FlagshipWP/load-flagship-grunt-config#0.1.1"
+    "sitecare-theme-config": "wpsitecare/sitecare-theme-config#0.1.0",
+    "sitecare-grunt-config-loader": "wpsitecare/sitecare-grunt-config-loader#0.1.0"
   }
 }
