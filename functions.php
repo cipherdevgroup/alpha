@@ -46,7 +46,7 @@ function alpha_setup() {
 	// http://themehybrid.com/docs/hybrid-core-styles
 	add_theme_support( 'hybrid-core-styles', array( 'style', 'google-fonts', ) );
 
-	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Site-Logo
+	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Site-Logo
 	add_theme_support( 'site-logo' );
 
 	// https://developer.wordpress.org/themes/functionality/navigation-menus/
@@ -64,10 +64,10 @@ function alpha_setup() {
 	// http://themehybrid.com/docs/template-hierarchy
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
-	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Author-Box
+	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Author-Box
 	add_theme_support( 'sitecare-author-box' );
 
-	// https://github.com/FlagshipWP/sitecare-library/wiki/sitecare-Footer-Widgets
+	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Footer-Widgets
 	add_theme_support( 'sitecare-footer-widgets', 3 );
 }
 
@@ -82,7 +82,7 @@ function alpha_includes() {
 	// Set the includes directories.
 	$includes_dir = trailingslashit( get_template_directory() ) . 'includes/';
 
-	// Load the main file in the Flagship library directory.
+	// Load the main file in the SiteCare library directory.
 	require_once $includes_dir . 'vendor/sitecare-library/init.php';
 
 	// Load all PHP files in the vendor directory.
