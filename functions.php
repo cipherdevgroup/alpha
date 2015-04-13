@@ -10,7 +10,7 @@
  */
 
 // Include Hybrid Core.
-require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
+require_once trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php';
 new Hybrid();
 
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
