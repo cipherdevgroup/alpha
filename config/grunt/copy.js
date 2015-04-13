@@ -48,7 +48,7 @@ module.exports = {
 			},
 			{
 				expand: true,
-				cwd: '<%= paths.composer %>flagshipwp/sitecare-library',
+				cwd: '<%= paths.composer %>wpsitecare/sitecare-library',
 				src: ['**/*'],
 				dest: 'includes/vendor/sitecare-library'
 			},
