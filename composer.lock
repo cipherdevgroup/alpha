@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32506c480c62286dadb69ffab4b74e30",
+    "hash": "2fc038a5a1a148f16b907409aca651ac",
     "packages": [
         {
             "name": "composer/installers",
@@ -102,39 +102,6 @@
             "time": "2015-02-18 17:17:01"
         },
         {
-            "name": "flagshipwp/flagship-library",
-            "version": "1.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FlagshipWP/flagship-library.git",
-                "reference": "c88d898e26437a3d54c93a361c296b9cb2faf55e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/c88d898e26437a3d54c93a361c296b9cb2faf55e",
-                "reference": "c88d898e26437a3d54c93a361c296b9cb2faf55e",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Robert Neu",
-                    "email": "rob@flagshipwp.com",
-                    "homepage": "https://flagshipwp.com"
-                }
-            ],
-            "description": "A helpful libray of functions and classes for Flagship themes.",
-            "homepage": "https://github.com/FlagshipWP/flagship-library",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-03-30 03:16:45"
-        },
-        {
             "name": "justintadlock/hybrid-core",
             "version": "dev-dev",
             "source": {
@@ -171,6 +138,39 @@
                 "wordpress"
             ],
             "time": "2015-03-16 19:04:39"
+        },
+        {
+            "name": "wpsitecare/sitecare-library",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wpsitecare/sitecare-library.git",
+                "reference": "8d61caac48af2dc5aa32ca154806c5e63b50ec91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpsitecare/sitecare-library/zipball/8d61caac48af2dc5aa32ca154806c5e63b50ec91",
+                "reference": "8d61caac48af2dc5aa32ca154806c5e63b50ec91",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Neu",
+                    "email": "rob@wpsitecare.com",
+                    "homepage": "http://www.wpsitecare.com"
+                }
+            ],
+            "description": "A helpful libray of functions and classes for SiteCare themes.",
+            "homepage": "https://github.com/wpsitecare/sitecare-library",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-04-13 03:21:49"
         },
         {
             "name": "zamoose/themehookalliance",
