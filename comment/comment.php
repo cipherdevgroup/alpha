@@ -31,15 +31,16 @@
 		</header><!-- .comment-meta -->
 
 		<div <?php hybrid_attr( 'comment-content' ); ?>>
+			<?php if ( ! $comment->comment_approved ) : ?>
+				<p class="alert"><?php _e( 'Your comment is awaiting moderation.', 'alpha' ); ?></p>
+			<?php endif; ?>
 			<?php comment_text(); ?>
 		</div><!-- .comment-content -->
 
 		<?php if ( hybrid_get_comment_reply_link() ) : ?>
-
 			<footer class="comment-meta">
 				<?php hybrid_comment_reply_link(); ?>
 			</footer><!-- .comment-meta -->
-
 		<?php endif; ?>
 
 	</article>
