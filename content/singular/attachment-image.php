@@ -15,9 +15,17 @@
 
 	<?php if ( has_excerpt() ) : // If the image has an excerpt/caption. ?>
 
-		<?php $src = wp_get_attachment_image_src( get_the_ID(), 'full' ); ?>
-
-		<?php echo img_caption_shortcode( array( 'align' => 'aligncenter', 'width' => esc_attr( $src[1] ), 'caption' => get_the_excerpt() ), wp_get_attachment_image( get_the_ID(), 'full', false ) ); ?>
+		<?php
+		$src = wp_get_attachment_image_src( get_the_ID(), 'full' );
+		echo img_caption_shortcode(
+			array(
+				'align'   => 'aligncenter',
+				'width'   => esc_attr( $src[1] ),
+				'caption' => get_the_excerpt(),
+			),
+			wp_get_attachment_image( get_the_ID(), 'full', false )
+		);
+		?>
 
 	<?php else : // If the image doesn't have a caption. ?>
 
@@ -61,9 +69,20 @@
 
 	</div><!-- .media-info -->
 
-	<?php $gallery = gallery_shortcode( array( 'columns' => 4, 'numberposts' => 8, 'orderby' => 'rand', 'id' => get_queried_object()->post_parent, 'exclude' => get_the_ID() ) ); ?>
+	<?php
+	$parent  = get_queried_object()->post_parent;
+	$gallery = gallery_shortcode(
+		array(
+			'columns'     => 4,
+			'numberposts' => 8,
+			'orderby'     => 'rand',
+			'id'          => $parent,
+			'exclude'     => get_the_ID()
+		)
+	);
+	?>
 
-	<?php if ( ! empty( $gallery ) ) : // Check if the gallery is not empty. ?>
+	<?php if ( ! empty( $gallery ) && ! empty( $parent ) ) : ?>
 
 		<div class="image-gallery">
 			<h3 class="attachment-meta-title"><?php _e( 'Gallery', 'alpha' ); ?></h3>
