@@ -19,8 +19,7 @@
     "vendor-dir": "assets/composer"
   },
   "require": {
-    "justintadlock/hybrid-core": "dev-dev",
-    "wpsitecare/sitecare-library": "~0.1",
+    "wpsitecare/carelib": "dev-master",
     "zamoose/themehookalliance": "dev-master",
     "composer/installers": "~1.0"
   }

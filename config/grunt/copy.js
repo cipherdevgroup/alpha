@@ -42,15 +42,9 @@ module.exports = {
 		files: [
 			{
 				expand: true,
-				cwd: '<%= paths.composer %>justintadlock/hybrid-core',
+				cwd: '<%= paths.composer %>wpsitecare/carelib',
 				src: ['**/*'],
-				dest: '<%= paths.hybridCore %>'
-			},
-			{
-				expand: true,
-				cwd: '<%= paths.composer %>wpsitecare/sitecare-library',
-				src: ['**/*'],
-				dest: 'includes/vendor/sitecare-library'
+				dest: 'includes/vendor/carelib'
 			},
 			{
 				expand: true,
