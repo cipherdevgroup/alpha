@@ -3,7 +3,7 @@
  * The template for displaying comments.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -24,8 +24,7 @@
 				wp_list_comments(
 					array(
 						'style'        => 'ol',
-						'callback'     => 'hybrid_comments_callback',
-						'end-callback' => 'hybrid_comments_end_callback',
+						'callback'     => 'alpha_comments_callback',
 					)
 				);
 				?>

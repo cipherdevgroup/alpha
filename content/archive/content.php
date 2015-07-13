@@ -3,13 +3,13 @@
  * A template part for displaying an entry within an archive.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
  */
 ?>
-<article <?php hybrid_attr( 'post' ); ?>>
+<article <?php alpha_attr( 'post' ); ?>>
 
 	<?php tha_entry_top(); ?>
 
@@ -27,7 +27,7 @@
 
 	<header class="entry-header">
 
-		<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
+		<?php the_title( '<h2 ' . alpha_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
 
 		<p class="entry-meta">
 			<?php sitecare_entry_author(); ?>
@@ -38,7 +38,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div <?php hybrid_attr( 'entry-summary' ); ?>>
+	<div <?php alpha_attr( 'entry-summary' ); ?>>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 

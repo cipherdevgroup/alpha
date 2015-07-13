@@ -3,7 +3,7 @@
  * The secondary nav menu template.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -11,7 +11,7 @@
 ?>
 <?php if ( has_nav_menu( 'secondary' ) ) : ?>
 
-	<nav <?php hybrid_attr( 'menu', 'secondary' ); ?>>
+	<nav <?php alpha_attr( 'menu', 'secondary' ); ?>>
 
 		<span id="menu-secondary-title" class="screen-reader-text">
 			<?php
@@ -28,7 +28,7 @@
 				'menu_id'         => 'secondary',
 				'menu_class'      => 'nav-menu secondary',
 				'fallback_cb'     => '',
-				'items_wrap'      => '<div ' . hybrid_get_attr( 'wrap', 'secondary-menu' ) . '><ul id="%s" class="%s">%s</ul></div>',
+				'items_wrap'      => '<div ' . alpha_get_attr( 'wrap', 'secondary-menu' ) . '><ul id="%s" class="%s">%s</ul></div>',
 			)
 		);
 		?>

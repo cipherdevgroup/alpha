@@ -3,7 +3,7 @@
  * A template to display when a 404 error occurs.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0

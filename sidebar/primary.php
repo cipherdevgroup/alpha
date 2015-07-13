@@ -3,7 +3,7 @@
  * Primary Sidebar Template
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -13,13 +13,13 @@
 
 	<?php tha_sidebars_before(); ?>
 
-	<aside <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
+	<aside <?php alpha_attr( 'sidebar', 'primary' ); ?>>
 
 		<?php tha_sidebar_top(); ?>
 
 		<span id="sidebar-primary-title" class="screen-reader-text"><?php
 			// Translators: %s is the sidebar name. This is the sidebar title shown to screen readers.
-			printf( _x( '%s', 'sidebar title', 'alpha' ), hybrid_get_sidebar_name( 'primary' ) );
+			printf( _x( '%s', 'sidebar title', 'alpha' ), alpha_get_sidebar_name( 'primary' ) );
 		?></span>
 
 		<?php if ( is_active_sidebar( 'primary' ) ) : ?>

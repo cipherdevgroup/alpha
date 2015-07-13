@@ -3,7 +3,7 @@
  * The template for displaying archive pages.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -11,11 +11,11 @@
 ?>
 <?php get_header(); ?>
 
-<div <?php hybrid_attr( 'site-inner' ); ?>>
+<div <?php alpha_attr( 'site-inner' ); ?>>
 
 	<?php tha_content_before(); ?>
 
-	<main <?php hybrid_attr( 'content' ); ?>>
+	<main <?php alpha_attr( 'content' ); ?>>
 
 		<?php tha_content_top(); ?>
 
@@ -49,7 +49,7 @@
 
 	<?php tha_content_after(); ?>
 
-	<?php hybrid_get_sidebar( 'primary' ); ?>
+	<?php alpha_get_sidebar( 'primary' ); ?>
 
 </div><!-- #site-inner -->
 

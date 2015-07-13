@@ -5,7 +5,7 @@
  * Contains the closing of the #content div and all content after
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -13,9 +13,9 @@
 ?>
 		<?php tha_footer_before(); ?>
 
-		<footer <?php hybrid_attr( 'footer' ); ?>>
+		<footer <?php alpha_attr( 'footer' ); ?>>
 
-			<div <?php hybrid_attr( 'wrap', 'footer' ); ?>>
+			<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
 
 				<?php tha_footer_top(); ?>
 

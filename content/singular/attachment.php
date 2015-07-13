@@ -3,22 +3,21 @@
  * A template part for displaying single attachments.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
  */
 ?>
-<article <?php hybrid_attr( 'post' ); ?>>
+<article <?php alpha_attr( 'post' ); ?>>
 
 	<?php tha_entry_top(); ?>
 
 	<header class="entry-header">
-		<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
+		<h1 <?php alpha_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php hybrid_attachment(); // Function for handling non-image attachments. ?>
 		<?php the_content(); ?>
 		<?php wp_link_pages(); ?>
 	</div><!-- .entry-content -->

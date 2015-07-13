@@ -3,7 +3,7 @@
  * A template to display taxonomy terms.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -26,7 +26,7 @@
 
 	<?php if ( ! empty( $terms ) ) : // If a list of child categories/terms was found. ?>
 
-		<nav <?php hybrid_attr( 'menu', 'sub-terms' ); ?>>
+		<nav <?php alpha_attr( 'menu', 'sub-terms' ); ?>>
 
 			<ul id="menu-sub-terms-items" class="menu-items">
 				<?php echo $terms; ?>

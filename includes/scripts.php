@@ -3,11 +3,24 @@
  * Script and Style Loaders and Related Functions.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
  */
+
+/**
+ * Return a script suffix.
+ *
+ * Returns .min if SCRIPT_DEBUG is disabled. Empty otherwise.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return string
+ */
+function alpha_get_suffix() {
+	return carelib_class( 'public-scripts' )->get_suffix();
+}
 
 add_action( 'admin_init', 'alpha_add_editor_styles' );
 /**
@@ -40,25 +53,20 @@ add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data' );
  */
 function alpha_rtl_add_data() {
 	wp_style_add_data( 'style', 'rtl', 'replace' );
-	wp_style_add_data( 'style', 'suffix', hybrid_get_min_suffix() );
+	wp_style_add_data( 'style', 'suffix', alpha_get_suffix() );
 }
 
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles', 4 );
 /**
- * Register our core parent theme styles.
- *
- * Normally we would enqueue all styles here, but because we've defined our base
- * styles in the theme setup function as Hybrid Core Styles, we only need to
- * register them. Hybrid Core will ensure they're loaded in the correct order.
- * Any non-global styles can still be enqueued manually in the usual way within
- * this function.
+ * Load our core parent theme styles.
  *
  * @since  1.0.0
  * @access public
- * @see    http://themehybrid.com/docs/hybrid-core-styles
  * @return void
  */
 function alpha_enqueue_styles() {
+	wp_enqueue_style( 'alpha-style' );
+
 	wp_register_style(
 		'google-fonts',
 		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
@@ -77,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts' );
  */
 function alpha_enqueue_scripts() {
 	$js_dir = trailingslashit( get_template_directory_uri() ) . 'js/';
-	$suffix = hybrid_get_min_suffix();
+	$suffix = alpha_get_suffix();
 
 	wp_enqueue_script(
 		'alpha',

@@ -3,7 +3,7 @@
  * A template to display when no contet can be found.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -11,7 +11,7 @@
 ?>
 <?php tha_entry_before(); ?>
 
-<article <?php hybrid_attr( 'post' ); ?>>
+<article <?php alpha_attr( 'post' ); ?>>
 
 	<?php tha_entry_top(); ?>
 
@@ -19,7 +19,7 @@
 		<h1 class="entry-title"><?php _e( 'Nothing found', 'alpha' ); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div <?php hybrid_attr( 'entry-content' ); ?>>
+	<div <?php alpha_attr( 'entry-content' ); ?>>
 		<p><?php _e( 'Apologies, but no entries were found.', 'alpha' ); ?></p>
 	</div><!-- .entry-content -->
 

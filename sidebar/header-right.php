@@ -5,7 +5,7 @@
  * Currently not in use.
  *
  * @package     Alpha
- * @subpackage  HybridCore
+ * @subpackage  CareLib
  * @copyright   Copyright (c) 2015, WP Site Care, LLC
  * @license     GPL-2.0+
  * @since       1.0.0
@@ -15,7 +15,7 @@ add_filter( 'wp_nav_menu', 'sitecare_header_menu_wrap' );
 
 if ( is_active_sidebar( 'header-right' ) ) : ?>
 
-	<div <?php hybrid_attr( 'header-right' ); ?>>
+	<div <?php alpha_attr( 'header-right' ); ?>>
 
 		<?php dynamic_sidebar( 'header-right' ); ?>
 
@@ -23,7 +23,7 @@ if ( is_active_sidebar( 'header-right' ) ) : ?>
 
 <?php elseif ( current_user_can( 'edit_theme_options' ) ) : ?>
 
-	<div <?php hybrid_attr( 'header-right' ); ?>>
+	<div <?php alpha_attr( 'header-right' ); ?>>
 
 		<p class="no-menu">
 			<?php _e( 'This is a widget area! It\'s perfect for a custom menu.', 'alpha' ); ?>
