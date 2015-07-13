@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2fc038a5a1a148f16b907409aca651ac",
+    "hash": "748ee7206a71cc979742ef246b8f0e24",
     "packages": [
         {
             "name": "composer/installers",
@@ -102,55 +102,17 @@
             "time": "2015-02-18 17:17:01"
         },
         {
-            "name": "justintadlock/hybrid-core",
-            "version": "dev-dev",
+            "name": "wpsitecare/carelib",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justintadlock/hybrid-core.git",
-                "reference": "e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9"
+                "url": "https://github.com/wpsitecare/carelib.git",
+                "reference": "ee9e56f08f529a127422b37916eb51dc9a621c44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9",
-                "reference": "e4daee4f5ae67a3199cf5d5aa20b3cbe5e8598e9",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "hybrid.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Justin Tadlock",
-                    "email": "justin@justintadlock.com",
-                    "homepage": "http://justintadlock.com"
-                }
-            ],
-            "description": "Hybrid Core WordPress theme framework",
-            "homepage": "http://themehybrid.com/hybrid-core",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-03-16 19:04:39"
-        },
-        {
-            "name": "wpsitecare/sitecare-library",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wpsitecare/sitecare-library.git",
-                "reference": "8d61caac48af2dc5aa32ca154806c5e63b50ec91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/sitecare-library/zipball/8d61caac48af2dc5aa32ca154806c5e63b50ec91",
-                "reference": "8d61caac48af2dc5aa32ca154806c5e63b50ec91",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/ee9e56f08f529a127422b37916eb51dc9a621c44",
+                "reference": "ee9e56f08f529a127422b37916eb51dc9a621c44",
                 "shasum": ""
             },
             "type": "library",
@@ -165,12 +127,12 @@
                     "homepage": "http://www.wpsitecare.com"
                 }
             ],
-            "description": "A helpful libray of functions and classes for SiteCare themes.",
-            "homepage": "https://github.com/wpsitecare/sitecare-library",
+            "description": "A collection of helpful classes to make creating an awesome theme more enjoyable.",
+            "homepage": "https://github.com/wpsitecare/carelib",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-04-13 03:21:49"
+            "time": "2015-07-11 03:00:29"
         },
         {
             "name": "zamoose/themehookalliance",
@@ -178,12 +140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zamoose/themehookalliance.git",
-                "reference": "4f9979c658d55f51565674cbafa5b6040cb431c1"
+                "reference": "9765ec46eb5e0144cbd46e8cf5f5c427a1e7555c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/4f9979c658d55f51565674cbafa5b6040cb431c1",
-                "reference": "4f9979c658d55f51565674cbafa5b6040cb431c1",
+                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/9765ec46eb5e0144cbd46e8cf5f5c427a1e7555c",
+                "reference": "9765ec46eb5e0144cbd46e8cf5f5c427a1e7555c",
                 "shasum": ""
             },
             "type": "library",
@@ -202,14 +164,14 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-03-24 22:01:23"
+            "time": "2015-06-09 01:05:54"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "justintadlock/hybrid-core": 20,
+        "wpsitecare/carelib": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,
