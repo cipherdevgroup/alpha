@@ -3,17 +3,17 @@ module.exports = function() {
 	var tasks = {
 		'build:dependencies:fonts': [
 			'clean:fonts',
-			'bower_install',
+			'shell:bower',
 			'copy:bowerfonts'
 		],
 		'build:dependencies:css': [
 			'clean:css',
-			'bower_install',
+			'shell:bower',
 			'copy:bowercss'
 		],
 		'build:dependencies:js': [
 			'clean:js',
-			'bower_install',
+			'shell:bower',
 			'copy:bowerjs'
 		],
 		'build:dependencies:php': [
@@ -31,9 +31,9 @@ module.exports = function() {
 			'build:dependencies:css',
 			'newer:sass',
 			'newer:usebanner',
-			'newer:autoprefixer',
+			'newer:postcss',
 			'newer:wpcss',
-			'newer:cssjanus',
+			'newer:rtlcss',
 			'newer:cssmin',
 			'newer:replace:style',
 			'newer:copy:css'
@@ -45,8 +45,7 @@ module.exports = function() {
 		'build:js': [
 			'build:dependencies:js',
 			'newer:concat:js',
-			'newer:uglify',
-			'newer:jsvalidate:theme'
+			'newer:uglify'
 		]
 	};
 
