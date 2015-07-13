@@ -9,9 +9,9 @@
  * @since       1.0.0
  */
 
-// Include Hybrid Core.
-require_once trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php';
-new Hybrid();
+// Include CareLib.
+require_once trailingslashit( get_template_directory() ) . 'includes/vendor/carelib/carelib.php';
+carelib()->run( array( 'prefix' => 'alpha' ) );
 
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
 /**
@@ -25,50 +25,21 @@ add_action( 'after_setup_theme', 'alpha_setup', 10 );
  * @return  void
  */
 function alpha_setup() {
-	// http://themehybrid.com/docs/theme-layouts
-	add_theme_support(
-		'theme-layouts',
-		array(
-			'1c'        => __( '1 Column Wide',                'alpha' ),
-			'1c-narrow' => __( '1 Column Narrow',              'alpha' ),
-			'2c-l'      => __( '2 Columns: Content / Sidebar', 'alpha' ),
-			'2c-r'      => __( '2 Columns: Sidebar / Content', 'alpha' )
-		),
-		array( 'default' => is_rtl() ? '2c-r' :'2c-l' )
-	);
+	global $content_width;
 
-	// http://themehybrid.com/docs/hybrid_set_content_width
-	hybrid_set_content_width( 1140 );
+	$content_width = 1140;
+
+	// http://themehybrid.com/docs/theme-layouts
+	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' : '2c-l' ) );
 
 	// http://codex.wordpress.org/Automatic_Feed_Links
 	add_theme_support( 'automatic-feed-links' );
-
-	// http://themehybrid.com/docs/hybrid-core-styles
-	add_theme_support( 'hybrid-core-styles', array( 'style', 'google-fonts', ) );
-
-	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Site-Logo
-	add_theme_support( 'site-logo' );
 
 	// https://developer.wordpress.org/themes/functionality/navigation-menus/
 	register_nav_menus( array(
 		'primary'   => _x( 'Primary Menu', 'nav menu location', 'alpha' ),
 		'secondary' => _x( 'Secondary Menu', 'nav menu location', 'alpha' ),
 	) );
-
-	// https://github.com/justintadlock/breadcrumb-trail
-	add_theme_support( 'breadcrumb-trail' );
-
-	// https://github.com/justintadlock/get-the-image
-	add_theme_support( 'get-the-image' );
-
-	// http://themehybrid.com/docs/template-hierarchy
-	add_theme_support( 'hybrid-core-template-hierarchy' );
-
-	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Author-Box
-	add_theme_support( 'sitecare-author-box' );
-
-	// https://github.com/wpsitecare/sitecare-library/wiki/sitecare-Footer-Widgets
-	add_theme_support( 'sitecare-footer-widgets', 3 );
 }
 
 add_action( 'after_setup_theme', 'alpha_includes', 10 );
@@ -79,20 +50,15 @@ add_action( 'after_setup_theme', 'alpha_includes', 10 );
  * @return  void
  */
 function alpha_includes() {
-	// Set the includes directories.
-	$includes_dir = trailingslashit( get_template_directory() ) . 'includes/';
+	$dir = trailingslashit( get_template_directory() ) . 'includes/';
 
-	// Load the main file in the SiteCare library directory.
-	require_once $includes_dir . 'vendor/sitecare-library/init.php';
-
-	// Load all PHP files in the vendor directory.
-	require_once $includes_dir . 'vendor/tha-theme-hooks.php';
+	require_once "{$dir}vendor/tha-theme-hooks.php";
 
 	// Load all PHP files in the includes directory.
-	require_once $includes_dir . 'compatibility.php';
-	require_once $includes_dir . 'general.php';
-	require_once $includes_dir . 'scripts.php';
-	require_once $includes_dir . 'widgetize.php';
+	require_once "{$dir}compatibility.php";
+	require_once "{$dir}general.php";
+	require_once "{$dir}scripts.php";
+	require_once "{$dir}widgetize.php";
 }
 
 // Add a hook for child themes to execute code.
