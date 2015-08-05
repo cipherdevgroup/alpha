@@ -1,18 +1,19 @@
 <?php
 /**
- * Script and Style Loaders and Related Functions.
+ * Load Theme JavaScript and CSS
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Functions\Scripts
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 
+// Exit if accessed directly
+defined( 'ABSPATH' ) or exit;
+
 /**
- * Return a script suffix.
- *
- * Returns .min if SCRIPT_DEBUG is disabled. Empty otherwise.
+ * Return a suffix to load minified JavaScript on production.
  *
  * @since  1.0.0
  * @access public
@@ -20,26 +21,6 @@
  */
 function alpha_get_suffix() {
 	return carelib_class( 'public-scripts' )->get_suffix();
-}
-
-add_action( 'admin_init', 'alpha_add_editor_styles' );
-/**
- * Replace the default theme stylesheet with a RTL version when a RTL
- * language is being used.
- *
- * @since  1.2.0
- * @access public
- * @return void
- */
-function alpha_add_editor_styles() {
-	// Set up editor styles
-	$editor_styles = array(
-		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
-		'css/editor-style.css',
-	);
-
-	// Add the editor styles.
-	add_editor_style( $editor_styles );
 }
 
 add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data' );
@@ -56,18 +37,21 @@ function alpha_rtl_add_data() {
 	wp_style_add_data( 'style', 'suffix', alpha_get_suffix() );
 }
 
-add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles', 4 );
+add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles' );
 /**
- * Load our core parent theme styles.
+ * Load a minified version of the theme's stylesheet along with any other
+ * required theme CSS files.
  *
  * @since  1.0.0
  * @access public
  * @return void
  */
 function alpha_enqueue_styles() {
-	wp_enqueue_style( 'alpha-style' );
+	$css_dir = trailingslashit( get_template_directory_uri() ) . 'css/';
+	$suffix  = alpha_get_suffix();
 
-	wp_register_style(
+	wp_enqueue_style( 'alpha-style' );
+	wp_enqueue_style(
 		'google-fonts',
 		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
 		array(),
@@ -77,21 +61,20 @@ function alpha_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts' );
 /**
- * Enqueue theme scripts.
+ * Register and load JavaScript files.
  *
  * @since  1.0.0
  * @access public
  * @return void
  */
 function alpha_enqueue_scripts() {
-	$js_dir = trailingslashit( get_template_directory_uri() ) . 'js/';
+	$js_uri = trailingslashit( get_template_directory_uri() ) . 'js/';
 	$suffix = alpha_get_suffix();
-
 	wp_enqueue_script(
-		'alpha',
-		$js_dir . "theme{$suffix}.js",
+		'alpha-general',
+		"{$js_uri}theme{$suffix}.js",
 		array( 'jquery' ),
-		null,
+		'1.0.0',
 		true
 	);
 }
