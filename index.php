@@ -15,4 +15,4 @@
  * @since       1.0.0
  */
 
-locate_template( 'framework/default.php', true, true );
+locate_template( 'templates/framework.php', true, true );
