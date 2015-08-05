@@ -6,6 +6,16 @@
 	font-size: $footer-widgets-font-size;
 	padding: $base-padding 0 10px;
 
+	@include media($medium-screen-up) {
+		.widget {
+			@include span-columns(4);
+
+			&:nth-of-type(3n) {
+				@include omega();
+			}
+		}
+	}
+
 	.widget-title {
 		color: $footer-widgets-heading-color;
 	}
@@ -67,17 +77,5 @@
 	.search-form button {
 		border-radius: $base-border-radius;
 		margin: 5px;
-	}
-}
-
-@include media($medium-screen-up) {
-	.footer-widgets-3 {
-		@include omega();
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		@include span-columns(4);
 	}
 }
