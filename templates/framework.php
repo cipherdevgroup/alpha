@@ -1,12 +1,12 @@
 <?php
 /**
- * The static front page template.
+ * The default framework markup file.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Templates
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 ?>
 <?php get_header(); ?>
@@ -21,19 +21,31 @@
 
 		<?php if ( have_posts() ) : ?>
 
+			<?php tha_content_while_before(); ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php tha_entry_before(); ?>
 
-				<?php hybrid_get_content_template(); ?>
+					<?php tha_entry_top(); ?>
+
+					<?php tha_entry_content_before(); ?>
+
+					<?php alpha_content(); ?>
+
+					<?php tha_entry_content_after(); ?>
+
+					<?php tha_entry_bottom(); ?>
 
 				<?php tha_entry_after(); ?>
 
 			<?php endwhile; ?>
 
+			<?php tha_content_while_after(); ?>
+
 		<?php else : ?>
 
-			<?php get_template_part( 'content/error' ); ?>
+			<?php get_template_part( 'templates/error' ); ?>
 
 		<?php endif; ?>
 
@@ -42,8 +54,6 @@
 	</main><!-- #content -->
 
 	<?php tha_content_after(); ?>
-
-	<?php alpha_get_sidebar( 'primary' ); ?>
 
 </div><!-- #site-inner -->
 

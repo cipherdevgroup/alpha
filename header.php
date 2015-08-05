@@ -25,12 +25,6 @@
 
 	<div <?php alpha_attr( 'site-container' ); ?>>
 
-		<div class="skip-link">
-			<a href="#content" class="button screen-reader-text">
-				<?php _e( 'Skip to content (Press enter)', 'alpha' ); ?>
-			</a>
-		</div><!-- .skip-link -->
-
 		<?php tha_header_before(); ?>
 
 		<header <?php alpha_attr( 'header' ); ?>>
@@ -39,14 +33,6 @@
 
 				<?php tha_header_top(); ?>
 
-				<div <?php alpha_attr( 'branding' ); ?>>
-					<?php sitecare_the_logo(); ?>
-					<?php hybrid_site_title(); ?>
-					<?php hybrid_site_description(); ?>
-				</div><!-- #branding -->
-
-				<?php hybrid_get_menu( 'primary' ); ?>
-
 				<?php tha_header_bottom(); ?>
 
 			</div>
@@ -54,5 +40,3 @@
 		</header><!-- #header -->
 
 		<?php tha_header_after(); ?>
-
-		<?php hybrid_get_menu( 'secondary' ); ?>
