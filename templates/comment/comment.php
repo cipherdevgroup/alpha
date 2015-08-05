@@ -2,16 +2,16 @@
 /**
  * A template part for displaying a comment.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Templates
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 ?>
 <li <?php alpha_attr( 'comment' ); ?>>
 
-	<?php echo get_avatar( $comment, 48 ); ?>
+	<?php echo get_avatar( $comment, 90 ); ?>
 
 	<article class="comment-container">
 

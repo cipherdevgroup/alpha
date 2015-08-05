@@ -2,11 +2,11 @@
 /**
  * A template part for displaying a ping.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Templates
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 ?>
 <li <?php alpha_attr( 'comment' ); ?>>
@@ -19,7 +19,7 @@
 				<time <?php alpha_attr( 'comment-published' ); ?>>
 					<?php
 					printf(
-						__( '%s ago', 'alpha' ),
+						esc_attr__( '%s ago', 'alpha' ),
 						human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) )
 					);
 					?>

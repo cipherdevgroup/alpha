@@ -2,18 +2,18 @@
 /**
  * A template part to display comment pagination.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Templates
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 ?>
 <?php if ( get_option( 'page_comments' ) && 1 < get_comment_pages_count() ) : ?>
 
 	<nav id="comments-nav" class="comments-nav pagination" role="navigation" aria-labelledby="comments-nav-title">
 
-		<h3 id="comments-nav-title" class="screen-reader-text"><?php _e( 'Comments Navigation', 'alpha' ); ?></h3>
+		<h3 id="comments-nav-title" class="screen-reader-text"><?php esc_html_e( 'Comments Navigation', 'alpha' ); ?></h3>
 
 		<?php
 		paginate_comments_links(

@@ -2,11 +2,11 @@
 /**
  * A template part to display when comments are closed.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Templates
+ * @subpackage CareLib
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
+ * @since      1.0.0
  */
 ?>
 <?php if ( pings_open() && ! comments_open() ) : ?>
@@ -21,9 +21,8 @@
 			);
 		?>
 	</p><!-- .comments-closed .pings-open -->
-	<?php
 
-elseif ( ! comments_open() ) : ?>
+<?php elseif ( ! comments_open() ) : ?>
 
 	<p class="comments-closed">
 		<?php esc_html_e( 'Comments are closed.', 'alpha' ); ?>
