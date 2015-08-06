@@ -9,8 +9,8 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
-defined( 'ABSPATH' ) or exit;
+// Prevent direct access.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Return a suffix to load minified JavaScript on production.

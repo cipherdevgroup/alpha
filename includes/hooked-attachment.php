@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
+// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'tha_entry_before', 'alpha_attachment_entry_meta', 20 );

@@ -9,8 +9,8 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
-defined( 'ABSPATH' ) or exit;
+// Prevent direct access.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Determine if we're viewing a page which lists multiple entries.

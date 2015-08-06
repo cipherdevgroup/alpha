@@ -9,8 +9,8 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
-defined( 'ABSPATH' ) or exit;
+// Prevent direct access.
+defined( 'ABSPATH' ) || exit;
 
 add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
 /**

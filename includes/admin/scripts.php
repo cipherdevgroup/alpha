@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
+// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'admin_init', 'alpha_add_editor_styles' );

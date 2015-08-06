@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-// Exit if accessed directly
+// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'tha_header_before', 'alpha_skip_link',       10 );

@@ -9,6 +9,9 @@
  * @since       1.0.0
  */
 
+// Prevent direct access.
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Return a path to the alpha includes directory with a trailing slash.
  *
