@@ -23,13 +23,13 @@
 
 			<header class="entry-header">
 				<h1 <?php alpha_attr( 'entry-title' ); ?>>
-					<?php esc_attr_e( 'Oops! That page can&rsquo;t be found.', 'wp-site-care' ); ?>
+					<?php esc_attr_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?>
 				</h1>
 			</header><!-- .page-header -->
 
 			<div class="entry-content">
 
-				<p><?php esc_attr_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-site-care' ); ?></p>
+				<p><?php esc_attr_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha' ); ?></p>
 
 				<?php get_search_form(); ?>
 
@@ -41,7 +41,7 @@
 					'WP_Widget_Archives',
 					'dropdown=1',
 					'after_title=</h2> ' . wpautop( sprintf(
-						__( 'Try looking in the monthly archives. %1$s', 'wp-site-care' ),
+						__( 'Try looking in the monthly archives. %1$s', 'alpha' ),
 						convert_smilies( ':)' )
 					) )
 				);
