@@ -58,7 +58,7 @@ function alpha_post_image() {
 	$link = is_singular() ? false : true;
 	alpha_image( apply_filters( 'alpha_post_image',
 		array(
-			'size'         => 'featured-blog',
+			'size'         => 'featured-image',
 			'order'        => array( 'featured', 'attachment' ),
 			'before'       => '<div class="featured-media image">',
 			'after'        => '</div>',
