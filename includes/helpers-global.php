@@ -13,6 +13,18 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Load the base theme framework template.
+ *
+ * @since  1.0.0
+ * @uses   CareLib_Template_Global::framework
+ * @param  string $name The name of the specialized template.
+ * @return void
+ */
+function alpha_framework( $name = null ) {
+	echo carelib_class( 'template-global' )->framework( $name );
+}
+
+/**
  * Output the opening tag for a wrapping <div>.
  *
  * @since  1.0.0
