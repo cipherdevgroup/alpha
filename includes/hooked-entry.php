@@ -27,6 +27,13 @@ add_action( 'tha_entry_bottom',         'alpha_entry_close',           99 );
 add_action( 'tha_entry_after',          'alpha_post_navigation',       10 );
 add_action( 'tha_entry_after',          'alpha_comments',              14 );
 
+/**
+ * Output opening markup for the entry article element.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
 function alpha_entry_open() {
 	echo '<article ' . alpha_get_attr( 'post' ) . '>';
 }
@@ -296,6 +303,13 @@ function alpha_entry_footer_close() {
 	echo '</footer><!-- .entry-footer -->';
 }
 
+/**
+ * Output closing markup for the entry article element.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
 function alpha_entry_close() {
 	echo '</article><!-- .entry -->';
 }
@@ -313,8 +327,15 @@ function alpha_post_navigation( $args = array() ) {
 	echo carelib_class( 'template-entry' )->get_post_navigation( $args );
 }
 
+/**
+ * Output the comments template.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
 function alpha_comments() {
-	if ( is_single() ) {
+	if ( apply_filters( 'alpha_display_comments', ! ( is_page() || is_attachment() ) ) ) {
 		comments_template();
 	}
 }
