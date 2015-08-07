@@ -12,20 +12,20 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'tha_entry_top',            'alpha_entry_open',             0 );
-add_action( 'tha_entry_top',            'alpha_sticky_banner',          2 );
-add_action( 'tha_entry_top',            'alpha_post_image',             4 );
-add_action( 'tha_entry_top',            'alpha_entry_header_open',      8 );
-add_action( 'tha_entry_top',            'alpha_entry_title',           10 );
-add_action( 'tha_entry_before',         'alpha_entry_meta',            12 );
-add_action( 'tha_entry_top',            'alpha_entry_header_close',    30 );
-add_action( 'tha_entry_content_before', 'alpha_entry_content_open',    10 );
-add_action( 'tha_entry_content_after',  'alpha_link_pages',             5 );
-add_action( 'tha_entry_content_after',  'alpha_entry_content_close',   10 );
-add_action( 'tha_entry_content_after',  'alpha_entry_footer',          10 );
-add_action( 'tha_entry_bottom',         'alpha_entry_close',           99 );
-add_action( 'tha_entry_after',          'alpha_post_navigation',       10 );
-add_action( 'tha_entry_after',          'alpha_comments',              14 );
+add_action( 'tha_entry_top',            'alpha_entry_open',           0 );
+add_action( 'tha_entry_top',            'alpha_sticky_banner',        2 );
+add_action( 'tha_entry_top',            'alpha_post_image',           4 );
+add_action( 'tha_entry_top',            'alpha_entry_header_open',    8 );
+add_action( 'tha_entry_top',            'alpha_entry_title',         10 );
+add_action( 'tha_entry_before',         'alpha_entry_meta',          12 );
+add_action( 'tha_entry_top',            'alpha_entry_header_close',  30 );
+add_action( 'tha_entry_content_before', 'alpha_entry_content_open',  10 );
+add_action( 'tha_entry_content_after',  'alpha_link_pages',           5 );
+add_action( 'tha_entry_content_after',  'alpha_entry_content_close', 10 );
+add_action( 'tha_entry_content_after',  'alpha_entry_footer',        10 );
+add_action( 'tha_entry_bottom',         'alpha_entry_close',         99 );
+add_action( 'tha_entry_after',          'alpha_post_navigation',     10 );
+add_action( 'tha_entry_after',          'alpha_comments',            14 );
 
 /**
  * Output opening markup for the entry article element.

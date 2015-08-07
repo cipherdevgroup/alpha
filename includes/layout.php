@@ -12,7 +12,7 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'alpha_register_layouts', 'alpha_register_layouts' );
+add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
 /**
  * Register our theme's custom layout options.
  *

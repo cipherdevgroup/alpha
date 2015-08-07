@@ -12,6 +12,10 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
+add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles',  10 );
+add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data',    12 );
+add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
+
 /**
  * Return a suffix to load minified JavaScript on production.
  *
@@ -23,21 +27,6 @@ function alpha_get_suffix() {
 	return carelib_class( 'public-scripts' )->get_suffix();
 }
 
-add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data' );
-/**
- * Replace the default theme stylesheet with a RTL version when a RTL
- * language is being used.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-function alpha_rtl_add_data() {
-	wp_style_add_data( 'style', 'rtl', 'replace' );
-	wp_style_add_data( 'style', 'suffix', alpha_get_suffix() );
-}
-
-add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles' );
 /**
  * Load a minified version of the theme's stylesheet along with any other
  * required theme CSS files.
@@ -59,7 +48,19 @@ function alpha_enqueue_styles() {
 	);
 }
 
-add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts' );
+/**
+ * Replace the default theme stylesheet with a RTL version when a RTL
+ * language is being used.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_rtl_add_data() {
+	wp_style_add_data( 'style', 'rtl', 'replace' );
+	wp_style_add_data( 'style', 'suffix', alpha_get_suffix() );
+}
+
 /**
  * Register and load JavaScript files.
  *

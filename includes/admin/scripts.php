@@ -12,7 +12,7 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'admin_init', 'alpha_add_editor_styles' );
+add_action( 'admin_init', 'alpha_add_editor_styles', 10 );
 /**
  * Add custom styles to the WordPress editor to give a better representation of
  * what the front of the site will look like.
