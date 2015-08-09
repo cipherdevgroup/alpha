@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function alpha_framework( $name = null ) {
-	echo carelib_class( 'template-global' )->framework( $name );
+	carelib_class( 'template-global' )->framework( $name );
 }
 
 /**
