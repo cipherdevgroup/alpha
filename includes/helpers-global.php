@@ -47,42 +47,6 @@ function alpha_wrap_close() {
 }
 
 /**
- * Display the linked site title wrapped in an `<h1>` or `<p>` tag.
- *
- * @since  1.0.0
- * @access public
- * @uses   CareLib_Template_Global::get_site_title
- * @return void
- */
-function alpha_site_title() {
-	echo carelib_class( 'template-global' )->get_site_title();
-}
-
-/**
- * Display the site description wrapped in a `<p>` tag.
- *
- * @since  1.0.0
- * @access public
- * @uses   CareLib_Template_Global::get_site_description
- * @return void
- */
-function alpha_site_description() {
-	echo carelib_class( 'template-global' )->get_site_description();
-}
-
-/**
- * Output an <img> tag of the site logo.
- *
- * @since  1.0.0
- * @access public
- * @uses   CareLib_Template_Global::the_logo
- * @return void
- */
-function alpha_logo() {
-	carelib_class( 'template-global' )->the_logo();
-}
-
-/**
  * Output a given menu template.
  *
  * @since  1.0.0
