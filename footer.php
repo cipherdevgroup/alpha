@@ -11,22 +11,6 @@
  * @since       1.0.0
  */
 ?>
-	<?php tha_footer_before(); ?>
-
-	<footer <?php alpha_attr( 'footer' ); ?>>
-
-		<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
-
-			<?php tha_footer_top(); ?>
-
-			<?php tha_footer_bottom(); ?>
-
-		</div><!-- .wrap -->
-
-	</footer><!-- .footer -->
-
-	<?php tha_footer_after(); ?>
-
 	<?php tha_body_bottom(); ?>
 	<?php wp_footer(); ?>
 

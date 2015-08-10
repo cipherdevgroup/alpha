@@ -22,19 +22,3 @@
 <body <?php alpha_attr( 'body' ); ?>>
 
 	<?php tha_body_top(); ?>
-
-	<?php tha_header_before(); ?>
-
-	<header <?php alpha_attr( 'header' ); ?>>
-
-		<div <?php alpha_attr( 'wrap', 'header' ); ?>>
-
-			<?php tha_header_top(); ?>
-
-			<?php tha_header_bottom(); ?>
-
-		</div>
-
-	</header><!-- #header -->
-
-	<?php tha_header_after(); ?>

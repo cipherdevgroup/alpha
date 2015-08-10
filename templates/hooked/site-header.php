@@ -1,6 +1,6 @@
 <?php
 /**
- * A template part for the default a11y skip to content link.
+ * A template part for the site's default header.
  *
  * @package    Alpha\Templates
  * @subpackage CareLib
@@ -14,3 +14,19 @@
 		<?php _e( 'Skip to content (Press enter)', 'alpha' ); ?>
 	</a>
 </div><!-- .skip-link -->
+
+<?php tha_header_before(); ?>
+
+<header <?php alpha_attr( 'header' ); ?>>
+
+	<div <?php alpha_attr( 'wrap', 'header' ); ?>>
+
+		<?php tha_header_top(); ?>
+
+		<?php tha_header_bottom(); ?>
+
+	</div>
+
+</header><!-- #header -->
+
+<?php tha_header_after(); ?>
