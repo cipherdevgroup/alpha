@@ -45,7 +45,7 @@ function alpha_header() {
  * @return void
  */
 function alpha_branding_open() {
-	printf( '<div %s>', alpha_get_attr( 'branding' ) );
+	echo '<div ' . alpha_get_attr( 'branding' ) . '>';
 }
 
 /**
