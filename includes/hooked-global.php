@@ -27,7 +27,7 @@ add_action( 'tha_body_bottom',   'alpha_footer',           10 );
 add_action( 'tha_footer_bottom', 'alpha_footer_content',   10 );
 
 /**
- * Display a11y skip links.
+ * Load the site header template.
  *
  * @since  1.0.0
  * @access public
@@ -182,7 +182,7 @@ function alpha_footer_widgets() {
 }
 
 /**
- * Display the theme's footer credit links.
+ * Load the site footer template.
  *
  * @since  1.0.0
  * @access public
