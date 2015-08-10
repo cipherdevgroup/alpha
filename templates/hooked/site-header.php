@@ -9,12 +9,6 @@
  * @since      1.0.0
  */
 ?>
-<div class="skip-link">
-	<a href="#content" class="button screen-reader-text">
-		<?php _e( 'Skip to content (Press enter)', 'alpha' ); ?>
-	</a>
-</div><!-- .skip-link -->
-
 <?php tha_header_before(); ?>
 
 <header <?php alpha_attr( 'header' ); ?>>

@@ -12,6 +12,7 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
+add_action( 'tha_body_top',      'alpha_skip_to_content',  5 );
 add_action( 'tha_body_top',      'alpha_header',           10 );
 add_action( 'tha_header_top',    'alpha_branding_open',    10 );
 add_action( 'tha_header_top',    'alpha_logo',             12 );
@@ -25,6 +26,23 @@ add_action( 'tha_content_after', 'alpha_primary_sidebar',  10 );
 add_action( 'tha_footer_before', 'alpha_footer_widgets',   10 );
 add_action( 'tha_body_bottom',   'alpha_footer',           10 );
 add_action( 'tha_footer_bottom', 'alpha_footer_content',   10 );
+
+/**
+ * Output a skip-to-content link markup for screen readers.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_skip_to_content() {
+	echo '<div id="skip-to-content" class="skip-link">';
+	echo apply_filters( 'alpha_skip_to_content',
+		sprintf( '<a href="#content" class="button screen-reader-text">%s</a>',
+			esc_html__( 'Skip to content (Press enter)', 'alpha' )
+		)
+	);
+	echo '</div><!-- #skip-to-content -->';
+}
 
 /**
  * Load the site header template.
