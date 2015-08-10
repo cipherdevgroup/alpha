@@ -11,23 +11,21 @@
  * @since       1.0.0
  */
 ?>
-		<?php tha_footer_before(); ?>
+	<?php tha_footer_before(); ?>
 
-		<footer <?php alpha_attr( 'footer' ); ?>>
+	<footer <?php alpha_attr( 'footer' ); ?>>
 
-			<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
+		<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
 
-				<?php tha_footer_top(); ?>
+			<?php tha_footer_top(); ?>
 
-				<?php tha_footer_bottom(); ?>
+			<?php tha_footer_bottom(); ?>
 
-			</div><!-- .wrap -->
+		</div><!-- .wrap -->
 
-		</footer><!-- .footer -->
+	</footer><!-- .footer -->
 
-		<?php tha_footer_after(); ?>
-
-	</div><!-- .site-container -->
+	<?php tha_footer_after(); ?>
 
 	<?php tha_body_bottom(); ?>
 	<?php wp_footer(); ?>

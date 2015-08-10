@@ -23,20 +23,18 @@
 
 	<?php tha_body_top(); ?>
 
-	<div <?php alpha_attr( 'site-container' ); ?>>
+	<?php tha_header_before(); ?>
 
-		<?php tha_header_before(); ?>
+	<header <?php alpha_attr( 'header' ); ?>>
 
-		<header <?php alpha_attr( 'header' ); ?>>
+		<div <?php alpha_attr( 'wrap', 'header' ); ?>>
 
-			<div <?php alpha_attr( 'wrap', 'header' ); ?>>
+			<?php tha_header_top(); ?>
 
-				<?php tha_header_top(); ?>
+			<?php tha_header_bottom(); ?>
 
-				<?php tha_header_bottom(); ?>
+		</div>
 
-			</div>
+	</header><!-- #header -->
 
-		</header><!-- #header -->
-
-		<?php tha_header_after(); ?>
+	<?php tha_header_after(); ?>
