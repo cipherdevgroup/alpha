@@ -21,13 +21,13 @@
 
 		<article class="entry error-404 not-found">
 
-			<header class="entry-header">
+			<header <?php alpha_attr( 'entry-header' ); ?>>
 				<h1 <?php alpha_attr( 'entry-title' ); ?>>
 					<?php esc_attr_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?>
 				</h1>
 			</header><!-- .page-header -->
 
-			<div class="entry-content">
+			<div <?php alpha_attr( 'entry-content' ); ?>>
 
 				<p><?php esc_attr_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha' ); ?></p>
 

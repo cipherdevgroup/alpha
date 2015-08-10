@@ -23,8 +23,8 @@
 				<?php
 				wp_list_comments(
 					array(
-						'style'        => 'ol',
-						'callback'     => 'alpha_comments_callback',
+						'style'    => 'ol',
+						'callback' => 'alpha_comments_callback',
 					)
 				);
 				?>
@@ -46,6 +46,4 @@
 
 	<?php tha_comments_after(); ?>
 
-	<?php
-
-endif;
+<?php endif; ?>
