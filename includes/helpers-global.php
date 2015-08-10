@@ -84,6 +84,32 @@ function alpha_display_breadcrumbs() {
 }
 
 /**
+ * Return a featured image using CareLib's advanced image grabber class.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Image_Grabber::grab_the_image
+ * @param  array $args a list of arguments to pass to the image grabber class
+ * @return mixed string or an array depending on what arguments are used
+ */
+function alpha_get_image( $args = array() ) {
+	return carelib_class( 'image-grabber' )->grab_the_image( $args );
+}
+
+/**
+ * Display a featured image using CareLib's advanced image grabber class.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Image_Grabber::grab_the_image
+ * @param  array $args a list of arguments to pass to the image grabber class
+ * @return void
+ */
+function alpha_image( $args = array() ) {
+	carelib_class( 'image-grabber' )->grab_the_image( $args, true );
+}
+
+/**
  * Output a given sidebar template.
  *
  * @since  1.0.0
