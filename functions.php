@@ -66,8 +66,8 @@ add_action( 'init', 'alpha_register_image_sizes', 5 );
 function alpha_register_image_sizes() {
 	set_post_thumbnail_size( 175, 130, true );
 
-	add_image_size( 'featured-image', 1025, 500, true );
-	add_image_size( 'related-posts',   350, 250, true );
+	add_image_size( 'featured',     1025, 500, true );
+	add_image_size( 'related-posts', 350, 250, true );
 }
 
 add_action( 'widgets_init', 'alpha_register_sidebars', 5 );
