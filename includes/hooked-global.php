@@ -12,14 +12,19 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'tha_header_before', 'alpha_skip_link',       10 );
-add_action( 'tha_header_top',    'alpha_branding',        10 );
-add_action( 'tha_header_bottom', 'alpha_menu_primary',    10 );
-add_action( 'tha_header_after',  'alpha_menu_secondary',  10 );
-add_action( 'tha_content_top',   'alpha_breadcrumbs',     10 );
-add_action( 'tha_content_after', 'alpha_primary_sidebar', 10 );
-add_action( 'tha_footer_before', 'alpha_footer_widgets',  10 );
-add_action( 'tha_footer_bottom', 'alpha_footer',          10 );
+add_action( 'tha_body_top',      'alpha_header',           10 );
+add_action( 'tha_header_top',    'alpha_branding_open',    10 );
+add_action( 'tha_header_top',    'alpha_logo',             12 );
+add_action( 'tha_header_top',    'alpha_site_title',       14 );
+add_action( 'tha_header_top',    'alpha_site_description', 16 );
+add_action( 'tha_header_top',    'alpha_branding_close',   20 );
+add_action( 'tha_header_bottom', 'alpha_menu_primary',     10 );
+add_action( 'tha_header_after',  'alpha_menu_secondary',   10 );
+add_action( 'tha_content_top',   'alpha_breadcrumbs',      10 );
+add_action( 'tha_content_after', 'alpha_primary_sidebar',  10 );
+add_action( 'tha_footer_before', 'alpha_footer_widgets',   10 );
+add_action( 'tha_body_bottom',   'alpha_footer',           10 );
+add_action( 'tha_footer_bottom', 'alpha_footer_content',   10 );
 
 /**
  * Display a11y skip links.
@@ -28,23 +33,70 @@ add_action( 'tha_footer_bottom', 'alpha_footer',          10 );
  * @access public
  * @return void
  */
-function alpha_skip_link() {
-	get_template_part( 'templates/hooked/site', 'skip-link' );
+function alpha_header() {
+	get_template_part( 'templates/hooked/site', 'header' );
 }
 
 /**
- * Display the site's branding elements like a logo and title.
+ * Output the opening markup for the site's branding elements.
  *
  * @since  1.0.0
  * @access public
  * @return void
  */
-function alpha_branding() {
-	get_template_part( 'templates/hooked/site', 'branding' );
+function alpha_branding_open() {
+	printf( '<div %s>', alpha_get_attr( 'branding' ) );
 }
 
 /**
- * Display the site's primary menu.
+ * Display the linked site title wrapped in an `<h1>` or `<p>` tag.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Template_Global::get_site_title
+ * @return void
+ */
+function alpha_site_title() {
+	echo carelib_class( 'template-global' )->get_site_title();
+}
+
+/**
+ * Display the site description wrapped in a `<p>` tag.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Template_Global::get_site_description
+ * @return void
+ */
+function alpha_site_description() {
+	echo carelib_class( 'template-global' )->get_site_description();
+}
+
+/**
+ * Output an <img> tag of the site logo.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Template_Global::the_logo
+ * @return void
+ */
+function alpha_logo() {
+	carelib_class( 'template-global' )->the_logo();
+}
+
+/**
+ * Output the closing markup for the site's branding elements.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_branding_close() {
+	echo '</div><!-- #branding -->';
+}
+
+/**
+ * Load the site's primary menu template.
  *
  * @since  1.0.0
  * @access public
@@ -71,7 +123,7 @@ function alpha_menu_primary_fallback() {
 }
 
 /**
- * Display the site's secondary menu.
+ * Load the site's secondary menu template.
  *
  * @since  1.0.0
  * @access public
@@ -117,24 +169,7 @@ function alpha_primary_sidebar() {
 }
 
 /**
- * Display the theme's footer credit links.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-function alpha_footer() {
-	printf( '<p class="credit">%s</p>', sprintf(
-		// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link.
-		__( 'Copyright &#169; %1$s %2$s. Designed by %3$s.', 'alpha' ),
-		date_i18n( 'Y' ),
-		carelib_class( 'template-global' )->get_site_link(),
-		carelib_class( 'template-global' )->get_credit_link()
-	) );
-}
-
-/**
- * Displays all registered footer widget areas using a template.
+ * Load the site-wide footer widgets template.
  *
  * @since  1.0.0
  * @access public
@@ -144,4 +179,32 @@ function alpha_footer_widgets() {
 	if ( is_active_sidebar( 'footer-widgets' ) ) {
 		alpha_sidebar( 'footer-widgets' );
 	}
+}
+
+/**
+ * Display the theme's footer credit links.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_footer() {
+	get_template_part( 'templates/hooked/site', 'footer' );
+}
+
+/**
+ * Display the theme's footer credit links.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_footer_content() {
+	printf( '<p class="credit">%s</p>', sprintf(
+		// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link.
+		__( 'Copyright &#169; %1$s %2$s. Designed by %3$s.', 'alpha' ),
+		date_i18n( 'Y' ),
+		carelib_class( 'template-global' )->get_site_link(),
+		carelib_class( 'template-global' )->get_credit_link()
+	) );
 }
