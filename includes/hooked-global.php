@@ -28,7 +28,7 @@ add_action( 'tha_body_bottom',   'alpha_footer',           10 );
 add_action( 'tha_footer_bottom', 'alpha_footer_content',   10 );
 
 /**
- * Output a skip-to-content link markup for screen readers.
+ * Output skip-to-content link markup for screen readers.
  *
  * @since  1.0.0
  * @access public
