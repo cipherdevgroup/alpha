@@ -47,7 +47,10 @@ function alpha_entry_open() {
  */
 function alpha_sticky_banner() {
 	if ( ! is_singular() && is_sticky() ) {
-		get_template_part( 'templates/hooked/entry-sticky', 'banner' );
+		printf( '<div %s><p class="ribbon-content">%s<p></div>',
+			alpha_get_attr( 'corner-ribbon', 'sticky' ),
+			esc_html__( 'Featured', 'alpha' )
+		);
 	}
 }
 
