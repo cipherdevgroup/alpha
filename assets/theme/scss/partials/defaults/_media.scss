@@ -15,7 +15,7 @@ img {
 
 a:hover img,
 a:focus img {
-	@include transition(opacity 0.2s ease-in-out);
+	transition: opacity 0.2s ease-in-out;
 	opacity: 0.9;
 }
 
@@ -108,7 +108,7 @@ a:focus img {
 	}
 
 	.gallery-caption {
-		@include transition(all, 0.2s ease-in-out);
+		transition: all 0.2s ease-in-out;
 		background: transparentize($gallery-caption-background-color, 0.5);
 		color: $gallery-caption-font-color;
 		font-size: $gallery-caption-font-size;
@@ -123,7 +123,7 @@ a:focus img {
 	}
 
 	&:hover .gallery-caption {
-		@include transform(translate(0, -100%));
+		transform: translate(0, -100%);
 		visibility: visible;
 		opacity: 1;
 	}

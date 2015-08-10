@@ -7,7 +7,7 @@
 	text-align: center;
 
 	.page-numbers {
-		@include transition (all 0.2s ease-in-out);
+		transition: all 0.2s ease-in-out;
 		background: $pagination-background-color;
 		border: 1px solid $pagination-border-color;
 		border-radius: $base-border-radius;
@@ -64,7 +64,7 @@
 
 	span,
 	a {
-		@include transition (all 0.2s ease-in-out);
+		transition: all 0.2s ease-in-out;
 		border: 1px solid $page-links-border-color;
 		border-radius: $base-border-radius;
 		color: $page-links-link-color;

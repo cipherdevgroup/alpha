@@ -41,7 +41,7 @@
 	top: -1px;
 
 	.ribbon-content {
-		@include transform(rotate(45deg));
+		transform: rotate(45deg);
 		background-color: $corner-ribbon-background-color;
 		color: $corner-ribbon-font-color;
 		font-size: $small-font-size;
@@ -57,7 +57,7 @@
 }
 
 .rtl .ribbon-content {
-	@include transform(rotate(-45deg));
+	transform: rotate(-45deg);
 }
 
 .entry-content {
