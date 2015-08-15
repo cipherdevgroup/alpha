@@ -20,6 +20,7 @@ add_action( 'tha_header_top',    'alpha_site_title',       14 );
 add_action( 'tha_header_top',    'alpha_site_description', 16 );
 add_action( 'tha_header_top',    'alpha_branding_close',   20 );
 add_action( 'tha_header_bottom', 'alpha_menu_primary',     10 );
+add_action( 'tha_header_bottom', 'alpha_menu_fallback',    10 );
 add_action( 'tha_header_after',  'alpha_menu_secondary',   10 );
 add_action( 'tha_content_top',   'alpha_breadcrumbs',      10 );
 add_action( 'tha_content_after', 'alpha_primary_sidebar',  10 );
@@ -134,7 +135,7 @@ function alpha_menu_primary() {
  * @access public
  * @return void
  */
-function alpha_menu_primary_fallback() {
+function alpha_menu_fallback() {
 	if ( ! has_nav_menu( 'primary' ) && current_user_can( 'edit_theme_options' ) ) {
 		alpha_menu( 'fallback-primary' );
 	}
