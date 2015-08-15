@@ -18,7 +18,7 @@ module.exports = function() {
 		],
 		'build:dependencies:php': [
 			'clean:php',
-			'composer:install',
+			'shell:composer',
 			'newer:copy:php'
 		],
 		'build:fonts': [
