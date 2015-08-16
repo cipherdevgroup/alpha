@@ -7,15 +7,16 @@
 // Theme Colors (private vars)
 //------------------------------------------------------------------------------
 $off-black:   #1c1e1f;
-$dark-gray:   #494b4c;
-$medium-gray: #676869;
+$dark-gray:   #474e57;
+$medium-gray: #5d646b;
 $light-gray:  #a4a5a5;
 $fog:         #ccc;
 $medium-fog:  #e0e0e0;
-$light-fog:   #f5f5f5;
+$light-fog:   #f3f3f4;
 $white:       #fff;
-$seafoam:     #33b787;
-$green:       #00a66c;
+$light-blue:  #69c0fc;
+$medium-blue: #1079c2;
+$dark-blue:   #00376c;
 
 // Global Base Colors
 //------------------------------------------------------------------------------
@@ -24,13 +25,13 @@ $base-font-color:                 $dark-gray;
 $base-border-color:               $medium-fog;
 $base-accent-color:               $light-gray;
 $base-heading-color:              $off-black;
-$base-heading-color-hover:        $green;
+$base-heading-color-hover:        $medium-blue;
 $base-blockquote-color:           $medium-gray;
-$base-link-color:                 $green;
-$base-link-color-hover:           lighten($seafoam, 10);
+$base-link-color:                 $medium-blue;
+$base-link-color-hover:           lighten($base-link-color, 10);
 $base-selection-background-color: $off-black;
 $base-selection-color:            $white;
-$base-insert-color:               lighten($seafoam, 45);
+$base-insert-color:               lighten($light-blue, 45);
 $cta-background-color:            $dark-gray;
 
 // Button Colors
@@ -39,7 +40,7 @@ $base-button-background-color:       $off-black;
 $base-button-background-color-hover: lighten($base-button-background-color, 10);
 $base-button-font-color:             $white;
 $base-button-font-color-hover:       $white;
-$cta-button-background-color:        $seafoam;
+$cta-button-background-color:        $light-blue;
 $cta-button-background-color-hover:  lighten($cta-button-background-color, 10);
 $cta-button-font-color:              $white;
 $cta-button-font-color-hover:        $white;
@@ -137,7 +138,7 @@ $comments-font-color:                       $base-font-color;
 $comment-background-color:                  $white;
 $comment-border-color:                      $base-border-color;
 $comment-header-background-color:           $light-fog;
-$comment-author-header-background-color:    lighten($seafoam, 50);
+$comment-author-header-background-color:    lighten($light-blue, 50);
 $comment-meta-link-color:                   $entry-meta-link-color;
 $comment-meta-link-color-hover:             $entry-meta-link-color-hover;
 $comment-meta-link-border-color:            $entry-meta-link-border-color;
