@@ -113,21 +113,28 @@ a:focus img {
 		color: $gallery-caption-font-color;
 		font-size: $gallery-caption-font-size;
 		line-height: 1.65;
-		max-height: 50%;
 		opacity: 0;
 		overflow: hidden;
 		padding: 10px;
 		position: absolute;
 		visibility: hidden;
 		width: 100%;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
-	&:hover .gallery-caption {
+	&:hover .gallery-caption,
+	&:focus .gallery-caption {
 		transform: translate(0, -100%);
 		visibility: visible;
 		opacity: 1;
-	}
 
+		&:hover,
+		&:focus {
+			white-space: normal;
+			overflow: visible;
+		}
+	}
 }
 
 .gallery-icon a {
