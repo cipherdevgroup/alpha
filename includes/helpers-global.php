@@ -2,7 +2,7 @@
 /**
  * Global template helper functions.
  *
- * @package    Alpha\Functions\Hooks
+ * @package    Alpha\Functions\TemplateHelpers
  * @subpackage CareLib
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
  * @license    GPL-2.0+
