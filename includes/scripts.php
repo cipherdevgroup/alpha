@@ -57,8 +57,8 @@ function alpha_enqueue_styles() {
  * @return void
  */
 function alpha_rtl_add_data() {
-	wp_style_add_data( 'style', 'rtl', 'replace' );
-	wp_style_add_data( 'style', 'suffix', alpha_get_suffix() );
+	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
+	wp_style_add_data( 'alpha-style', 'suffix', alpha_get_suffix() );
 }
 
 /**
