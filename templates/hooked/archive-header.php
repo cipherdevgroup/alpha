@@ -21,7 +21,7 @@
 
 			<?php if ( is_category() || is_tax() ) : ?>
 
-				<?php get_template_part( 'menu/sub-terms' ); ?>
+				<?php get_template_part( 'templates/menu/sub-terms' ); ?>
 
 			<?php endif; ?>
 

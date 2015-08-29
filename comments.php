@@ -30,11 +30,11 @@
 				?>
 			</ol><!-- .comment-list -->
 
-			<?php get_template_part( 'comment/navigation' ); ?>
+			<?php get_template_part( 'templates/comment/navigation' ); ?>
 
 			<?php if ( ! comments_open() || ! pings_open() ) : ?>
 
-				<?php get_template_part( 'comment/error' ); ?>
+				<?php get_template_part( 'templates/comment/error' ); ?>
 
 			<?php endif; ?>
 
