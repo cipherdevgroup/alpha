@@ -76,7 +76,7 @@ function alpha_branding_open() {
  * @return void
  */
 function alpha_site_title() {
-	echo carelib_class( 'template-global' )->get_site_title();
+	echo carelib_get( 'template-global' )->get_site_title();
 }
 
 /**
@@ -88,7 +88,7 @@ function alpha_site_title() {
  * @return void
  */
 function alpha_site_description() {
-	echo carelib_class( 'template-global' )->get_site_description();
+	echo carelib_get( 'template-global' )->get_site_description();
 }
 
 /**
@@ -100,7 +100,7 @@ function alpha_site_description() {
  * @return void
  */
 function alpha_logo() {
-	carelib_class( 'template-global' )->the_logo();
+	carelib_get( 'template-global' )->the_logo();
 }
 
 /**
@@ -223,7 +223,7 @@ function alpha_footer_content() {
 		// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link.
 		__( 'Copyright &#169; %1$s %2$s. Designed by %3$s.', 'alpha' ),
 		date_i18n( 'Y' ),
-		carelib_class( 'template-global' )->get_site_link(),
-		carelib_class( 'template-global' )->get_credit_link()
+		carelib_get( 'template-global' )->get_site_link(),
+		carelib_get( 'template-global' )->get_credit_link()
 	) );
 }

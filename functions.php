@@ -79,12 +79,12 @@ add_action( 'widgets_init', 'alpha_register_sidebars', 5 );
  * @return void
  */
 function alpha_register_sidebars() {
-	carelib_class( 'sidebar' )->register( array(
+	carelib_get( 'sidebar' )->register( array(
 		'id'          => 'primary',
 		'name'        => _x( 'Primary Sidebar', 'sidebar', 'alpha' ),
 		'description' => __( 'The main sidebar. It is displayed on either the left or right side of the page based on the chosen layout.', 'alpha' ),
 	) );
-	carelib_class( 'sidebar' )->register( array(
+	carelib_get( 'sidebar' )->register( array(
 		'id'          => 'footer-widgets',
 		'name'        => _x( 'Footer Widgets', 'sidebar', 'alpha' ),
 		'description' => __( 'A widgeted area which displays just before the main site footer on all pages.', 'alpha' ),

@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function alpha_entry_terms( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_entry_terms( $args );
+	echo carelib_get( 'template-entry' )->get_entry_terms( $args );
 }
 
 /**
@@ -35,7 +35,7 @@ function alpha_entry_terms( $args = array() ) {
  * @return void
  */
 function alpha_content() {
-	echo carelib_class( 'template-entry' )->get_content();
+	echo carelib_get( 'template-entry' )->get_content();
 }
 
 /**
@@ -47,7 +47,7 @@ function alpha_content() {
  * @return void
  */
 function alpha_null_entry() {
-	carelib_class( 'template-entry' )->null_entry();
+	carelib_get( 'template-entry' )->null_entry();
 }
 
 /**
@@ -59,7 +59,7 @@ function alpha_null_entry() {
  * @return void
  */
 function alpha_null_entry_content() {
-	carelib_class( 'template-entry' )->null_entry_content();
+	carelib_get( 'template-entry' )->null_entry_content();
 }
 
 /**
@@ -70,5 +70,5 @@ function alpha_null_entry_content() {
  * @return void
  */
 function alpha_null_the_content() {
-	carelib_class( 'template-entry' )->null_the_content();
+	carelib_get( 'template-entry' )->null_the_content();
 }

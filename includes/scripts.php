@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
  * @return string
  */
 function alpha_get_suffix() {
-	return carelib_class( 'public-scripts' )->get_suffix();
+	return carelib_get( 'public-scripts' )->get_suffix();
 }
 
 /**

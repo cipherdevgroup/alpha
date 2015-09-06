@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * @return bool true if we're on a plural page.
  */
 function alpha_is_plural() {
-	return carelib_class( 'template-archive' )->is_plural();
+	return carelib_get( 'template-archive' )->is_plural();
 }
 
 /**
@@ -33,7 +33,7 @@ function alpha_is_plural() {
  * @return bool true if we're on a blog archive page.
  */
 function alpha_is_blog_archive() {
-	return carelib_class( 'template-archive' )->is_blog_archive() || is_search();
+	return carelib_get( 'template-archive' )->is_blog_archive() || is_search();
 }
 
 /**

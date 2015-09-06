@@ -87,7 +87,7 @@ function alpha_post_image() {
  * @return string
  */
 function alpha_entry_title( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_entry_title( $args );
+	echo carelib_get( 'template-entry' )->get_entry_title( $args );
 }
 
 /**
@@ -140,7 +140,7 @@ function alpha_entry_meta_open() {
  * @return string
  */
 function alpha_entry_author( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_entry_author( $args );
+	echo carelib_get( 'template-entry' )->get_entry_author( $args );
 }
 
 /**
@@ -153,7 +153,7 @@ function alpha_entry_author( $args = array() ) {
  * @return string
  */
 function alpha_entry_published( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_entry_published( $args );
+	echo carelib_get( 'template-entry' )->get_entry_published( $args );
 }
 
 /**
@@ -166,7 +166,7 @@ function alpha_entry_published( $args = array() ) {
  * @return string output
  */
 function alpha_entry_comments_link( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_entry_comments_link( $args );
+	echo carelib_get( 'template-entry' )->get_entry_comments_link( $args );
 }
 
 /**
@@ -327,7 +327,7 @@ function alpha_entry_close() {
  * @return string
  */
 function alpha_post_navigation( $args = array() ) {
-	echo carelib_class( 'template-entry' )->get_post_navigation( $args );
+	echo carelib_get( 'template-entry' )->get_post_navigation( $args );
 }
 
 /**

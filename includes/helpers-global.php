@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function alpha_framework( $name = null ) {
-	carelib_class( 'template-global' )->framework( $name );
+	carelib_get( 'template-global' )->framework( $name );
 }
 
 /**
@@ -55,7 +55,7 @@ function alpha_wrap_close() {
  * @return void
  */
 function alpha_menu( $name = null ) {
-	carelib_class( 'menu' )->template( $name );
+	carelib_get( 'menu' )->template( $name );
 }
 
 /**
@@ -68,7 +68,7 @@ function alpha_menu( $name = null ) {
  * @return string
  */
 function alpha_get_menu_location_name( $location ) {
-	return carelib_class( 'menu' )->get_location_name( $location );
+	return carelib_get( 'menu' )->get_location_name( $location );
 }
 
 /**
@@ -80,7 +80,7 @@ function alpha_get_menu_location_name( $location ) {
  * @return bool true if both our template tag and theme mod return true.
  */
 function alpha_display_breadcrumbs() {
-	return carelib_class( 'template-global' )->display_breadcrumbs();
+	return carelib_get( 'template-global' )->display_breadcrumbs();
 }
 
 /**
@@ -93,7 +93,7 @@ function alpha_display_breadcrumbs() {
  * @return mixed string or an array depending on what arguments are used
  */
 function alpha_get_image( $args = array() ) {
-	return carelib_class( 'image-grabber' )->grab_the_image( $args );
+	return carelib_get( 'image-grabber' )->grab_the_image( $args );
 }
 
 /**
@@ -106,7 +106,7 @@ function alpha_get_image( $args = array() ) {
  * @return void
  */
 function alpha_image( $args = array() ) {
-	carelib_class( 'image-grabber' )->grab_the_image( $args, true );
+	carelib_get( 'image-grabber' )->grab_the_image( $args, true );
 }
 
 /**
@@ -118,7 +118,7 @@ function alpha_image( $args = array() ) {
  * @return void
  */
 function alpha_sidebar( $name = null ) {
-	carelib_class( 'sidebar' )->template( $name );
+	carelib_get( 'sidebar' )->template( $name );
 }
 
 /**
@@ -131,7 +131,7 @@ function alpha_sidebar( $name = null ) {
  * @return string
  */
 function alpha_get_sidebar_name( $id ) {
-	return carelib_class( 'sidebar' )->get_name( $id );
+	return carelib_get( 'sidebar' )->get_name( $id );
 }
 
 /**
@@ -144,5 +144,5 @@ function alpha_get_sidebar_name( $id ) {
  * @return string an escaped link to the WordPress customizer panel.
  */
 function alpha_get_customizer_link( $args = array() ) {
-	return carelib_class( 'template-global' )->get_customizer_link( $args );
+	return carelib_get( 'template-global' )->get_customizer_link( $args );
 }

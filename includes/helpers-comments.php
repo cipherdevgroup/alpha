@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function alpha_comments_callback( $comment, $args, $depth  ) {
-	carelib_class( 'template-comments' )->comments_callback( $comment, $args, $depth );
+	carelib_get( 'template-comments' )->comments_callback( $comment, $args, $depth );
 }
 
 /**
@@ -37,7 +37,7 @@ function alpha_comments_callback( $comment, $args, $depth  ) {
  * @return string
  */
 function alpha_get_comment_reply_link( $args = array() ) {
-	carelib_class( 'template-comments' )->get_reply_link( $args );
+	carelib_get( 'template-comments' )->get_reply_link( $args );
 }
 
 /**

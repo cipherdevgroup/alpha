@@ -39,5 +39,5 @@ function alpha_archive_header() {
  * @return string
  */
 function alpha_posts_navigation( $args = array() ) {
-	echo carelib_class( 'template-archive' )->get_posts_navigation( $args );
+	echo carelib_get( 'template-archive' )->get_posts_navigation( $args );
 }

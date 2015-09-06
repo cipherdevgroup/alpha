@@ -49,7 +49,7 @@ function alpha_register_layouts() {
 	);
 
 	foreach ( $layouts as $layout => $args ) {
-		carelib_class( 'layouts' )->register_layout( $layout, $args );
+		carelib_get( 'layouts' )->register_layout( $layout, $args );
 	}
 }
 
