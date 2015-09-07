@@ -1,7 +1,7 @@
 /**
  * Alpha Mobile Menu
  *
- * Merge existing menus into an a11y-compliant off-canvas mobile menu.
+ * Merge existing menus into an a11y-compliant, off-canvas mobile menu.
  *
  * @version   0.1.0
  * @copyright Copyright (c) 2015, WP Site Care, LLC
@@ -47,8 +47,7 @@
 		}
 
 		/**
-		 * Helper function to check whether or not the mobile menu is currently
-		 * open and visible.
+		 * Check whether or not the mobile menu is currently open and visible.
 		 *
 		 * @since  0.1.0
 		 * @return {Boolean} Returns true if the menu is open.
@@ -61,8 +60,8 @@
 		}
 
 		/**
-		 * Helper function to check whether or not our existing menus have been
-		 * merged into a single menu for mobile display.
+		 * Check whether or not our existing menus have been merged into a
+		 * single menu for mobile display.
 		 *
 		 * @since  0.1.0
 		 * @return {Boolean} Returns true if the menus have been merged.
@@ -91,9 +90,8 @@
 		}
 
 		/**
-		 * If we have two menus which have been merged, this will split them
-		 * back into two separate menus using the same format as before they
-		 * were merged.
+		 * If we have two menus which have been merged, split them back into two
+		 * separate menus using the same format as before they were merged.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -106,9 +104,9 @@
 		}
 
 		/**
-		 * This will toggle all classes related to a menu being in an open or
-		 * closed state except for the body class as it is used as a guide for
-		 * whether or not the mobile menu has been opened.
+		 * Toggle all classes related to a menu being in an open or closed state
+		 * except for the body class as it is used as a guide for whether or
+		 * not the mobile menu has been opened.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -119,8 +117,8 @@
 		}
 
 		/**
-		 * This will toggle all attributes related to a menu being in an open or
-		 * closed state. Most of these changes are made for a11y reasons.
+		 * Toggle all attributes related to a menu being in an open or closed
+		 * state. Most of these changes are made for a11y reasons.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -137,13 +135,14 @@
 		}
 
 		/**
-		 * This forces the focus state of either the mobile menu or the menu
-		 * button when a user is tabbing through the mobile menu. When a user
-		 * opens the mobile menu, it is given the focus so keyboard navigation
-		 * will work as expected while the user tabs through the menu items.
+		 * Force the focus state of either the mobile menu or the menu button
+		 * when a user is tabbing through the mobile menu.
+		 *
+		 * When a user opens the mobile menu, it is given the focus so keyboard
+		 * navigation will work correctly while the user tabs through menu items.
 		 *
 		 * When a user tabs out of either the beginning or end of the menu,
-		 * focus is be restored to the mobile menu button so the menu can be
+		 * focus is restored to the mobile menu button so the menu can be
 		 * closed by pressing enter.
 		 *
 		 * @since  0.1.0
@@ -189,7 +188,7 @@
 		}
 
 		/**
-		 * This fires all methods required to open the mobile menu.
+		 * Fire all methods required to open the mobile menu.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -207,7 +206,7 @@
 		}
 
 		/**
-		 * This fires all methods required to close the mobile menu.
+		 * Fires all methods required to close the mobile menu.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -224,9 +223,9 @@
 		}
 
 		/**
-		 * This will either split or merge our existing menus based on screen
-		 * width. It will also force the menu to close if the screen is larger
-		 * than the specified width for a mobile menu to be displayed.
+		 * Split or merge our existing menus based on screen width and force the
+		 * menu to close if the screen is larger than the specified width for a
+		 * mobile menu to be displayed.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -246,8 +245,7 @@
 		}
 
 		/**
-		 * This fires all methods required to either open or close the mobile
-		 * menu. It is meant to be attached to a click or touch event.
+		 * Fire all methods required to either open or close the mobile menu.
 		 *
 		 * @since  0.1.0
 		 * @param {object} event The current event being fired.
@@ -261,10 +259,7 @@
 		}
 
 		/**
-		 * This is the final method which actually loads all of our mobile
-		 * menu functionality. It merges our menus on load if the user is on a
-		 * screen small enough for a mobile menu, injects our menu button, and
-		 * handles the opening and closing of the menu as-needed.
+		 * Load all of our mobile menu functionality.
 		 *
 		 * @since  0.1.0
 		 * @return void
