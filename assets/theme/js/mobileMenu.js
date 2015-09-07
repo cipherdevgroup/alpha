@@ -15,7 +15,7 @@
 
 	$$ = function( selector ) {
 		var temp = cache[selector];
-		if ( temp !== undefined ) {
+		if ( undefined !== temp ) {
 			return temp;
 		}
 		return cache[selector] = $( selector );
@@ -127,7 +127,7 @@
 		 */
 		function toggleAttributes() {
 			$menuButton.attr( 'aria-expanded', function( index, attr ) {
-				return attr === 'false' ? 'true' : 'false';
+				return 'false' === attr ? 'true' : 'false';
 			});
 			if ( $mobileMenu.attr( 'tabindex' ) ) {
 				$mobileMenu.removeAttr( 'tabindex' );
@@ -224,9 +224,9 @@
 		}
 
 		/**
-		* This will either split or merge our existing menus based on screen
-		* width. It will also force the menu to close if the screen is larger
-		* than the specified width for a mobile menu to be displayed.
+		 * This will either split or merge our existing menus based on screen
+		 * width. It will also force the menu to close if the screen is larger
+		 * than the specified width for a mobile menu to be displayed.
 		 *
 		 * @since  0.1.0
 		 * @return void
@@ -278,4 +278,4 @@
 
 		loadMobileMenu();
 	};
-}( jQuery ));
+}( jQuery ) );

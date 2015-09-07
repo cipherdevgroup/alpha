@@ -15,7 +15,7 @@ window.alpha = window.alpha || {};
 
 	$.extend( alpha, {
 
-		//* Global script initialization
+		// Global script initialization
 		globalInit: function() {
 			var $videos = $( '#site-inner' );
 			$body.addClass( 'ontouchstart' in window || 'onmsgesturechange' in window ? 'touch' : 'no-touch' );
