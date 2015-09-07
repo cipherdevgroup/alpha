@@ -1,6 +1,4 @@
-html {
-	font-size: $base-font-size-medium;
-
+:root {
 	@include media($medium-screen-up) {
 		font-size: $base-font-size;
 	}
