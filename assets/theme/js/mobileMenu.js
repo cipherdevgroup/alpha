@@ -112,7 +112,7 @@
 		 * @return void
 		 */
 		function toggleClasses() {
-			$mobileMenu.toggleClass( menuClass + ' menu-mobile visible' );
+			$mobileMenu.toggleClass( 'visible' );
 			$menuButton.toggleClass( 'activated' );
 		}
 
@@ -236,11 +236,17 @@
 					splitMenus();
 				}
 				closeMenu();
+				$mobileMenu.addClass( menuClass );
+				$mobileMenu.removeClass( 'menu-mobile' );
 				$$( 'body' ).removeClass( 'menu-open' );
 			}
 
-			if ( window.innerWidth < 1023 && ! menusMerged() ) {
-				mergeMenus();
+			if ( window.innerWidth < 1023 ) {
+				$mobileMenu.removeClass( menuClass );
+				$mobileMenu.addClass( 'menu-mobile' );
+				if ( ! menusMerged() ) {
+					mergeMenus();
+				}
 			}
 		}
 
