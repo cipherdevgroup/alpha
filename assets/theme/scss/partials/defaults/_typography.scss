@@ -6,14 +6,6 @@ html {
 	}
 }
 
-body {
-	background-color: $base-background-color;
-	color: $base-font-color;
-	font-family: $base-font-family;
-	font-weight: 400;
-	line-height: $base-line-height;
-}
-
 a,
 button,
 input:focus,
@@ -26,14 +18,14 @@ textarea:focus,
 }
 
 ::selection {
-	background-color: $base-selection-background-color;
 	color: $base-selection-color;
 }
 
 a {
-	transition: color 0.1s linear;
+	cursor: pointer;
 	color: $base-link-color;
 	text-decoration: none;
+	transition: color 0.1s linear;
 
 	&:hover {
 		color: $base-link-color-hover;
@@ -120,10 +112,6 @@ sup {
 
 sub {
 	top: 0.5ex;
-}
-
-small {
-	font-size: 75%;
 }
 
 big {
