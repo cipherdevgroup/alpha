@@ -2,7 +2,7 @@
 @import "bourbon";
 
 // Load Neat Grid
-@import "variables/neat-grid";
+@import "settings/neat-grid";
 @import "neat";
 
 // Load Global Variables
@@ -15,7 +15,8 @@
 /*
 HTML5 Reset
 ----------------------------------------------------------------------------- */
-@import "../../bower/scss/wp-normalize";
+@import "settings/sanitize";
+@import "../../bower/scss/sanitize";
 
 
 /*
