@@ -41,7 +41,7 @@ __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 		<tr>
 			<td>Grunt CLI >= 0.1.13</td>
 			<td><code>grunt -V</code></td>
-			<td><code>npm install -g grunt-cli`</td>
+			<td><code>npm install -g grunt-cli</td>
 		</tr>
 		<tr>
 			<td>Bower 1.5.x</td>
