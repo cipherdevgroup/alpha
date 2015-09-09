@@ -59,7 +59,7 @@
 		@include span-columns(8);
 	}
 
-	.layout-2c-r .content {
+	.layout-2c-l .content {
 		@include omega();
 		float: right;
 	}
@@ -70,7 +70,7 @@
 		@include span-columns(4);
 	}
 
-	.layout-2c-l .sidebar {
+	.layout-2c-r .sidebar {
 		@include omega();
 		float: right;
 	}

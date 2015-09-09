@@ -22,17 +22,17 @@ add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
  */
 function alpha_register_layouts() {
 	$layouts = array(
-		'2c-l' => array(
-			'label'            => _x( '2 Columns: Left Content', 'theme layout', 'alpha' ),
-			'is_global_layout' => true,
-			'is_post_layout'   => true,
-			'image'            => '%s/images/content-left.svg',
-		),
 		'2c-r' => array(
-			'label'            => _x( '2 Columns: Right Content', 'theme layout', 'alpha' ),
+			'label'            => _x( '2 Columns: Right Sidebar', 'theme layout', 'alpha' ),
 			'is_global_layout' => true,
 			'is_post_layout'   => true,
-			'image'            => '%s/images/content-right.svg',
+			'image'            => '%s/images/sidebar-right.svg',
+		),
+		'2c-l' => array(
+			'label'            => _x( '2 Columns: Left Sidebar', 'theme layout', 'alpha' ),
+			'is_global_layout' => true,
+			'is_post_layout'   => true,
+			'image'            => '%s/images/sidebar-left.svg',
 		),
 		'1c' => array(
 			'label'            => _x( '1 Column Wide', 'theme layout', 'alpha' ),
