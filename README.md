@@ -29,7 +29,7 @@ __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 			<td><a href="https://getcomposer.org/download/">getcomposer.org</a></td>
 		</tr>
 		<tr>
-			<td>Node.js 0.12.x</td>
+			<td>Node.js 4.x</td>
 			<td><code>node -v</code></td>
 			<td><a href="http://nodejs.org/">nodejs.org</a></td>
 		</tr>
