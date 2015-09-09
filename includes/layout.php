@@ -26,13 +26,13 @@ function alpha_register_layouts() {
 			'label'            => _x( '2 Columns: Left Content', 'theme layout', 'alpha' ),
 			'is_global_layout' => true,
 			'is_post_layout'   => true,
-			'image'            => '%s/images/sidebar-right.svg',
+			'image'            => '%s/images/content-left.svg',
 		),
 		'2c-r' => array(
 			'label'            => _x( '2 Columns: Right Content', 'theme layout', 'alpha' ),
 			'is_global_layout' => true,
 			'is_post_layout'   => true,
-			'image'            => '%s/images/sidebar-left.svg',
+			'image'            => '%s/images/content-right.svg',
 		),
 		'1c' => array(
 			'label'            => _x( '1 Column Wide', 'theme layout', 'alpha' ),
