@@ -93,7 +93,7 @@ function alpha_display_breadcrumbs() {
  * @return mixed string or an array depending on what arguments are used
  */
 function alpha_get_image( $args = array() ) {
-	return carelib_get( 'image-grabber' )->grab_the_image( $args );
+	return carelib_get( 'image-grabber-api' )->get_the_image( $args );
 }
 
 /**
@@ -106,7 +106,7 @@ function alpha_get_image( $args = array() ) {
  * @return void
  */
 function alpha_image( $args = array() ) {
-	carelib_get( 'image-grabber' )->grab_the_image( $args, true );
+	carelib_get( 'image-grabber-api' )->the_image( $args );
 }
 
 /**
