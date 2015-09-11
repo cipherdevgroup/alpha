@@ -88,12 +88,12 @@ function alpha_display_breadcrumbs() {
  *
  * @since  1.0.0
  * @access public
- * @uses   CareLib_Image_Grabber::grab_the_image
+ * @uses   CareLib_Image_Grabber_API::get
  * @param  array $args a list of arguments to pass to the image grabber class
  * @return mixed string or an array depending on what arguments are used
  */
 function alpha_get_image( $args = array() ) {
-	return carelib_get( 'image-grabber-api' )->get_the_image( $args );
+	return carelib_get( 'image-grabber-api' )->get( $args );
 }
 
 /**
@@ -101,12 +101,12 @@ function alpha_get_image( $args = array() ) {
  *
  * @since  1.0.0
  * @access public
- * @uses   CareLib_Image_Grabber::grab_the_image
+ * @uses   CareLib_Image_Grabber_API::get
  * @param  array $args a list of arguments to pass to the image grabber class
  * @return void
  */
 function alpha_image( $args = array() ) {
-	carelib_get( 'image-grabber-api' )->the_image( $args );
+	echo carelib_get( 'image-grabber-api' )->get( $args );
 }
 
 /**
