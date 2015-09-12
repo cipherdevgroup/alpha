@@ -12,4 +12,4 @@
  * @since      1.0.0
  */
 
-alpha_framework();
+alpha_framework( apply_filters( 'alpha_index_template', null ) );
