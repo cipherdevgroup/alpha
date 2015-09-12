@@ -1,15 +1,16 @@
 <?php
 /**
- * The main template file.
+* The main template file.
+*
+* This is here for WordPress theme compatibility. The actual template structure
+* can be found in `/templates/framework.php`
+*
+* To modify the markup, you can filter `alpha_index_template` to load a custom
+* framework file rather than the default `framework.php`.
  *
- * This is here for WordPress theme compatibility reasons. The actual template
- * structure can be found in /templates/framework.php
- *
+ * @since      1.0.0
  * @package    Alpha\Templates
  * @subpackage CareLib
- * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
- * @since      1.0.0
+ * @see        /includes/vendor/carelib/inc/template-global.php
+ * @uses       CareLib_Template_Global::framework()
  */
-
-alpha_framework( apply_filters( 'alpha_index_template', null ) );
