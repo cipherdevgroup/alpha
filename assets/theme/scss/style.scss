@@ -5,6 +5,9 @@
 @import "settings/neat-grid";
 @import "neat";
 
+// Load Theme Mixins
+@import "mixins/global";
+
 // Load Global Variables
 @import "variables/colors";
 @import "variables/layout";

@@ -5,6 +5,9 @@
 @import "settings/neat-grid";
 @import "neat";
 
+// Load Theme Mixins
+@import "mixins/global";
+
 // Load Global Variables
 @import "variables/colors";
 @import "variables/layout";
@@ -50,97 +53,4 @@ body {
 /*
 Content Area
 ----------------------------------------------------------------------------- */
-p,
-ol,
-ul,
-dl {
-	margin-bottom: $content-margin;
-}
-
-ol,
-ul {
-	margin-left: $base-padding;
-}
-
-li {
-	margin-bottom: 1%;
-}
-
-ol > li {
-	list-style-type: decimal;
-}
-
-ul > li {
-	list-style-type: disc;
-}
-
-li ol,
-li ul {
-	margin-top: 1%;
-}
-
-blockquote {
-	border-left: 7px solid $blockquote-border-color;
-	margin: 4% 5% 4% 0;
-	padding: 0 0 0 5%;
-}
-
-.mce-item-table,
-table {
-	border-collapse: separate;
-	border: 1px solid $table-border-color;
-	border-left: 0;
-	margin: 20px 0;
-	width: 100%;
-}
-
-.mce-item-table td,
-.mce-item-table th,
-.mce-item-table caption,
-table th,
-table td {
-	border: 0;
-	border-left: 1px solid $table-border-color;
-	border-top: 1px solid $table-border-color;
-	font-size: $base-font-size;
-	line-height: 1.2;
-	padding: 10px;
-	text-align: left;
-	vertical-align: top;
-}
-
-table thead:first-child tr:first-child th,
-table tbody:first-child tr:first-child th,
-table tbody:first-child tr:first-child td {
-	border-top: 0 none;
-}
-
-pre {
-	background: $pre-background-color;
-	color: $base-heading-color;
-	font-family: $monospace;
-	font-size: $medium-font-size;
-	margin-bottom: $content-margin;
-	max-width: 100%;
-	overflow: auto;
-	padding: 3% 10% 3% 5%;
-	position: relative;
-	tab-size: 4;
-	white-space: pre-wrap;
-}
-
-code,
-kbd,
-tt,
-var {
-	font-family: $monospace;
-	font-size: $medium-font-size;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 10px 0;
-	font-size: $wp-caption-font-size;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.2;
-}
+@include entry-content();
