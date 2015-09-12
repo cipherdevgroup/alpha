@@ -13,4 +13,6 @@
  * @subpackage CareLib
  * @see        /includes/vendor/carelib/inc/template-global.php
  * @uses       CareLib_Template_Global::framework()
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @license    GPL-2.0+
  */
