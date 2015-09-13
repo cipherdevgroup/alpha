@@ -104,20 +104,20 @@ function alpha_includes() {
 	require_once "{$dir}vendor/tha-theme-hooks.php";
 	require_once "{$dir}attributes.php";
 	require_once "{$dir}compatibility.php";
-	require_once "{$dir}helpers-comments.php";
 	require_once "{$dir}layout.php";
+	require_once "{$dir}template-comments.php";
 
 	if ( is_admin() ) {
 		require_once "{$dir}admin/scripts.php";
 	} else {
-		require_once "{$dir}helpers-blog.php";
-		require_once "{$dir}helpers-entry.php";
-		require_once "{$dir}helpers-global.php";
 		require_once "{$dir}hooked-archive.php";
 		require_once "{$dir}hooked-attachment.php";
 		require_once "{$dir}hooked-entry.php";
 		require_once "{$dir}hooked-global.php";
 		require_once "{$dir}scripts.php";
+		require_once "{$dir}template-blog.php";
+		require_once "{$dir}template-entry.php";
+		require_once "{$dir}template-global.php";
 	}
 }
 
