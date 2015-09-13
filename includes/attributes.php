@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) || exit;
  * @param  string $context a specific context (e.g., 'primary').
  * @return void
  */
-function alpha_attr( $slug, $context = '' ) {
-	echo alpha_get_attr( $slug, $context );
+function alpha_attr( $slug, $context = '', $attr = array() ) {
+	echo alpha_get_attr( $slug, $context, $attr );
 }
 
 /**
@@ -34,6 +34,6 @@ function alpha_attr( $slug, $context = '' ) {
  * @param  string $context a specific context (e.g., 'primary').
  * @return string the attributes for a given element
  */
-function alpha_get_attr( $slug, $context = '' ) {
-	return carelib_get( 'attributes' )->get_attr( $slug, $context );
+function alpha_get_attr( $slug, $context = '', $attr = array() ) {
+	return carelib_get( 'attributes' )->get_attr( $slug, $context, $attr );
 }
