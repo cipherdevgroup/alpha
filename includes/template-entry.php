@@ -44,6 +44,7 @@ function alpha_content() {
  *
  * @since  1.0.0
  * @access public
+ * @uses   CareLib_Template_Entry::null_entry
  * @return void
  */
 function alpha_null_entry() {
@@ -52,10 +53,11 @@ function alpha_null_entry() {
 
 /**
  * Filter the WordPress content to null between the entry_content_before
- * and entrY_content_after hook locations.
+ * and entry_content_after hook locations.
  *
  * @since  1.0.0
  * @access public
+ * @uses   CareLib_Template_Entry::null_entry_content
  * @return void
  */
 function alpha_null_entry_content() {
@@ -67,6 +69,7 @@ function alpha_null_entry_content() {
  *
  * @since  1.0.0
  * @access public
+ * @uses   CareLib_Template_Entry::null_the_content
  * @return void
  */
 function alpha_null_the_content() {
