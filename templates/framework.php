@@ -45,7 +45,7 @@
 
 		<?php else : ?>
 
-			<?php get_template_part( 'templates/error' ); ?>
+			<?php get_template_part( 'template-parts/error' ); ?>
 
 		<?php endif; ?>
 
