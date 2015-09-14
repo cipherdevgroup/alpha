@@ -108,6 +108,7 @@ function alpha_includes() {
 	require_once "{$dir}template-comments.php";
 
 	if ( is_admin() ) {
+		require_once "{$dir}admin/layout.php";
 		require_once "{$dir}admin/scripts.php";
 	} else {
 		require_once "{$dir}hooked-archive.php";
