@@ -17,10 +17,10 @@
 		<?php
 		printf(	'<a class="button" href="%1$s">%2$s</a>',
 			alpha_get_customizer_link( array(
-				'focus_type'   => 'section',
-				'focus_target' => 'nav',
+				'focus_type'   => 'panel',
+				'focus_target' => 'nav_menus',
 			) ),
-			esc_attr__( 'Add a Menu', 'alpha' )
+			esc_html__( 'Add a Menu', 'alpha' )
 		);
 		?>
 
