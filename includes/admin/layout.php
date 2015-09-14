@@ -23,7 +23,7 @@ add_action( 'add_meta_boxes', 'alpha_disable_layout_metabox', 5, 2 );
  * @return void
  */
 function alpha_disable_layout_metabox( $post_type, $post ) {
-	if ( alpha_is_page_layout_forced( $post->ID ) ) {
+	if ( is_a( $post, 'WP_Post' ) && alpha_is_page_layout_forced( $post->ID ) ) {
 		add_filter( 'alpha_allow_layout_control', '__return_false' );
 	}
 }
