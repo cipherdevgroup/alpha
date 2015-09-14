@@ -43,7 +43,7 @@ function alpha_setup() {
 
 	$content_width = 1140;
 
-	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' : '2c-l' ) );
+	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-l' : '2c-r' ) );
 
 	add_theme_support( 'automatic-feed-links' );
 
