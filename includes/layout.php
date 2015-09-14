@@ -1,6 +1,6 @@
 <?php
 /**
- * General Theme-Specific Functions.
+ * Functions for controlling layout options.
  *
  * @package    Alpha\Functions\Layout
  * @subpackage CareLib
