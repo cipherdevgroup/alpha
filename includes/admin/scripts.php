@@ -31,6 +31,13 @@ function alpha_add_editor_styles() {
 	add_editor_style( $editor_styles );
 }
 
+/**
+ * Build a Google Fonts string for use within editor styles.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return string
+ */
 function alpha_build_admin_google_font( $families ) {
 	return str_replace( ',', '%2C', "//fonts.googleapis.com/css?family={$families}" );
 }
