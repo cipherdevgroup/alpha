@@ -27,6 +27,18 @@ function alpha_get_includes_dir() {
 require_once alpha_get_includes_dir() . 'vendor/carelib/carelib.php';
 carelib()->set_prefix( 'alpha' )->run();
 
+add_action( 'after_setup_theme', 'alpha_content_width', 0 );
+/**
+ * Set the content width and allow it to be filtered directly.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'alpha_content_width', 1140 );
+}
+
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -35,14 +47,11 @@ add_action( 'after_setup_theme', 'alpha_setup', 10 );
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  *
- * @since   1.0.0
- * @return  void
+ * @since  1.0.0
+ * @access public
+ * @return void
  */
 function alpha_setup() {
-	global $content_width;
-
-	$content_width = 1140;
-
 	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-l' : '2c-r' ) );
 
 	add_theme_support( 'automatic-feed-links' );
@@ -95,8 +104,9 @@ add_action( 'after_setup_theme', 'alpha_includes', 10 );
 /**
  * Load all required theme files.
  *
- * @since   1.0.0
- * @return  void
+ * @since  1.0.0
+ * @access public
+ * @return void
  */
 function alpha_includes() {
 	$dir = alpha_get_includes_dir();
