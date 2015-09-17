@@ -24,9 +24,13 @@ add_action( 'admin_init', 'alpha_add_editor_styles', 10 );
 function alpha_add_editor_styles() {
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	$editor_styles = array(
-		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
+		alpha_build_admin_google_font( 'Raleway:400,600|Lato:400,400italic,700' ),
 		"css/editor-style{$suffix}.css",
 	);
 
 	add_editor_style( $editor_styles );
+}
+
+function alpha_build_admin_google_font( $families ) {
+	return str_replace( ',', '%2C', "//fonts.googleapis.com/css?family={$families}" );
 }
