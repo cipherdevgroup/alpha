@@ -25,7 +25,7 @@ function alpha_get_includes_dir() {
 
 // Include CareLib.
 require_once alpha_get_includes_dir() . 'vendor/carelib/carelib.php';
-carelib()->run( array( 'prefix' => 'alpha' ) );
+carelib()->set_prefix( 'alpha' )->run();
 
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
 /**
