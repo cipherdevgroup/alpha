@@ -53,7 +53,7 @@ function alpha_skip_to_content() {
  * @return void
  */
 function alpha_header() {
-	get_template_part( 'template-parts/hooked/site', 'header' );
+	get_template_part( 'template-parts/site-header' );
 }
 
 /**
@@ -208,7 +208,7 @@ function alpha_footer_widgets() {
  * @return void
  */
 function alpha_footer() {
-	get_template_part( 'template-parts/hooked/site', 'footer' );
+	get_template_part( 'template-parts/site-footer' );
 }
 
 /**

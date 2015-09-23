@@ -24,7 +24,7 @@ add_action( 'tha_content_while_after', 'alpha_posts_navigation',  10 );
  */
 function alpha_archive_header() {
 	if ( is_archive() || is_search() ) {
-		get_template_part( 'template-parts/hooked/archive', 'header' );
+		get_template_part( 'template-parts/archive-header' );
 	}
 }
 
