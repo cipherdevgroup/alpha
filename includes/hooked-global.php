@@ -12,7 +12,7 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'tha_body_top',      'alpha_skip_to_content',  5 );
+add_action( 'tha_body_top',      'alpha_skip_to_content',   5 );
 add_action( 'tha_body_top',      'alpha_header',           10 );
 add_action( 'tha_header_top',    'alpha_branding_open',    10 );
 add_action( 'tha_header_top',    'alpha_logo',             12 );
