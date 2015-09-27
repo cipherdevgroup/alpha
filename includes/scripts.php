@@ -28,6 +28,20 @@ function alpha_get_suffix() {
 }
 
 /**
+ * Build a Google Fonts string.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  string $families the font families to include
+ * @param  bool $editor_style set to true if string is being used as editor style
+ * @return string
+ */
+function alpha_google_fonts_string( $families, $editor_style = false ) {
+	$string = "https://fonts.googleapis.com/css?family={$families}";
+	return $editor_style ? str_replace( ',', '%2C', $string ) : $string;
+}
+
+/**
  * Load a minified version of the theme's stylesheet along with any other
  * required theme CSS files.
  *
@@ -37,12 +51,14 @@ function alpha_get_suffix() {
  */
 function alpha_enqueue_styles() {
 	wp_enqueue_style( 'alpha-style' );
-	wp_enqueue_style(
-		'alpha-google-fonts',
-		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
-		array(),
-		null
-	);
+	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
+		wp_enqueue_style(
+			'alpha-google-fonts',
+			alpha_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700' ),
+			array(),
+			null
+		);
+	}
 }
 
 /**
