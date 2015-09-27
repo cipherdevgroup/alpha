@@ -36,12 +36,9 @@ function alpha_get_suffix() {
  * @return void
  */
 function alpha_enqueue_styles() {
-	$css_dir = trailingslashit( get_template_directory_uri() ) . 'css/';
-	$suffix  = alpha_get_suffix();
-
 	wp_enqueue_style( 'alpha-style' );
 	wp_enqueue_style(
-		'google-fonts',
+		'alpha-google-fonts',
 		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
 		array(),
 		null
