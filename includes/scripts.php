@@ -13,8 +13,8 @@
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles',  10 );
-add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data',    12 );
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
+add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data',    12 );
 
 /**
  * Return a suffix to load minified JavaScript on production.
@@ -49,6 +49,27 @@ function alpha_enqueue_styles() {
 }
 
 /**
+ * Register and load JavaScript files.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_enqueue_scripts() {
+	$js_uri  = trailingslashit( get_template_directory_uri() ) . 'js/';
+	$suffix  = alpha_get_suffix();
+	$version = carelib_get( 'public-scripts' )->theme_version();
+
+	wp_enqueue_script(
+		'alpha-general',
+		"{$js_uri}theme{$suffix}.js",
+		array( 'jquery' ),
+		'1.0.0',
+		$version
+	);
+}
+
+/**
  * Replace the default theme stylesheet with a RTL version when a RTL
  * language is being used.
  *
@@ -59,23 +80,4 @@ function alpha_enqueue_styles() {
 function alpha_rtl_add_data() {
 	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
 	wp_style_add_data( 'alpha-style', 'suffix', alpha_get_suffix() );
-}
-
-/**
- * Register and load JavaScript files.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-function alpha_enqueue_scripts() {
-	$js_uri = trailingslashit( get_template_directory_uri() ) . 'js/';
-	$suffix = alpha_get_suffix();
-	wp_enqueue_script(
-		'alpha-general',
-		"{$js_uri}theme{$suffix}.js",
-		array( 'jquery' ),
-		'1.0.0',
-		true
-	);
 }
