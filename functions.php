@@ -54,9 +54,9 @@ add_action( 'after_setup_theme', 'alpha_setup', 10 );
 function alpha_setup() {
 	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-l' : '2c-r' ) );
 
-	add_theme_support( 'automatic-feed-links' );
+	carelib_get( 'site-logo' )->add_support();
 
-	add_theme_support( 'site-logo' );
+	add_theme_support( 'automatic-feed-links' );
 
 	register_nav_menus( array(
 		'primary'   => _x( 'Primary Menu', 'nav menu location', 'alpha' ),
