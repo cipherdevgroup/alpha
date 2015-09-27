@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "748ee7206a71cc979742ef246b8f0e24",
+    "content-hash": "fc520767170354f6fdee8faa2a204716",
     "packages": [
         {
             "name": "composer/installers",
@@ -107,12 +108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "e0e83fbde496ea688c6683f86e55a900144fa02f"
+                "reference": "629e1f07fd6fc7351e138e8bf6f37b0e521fb7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/e0e83fbde496ea688c6683f86e55a900144fa02f",
-                "reference": "e0e83fbde496ea688c6683f86e55a900144fa02f",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/629e1f07fd6fc7351e138e8bf6f37b0e521fb7a9",
+                "reference": "629e1f07fd6fc7351e138e8bf6f37b0e521fb7a9",
                 "shasum": ""
             },
             "type": "library",
@@ -132,7 +133,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-09-17 19:12:08"
+            "time": "2015-09-26 06:47:21"
         },
         {
             "name": "zamoose/themehookalliance",
