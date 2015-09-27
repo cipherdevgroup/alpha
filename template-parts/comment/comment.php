@@ -13,9 +13,9 @@
 
 	<?php echo get_avatar( $comment, 90 ); ?>
 
-	<article class="comment-container">
+	<article <?php alpha_attr( 'comment-container' ); ?>>
 
-		<header class="comment-meta">
+		<header <?php alpha_attr( 'comment-meta' ); ?>>
 			<cite <?php alpha_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
 			<a <?php alpha_attr( 'comment-permalink' ); ?>>
 				<time <?php alpha_attr( 'comment-published' ); ?>>
@@ -40,7 +40,7 @@
 		</div><!-- .comment-content -->
 
 		<?php if ( alpha_get_comment_reply_link() ) : ?>
-			<footer class="comment-meta">
+			<footer <?php alpha_attr( 'comment-meta' ); ?>>
 				<?php alpha_comment_reply_link(); ?>
 			</footer><!-- .comment-meta -->
 		<?php endif; ?>

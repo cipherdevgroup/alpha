@@ -13,7 +13,7 @@
 
 	<article>
 
-		<header class="comment-meta">
+		<header <?php alpha_attr( 'comment-meta' ); ?>>
 			<cite <?php alpha_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
 			<a <?php alpha_attr( 'comment-permalink' ); ?>>
 				<time <?php alpha_attr( 'comment-published' ); ?>>
