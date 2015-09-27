@@ -14,6 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 add_action( 'init', 'alpha_register_image_sizes', 5 );
 add_action( 'init', 'alpha_register_nav_menus',  10 );
+add_action( 'init', 'alpha_add_editor_styles',   10 );
 
 /**
  * Register custom image sizes for the theme.
@@ -40,4 +41,24 @@ function alpha_register_nav_menus() {
 		'primary'   => _x( 'Primary Menu', 'nav menu location', 'alpha' ),
 		'secondary' => _x( 'Secondary Menu', 'nav menu location', 'alpha' ),
 	) );
+}
+
+/**
+ * Add custom styles to the WordPress editor to give a better representation of
+ * what the front of the site will look like.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_add_editor_styles() {
+	$styles = array(
+		'css/editor-style' . alpha_get_suffix() . '.css',
+	);
+
+	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
+		$styles[] = alpha_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
+	}
+
+	add_editor_style( $styles );
 }
