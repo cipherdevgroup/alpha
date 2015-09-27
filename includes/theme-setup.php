@@ -12,9 +12,10 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'alpha_content_width', 0 );
-add_action( 'after_setup_theme', 'alpha_setup',        10 );
-add_action( 'after_setup_theme', 'alpha_includes',     10 );
+add_action( 'after_setup_theme', 'alpha_content_width',   0 );
+add_action( 'after_setup_theme', 'alpha_setup',          10 );
+add_action( 'after_setup_theme', 'alpha_includes',       10 );
+add_action( 'after_setup_theme', 'alpha_admin_includes', 10 );
 
 /**
  * Set the content width and allow it to be filtered directly.
@@ -51,29 +52,37 @@ function alpha_setup() {
  *
  * @since  1.0.0
  * @access public
- * @uses   alpha_get_includes_dir()
+ * @uses   alpha_require_once()
  * @return void
  */
 function alpha_includes() {
 	alpha_require_once( 'vendor/tha-theme-hooks.php' );
 	alpha_require_once( 'attributes.php' );
 	alpha_require_once( 'compatibility.php' );
+	alpha_require_once( 'hooked-archive.php' );
+	alpha_require_once( 'hooked-attachment.php' );
+	alpha_require_once( 'hooked-entry.php' );
+	alpha_require_once( 'hooked-global.php' );
 	alpha_require_once( 'layout.php' );
+	alpha_require_once( 'scripts.php' );
+	alpha_require_once( 'template-blog.php' );
 	alpha_require_once( 'template-comments.php' );
+	alpha_require_once( 'template-entry.php' );
+	alpha_require_once( 'template-global.php' );
 	alpha_require_once( 'theme-init.php' );
 	alpha_require_once( 'widgets-init.php' );
+}
 
+/**
+ * Load all required admin theme files.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   alpha_require_once()
+ * @return void
+ */
+function alpha_admin_includes() {
 	if ( is_admin() ) {
 		alpha_require_once( 'admin/layout.php' );
-		alpha_require_once( 'admin/scripts.php' );
-	} else {
-		alpha_require_once( 'hooked-archive.php' );
-		alpha_require_once( 'hooked-attachment.php' );
-		alpha_require_once( 'hooked-entry.php' );
-		alpha_require_once( 'hooked-global.php' );
-		alpha_require_once( 'scripts.php' );
-		alpha_require_once( 'template-blog.php' );
-		alpha_require_once( 'template-entry.php' );
-		alpha_require_once( 'template-global.php' );
 	}
 }
