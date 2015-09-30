@@ -49,7 +49,7 @@ add_action( 'after_setup_theme', 'alpha_setup', 10 );
  * @return void
  */
 function alpha_setup() {
-	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-l' : '2c-r' ) );
+	carelib_get( 'layouts' )->set_default( is_rtl() ? '2c-l' : '2c-r' )->add_support();
 
 	carelib_get( 'site-logo' )->add_support();
 
