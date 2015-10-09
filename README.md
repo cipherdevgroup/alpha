@@ -38,7 +38,7 @@ Please note: this software is still under fairly active development. You are fre
 		<tr>
 			<td>npm.js 3.x</td>
 			<td><code>npm -v</code></td>
-			<td><code>npm install -g npm@3.0-latest</code></td>
+			<td><code>npm install -g npm</code></td>
 		</tr>
 		<tr>
 			<td>Grunt CLI >= 0.1.13</td>
