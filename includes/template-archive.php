@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Wrapper for is_archive which also includes search results.
  *
- * @since  0.2.0
+ * @since  1.0.0
  * @access public
  * @uses   CareLib_Template_Archive::is_archive
  * @return bool true if we're on an archive page.
