@@ -76,7 +76,6 @@ function alpha_includes() {
 	alpha_require_once( 'layout.php' );
 	alpha_require_once( 'scripts.php' );
 	alpha_require_once( 'template-archive.php' );
-	alpha_require_once( 'template-comments.php' );
 	alpha_require_once( 'template-entry.php' );
 	alpha_require_once( 'template-global.php' );
 	alpha_require_once( 'theme-init.php' );

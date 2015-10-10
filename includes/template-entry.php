@@ -75,3 +75,18 @@ function alpha_null_entry_content() {
 function alpha_null_the_content() {
 	carelib_get( 'template-entry' )->null_the_content();
 }
+
+/**
+ * A custom comment callback to use with WordPress' `comments_template` function.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Template_Comments::comments_callback
+ * @param  $comment object the comment object.
+ * @param  $args array list of arguments passed from wp_list_comments().
+ * @param  $depth integer What level the particular comment is.
+ * @return void
+ */
+function alpha_comments_callback( $comment, $args, $depth ) {
+	carelib_get( 'template-comments' )->comments_callback( $comment, $args, $depth );
+}

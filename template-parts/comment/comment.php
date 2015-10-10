@@ -39,10 +39,12 @@
 			<?php comment_text(); ?>
 		</div><!-- .comment-content -->
 
-		<?php if ( alpha_get_comment_reply_link() ) : ?>
-			<footer <?php alpha_attr( 'comment-meta' ); ?>>
-				<?php alpha_comment_reply_link(); ?>
-			</footer><!-- .comment-meta -->
-		<?php endif; ?>
+		<?php
+		comment_reply_link( array_merge( $args, array(
+			'depth'  => $depth,
+			'before' => sprintf( '<footer %s>', alpha_get_attr( 'comment-meta' ) ),
+			'after'  => '</footer>',
+		) ) );
+		?>
 
 	</article>
