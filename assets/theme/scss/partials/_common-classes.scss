@@ -1,4 +1,4 @@
-/* Hybrid Core
+/* CareLib
 --------------------------------------------- */
 
 .breadcrumbs {
@@ -8,19 +8,6 @@
 	.sep {
 		padding: 0 4px;
 	}
-}
-
-.loop-meta {
-	margin-bottom: $base-margin;
-
-	p:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.loop-title {
-	font-size: $loop-title-size;
-	font-weight: 600;
 }
 
 /* Search Form
@@ -83,24 +70,24 @@
 	}
 }
 
-/* WordPress
+/* Archives
 --------------------------------------------- */
 
-.admin-bar {
-	.menu-mobile {
-		top: 46px;
+.archive-title {
+	font-size: $archive-title-size;
+	font-weight: 600;
+}
 
-		@media screen and (min-width: 782px) { // Thanks WordPress.
-			top: 32px;
-		}
+.archive-description {
+	margin-bottom: $base-margin;
+
+	p:last-child {
+		margin-bottom: 0;
 	}
 }
 
-.menu-open {
-	#wpadminbar { // Thanks again WordPress.
-		position: fixed;
-	}
-}
+/* WordPress Images
+--------------------------------------------- */
 
 img.centered,
 .aligncenter,
@@ -180,4 +167,23 @@ img.alignnone,
 	padding: 15px;
 	width: auto;
 	z-index: $screen-reader-z-index;
+}
+
+/* Admin Bar
+--------------------------------------------- */
+
+.admin-bar {
+	.menu-mobile {
+		top: 46px;
+
+		@media screen and (min-width: 782px) { // Thanks WordPress.
+			top: 32px;
+		}
+	}
+}
+
+.menu-open {
+	#wpadminbar { // Thanks again WordPress.
+		position: fixed;
+	}
 }
