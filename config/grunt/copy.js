@@ -104,8 +104,7 @@ module.exports = {
 				src: [
 					'skip-link-focus/skip-link-focus.js',
 					'fitvids/jquery.fitvids.js',
-					'accessible-menu/dist/jquery.accessible-menu.js',
-					'sidr/jquery.sidr.min.js'
+					'accessible-menu/dist/jquery.accessible-menu.js'
 				],
 				dest: '<%= paths.bower%>js/concat'
 			}
