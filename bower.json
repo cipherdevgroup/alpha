@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "wp-normalize.scss": "~1.0",
     "fitvids": "~1.1",
     "accessible-menu": "GaryJones/accessible-menu#master",
     "themicons": "cedaro/themicons#2.0.0",
-    "sanitize-css": "10up/sanitize.css#master",
     "skip-link-focus": "~0.1.0"
   }
 }
