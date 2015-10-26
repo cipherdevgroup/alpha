@@ -141,6 +141,19 @@ img.alignnone,
 	text-align: center;
 }
 
+.wp-smiley,
+.emoji {
+	display: inline;
+	border: 0;
+	box-shadow: none;
+	height: 1em;
+	width: 1em;
+	margin: 0 0.2em;
+	vertical-align: -0.1em;
+	background: none;
+	padding: 0;
+}
+
 /* Screen Readers
 --------------------------------------------- */
 
