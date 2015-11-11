@@ -9,17 +9,20 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -29,9 +32,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -100,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2015-10-29 23:28:48"
         },
         {
             "name": "wpsitecare/carelib",
@@ -108,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "6b36b8560ada5e04a46288ac87efbdbc86d403ad"
+                "reference": "c9672cd957b92bb61c1090f4cca54af448268bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/6b36b8560ada5e04a46288ac87efbdbc86d403ad",
-                "reference": "6b36b8560ada5e04a46288ac87efbdbc86d403ad",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/c9672cd957b92bb61c1090f4cca54af448268bea",
+                "reference": "c9672cd957b92bb61c1090f4cca54af448268bea",
                 "shasum": ""
             },
             "type": "library",
@@ -133,7 +136,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-10-09 20:38:02"
+            "time": "2015-11-07 00:39:35"
         },
         {
             "name": "zamoose/themehookalliance",
