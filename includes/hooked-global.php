@@ -182,7 +182,7 @@ function alpha_breadcrumbs() {
  * @return void
  */
 function alpha_primary_sidebar() {
-	if ( ! in_array( get_theme_mod( 'theme_layout' ), array( '1c', '1c-narrow' ) ) ) {
+	if ( alpha_layout_has_sidebar() ) {
 		alpha_sidebar( 'primary' );
 	}
 }

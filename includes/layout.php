@@ -144,3 +144,15 @@ function alpha_force_left_sidebar_layout() {
 	add_filter( 'alpha_allow_layout_control', '__return_false' );
 	return alpha_return_left_sidebar_layout();
 }
+
+/**
+ * Check whether the current layout includes a sidebar.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   CareLib_Layouts::get_theme_layout
+ * @return bool true if the current layout includes a sidebar
+ */
+function alpha_layout_has_sidebar() {
+	return ! in_array( carelib_get( 'layouts' )->get_theme_layout(), array( '1c', '1c-narrow' ) );
+}
