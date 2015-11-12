@@ -215,7 +215,7 @@
 			if ( ! menuIsOpen() ) {
 				return;
 			}
-			if ( menusMerged() && window.innerWidth < 1023 ) {
+			if ( menusMerged() && ! isHidden( $menuButton ) ) {
 				splitMenus();
 			}
 			toggleClasses();
@@ -231,7 +231,7 @@
 		 * @return void
 		 */
 		function reflowMenus() {
-			if ( window.innerWidth >= 1023 ) {
+			if ( isHidden( $menuButton ) ) {
 				if ( menusMerged() ) {
 					splitMenus();
 				}
@@ -239,15 +239,24 @@
 				$mobileMenu.addClass( menuClass );
 				$mobileMenu.removeClass( 'menu-mobile' );
 				$$( 'body' ).removeClass( 'menu-open' );
-			}
-
-			if ( window.innerWidth < 1023 ) {
+			} else {
 				$mobileMenu.removeClass( menuClass );
 				$mobileMenu.addClass( 'menu-mobile' );
 				if ( ! menusMerged() ) {
 					mergeMenus();
 				}
 			}
+		}
+
+		/**
+		 * Check whether or not a given element is visible.
+		 *
+		 * @param  {object} $object a jQuery object to check
+		 * @return {bool} true if the current element is hidden
+		 */
+		function isHidden( $object ) {
+			var element = $object[0];
+			return ( null === element.offsetParent );
 		}
 
 		/**
