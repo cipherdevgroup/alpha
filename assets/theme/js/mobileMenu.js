@@ -31,7 +31,7 @@
 	};
 
 	$.fn.alphaMobileMenu = function() {
-		var $menuButton = $$( '<button type="button" id="menu-toggle" class="menu-button" aria-expanded="false"></button>' ),
+		var $menuButton = $$( '#menu-toggle-primary' ),
 			$mobileMenu = $$( '#menu-primary' ),
 			menuClass   = 'menu-primary';
 
@@ -307,7 +307,6 @@
 		 * @return void
 		 */
 		function loadMobileMenu() {
-			$$( '#branding' ).after( $menuButton );
 			$menuButton.on( 'click', toggleMenu );
 			debouncedResize(function() {
 				reflowMenus();
