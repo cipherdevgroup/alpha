@@ -47,6 +47,20 @@
 		}
 
 		/**
+		 * Debounce a window resize event.
+		 *
+		 * @since  0.2.0
+		 * @return {Boolean} Returns true if the menu is open.
+		 */
+		function debouncedResize( c, t ) {
+			onresize = function() {
+				clearTimeout( t );
+				t = setTimeout( c, 100 );
+			};
+			return c;
+		}
+
+		/**
 		 * Check whether or not the mobile menu is currently open and visible.
 		 *
 		 * @since  0.1.0
@@ -282,8 +296,9 @@
 		function loadMobileMenu() {
 			$$( '#branding' ).after( $menuButton );
 			$menuButton.on( 'click', toggleMenu );
-			$$( window ).resize( reflowMenus );
-			$$( window ).trigger( 'resize' );
+			debouncedResize(function() {
+				reflowMenus();
+			})();
 		}
 
 		loadMobileMenu();
