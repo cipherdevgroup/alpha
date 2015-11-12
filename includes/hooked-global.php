@@ -12,21 +12,22 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'tha_body_top',      'alpha_skip_to_content',   5 );
-add_action( 'tha_body_top',      'alpha_header',           10 );
-add_action( 'tha_header_top',    'alpha_branding_open',    10 );
-add_action( 'tha_header_top',    'alpha_logo',             12 );
-add_action( 'tha_header_top',    'alpha_site_title',       14 );
-add_action( 'tha_header_top',    'alpha_site_description', 16 );
-add_action( 'tha_header_top',    'alpha_branding_close',   20 );
-add_action( 'tha_header_bottom', 'alpha_menu_primary',     10 );
-add_action( 'tha_header_bottom', 'alpha_menu_fallback',    10 );
-add_action( 'tha_header_after',  'alpha_menu_secondary',   10 );
-add_action( 'tha_content_top',   'alpha_breadcrumbs',      10 );
-add_action( 'tha_content_after', 'alpha_primary_sidebar',  10 );
-add_action( 'tha_footer_before', 'alpha_footer_widgets',   10 );
-add_action( 'tha_body_bottom',   'alpha_footer',           10 );
-add_action( 'tha_footer_bottom', 'alpha_footer_content',   10 );
+add_action( 'tha_body_top',      'alpha_skip_to_content',     5 );
+add_action( 'tha_body_top',      'alpha_header',             10 );
+add_action( 'tha_header_top',    'alpha_branding_open',      10 );
+add_action( 'tha_header_top',    'alpha_logo',               12 );
+add_action( 'tha_header_top',    'alpha_site_title',         14 );
+add_action( 'tha_header_top',    'alpha_site_description',   16 );
+add_action( 'tha_header_top',    'alpha_branding_close',     20 );
+add_action( 'tha_header_top',    'alpha_menu_toggle_button', 22 );
+add_action( 'tha_header_bottom', 'alpha_menu_primary',       10 );
+add_action( 'tha_header_bottom', 'alpha_menu_fallback',      10 );
+add_action( 'tha_header_after',  'alpha_menu_secondary',     10 );
+add_action( 'tha_content_top',   'alpha_breadcrumbs',        10 );
+add_action( 'tha_content_after', 'alpha_primary_sidebar',    10 );
+add_action( 'tha_footer_before', 'alpha_footer_widgets',     10 );
+add_action( 'tha_body_bottom',   'alpha_footer',             10 );
+add_action( 'tha_footer_bottom', 'alpha_footer_content',     10 );
 
 /**
  * Output skip-to-content link markup for screen readers.
@@ -112,6 +113,22 @@ function alpha_logo() {
  */
 function alpha_branding_close() {
 	echo '</div><!-- #branding -->';
+}
+
+/**
+ * Output the markup for the main menu toggle button.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_menu_toggle_button() {
+	if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) {
+		printf( '<button %s>%s</button>',
+			alpha_get_attr( 'menu-toggle', 'main' ),
+			apply_filters( 'alpha_menu_toggle_button_text', '' )
+		);
+	}
 }
 
 /**
