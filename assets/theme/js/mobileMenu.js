@@ -61,6 +61,17 @@
 		}
 
 		/**
+		 * Check whether or not a given element is visible.
+		 *
+		 * @param  {object} $object a jQuery object to check
+		 * @return {bool} true if the current element is hidden
+		 */
+		function isHidden( $object ) {
+			var element = $object[0];
+			return ( null === element.offsetParent );
+		}
+
+		/**
 		 * Check whether or not the mobile menu is currently open and visible.
 		 *
 		 * @since  0.1.0
@@ -273,17 +284,6 @@
 					mergeMenus();
 				}
 			}
-		}
-
-		/**
-		 * Check whether or not a given element is visible.
-		 *
-		 * @param  {object} $object a jQuery object to check
-		 * @return {bool} true if the current element is hidden
-		 */
-		function isHidden( $object ) {
-			var element = $object[0];
-			return ( null === element.offsetParent );
 		}
 
 		/**
