@@ -3,7 +3,7 @@
  *
  * Merge existing menus into an a11y-compliant, off-canvas mobile menu.
  *
- * @version   0.1.0
+ * @version   0.2.0
  * @copyright Copyright (c) 2015, WP Site Care, LLC
  * @license   MIT
  */
