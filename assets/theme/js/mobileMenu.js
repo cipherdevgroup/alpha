@@ -131,6 +131,20 @@
 		}
 
 		/**
+		 * Toggle aria attributes.
+		 *
+		 * @since  0.2.0
+		 * @param  {button} $object passed through
+		 * @param  {aria-xx} attribute aria attribute to toggle
+		 * @return {bool}
+		 */
+		function toggleAria( $object, attribute ) {
+			$object.attr( attribute, function( index, value ) {
+				return 'false' === value ? 'true' : 'false';
+			});
+		}
+
+		/**
 		 * Toggle all attributes related to a menu being in an open or closed
 		 * state. Most of these changes are made for a11y reasons.
 		 *
@@ -138,9 +152,8 @@
 		 * @return void
 		 */
 		function toggleAttributes() {
-			$menuButton.attr( 'aria-expanded', function( index, attr ) {
-				return 'false' === attr ? 'true' : 'false';
-			});
+			toggleAria( $menuButton, 'aria-pressed' );
+			toggleAria( $menuButton, 'aria-expanded' );
 			if ( $mobileMenu.attr( 'tabindex' ) ) {
 				$mobileMenu.removeAttr( 'tabindex' );
 			} else {
