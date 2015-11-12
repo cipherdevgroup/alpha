@@ -185,10 +185,10 @@ body {
 	}
 }
 
-.menu-button {
-	background: $menu-button-background-color;
+.menu-toggle {
+	background: $menu-toggle-background-color;
 	border-radius: $base-border-radius;
-	color: $menu-button-link-color;
+	color: $menu-toggle-link-color;
 	cursor: pointer;
 	display: block;
 	float: right;
@@ -202,8 +202,8 @@ body {
 	&:hover,
 	&:focus,
 	&:active {
-		background: $menu-button-background-color-hover;
-		color: $menu-button-color-hover;
+		background: $menu-toggle-background-color-hover;
+		color: $menu-toggle-color-hover;
 		outline: none;
 
 		@include media($medium-screen-up) {
@@ -212,7 +212,7 @@ body {
 	}
 
 	&::before {
-		font-size: $menu-button-font-size;
+		font-size: $menu-toggle-font-size;
 	}
 }
 

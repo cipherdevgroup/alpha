@@ -85,10 +85,10 @@ $menu-secondary-link-color-hover: $base-link-color;
 
 // Mobile Menu Colors
 //------------------------------------------------------------------------------
-$menu-button-background-color:       transparent;
-$menu-button-background-color-hover: transparent;
-$menu-button-link-color:             $off-black;
-$menu-button-color-hover:            $light-gray;
+$menu-toggle-background-color:       transparent;
+$menu-toggle-background-color-hover: transparent;
+$menu-toggle-link-color:             $off-black;
+$menu-toggle-color-hover:            $light-gray;
 $menu-mobile-background-color:       lighten($off-black, 3);
 $menu-mobile-border-color:           rgba(255, 255, 255, 0.1);
 $menu-mobile-color:                  lighten($nav-link-color, 30);

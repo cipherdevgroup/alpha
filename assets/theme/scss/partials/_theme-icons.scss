@@ -3,8 +3,8 @@ a[href^="mailto:"]::before,
 a[href^="tel:"]::before,
 
 // Menu
-.menu-button::before,
-.menu-button.activated::before,
+.menu-toggle::before,
+.menu-toggle.activated::before,
 
 // Search
 .search-form button::before,
@@ -85,11 +85,11 @@ a[href^="tel:"]::before {
 
 /* Menu Icon
 --------------------------------------------- */
-.menu-button::before {
+.menu-toggle::before {
 	content: $sic-menu;
 }
 
-.menu-button.activated::before {
+.menu-toggle.activated::before {
 	content: $sic-close;
 }
 

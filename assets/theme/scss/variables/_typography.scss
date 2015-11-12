@@ -59,7 +59,7 @@ $archive-title-size: $h1-font-size;
 $nav-font-size:         $medium-font-size;
 $subnav-font-size:      $small-font-size;
 $pagination-font-size:  $medium-font-size;
-$menu-button-font-size: floor(modular-scale(7, $base-font-size, $major-second));
+$menu-toggle-font-size: floor(modular-scale(7, $base-font-size, $major-second));
 
 // Form Font Properties
 //------------------------------------------------------------------------------
