@@ -24,7 +24,7 @@ module.exports = function() {
 		'build:fonts': [
 			'build:dependencies:fonts',
 			'newer:copy:fonts',
-			'newer:image:icons',
+			'newer:imagemin:icons',
 			'webfont'
 		],
 		'build:css': [
@@ -39,7 +39,7 @@ module.exports = function() {
 			'newer:copy:css'
 		],
 		'build:images': [
-			'newer:image:images',
+			'newer:imagemin:images',
 			'newer:copy:images'
 		],
 		'build:js': [
