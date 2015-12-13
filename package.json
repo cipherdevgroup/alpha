@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "sitecare-theme-config": "wpsitecare/sitecare-theme-config",
-    "load-project-config": "cedaro/load-project-config"
+    "load-project-config": "~0.2.0"
   }
 }
