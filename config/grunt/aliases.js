@@ -23,9 +23,7 @@ module.exports = function() {
 		],
 		'build:fonts': [
 			'build:dependencies:fonts',
-			'newer:copy:fonts',
-			'newer:imagemin:icons',
-			'webfont'
+			'newer:copy:fonts'
 		],
 		'build:css': [
 			'build:dependencies:css',

@@ -1,4 +1,4 @@
-/* Loop Pagination
+/* Archive Pagination
 --------------------------------------------- */
 
 .pagination {
@@ -20,19 +20,6 @@
 		background: $pagination-current-background-color;
 	}
 
-	.next:before,
-	.prev:before {
-		font-family: "siteicons";
-	}
-
-	.next:before {
-		content: $sic-arrow-right;
-	}
-
-	.prev:before {
-		content: $sic-arrow-left;
-	}
-
 	a {
 		color: $pagination-link-color;
 
@@ -41,16 +28,6 @@
 			background: $pagination-background-color-hover;
 			border: 1px solid $pagination-border-color-hover;
 		}
-	}
-}
-
-.rtl {
-	.pagination .next:before {
-		content: $sic-arrow-left;
-	}
-
-	.pagination .prev:before {
-		content: $sic-arrow-right;
 	}
 }
 
@@ -95,24 +72,12 @@
 	@include media($medium-screen-up) {
 		float: right;
 	}
-
-	&:after {
-		font-family: "siteicons";
-		content: $sic-arrow-right;
-		padding-left: 10px;
-	}
 }
 
 .nav-previous a {
 
 	@include media($medium-screen-up) {
 		float: left;
-	}
-
-	&:before {
-		font-family: "siteicons";
-		content: $sic-arrow-left;
-		padding-right: 10px;
 	}
 }
 
@@ -136,7 +101,7 @@
 	color: $nav-single-link-color;
 }
 
-/* Loop Page Links
+/* Archive Page Links
 --------------------------------------------- */
 
 .nav-archive {
