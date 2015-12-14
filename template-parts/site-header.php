@@ -2,10 +2,10 @@
 /**
  * A template part for the site's default header.
  *
- * @package    Alpha\Templates
- * @subpackage CareLib
+ * @package    Alpha\TemplateParts
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 ?>

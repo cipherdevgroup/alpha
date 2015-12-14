@@ -2,14 +2,13 @@
 /**
  * Include library and setup files.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Functions
+ * @subpackage Alpha
+ * @author     Robert Neu
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -17,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since  1.0.0
  * @access public
- * @param  string $path the relative path of the file to be included
+ * @param  string $path the relative path of the file to be included.
  * @return void
  */
 function alpha_require_once( $path ) {

@@ -3,13 +3,12 @@
  * Template helper functions related to entries.
  *
  * @package    Alpha\Fucntions\TemplateHelpers
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -18,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_terms
- * @param  array $args a list of arguments to pass to the entry terms method
+ * @param  array $args a list of arguments to pass to the entry terms method.
  * @return void
  */
 function alpha_entry_terms( $args = array() ) {
@@ -82,9 +81,9 @@ function alpha_null_the_content() {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Template_Comments::comments_callback
- * @param  $comment object the comment object.
- * @param  $args array list of arguments passed from wp_list_comments().
- * @param  $depth integer What level the particular comment is.
+ * @param  object  $comment the comment object.
+ * @param  array   $args list of arguments passed from wp_list_comments().
+ * @param  integer $depth What level the particular comment is.
  * @return void
  */
 function alpha_comments_callback( $comment, $args, $depth ) {

@@ -3,9 +3,9 @@
  * The default framework markup file.
  *
  * @package    Alpha\Templates
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 ?>

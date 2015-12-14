@@ -3,13 +3,12 @@
  * Functions used to hook global template parts and other markup elements.
  *
  * @package    Alpha\Functions\Hooks
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'tha_body_top',      'alpha_skip_to_content',   5 );
@@ -209,7 +208,7 @@ function alpha_primary_sidebar() {
  *
  * @since  1.0.0
  * @access public
- * @return null
+ * @return void
  */
 function alpha_footer_widgets() {
 	if ( is_active_sidebar( 'footer-widgets' ) ) {

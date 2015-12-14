@@ -3,13 +3,12 @@
  * Load Theme JavaScript and CSS
  *
  * @package    Alpha\Functions\Scripts
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles',  10 );
@@ -32,8 +31,8 @@ function alpha_get_suffix() {
  *
  * @since  1.0.0
  * @access public
- * @param  string $families the font families to include
- * @param  bool $editor_style set to true if string is being used as editor style
+ * @param  string $families the font families to include.
+ * @param  bool   $editor_style set to true if string is being used as editor style.
  * @return string
  */
 function alpha_google_fonts_string( $families, $editor_style = false ) {

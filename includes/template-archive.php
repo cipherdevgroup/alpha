@@ -3,13 +3,12 @@
  * Template helper functions and hooks used within the blog section.
  *
  * @package    Alpha\Fucntions\TemplateHelpers
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**

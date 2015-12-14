@@ -3,13 +3,12 @@
  * Functions for controlling layout options within the admin.
  *
  * @package    Alpha\Admin\Layout
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'add_meta_boxes', 'alpha_disable_layout_metabox', 5, 2 );
@@ -18,8 +17,8 @@ add_action( 'add_meta_boxes', 'alpha_disable_layout_metabox', 5, 2 );
  *
  * @since  1.0.0
  * @access public
- * @param  string $post_type
- * @param  WP_Post $post
+ * @param  string  $post_type The post type of the current post.
+ * @param  WP_Post $post The post type object of the current post.
  * @return void
  */
 function alpha_disable_layout_metabox( $post_type, $post ) {
@@ -33,7 +32,7 @@ function alpha_disable_layout_metabox( $post_type, $post ) {
  *
  * @since  1.0.0
  * @access public
- * @param  int $post_id
+ * @param  int $post_id The post ID for the post to be checked.
  * @return bool true if the current layout is forced, false otherwise
  */
 function alpha_is_page_layout_forced( $post_id ) {

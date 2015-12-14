@@ -3,13 +3,12 @@
  * Functions used to hook global template parts and other markup elements.
  *
  * @package    Alpha\Functions\Hooks
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'tha_content_top',         'alpha_archive_header',        12 );
@@ -105,8 +104,8 @@ function alpha_archive_header_close() {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Template_Archive::get_posts_navigation
- * @param  $args array
- * @return string
+ * @param  array $args A list of arguments to be merged with defaults.
+ * @return void
  */
 function alpha_posts_navigation( $args = array() ) {
 	echo carelib_get( 'template-archive' )->get_posts_navigation( $args );

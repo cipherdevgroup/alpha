@@ -2,10 +2,10 @@
 /**
  * A template to display when no content can be found.
  *
- * @package    Alpha\Templates
- * @subpackage CareLib
+ * @package    Alpha\TemplateParts
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 ?>

@@ -2,14 +2,13 @@
 /**
  * HTML attribute functions and filters.
  *
- * @package    Alpha\Fucntions\Attributes
- * @subpackage CareLib
+ * @package    Alpha\Functions
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -19,6 +18,7 @@ defined( 'ABSPATH' ) || exit;
  * @access public
  * @param  string $slug the slug/ID of the element (e.g., 'sidebar').
  * @param  string $context a specific context (e.g., 'primary').
+ * @param  array  $attr A list of attributes to be merged.
  * @return void
  */
 function alpha_attr( $slug, $context = '', $attr = array() ) {
@@ -32,6 +32,7 @@ function alpha_attr( $slug, $context = '', $attr = array() ) {
  * @access public
  * @param  string $slug the slug/ID of the element (e.g., 'sidebar').
  * @param  string $context a specific context (e.g., 'primary').
+ * @param  array  $attr A list of attributes to be merged.
  * @return string the attributes for a given element
  */
 function alpha_get_attr( $slug, $context = '', $attr = array() ) {

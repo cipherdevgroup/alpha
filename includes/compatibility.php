@@ -2,14 +2,13 @@
 /**
  * Provides compatibility with various WordPress plugins.
  *
- * @package    Alpha\Functions\Compatibility
- * @subpackage CareLib
+ * @package    Alpha\Functions\Plugins
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
@@ -18,9 +17,8 @@ add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
  * Change the default related posts image size.
  *
  * @since  1.0.0
- * @return void
  * @access public
- * @return string
+ * @return void
  */
 function alpha_jetpack_setup() {
 	// Return early if Jetpack isn't activated.

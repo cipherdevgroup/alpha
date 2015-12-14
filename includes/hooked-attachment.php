@@ -3,13 +3,12 @@
  * Functions used to hook attachment template parts and other markup elements.
  *
  * @package    Alpha\Functions\Hooks
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'tha_head_bottom',  'alpha_force_attachment_layout',  10 );

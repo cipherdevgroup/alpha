@@ -2,14 +2,13 @@
 /**
  * Theme functions which must be run on the WordPress core 'widgets_init' hook.
  *
- * @package     Alpha
- * @subpackage  CareLib
- * @copyright   Copyright (c) 2015, WP Site Care, LLC
- * @license     GPL-2.0+
- * @since       1.0.0
+ * @package    Alpha\Functions
+ * @subpackage Alpha
+ * @author     Robert Neu
+ * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'widgets_init', 'alpha_register_sidebars', 5 );

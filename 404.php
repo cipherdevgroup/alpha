@@ -3,9 +3,9 @@
  * The template for displaying 404 pages (Not Found).
  *
  * @package    Alpha\Templates
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 ?>
@@ -36,7 +36,7 @@
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 				<?php
-				// Translators: %1$s: smiley
+				// Translators: %1$s is a smile emoji.
 				the_widget(
 					'WP_Widget_Archives',
 					'dropdown=1',

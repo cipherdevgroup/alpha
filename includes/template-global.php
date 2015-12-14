@@ -3,13 +3,12 @@
  * Global template helper functions.
  *
  * @package    Alpha\Functions\TemplateHelpers
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -51,6 +50,7 @@ function alpha_wrap_close() {
  *
  * @since  1.0.0
  * @access public
+ * @param  string $name The name of the menu to load.
  * @uses   CareLib_Menu::template
  * @return void
  */
@@ -64,7 +64,7 @@ function alpha_menu( $name = null ) {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Menu::get_location_name
- * @param  string $location
+ * @param  string $location The WordPress menu location to check.
  * @return string
  */
 function alpha_get_menu_location_name( $location ) {
@@ -89,7 +89,7 @@ function alpha_display_breadcrumbs() {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Image_Grabber_API::get
- * @param  array $args a list of arguments to pass to the image grabber class
+ * @param  array $args a list of arguments to pass to the image grabber class.
  * @return mixed string or an array depending on what arguments are used
  */
 function alpha_get_image( $args = array() ) {
@@ -102,7 +102,7 @@ function alpha_get_image( $args = array() ) {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Image_Grabber_API::get
- * @param  array $args a list of arguments to pass to the image grabber class
+ * @param  array $args a list of arguments to pass to the image grabber class.
  * @return void
  */
 function alpha_image( $args = array() ) {
@@ -115,6 +115,7 @@ function alpha_image( $args = array() ) {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Sidebar::template
+ * @param  string $name the name of the sidebar to load.
  * @return void
  */
 function alpha_sidebar( $name = null ) {
@@ -127,7 +128,7 @@ function alpha_sidebar( $name = null ) {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Sidebar::get_name
- * @param  string $sidebar_id
+ * @param  string $id The id of the sidebar to check.
  * @return string
  */
 function alpha_get_sidebar_name( $id ) {
@@ -140,7 +141,7 @@ function alpha_get_sidebar_name( $id ) {
  * @since  1.0.0
  * @access public
  * @uses   CareLib_Template_Global::get_customizer_link
- * @param  $args array options for how the link will be formatted
+ * @param  array $args options for how the link will be formatted.
  * @return string an escaped link to the WordPress customizer panel.
  */
 function alpha_get_customizer_link( $args = array() ) {

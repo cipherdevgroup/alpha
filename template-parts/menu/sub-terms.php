@@ -2,10 +2,10 @@
 /**
  * A template to display taxonomy terms.
  *
- * @package    Alpha\Templates
- * @subpackage CareLib
+ * @package    Alpha\TemplateParts
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 ?>
@@ -24,7 +24,7 @@
 	);
 	?>
 
-	<?php if ( ! empty( $terms ) ) : // If a list of child categories/terms was found. ?>
+	<?php if ( ! empty( $terms ) ) : ?>
 
 		<nav <?php alpha_attr( 'menu', 'sub-terms' ); ?>>
 
@@ -34,6 +34,6 @@
 
 		</nav><!-- .menu -->
 
-	<?php endif; // End check for list.
+	<?php endif;
 
-endif; // End check for hierarchy.
+endif;
