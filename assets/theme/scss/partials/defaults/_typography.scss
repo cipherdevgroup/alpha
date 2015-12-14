@@ -1,9 +1,5 @@
 html {
-	font-size: $base-font-size-medium;
-
-	@include media($medium-screen-up) {
-		font-size: $base-font-size;
-	}
+	@include base-font-size();
 }
 
 body {
@@ -178,43 +174,23 @@ h6 {
 }
 
 h1 {
-	font-size: $h1-font-size-small;
-
-	@include media($small-screen-up) {
-		font-size: $h1-font-size;
-	}
+	@include h1-font-size();
 }
 
 h2 {
-	font-size: $h2-font-size-small;
-
-	@include media($small-screen-up) {
-		font-size: $h2-font-size;
-	}
+	@include h2-font-size();
 }
 
 h3 {
-	font-size: $h3-font-size-small;
-
-	@include media($small-screen-up) {
-		font-size: $h3-font-size;
-	}
+	@include h3-font-size();
 }
 
 h4 {
-	font-size: $h4-font-size-small;
-
-	@include media($small-screen-up) {
-		font-size: $h4-font-size;
-	}
+	@include h4-font-size();
 }
 
 h5 {
-	font-size: $h5-font-size-small;
-
-	@include media($small-screen-up) {
-		font-size: $h5-font-size;
-	}
+	@include h5-font-size();
 }
 
 h6 {
