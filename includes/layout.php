@@ -3,13 +3,12 @@
  * Functions for controlling layout options.
  *
  * @package    Alpha\Functions\Layout
- * @subpackage CareLib
+ * @subpackage Alpha
+ * @author     Robert Neu
  * @copyright  Copyright (c) 2015, WP Site Care, LLC
- * @license    GPL-2.0+
  * @since      1.0.0
  */
 
-// Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
@@ -154,5 +153,9 @@ function alpha_force_left_sidebar_layout() {
  * @return bool true if the current layout includes a sidebar
  */
 function alpha_layout_has_sidebar() {
-	return ! in_array( carelib_get( 'layouts' )->get_theme_layout(), array( '1c', '1c-narrow' ) );
+	return ! in_array(
+		carelib_get( 'layouts' )->get_theme_layout(),
+		array( '1c', '1c-narrow' ),
+		true
+	);
 }
