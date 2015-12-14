@@ -30,3 +30,15 @@ div.gform_wrapper {
 #wpstats {
 	display: none;
 }
+
+/* WordPress SEO
+--------------------------------------------- */
+
+.breadcrumbs {
+	font-size: $medium-font-size;
+	margin-bottom: 15px;
+
+	.sep {
+		padding: 0 4px;
+	}
+}
