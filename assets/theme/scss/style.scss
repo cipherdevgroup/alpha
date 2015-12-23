@@ -5,6 +5,9 @@
 @import "settings/neat-grid";
 @import "neat";
 
+// Load Media Queries Mixins
+@import "../../bower/scss/media-queries";
+
 // Load Theme Mixins
 @import "mixins/global";
 

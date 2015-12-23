@@ -89,8 +89,12 @@ module.exports = {
 		files: [
 			{
 				expand: true,
-				cwd: 'bower_components/wp-normalize.scss/',
-				src: ['_wp-normalize.scss'],
+				flatten: true,
+				cwd: 'bower_components/',
+				src: [
+					'wp-normalize.scss/_wp-normalize.scss',
+					'sass-mediaqueries/_media-queries.scss'
+				],
 				dest: '<%= paths.bower%>scss/'
 			}
 		]
