@@ -20,7 +20,11 @@ input[type="search"] {
 .site-container,
 .site-inner,
 .wrap {
-	@include clearfix;
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
 }
 
 html,

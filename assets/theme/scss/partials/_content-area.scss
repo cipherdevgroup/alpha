@@ -34,11 +34,12 @@
 }
 
 .corner-ribbon {
-	@include size(85px);
+	height: 85px;
 	overflow: hidden;
 	position: absolute;
-	right: -1px;
 	top: -1px;
+	right: -1px;
+	width: 85px;
 
 	.ribbon-content {
 		transform: rotate(45deg);

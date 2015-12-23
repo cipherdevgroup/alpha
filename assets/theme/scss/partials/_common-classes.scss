@@ -14,12 +14,15 @@
 	}
 
 	button[type=submit] {
-		@include position(absolute, 0 0 0 null);
 		border: 1px solid $base-button-background-color;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 		outline: none;
 		padding: 0 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
 
 		&::before {
 			font-size: $base-font-size;
