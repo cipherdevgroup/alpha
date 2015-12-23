@@ -45,7 +45,7 @@ p {
 	margin: 0 0 $content-margin-small;
 	padding: 0;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		margin-bottom: $content-margin;
 	}
 }

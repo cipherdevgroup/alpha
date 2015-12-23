@@ -4,11 +4,11 @@
 	color: $header-font-color;
 	padding: 10px 0;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding: 15px 0;
 	}
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		padding: 25px 0;
 	}
 }
@@ -22,7 +22,7 @@
 	margin-right: 0;
 	width: auto;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		@include span-columns(3);
 	}
 }

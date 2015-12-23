@@ -40,7 +40,7 @@ a:focus img {
 	position: relative;
 	text-align: center;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 
 		.gallery-columns-0 &,
 		.gallery-columns-1 &,

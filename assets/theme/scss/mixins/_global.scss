@@ -3,7 +3,7 @@
 @mixin base-font-size {
 	font-size: $base-font-size-medium;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		font-size: $base-font-size;
 	}
 }
@@ -11,7 +11,7 @@
 @mixin h1-font-size {
 	font-size: $h1-font-size-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		font-size: $h1-font-size;
 	}
 }
@@ -19,7 +19,7 @@
 @mixin h2-font-size {
 	font-size: $h2-font-size-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		font-size: $h2-font-size;
 	}
 }
@@ -27,7 +27,7 @@
 @mixin h3-font-size {
 	font-size: $h3-font-size-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		font-size: $h3-font-size;
 	}
 }
@@ -35,7 +35,7 @@
 @mixin h4-font-size {
 	font-size: $h4-font-size-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		font-size: $h4-font-size;
 	}
 }
@@ -43,7 +43,7 @@
 @mixin h5-font-size {
 	font-size: $h5-font-size-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		font-size: $h5-font-size;
 	}
 }
@@ -57,7 +57,7 @@
 	> dl {
 		margin-bottom: $content-margin-small;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			margin-bottom: $content-margin;
 		}
 	}
@@ -66,7 +66,7 @@
 	ul {
 		margin-left: 20px;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			margin-left: $base-padding;
 		}
 	}

@@ -11,7 +11,7 @@
 	word-wrap: break-word;
 	word-break: normal;
 
-	@include media($smaller-screen-up) {
+	@include min-screen($smaller-screen) {
 		padding-top: $site-inner-padding;
 	}
 }
@@ -24,16 +24,16 @@
 	padding-left: 5%;
 	padding-right: 5%;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		max-width: $wrap-max-width-medium;
 	}
 
-	@include media($large-screen-up) {
+	@include min-screen($large-screen) {
 		max-width: $wrap-max-width-large;
 	}
 }
@@ -48,7 +48,7 @@
 	padding: 0;
 }
 
-@include media($medium-screen-up) {
+@include min-screen($medium-screen) {
 
 	.layout-1c-narrow .content {
 		@include pad(0 15%);
@@ -95,7 +95,7 @@
 /* Column Classes
 --------------------------------------------- */
 
-@include media($small-screen-up) {
+@include min-screen($small-screen) {
 
 	.one-half,
 	.three-sixths,

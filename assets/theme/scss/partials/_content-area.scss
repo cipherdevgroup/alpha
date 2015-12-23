@@ -6,7 +6,7 @@
 	padding: 0;
 	position: relative;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding: $article-padding;
 	}
 }
@@ -15,7 +15,7 @@
 	background-color: $entry-background-color;
 	border-bottom: 1px solid $entry-border-color;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		border: 1px solid $entry-border-color;
 	}
 }
@@ -110,7 +110,7 @@
 .entry-header .entry-meta {
 	margin-bottom: $content-margin-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		margin-bottom: $content-margin;
 	}
 }
@@ -135,7 +135,7 @@
 	margin: 0 0 $content-margin;
 	overflow: hidden;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		margin-left: -$base-padding;
 		margin-right: -$base-padding;
 		margin-top: -$base-padding;

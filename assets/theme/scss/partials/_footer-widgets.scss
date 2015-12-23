@@ -6,7 +6,7 @@
 	font-size: $footer-widgets-font-size;
 	padding: $base-padding 0 10px;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		.widget {
 			@include span-columns(4);
 

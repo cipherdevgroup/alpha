@@ -15,7 +15,7 @@
 		display: block;
 		padding: 25px 15px;
 
-		@include media($large-screen-up) {
+		@include min-screen($large-screen) {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
@@ -103,7 +103,7 @@
 --------------------------------------------- */
 
 .site-header .menu-primary {
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		@include span-columns(9);
 		float: right;
 		text-align: right;
@@ -126,7 +126,7 @@
 .menu-primary {
 	display: none;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		display: block;
 	}
 }
@@ -136,7 +136,7 @@
 	margin: 0;
 	padding: 2px 0;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		display: block;
 	}
 
@@ -155,7 +155,7 @@
 	border-bottom: 1px solid $menu-secondary-border-color;
 	display: none;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		display: block;
 	}
 
@@ -195,7 +195,7 @@ body {
 	margin: 7px 0;
 	padding: 0;
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		display: none;
 	}
 
@@ -206,7 +206,7 @@ body {
 		color: $menu-toggle-color-hover;
 		outline: none;
 
-		@include media($medium-screen-up) {
+		@include min-screen($medium-screen) {
 			display: none;
 		}
 	}

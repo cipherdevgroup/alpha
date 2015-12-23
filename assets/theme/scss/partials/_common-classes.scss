@@ -52,7 +52,7 @@
 	display: block;
 }
 
-@include media($smaller-screen-up) {
+@include min-screen($smaller-screen) {
 	.alignleft .avatar {
 		margin-right: 24px;
 	}
@@ -87,12 +87,12 @@ img.alignnone,
 	display: block;
 	margin: 0 auto $content-margin-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		margin-bottom: $content-margin;
 	}
 }
 
-@include media($smaller-screen-up) {
+@include min-screen($smaller-screen) {
 	.alignleft {
 		float: left;
 		text-align: left;

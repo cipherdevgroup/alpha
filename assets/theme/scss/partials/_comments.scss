@@ -6,7 +6,7 @@
 	background-color: $comment-background-color;
 	margin-bottom: $base-margin;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		border: 1px solid $comment-border-color;
 	}
 
@@ -19,7 +19,7 @@
 	position: relative;
 	padding-left: 40px;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding-left: 60px;
 	}
 
@@ -30,7 +30,7 @@
 		padding: 5px;
 		position: relative;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			border-bottom: 1px solid $comment-border-color;
 			padding: 10px 20px;
 		}
@@ -55,7 +55,7 @@
 			border-right-color: transparent;
 			border-width: 8px;
 
-			@include media($small-screen-up) {
+			@include min-screen($small-screen) {
 				border-right-color: $comment-border-color;
 			}
 		}
@@ -83,7 +83,7 @@
 		margin: 0;
 		width: 30px;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			width: 48px;
 		}
 	}
@@ -94,7 +94,7 @@
 		margin-top: 20px;
 		padding-bottom: 0;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			margin-left: -30px;
 		}
 	}
@@ -104,7 +104,7 @@
 	}
 
 	footer {
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			padding: 0 20px 20px;
 		}
 	}
@@ -140,7 +140,7 @@
 	clear: both;
 	padding-top: 10px;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding: $comment-padding;
 	}
 }
@@ -163,7 +163,7 @@
 	margin-bottom: $base-margin;
 	padding: $comments-padding-small;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding: $comments-padding;
 	}
 
@@ -175,7 +175,7 @@
 		display: block;
 		width: 100%;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			display: inline-block;
 			width: auto;
 		}
@@ -187,7 +187,7 @@
 	font-size: $medium-font-size;
 	padding: 10px;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		padding: 20px;
 	}
 }

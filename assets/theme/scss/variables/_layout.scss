@@ -6,14 +6,6 @@ $small-screen:     $max-width - 330px; // 810px;
 $medium-screen:    $max-width - 117px; // 1023px
 $large-screen:     $max-width + 40px;  // 1180px
 
-// Global Breakpoints
-//------------------------------------------------------------------------------
-$smallest-screen-up:  new-breakpoint(min-width $smallest-screen  4);
-$smaller-screen-up:   new-breakpoint(min-width $smaller-screen   6);
-$small-screen-up:     new-breakpoint(min-width $small-screen    12);
-$medium-screen-up:    new-breakpoint(min-width $medium-screen   12);
-$large-screen-up:     new-breakpoint(min-width $large-screen    12);
-
 // Global Max Width Settings
 //------------------------------------------------------------------------------
 $base-wrap-max-width:    $max-width - 372px; // 768px;

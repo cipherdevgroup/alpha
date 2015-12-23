@@ -31,7 +31,6 @@
 	}
 }
 
-
 /* Single Post Pagination
 --------------------------------------------- */
 
@@ -69,14 +68,14 @@
 --------------------------------------------- */
 .nav-next a {
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		float: right;
 	}
 }
 
 .nav-previous a {
 
-	@include media($medium-screen-up) {
+	@include min-screen($medium-screen) {
 		float: left;
 	}
 }

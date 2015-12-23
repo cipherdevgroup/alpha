@@ -8,7 +8,7 @@
 	padding: $author-box-padding-small;
 	text-align: center;
 
-	@include media($small-screen-up) {
+	@include min-screen($small-screen) {
 		text-align: left;
 		padding: $author-box-padding;
 	}
@@ -21,7 +21,7 @@
 		margin: 0 auto $content-margin-small;
 		width: 100px;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			float: left;
 			margin-bottom: $content-margin;
 			margin-right: $content-margin;
@@ -32,7 +32,7 @@
 		display: block;
 		margin: $content-margin-small 0;
 
-		@include media($small-screen-up) {
+		@include min-screen($small-screen) {
 			margin: $content-margin 0;
 		}
 
@@ -75,7 +75,7 @@
 	margin: 0.7rem 0.5rem 0 0;
 }
 
-@include media($small-screen-up) {
+@include min-screen($small-screen) {
 	.pull-quote {
 		max-width: 60%;
 
