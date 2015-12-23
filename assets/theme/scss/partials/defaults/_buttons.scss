@@ -11,6 +11,17 @@
 	width: auto;
 }
 
+%base-button-style {
+	background-color: $base-button-background-color;
+	color: $base-button-font-color;
+
+	&:hover,
+	&:focus {
+		background-color: $base-button-background-color-hover;
+		color: $base-button-font-color-hover;
+	}
+}
+
 %cta-button-style {
 	background-color: $cta-button-background-color;
 	color: $cta-button-font-color;
@@ -28,22 +39,7 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	@extend %button-base;
-	background-color: $base-button-background-color;
-	color: $base-button-font-color;
-}
-
-button:hover,
-button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-.button:hover,
-.button:focus {
-	background-color: $base-button-background-color-hover;
-	color: $base-button-font-color-hover;
+	@extend %base-button-style;
 }
 
 .entry-content .button:hover,
