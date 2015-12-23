@@ -8,6 +8,9 @@
 // Load Theme Mixins
 @import "mixins/global";
 
+// Load Media Queries Mixins
+@import "../../bower/scss/media-queries";
+
 // Load Global Variables
 @import "variables/colors";
 @import "variables/layout";
