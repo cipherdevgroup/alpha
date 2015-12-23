@@ -180,7 +180,7 @@ img.alignnone,
 	.menu-mobile {
 		top: 46px;
 
-		@media screen and (min-width: 782px) { // Thanks WordPress.
+		@include min-screen(782px) { // Thanks WordPress.
 			top: 32px;
 		}
 	}
