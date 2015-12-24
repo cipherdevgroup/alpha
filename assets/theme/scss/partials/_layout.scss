@@ -93,37 +93,38 @@
 --------------------------------------------- */
 
 @include min-screen($small-screen) {
+	@include nested(12) {
+		.one-half,
+		.three-sixths,
+		.two-fourths {
+			@include span(6);
+		}
 
-	.one-half,
-	.three-sixths,
-	.two-fourths {
-		@include span(6 of 12);
-	}
+		.one-third,
+		.two-sixths {
+			@include span(4);
+		}
 
-	.one-third,
-	.two-sixths {
-		@include span(4 of 12);
-	}
+		.four-sixths,
+		.two-thirds {
+			@include span(8);
+		}
 
-	.four-sixths,
-	.two-thirds {
-		@include span(8 of 12);
-	}
+		.one-fourth {
+			@include span(3);
+		}
 
-	.one-fourth {
-		@include span(3 of 12);
-	}
+		.three-fourths {
+			@include span(9);
+		}
 
-	.three-fourths {
-		@include span(9 of 12);
-	}
+		.one-sixth {
+			@include span(2);
+		}
 
-	.one-sixth {
-		@include span(2 of 12);
-	}
-
-	.five-sixths {
-		@include span(10 of 12);
+		.five-sixths {
+			@include span(10);
+		}
 	}
 
 	.last {

@@ -27,6 +27,10 @@ a:focus img {
 /* Gallery
 --------------------------------------------- */
 
+.gallery {
+	@include container(12);
+}
+
 .gallery-item {
 	line-height: 0;
 	list-style: none;
@@ -37,45 +41,46 @@ a:focus img {
 	text-align: center;
 
 	@include min-screen($small-screen) {
+		@include nested(12) {
+			.gallery-columns-2 &,
+			.gallery-col-2 & {
+				@include gallery(6);
+			}
 
-		.gallery-columns-2 &,
-		.gallery-col-2 & {
-			@include gallery(6 of 12);
-		}
+			.gallery-columns-3 &,
+			.gallery-col-3 & {
+				@include gallery(4);
+			}
 
-		.gallery-columns-3 &,
-		.gallery-col-3 & {
-			@include gallery(4 of 12);
-		}
+			.gallery-columns-4 &,
+			.gallery-col-4 & {
+				@include gallery(3);
+			}
 
-		.gallery-columns-4 &,
-		.gallery-col-4 & {
-			@include gallery(3 of 12);
-		}
+			.gallery-columns-5 &,
+			.gallery-col-5 & {
+				@include gallery(2.4);
+			}
 
-		.gallery-columns-5 &,
-		.gallery-col-5 & {
-			@include gallery(2.4 of 12);
-		}
+			.gallery-columns-6 &,
+			.gallery-col-6 & {
+				@include gallery(2);
+			}
 
-		.gallery-columns-6 &,
-		.gallery-col-6 & {
-			@include gallery(2 of 12);
-		}
+			.gallery-columns-7 &,
+			.gallery-col-7 & {
+				@include gallery(1.71);
+			}
 
-		.gallery-columns-7 &,
-		.gallery-col-7 & {
-			@include gallery(1.71 of 12);
-		}
+			.gallery-columns-8 &,
+			.gallery-col-8 & {
+				@include gallery(1.5);
+			}
 
-		.gallery-columns-8 &,
-		.gallery-col-8 & {
-			@include gallery(1.5 of 12);
-		}
-
-		.gallery-columns-9 &,
-		.gallery-col-9 & {
-			@include gallery(1.33 of 12);
+			.gallery-columns-9 &,
+			.gallery-col-9 & {
+				@include gallery(1.33);
+			}
 		}
 	}
 
