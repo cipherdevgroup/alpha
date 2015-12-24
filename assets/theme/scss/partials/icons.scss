@@ -25,13 +25,17 @@
 
 .pagination,
 .page-links {
-
 	.prev {
 		@include ti-before("\f201", 0);
 	}
 
 	.next {
 		@include ti-after("\f202", 0);
+	}
+
+	.prev:before,
+	.next:after {
+		line-height: 1;
 	}
 }
 
