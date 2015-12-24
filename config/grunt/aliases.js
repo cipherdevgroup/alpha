@@ -28,7 +28,6 @@ module.exports = function() {
 		'build:css': [
 			'build:dependencies:css',
 			'newer:sass',
-			'newer:usebanner',
 			'newer:postcss',
 			'newer:wpcss',
 			'newer:rtlcss',
