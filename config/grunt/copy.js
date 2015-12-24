@@ -96,6 +96,16 @@ module.exports = {
 					'sass-mediaqueries/_media-queries.scss'
 				],
 				dest: '<%= paths.bower%>scss/'
+			},
+			{
+				expand: true,
+				flatten: false,
+				cwd: 'bower_components/susy/sass/',
+				src: [
+					'*.scss',
+					'**/*.scss'
+				],
+				dest: '<%= paths.bower%>scss/susy/'
 			}
 		]
 	},

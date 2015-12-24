@@ -23,7 +23,7 @@
 	width: auto;
 
 	@include min-screen($medium-screen) {
-		@include span-columns(3);
+		@include span(3 of 12);
 	}
 }
 
@@ -58,8 +58,8 @@
 --------------------------------------------- */
 
 .header-right {
-	@include span-columns(9);
-	float: right;
+	@include span(9 of 12);
+	@include last();
 	text-align: right;
 
 	.widget {

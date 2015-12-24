@@ -8,6 +8,7 @@
     "fitvids": "~1.1",
     "accessible-menu": "GaryJones/accessible-menu#master",
     "skip-link-focus": "~0.1.0",
-    "sass-mediaqueries": "~1.6.1"
+    "sass-mediaqueries": "~1.6.1",
+    "susy": "~2.2.9"
   }
 }

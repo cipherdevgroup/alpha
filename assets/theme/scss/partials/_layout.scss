@@ -56,33 +56,33 @@
 
 	.layout-2c-l .content,
 	.layout-2c-r .content {
-		@include span-columns(8);
+		@include span(8 of 12);
 	}
 
 	.layout-2c-l .content {
-		@include omega();
+		@include last();
 		float: right;
 	}
 
 	/* Primary Sidebar
 	-------------------- */
 	.sidebar {
-		@include span-columns(4);
+		@include span(4 of 12);
 	}
 
 	.layout-2c-r .sidebar {
-		@include omega();
+		@include last();
 		float: right;
 	}
 
 	/* Secondary Sidebar
 	-------------------- */
 	.sidebar-secondary {
-		@include span-columns(2);
+		@include span(2 of 12);
 	}
 
 	.content-sidebar-sidebar .sidebar-secondary {
-		@include omega();
+		@include  last();
 		float: right;
 	}
 }
@@ -100,37 +100,36 @@
 	.one-half,
 	.three-sixths,
 	.two-fourths {
-		@include span-columns(6);
+		@include span(6 of 12);
 	}
 
 	.one-third,
 	.two-sixths {
-		@include span-columns(4);
+		@include span(4 of 12);
 	}
 
 	.four-sixths,
 	.two-thirds {
-		@include span-columns(8);
+		@include span(8 of 12);
 	}
 
 	.one-fourth {
-		@include span-columns(3);
+		@include span(3 of 12);
 	}
 
 	.three-fourths {
-		@include span-columns(9);
+		@include span(9 of 12);
 	}
 
 	.one-sixth {
-		@include span-columns(2);
+		@include span(2 of 12);
 	}
 
 	.five-sixths {
-		@include span-columns(10);
+		@include span(10 of 12);
 	}
 
 	.last {
-		@include omega();
-		clear: right;
+		@include last();
 	}
 }
