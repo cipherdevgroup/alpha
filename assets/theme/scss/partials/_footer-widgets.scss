@@ -39,20 +39,12 @@
 	.button {
 		background-color: $footer-widgets-button-background-color;
 		color: $footer-widgets-button-font-color;
-	}
 
-	button:hover,
-	button:focus,
-	.button:hover,
-	.button:focus,
-	input[type="button"]:hover,
-	input[type="button"]:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	input[type="reset"]:hover,
-	input[type="reset"]:focus {
-		background-color: $footer-widgets-button-background-color-hover;
-		color: $footer-widgets-button-font-color-hover;
+		&:hover,
+		&:focus {
+			background-color: $footer-widgets-button-background-color-hover;
+			color: $footer-widgets-button-font-color-hover;
+		}
 	}
 
 	th,
