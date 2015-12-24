@@ -45,37 +45,37 @@ a:focus img {
 
 		.gallery-columns-3 &,
 		.gallery-col-3 & {
-			@include span(4 of 12);
+			@include gallery(4 of 12);
 		}
 
 		.gallery-columns-4 &,
 		.gallery-col-4 & {
-			@include span(3 of 12);
+			@include gallery(3 of 12);
 		}
 
 		.gallery-columns-5 &,
 		.gallery-col-5 & {
-			@include span(2.4 of 12);
+			@include gallery(2.4 of 12);
 		}
 
 		.gallery-columns-6 &,
 		.gallery-col-6 & {
-			@include span(2 of 12);
+			@include gallery(2 of 12);
 		}
 
 		.gallery-columns-7 &,
 		.gallery-col-7 & {
-			@include span(1.71 of 12);
+			@include gallery(1.71 of 12);
 		}
 
 		.gallery-columns-8 &,
 		.gallery-col-8 & {
-			@include span(1.5 of 12);
+			@include gallery(1.5 of 12);
 		}
 
 		.gallery-columns-9 &,
 		.gallery-col-9 & {
-			@include span(1.33 of 12);
+			@include gallery(1.33 of 12);
 		}
 	}
 
