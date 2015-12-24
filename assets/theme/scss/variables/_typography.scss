@@ -23,7 +23,8 @@ $blockquote-font-family:  $serif;
 $base-font-size:        16px;
 $base-line-height:      1.625;
 $base-button-font-size: $base-font-size;
-$small-font-size:       14px;
+$medium-font-size:      14px;
+$small-font-size:       12px;
 
 // Heading Font Properties
 //------------------------------------------------------------------------------
@@ -45,14 +46,14 @@ $header-font-family:         $heading-font-family;
 $site-title-font-size:       $h2-font-size;
 $site-description-font-size: $base-font-size;
 
-// Loop Font Properties
+// Archive Font Properties
 //------------------------------------------------------------------------------
 $archive-title-size: $h1-font-size;
 
 // Menu Font Properties
 //------------------------------------------------------------------------------
 $nav-font-size:         $base-font-size;
-$subnav-font-size:      $small-font-size;
+$subnav-font-size:      $medium-font-size;
 $pagination-font-size:  $base-font-size;
 $menu-toggle-font-size: 40px;
 
@@ -68,7 +69,7 @@ $wp-caption-font-size:      $small-font-size;
 
 // Widget Font Properties
 //------------------------------------------------------------------------------
-$widget-title-size: $h6-font-size;
+$widget-title-size: $h4-font-size;
 $widget-font-size: $base-font-size;
 $footer-widgets-font-size: $widget-font-size;
 
