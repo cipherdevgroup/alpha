@@ -1,6 +1,7 @@
 {
   "name": "alpha",
   "capitalname": "Alpha",
+  "textdomain": "alpha",
   "version": "1.0.0",
   "copyright": "2015",
   "license": "GPL-2.0+",
@@ -14,18 +15,6 @@
       "url": "http://www.wpsitecare.com"
     }
   ],
-  "theme": {
-    "name": "Alpha",
-    "uri": "https://github.com/wpsitecare/alpha",
-    "description": "The WP Site Care Starter Theme.",
-    "author": "WP Site Care",
-    "authoruri": "http://www.wpsitecare.com",
-    "tags": "white, light, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, 'seo-friendly', microformats, post-formats, sticky-post, translation-ready",
-    "license": "GPL-2.0+",
-    "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",
-    "textdomain": "alpha",
-    "domainpath": "/languages"
-  },
   "pot": {
     "reportmsgidbugsto": "Robert Neu <translations@wpsitecare.com>",
     "lasttranslator": "Robert Neu <translations@wpsitecare.com>",
