@@ -11,11 +11,69 @@
 	display: inline-block;
 	font-style: normal;
 	font-weight: normal;
-	line-height: 1;
+	line-height: inherit;
 	speak: none;
 	text-decoration: none;
 	text-transform: none;
 	vertical-align: middle;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+}
+
+/* Pagination Icons
+--------------------------------------------- */
+
+.pagination,
+.page-links {
+
+	.prev {
+		@include ti-before("\f201", 0);
+	}
+
+	.next {
+		@include ti-after("\f202", 0);
+	}
+}
+
+.nav-single {
+	.nav-previous a {
+		@include ti-before("\f201", 10px);
+	}
+
+	.nav-next a {
+		@include ti-after("\f202", 10px);
+	}
+}
+
+/* Search Form Icons
+--------------------------------------------- */
+
+.search-form {
+	button[type=submit] {
+		@include ti-before("\f21d", 0);
+	}
+}
+
+/* Menu Icons
+--------------------------------------------- */
+
+.menu-toggle {
+	@include ti-before("\f212", 0);
+
+	&.activated {
+		@include ti-before("\f20c", 0);
+	}
+}
+
+/* Meta Icons
+--------------------------------------------- */
+
+.entry-meta {
+	&.categories .entry-terms {
+		@include ti-before("\f21b");
+	}
+
+	&.tags .entry-terms {
+		@include ti-before("\f21c");
+	}
 }
