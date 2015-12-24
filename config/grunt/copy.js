@@ -32,7 +32,8 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: [
-					'<%= paths.authorAssets %>fonts/**/*'
+					'<%= paths.authorAssets %>fonts/**/*',
+					'<%= paths.bower %>fonts/**/*'
 				],
 				dest: 'fonts/'
 			}
@@ -129,13 +130,9 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: 'bower_components/themicons/src/',
-				src: ['**/*'],
-				dest: '<%= paths.bower%>icons/webfont',
-				rename: function( dest, src ) {
-					'use strict';
-					return dest + '/' + src.replace( 'themicons_', '' );
-				}
+				cwd: 'bower_components/themicons/dist/fonts/',
+				src: ['**/*', '!**/*.html'],
+				dest: '<%= paths.bower%>fonts/'
 			}
 		]
 	}

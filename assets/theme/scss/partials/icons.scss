@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "themicons";
+	src: url("fonts/themicons.woff2") format("woff2"),
+		url("fonts/themicons.woff") format("woff"),
+		url("fonts/themicons.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+%icon-base {
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

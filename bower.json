@@ -7,6 +7,7 @@
     "wp-normalize.scss": "~1.0",
     "fitvids": "~1.1",
     "accessible-menu": "GaryJones/accessible-menu#master",
+    "themicons": "cedaro/themicons#2.1.0",
     "skip-link-focus": "~0.1.0",
     "sass-mediaqueries": "~1.6.1",
     "susy": "~2.2.9"
