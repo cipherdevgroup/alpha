@@ -1,13 +1,5 @@
 // Typography
 //------------------------------------------------------------------------------
-@mixin base-font-size {
-	font-size: $base-font-size-medium;
-
-	@include min-screen($medium-screen) {
-		font-size: $base-font-size;
-	}
-}
-
 @mixin h1-font-size {
 	font-size: $h1-font-size-small;
 
@@ -32,21 +24,6 @@
 	}
 }
 
-@mixin h4-font-size {
-	font-size: $h4-font-size-small;
-
-	@include min-screen($small-screen) {
-		font-size: $h4-font-size;
-	}
-}
-
-@mixin h5-font-size {
-	font-size: $h5-font-size-small;
-
-	@include min-screen($small-screen) {
-		font-size: $h5-font-size;
-	}
-}
 
 // Content Area
 //------------------------------------------------------------------------------

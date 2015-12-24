@@ -1,5 +1,5 @@
 html {
-	@include base-font-size();
+	font-size: $base-font-size;
 }
 
 body {
@@ -65,7 +65,7 @@ pre {
 	background: $pre-background-color;
 	color: $base-heading-color;
 	font-family: $monospace;
-	font-size: $medium-font-size;
+	font-size: $base-font-size;
 	margin-bottom: $content-margin;
 	max-width: 100%;
 	overflow: auto;
@@ -80,7 +80,7 @@ kbd,
 tt,
 var {
 	font-family: $monospace;
-	font-size: $medium-font-size;
+	font-size: $base-font-size;
 }
 
 address {
@@ -185,11 +185,11 @@ h3 {
 }
 
 h4 {
-	@include h4-font-size();
+	font-size: $h4-font-size;
 }
 
 h5 {
-	@include h5-font-size();
+	font-size: $h5-font-size;
 }
 
 h6 {

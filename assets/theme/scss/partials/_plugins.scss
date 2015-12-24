@@ -20,7 +20,7 @@ div.gform_wrapper {
 	}
 
 	.gform_footer input[type=submit] {
-		font-size: $medium-font-size;
+		font-size: $base-font-size;
 		padding: 16px 24px;
 	}
 }
@@ -35,7 +35,7 @@ div.gform_wrapper {
 --------------------------------------------- */
 
 .breadcrumbs {
-	font-size: $medium-font-size;
+	font-size: $base-font-size;
 	margin-bottom: 15px;
 
 	.sep {
