@@ -38,7 +38,7 @@
 
 			<?php endif; ?>
 
-		<?php endif; // End check for comments. ?>
+		<?php endif; ?>
 
 		<?php comment_form(); ?>
 

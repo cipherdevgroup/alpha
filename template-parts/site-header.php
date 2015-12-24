@@ -19,7 +19,7 @@
 
 		<?php tha_header_bottom(); ?>
 
-	</div>
+	</div><!-- .wrap -->
 
 </header><!-- #header -->
 
