@@ -51,7 +51,7 @@
 @include min-screen($medium-screen) {
 
 	.layout-1c-narrow .content {
-		@include pad(0 15%);
+		@include pad(15%);
 	}
 
 	.layout-2c-l .content,
@@ -61,7 +61,6 @@
 
 	.layout-2c-l .content {
 		@include last();
-		float: right;
 	}
 
 	/* Primary Sidebar
@@ -72,7 +71,6 @@
 
 	.layout-2c-r .sidebar {
 		@include last();
-		float: right;
 	}
 
 	/* Secondary Sidebar
@@ -82,8 +80,7 @@
 	}
 
 	.content-sidebar-sidebar .sidebar-secondary {
-		@include  last();
-		float: right;
+		@include last();
 	}
 }
 
