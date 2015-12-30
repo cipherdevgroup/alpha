@@ -76,8 +76,8 @@ function alpha_enqueue_scripts() {
 		'alpha-general',
 		"{$js_uri}theme{$suffix}.js",
 		array( 'jquery' ),
-		'1.0.0',
-		$version
+		$version,
+		true
 	);
 }
 
