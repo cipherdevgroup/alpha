@@ -29,7 +29,6 @@ module.exports = function() {
 			'build:dependencies:css',
 			'newer:sass',
 			'newer:postcss',
-		//	'newer:wpcss',
 			'newer:rtlcss',
 			'newer:cssmin',
 			'newer:replace:style',
