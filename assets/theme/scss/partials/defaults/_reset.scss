@@ -9,7 +9,6 @@ input[type="search"] {
 /* Float Clearing
 --------------------------------------------- */
 
-.author-box,
 .clearfix,
 .entry,
 .entry-content,
@@ -20,11 +19,7 @@ input[type="search"] {
 .site-container,
 .site-inner,
 .wrap {
-	&::after {
-		clear: both;
-		content: "";
-		display: table;
-	}
+	@include clearfix();
 }
 
 html,
