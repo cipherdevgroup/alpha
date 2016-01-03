@@ -31,7 +31,6 @@ module.exports = function() {
 			'newer:postcss',
 			'newer:rtlcss',
 			'newer:cssmin',
-			'newer:replace:style',
 			'newer:copy:css'
 		],
 		'build:images': [
