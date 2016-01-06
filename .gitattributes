@@ -1,8 +1,22 @@
-# Git will always convert line endings to LF on checkout.
-# You should use this for files that must keep LF endings, even on Windows.
-# See https://help.github.com/articles/dealing-with-line-endings/
-* text eol=lf
-*.jpg binary
-*.png binary
-*.gif binary
-*.ico binary
+# Borrowed some elements from Drupal's git normalization
+# @see https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
+# @see https://www.drupal.org/node/1542048
+
+# Auto-detect text files, ensure they use LF.
+* text=auto eol=lf
+
+# Define binary file attributes.
+# - Do not treat them as text.
+# - Include binary diff in patches instead of "binary files differ."
+*.gif  -text diff
+*.gz   -text diff
+*.ico  -text diff
+*.jpg  -text diff
+*.png  -text diff
+
+# Treat font files as binary.
+*.otf  binary
+*.eot  binary
+*.svg  binary
+*.ttf  binary
+*.woff binary
