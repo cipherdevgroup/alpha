@@ -1,4 +1,5 @@
-/*jshint node:true */
+// jscs:disable validateQuoteMarks
+// jshint node:true
 
 module.exports = function( grunt ) {
 	'use strict';
