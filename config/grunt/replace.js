@@ -6,11 +6,11 @@ module.exports = {
 			patterns: [
 				{
 					match: /alpha/g,
-					replacement: '<%= pkg.name %>'
+					replacement: '<%= package.name %>'
 				},
 				{
 					match: /Alpha/g,
-					replacement: '<%= pkg.capitalname %>'
+					replacement: '<%= package.capitalname %>'
 				}
 			]
 		},
