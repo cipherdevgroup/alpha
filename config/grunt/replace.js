@@ -18,21 +18,15 @@ module.exports = {
 			{
 				expand: true,
 				src: [
-					'**',
-					'.*',
+					'**/*.{php,scss,css,js,html,txt,md,json}',
 					'!<%= paths.bower %>**/*',
 					'!<%= paths.composer %>**/*',
-					'!**/*.{ttf,woff,woff2,eot,otf}',
-					'!**/*.{png,ico,jpg,gif,svg,psd}',
 					'!node_modules/**',
 					'!bower_components/**',
 					'!.sass-cache/**',
 					'!dist/**',
 					'!logs/**',
-					'!tmp/**',
-					'!*.sublime*',
-					'!.idea/**',
-					'!.DS_Store'
+					'!tmp/**'
 				]
 			}
 		]
