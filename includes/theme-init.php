@@ -11,10 +11,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'init', 'alpha_register_image_sizes', 5 );
-add_action( 'init', 'alpha_register_nav_menus',  10 );
-add_action( 'init', 'alpha_add_editor_styles',   10 );
-
 /**
  * Register custom image sizes for the theme.
  *

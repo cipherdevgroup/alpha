@@ -11,7 +11,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
 /**
  * Make adjustments to the theme when Jetpack is installed and activated.
  * Change the default related posts image size.
@@ -33,7 +32,6 @@ function alpha_jetpack_setup() {
 	) );
 }
 
-add_filter( 'rp4wp_thumbnail_size', 'alpha_related_posts_image' );
 /**
  * Change the default related posts image size.
  *

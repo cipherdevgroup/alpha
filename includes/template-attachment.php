@@ -11,9 +11,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'tha_head_bottom',  'alpha_force_attachment_layout',  10 );
-add_action( 'tha_entry_before', 'alpha_attachment_entry_content', 10 );
-
 /**
  * Force the layout on attachment pages.
  *

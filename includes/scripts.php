@@ -11,10 +11,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles',  10 );
-add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
-add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data',    12 );
-
 /**
  * Return a suffix to load minified JavaScript on production.
  *

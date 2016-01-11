@@ -68,17 +68,16 @@ function alpha_includes() {
 	alpha_require_once( 'vendor/tha-theme-hooks.php' );
 	alpha_require_once( 'attributes.php' );
 	alpha_require_once( 'compatibility.php' );
-	alpha_require_once( 'hooked-archive.php' );
-	alpha_require_once( 'hooked-attachment.php' );
-	alpha_require_once( 'hooked-entry.php' );
-	alpha_require_once( 'hooked-global.php' );
 	alpha_require_once( 'layout.php' );
 	alpha_require_once( 'scripts.php' );
 	alpha_require_once( 'template-archive.php' );
+	alpha_require_once( 'template-attachment.php' );
 	alpha_require_once( 'template-entry.php' );
 	alpha_require_once( 'template-global.php' );
 	alpha_require_once( 'theme-init.php' );
 	alpha_require_once( 'widgets-init.php' );
+	alpha_require_once( 'actions.php' );
+	alpha_require_once( 'filters.php' );
 }
 
 add_action( 'after_setup_theme', 'alpha_admin_includes', 10 );
