@@ -11,10 +11,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
+add_action( 'after_setup_theme', 'alpha_content_width', 0 );
+add_action( 'after_setup_theme', 'alpha_setup', 10 );
+add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
 add_action( 'init', 'alpha_register_image_sizes', 5 );
 add_action( 'init', 'alpha_register_nav_menus',  10 );
 add_action( 'init', 'alpha_add_editor_styles',   10 );
-add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
 add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
 add_action( 'widgets_init', 'alpha_register_sidebars', 5 );
 add_action( 'wp_enqueue_scripts', 'alpha_enqueue_styles',  10 );
