@@ -11,4 +11,9 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Callback defined in includes/plugins.php
+ *
+ * @see alpha_related_posts_image
+ */
 add_filter( 'rp4wp_thumbnail_size', 'alpha_related_posts_image' );
