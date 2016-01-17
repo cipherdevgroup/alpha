@@ -97,24 +97,26 @@ $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
 
 // Entry Colors
 //------------------------------------------------------------------------------
-$entry-background-color:           $white;
-$entry-border-color:               $base-border-color;
-$entry-sticky-border-color:        $dark-gray;
-$blockquote-border-color:          $light-fog;
-$table-border-color:               $base-border-color;
-$code-background-color:            $light-fog;
-$code-border-color:                darken($base-border-color, 10);
-$code-font-color:                  $off-black;
-$entry-meta-font-color:            $medium-gray;
-$entry-meta-link-color:            $medium-gray;
-$entry-meta-link-color-hover:      $base-link-color;
-$entry-meta-link-border-color:     $base-link-color;
-$featured-media-background-color:  $light-fog;
-$pre-background-color:             $light-fog;
-$corner-ribbon-background-color:   $base-accent-color;
-$corner-ribbon-font-color:         $white;
-$gallery-caption-background-color: $off-black;
-$gallery-caption-font-color:       $white;
+$entry-background-color:                $white;
+$entry-border-color:                    $base-border-color;
+$entry-sticky-border-color:             $dark-gray;
+$blockquote-border-color:               $light-fog;
+$table-border-color:                    $base-border-color;
+$code-background-color:                 $light-fog;
+$code-border-color:                     darken($base-border-color, 10);
+$code-font-color:                       $off-black;
+$entry-meta-font-color:                 $medium-gray;
+$entry-meta-link-color:                 $medium-gray;
+$entry-meta-link-color-hover:           $base-link-color;
+$entry-meta-link-border-color:          $base-link-color;
+$featured-media-background-color:       $light-fog;
+$pre-background-color:                  $light-fog;
+$corner-ribbon-background-color:        $base-accent-color;
+$corner-ribbon-font-color:              $white;
+$sticky-corner-ribbon-background-color: $base-link-color;
+$sticky-corner-ribbon-font-color:       $white;
+$gallery-caption-background-color:      $off-black;
+$gallery-caption-font-color:            $white;
 
 // SiteCare Colors
 //------------------------------------------------------------------------------

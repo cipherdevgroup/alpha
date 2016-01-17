@@ -61,6 +61,15 @@
 	transform: rotate(-45deg);
 }
 
+.sticky {
+	.corner-ribbon {
+
+		.ribbon-content {
+			background-color: $sticky-corner-ribbon-background-color;
+		}
+	}
+}
+
 .entry-content {
 	@include entry-content();
 }
