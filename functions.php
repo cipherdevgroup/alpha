@@ -26,7 +26,7 @@ function alpha_require_once( $path ) {
 alpha_require_once( 'vendor/carelib/carelib.php' );
 alpha_require_once( 'vendor/tha-theme-hooks.php' );
 alpha_require_once( 'attributes.php' );
-alpha_require_once( 'compatibility.php' );
+alpha_require_once( 'plugins.php' );
 alpha_require_once( 'scripts.php' );
 alpha_require_once( 'template-archive.php' );
 alpha_require_once( 'template-attachment.php' );
