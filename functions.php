@@ -35,7 +35,7 @@ require_once ALPHA_DIR . 'includes/actions.php';
 require_once ALPHA_DIR . 'includes/filters.php';
 
 if ( is_admin() ) {
-	require_once ALPHA_DIR . 'includes/admin/layout.php';
+	require_once ALPHA_DIR . 'admin/layout.php';
 }
 
 carelib()->set_prefix( 'alpha' )->run();
