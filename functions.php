@@ -12,33 +12,30 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Require an included theme file once.
+ * The absolute path to the template's root directory with a trailing slash.
  *
- * @since  1.0.0
- * @access public
- * @param  string $path the relative path of the file to be included.
- * @return void
+ * @since 1.0.0
+ * @uses  get_template_directory()
+ * @uses  trailingslashit()
  */
-function alpha_require_once( $path ) {
-	require_once trailingslashit( get_template_directory() ) . 'includes/' . ltrim( $path );
-}
+define( 'ALPHA_DIR',  trailingslashit( get_template_directory() ) );
 
-alpha_require_once( 'vendor/carelib/carelib.php' );
-alpha_require_once( 'vendor/tha-theme-hooks.php' );
-alpha_require_once( 'attributes.php' );
-alpha_require_once( 'plugins.php' );
-alpha_require_once( 'scripts.php' );
-alpha_require_once( 'template-archive.php' );
-alpha_require_once( 'template-attachment.php' );
-alpha_require_once( 'template-entry.php' );
-alpha_require_once( 'template-global.php' );
-alpha_require_once( 'template-layout.php' );
-alpha_require_once( 'theme-setup.php' );
-alpha_require_once( 'actions.php' );
-alpha_require_once( 'filters.php' );
+require_once ALPHA_DIR . 'includes/vendor/carelib/carelib.php';
+require_once ALPHA_DIR . 'includes/vendor/tha-theme-hooks.php';
+require_once ALPHA_DIR . 'includes/attributes.php';
+require_once ALPHA_DIR . 'includes/plugins.php';
+require_once ALPHA_DIR . 'includes/scripts.php';
+require_once ALPHA_DIR . 'includes/template-archive.php';
+require_once ALPHA_DIR . 'includes/template-attachment.php';
+require_once ALPHA_DIR . 'includes/template-entry.php';
+require_once ALPHA_DIR . 'includes/template-global.php';
+require_once ALPHA_DIR . 'includes/template-layout.php';
+require_once ALPHA_DIR . 'includes/theme-setup.php';
+require_once ALPHA_DIR . 'includes/actions.php';
+require_once ALPHA_DIR . 'includes/filters.php';
 
 if ( is_admin() ) {
-	alpha_require_once( 'admin/layout.php' );
+	require_once ALPHA_DIR . 'includes/admin/layout.php';
 }
 
 carelib()->set_prefix( 'alpha' )->run();
