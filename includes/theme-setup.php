@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Set the content width and allow it to be filtered directly.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -25,7 +25,7 @@ function alpha_content_width() {
 /**
  * Set up theme defaults and add support for WordPress and CareLib features.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -40,7 +40,7 @@ function alpha_setup() {
 /**
  * Register custom image sizes for the theme.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -53,7 +53,7 @@ function alpha_register_image_sizes() {
 /**
  * Register custom nav menus for the theme.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -68,7 +68,7 @@ function alpha_register_nav_menus() {
  * Add custom styles to the WordPress editor to give a better representation of
  * what the front of the site will look like.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -87,7 +87,7 @@ function alpha_add_editor_styles() {
 /**
  * Register our theme's custom layout options.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -127,7 +127,7 @@ function alpha_register_layouts() {
 /**
  * Registers sidebars.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */

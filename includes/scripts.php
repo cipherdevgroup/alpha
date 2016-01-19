@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Return a suffix to load minified JavaScript on production.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return string
  */
@@ -25,7 +25,7 @@ function alpha_get_suffix() {
 /**
  * Build a Google Fonts string.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @param  string $families the font families to include.
  * @param  bool   $editor_style set to true if string is being used as editor style.
@@ -40,7 +40,7 @@ function alpha_google_fonts_string( $families, $editor_style = false ) {
  * Load a minified version of the theme's stylesheet along with any other
  * required theme CSS files.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -59,7 +59,7 @@ function alpha_enqueue_styles() {
 /**
  * Register and load JavaScript files.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -80,7 +80,7 @@ function alpha_enqueue_scripts() {
  * Replace the default theme stylesheet with a RTL version when a RTL
  * language is being used.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */

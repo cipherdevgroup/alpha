@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 ?>
 <?php tha_footer_before(); ?>

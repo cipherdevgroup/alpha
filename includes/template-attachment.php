@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Force the layout on attachment pages.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -27,7 +27,7 @@ function alpha_force_attachment_layout() {
 /**
  * Add hooks for displaying all entry meta data and content on attachment pages.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -46,7 +46,7 @@ function alpha_attachment_entry_content() {
 /**
  * Output a formatted attachment image.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -81,7 +81,7 @@ function alpha_attachment_image() {
 /**
  * Output the opening markup for the attachment meta element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -93,7 +93,7 @@ function alpha_attachment_meta_open() {
  * Output a formatted WordPress image gallery of related attachments on
  * attachment image pages.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -127,7 +127,7 @@ function alpha_attachment_image_gallery() {
 /**
  * Output the closing markup for the attachment meta element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */

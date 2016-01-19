@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Load the base theme framework template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @uses   CareLib_Template_Global::framework
  * @param  string $name The name of the specialized template.
  * @return void
@@ -26,7 +26,7 @@ function alpha_framework( $name = null ) {
 /**
  * Output the opening tag for a wrapping <div>.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -37,7 +37,7 @@ function alpha_wrap_open() {
 /**
  * Close out the closing tag for a wrapping <div>.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -48,7 +48,7 @@ function alpha_wrap_close() {
 /**
  * Output a given menu template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @param  string $name The name of the menu to load.
  * @uses   CareLib_Menu::template
@@ -61,7 +61,7 @@ function alpha_menu( $name = null ) {
 /**
  * Return the name of a given WordPress menu location.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Menu::get_location_name
  * @param  string $location The WordPress menu location to check.
@@ -74,7 +74,7 @@ function alpha_get_menu_location_name( $location ) {
 /**
  * Display our breadcrumbs based on selections made in the WordPress customizer.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Global::display_breadcrumbs
  * @return bool true if both our template tag and theme mod return true.
@@ -86,7 +86,7 @@ function alpha_display_breadcrumbs() {
 /**
  * Return a featured image using CareLib's advanced image grabber class.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Image_Grabber_API::get
  * @param  array $args a list of arguments to pass to the image grabber class.
@@ -99,7 +99,7 @@ function alpha_get_image( $args = array() ) {
 /**
  * Display a featured image using CareLib's advanced image grabber class.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Image_Grabber_API::get
  * @param  array $args a list of arguments to pass to the image grabber class.
@@ -112,7 +112,7 @@ function alpha_image( $args = array() ) {
 /**
  * Output a given sidebar template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Sidebar::template
  * @param  string $name the name of the sidebar to load.
@@ -125,7 +125,7 @@ function alpha_sidebar( $name = null ) {
 /**
  * Return the name of a given dynamic sidebar.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Sidebar::get_name
  * @param  string $id The id of the sidebar to check.
@@ -138,7 +138,7 @@ function alpha_get_sidebar_name( $id ) {
 /**
  * Return a formatted link to the customizer panel.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Global::get_customizer_link
  * @param  array $args options for how the link will be formatted.
@@ -152,7 +152,7 @@ function alpha_get_customizer_link( $args = array() ) {
 /**
  * Output skip-to-content link markup for screen readers.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -169,7 +169,7 @@ function alpha_skip_to_content() {
 /**
  * Load the site header template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -180,7 +180,7 @@ function alpha_header() {
 /**
  * Output the opening markup for the site's branding elements.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -191,7 +191,7 @@ function alpha_branding_open() {
 /**
  * Display the linked site title wrapped in an `<h1>` or `<p>` tag.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Global::get_site_title
  * @return void
@@ -203,7 +203,7 @@ function alpha_site_title() {
 /**
  * Display the site description wrapped in a `<p>` tag.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Global::get_site_description
  * @return void
@@ -215,7 +215,7 @@ function alpha_site_description() {
 /**
  * Output an <img> tag of the site logo.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Global::the_logo
  * @return void
@@ -227,7 +227,7 @@ function alpha_logo() {
 /**
  * Output the closing markup for the site's branding elements.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -238,7 +238,7 @@ function alpha_branding_close() {
 /**
  * Output the markup for the primary menu toggle button.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -254,7 +254,7 @@ function alpha_menu_toggle() {
 /**
  * Load the site's primary menu template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -268,7 +268,7 @@ function alpha_menu_primary() {
  * Display the site's primary menu fallback for logged-in users who can edit
  * theme options.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -281,7 +281,7 @@ function alpha_menu_fallback() {
 /**
  * Load the site's secondary menu template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -294,7 +294,7 @@ function alpha_menu_secondary() {
 /**
  * Load the breadcrumbs template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -314,7 +314,7 @@ function alpha_breadcrumbs() {
 /**
  * Load the primary sidebar on all multi-column layouts.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -327,7 +327,7 @@ function alpha_primary_sidebar() {
 /**
  * Load the site-wide footer widgets template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -340,7 +340,7 @@ function alpha_footer_widgets() {
 /**
  * Load the site footer template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -351,7 +351,7 @@ function alpha_footer() {
 /**
  * Display the theme's footer credit links.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */

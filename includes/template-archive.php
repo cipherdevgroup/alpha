@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Wrapper for is_archive which also includes search results.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Archive::is_archive
  * @return bool true if we're on an archive page.
@@ -26,7 +26,7 @@ function alpha_is_archive() {
 /**
  * Determine if we're viewing a page which lists multiple entries.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Archive::is_plural
  * @return bool true if we're on a plural page.
@@ -38,7 +38,7 @@ function alpha_is_plural() {
 /**
  * Determine if we're viewing a blog section archive.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Archive::is_blog_archive
  * @return bool true if we're on a blog archive page.
@@ -50,7 +50,7 @@ function alpha_is_blog_archive() {
 /**
  * Determine if we're viewing anything within the blog section.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return bool true if we're on a blog archive page or a singular post.
  */
@@ -61,7 +61,7 @@ function alpha_is_blog() {
 /**
  * Add a custom action for the archive header.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -74,7 +74,7 @@ function alpha_archive_header() {
 /**
  * Output the opening markup for the archive header.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -85,7 +85,7 @@ function alpha_archive_header_open() {
 /**
  * Output the archive title.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -96,7 +96,7 @@ function alpha_archive_title() {
 /**
  * Load the archive sub-terms menu template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -109,7 +109,7 @@ function alpha_archive_sub_terms() {
 /**
  * Output the archive description.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -125,7 +125,7 @@ function alpha_archive_description() {
 /**
  * Output the closing markup for the archive header.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -137,7 +137,7 @@ function alpha_archive_header_close() {
  * Helper function to build a newer/older or paginated navigation element within
  * a loop of multiple entries.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Archive::get_posts_navigation
  * @param  array $args A list of arguments to be merged with defaults.

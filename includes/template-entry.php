@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Display a formatted markup block with information about the entry's terms.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_terms
  * @param  array $args a list of arguments to pass to the entry terms method.
@@ -28,7 +28,7 @@ function alpha_entry_terms( $args = array() ) {
  * Display either an excerpt or the content depending on what page the user is
  * currently viewing.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_content
  * @return void
@@ -41,7 +41,7 @@ function alpha_content() {
  * Remove all actions from THA entry hooks and filter the WordPress post
  * content to return null.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::null_entry
  * @return void
@@ -54,7 +54,7 @@ function alpha_null_entry() {
  * Filter the WordPress content to null between the entry_content_before
  * and entry_content_after hook locations.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::null_entry_content
  * @return void
@@ -66,7 +66,7 @@ function alpha_null_entry_content() {
 /**
  * Hookable wrapper around a filter to null the WordPress core post content.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::null_the_content
  * @return void
@@ -78,7 +78,7 @@ function alpha_null_the_content() {
 /**
  * A custom comment callback to use with WordPress' `comments_template` function.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Comments::comments_callback
  * @param  object  $comment the comment object.
@@ -93,7 +93,7 @@ function alpha_comments_callback( $comment, $args, $depth ) {
 /**
  * Output opening markup for the entry article element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -104,7 +104,7 @@ function alpha_entry_open() {
 /**
  * Output markup for a sticky ribbon on sticky posts in archive views.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -120,7 +120,7 @@ function alpha_sticky_banner() {
 /**
  * Output the featured post image within archives.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -142,7 +142,7 @@ function alpha_post_image() {
 /**
  * Output a formatted entry title.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_title
  * @param  array $args A list of arguments to be merged with defaults.
@@ -155,7 +155,7 @@ function alpha_entry_title( $args = array() ) {
 /**
  * Add hooks for the entry meta on all entries except pages and attachments.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -173,7 +173,7 @@ function alpha_entry_meta() {
 /**
  * Output the opening markup for the entry header element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -184,7 +184,7 @@ function alpha_entry_header_open() {
 /**
  * Output the opening markup for the entry meta element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -195,7 +195,7 @@ function alpha_entry_meta_open() {
 /**
  * Output formatted information about an entry's author.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_author
  * @param  array $args A list of arguments to be merged with defaults.
@@ -208,7 +208,7 @@ function alpha_entry_author( $args = array() ) {
 /**
  * Output a post's formatted published date.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_published
  * @param  array $args A list of arguments to be merged with defaults.
@@ -221,7 +221,7 @@ function alpha_entry_published( $args = array() ) {
 /**
  * Output a formatted link to the current entry comments.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_entry_comments_link
  * @param  array $args A list of arguments to be merged with defaults.
@@ -234,7 +234,7 @@ function alpha_entry_comments_link( $args = array() ) {
 /**
  * Output the closing markup for the entry meta element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -245,7 +245,7 @@ function alpha_entry_meta_close() {
 /**
  * Output the closing markup for the entry header element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -256,7 +256,7 @@ function alpha_entry_header_close() {
 /**
  * Output the opening markup for the entry content element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -268,7 +268,7 @@ function alpha_entry_content_open() {
 /**
  * Output singular entry pagination links.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -281,7 +281,7 @@ function alpha_link_pages() {
 /**
  * Output the closing markup for the entry content element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -292,7 +292,7 @@ function alpha_entry_content_close() {
 /**
  * Add hooks for the entry footer on all entries except pages and attachments.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -309,7 +309,7 @@ function alpha_entry_footer() {
 /**
  * Output the opening markup for the entry footer element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -320,7 +320,7 @@ function alpha_entry_footer_open() {
 /**
  * Output formatted data about the current entry's post tag taxonomy terms.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -340,7 +340,7 @@ function alpha_entry_meta_tags() {
 /**
  * Output formatted data about the current entry's category taxonomy terms.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -360,7 +360,7 @@ function alpha_entry_meta_categories() {
 /**
  * Output the closing markup for the entry footer element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -371,7 +371,7 @@ function alpha_entry_footer_close() {
 /**
  * Output closing markup for the entry article element.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */
@@ -382,7 +382,7 @@ function alpha_entry_close() {
 /**
  * Output a next and previous post navigation element on single entries.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @uses   CareLib_Template_Entry::get_post_navigation
  * @param  array $args A list of arguments to be merged with defaults.
@@ -395,7 +395,7 @@ function alpha_post_navigation( $args = array() ) {
 /**
  * Output the comments template.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @return void
  */

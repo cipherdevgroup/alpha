@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Output an HTML element's attributes.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @param  string $slug the slug/ID of the element (e.g., 'sidebar').
  * @param  string $context a specific context (e.g., 'primary').
@@ -28,7 +28,7 @@ function alpha_attr( $slug, $context = '', $attr = array() ) {
 /**
  * Return an HTML element's attributes.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  * @param  string $slug the slug/ID of the element (e.g., 'sidebar').
  * @param  string $context a specific context (e.g., 'primary').

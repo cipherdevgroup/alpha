@@ -6,7 +6,7 @@
  * @subpackage Alpha
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      1.0.0
+ * @since      0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -53,7 +53,7 @@ carelib()->set_prefix( 'alpha' )->run();
  * This is meant for plugins and child themes to execute code after the parent
  * theme setup has been completed.
  *
- * @since  1.0.0
+ * @since  0.1.0
  * @access public
  */
 do_action( 'sitecare_after_setup_parent' );
