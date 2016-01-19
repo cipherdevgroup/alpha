@@ -27,6 +27,15 @@ define( 'PARENT_THEME_VERSION', '0.1.0' );
  */
 define( 'PARENT_THEME_DIR',  trailingslashit( get_template_directory() ) );
 
+/**
+ * The absolute path to the template's root directory with a trailing slash.
+ *
+ * @since 0.1.0
+ * @uses  get_template_directory_uri()
+ * @uses  trailingslashit()
+ */
+define( 'PARENT_THEME_URI',  trailingslashit( get_template_directory_uri() ) );
+
 require_once PARENT_THEME_DIR . 'includes/vendor/carelib/carelib.php';
 require_once PARENT_THEME_DIR . 'includes/vendor/tha-theme-hooks.php';
 require_once PARENT_THEME_DIR . 'includes/attributes.php';

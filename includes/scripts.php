@@ -64,12 +64,11 @@ function alpha_enqueue_styles() {
  * @return void
  */
 function alpha_enqueue_scripts() {
-	$js_uri  = trailingslashit( get_template_directory_uri() ) . 'js/';
 	$suffix  = alpha_get_suffix();
 
 	wp_enqueue_script(
 		'alpha-general',
-		"{$js_uri}theme{$suffix}.js",
+		PARENT_THEME_URI . "js/theme{$suffix}.js",
 		array( 'jquery' ),
 		PARENT_THEME_VERSION,
 		true
