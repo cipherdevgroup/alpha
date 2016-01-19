@@ -66,7 +66,6 @@ function alpha_enqueue_styles() {
 function alpha_enqueue_scripts() {
 	$js_uri  = trailingslashit( get_template_directory_uri() ) . 'js/';
 	$suffix  = alpha_get_suffix();
-	$version = carelib_get( 'public-scripts' )->theme_version();
 
 	wp_enqueue_script(
 		'alpha-general',
