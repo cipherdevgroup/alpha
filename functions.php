@@ -21,7 +21,7 @@ define( 'PARENT_THEME_VERSION', '0.1.0' );
 /**
  * The absolute path to the template's root directory with a trailing slash.
  *
- * @since 1.0.0
+ * @since 0.1.0
  * @uses  get_template_directory()
  * @uses  trailingslashit()
  */
