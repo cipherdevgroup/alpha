@@ -11,7 +11,7 @@
  * @package    Alpha\Templates
  * @subpackage Alpha
  * @author     Robert Neu
- * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @see        /includes/vendor/carelib/inc/template-global.php
  * @uses       CareLib_Template_Global::framework()
  * @since      1.0.0

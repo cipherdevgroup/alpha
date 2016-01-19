@@ -5,7 +5,7 @@
  * @package    Alpha\Functions\Layout
  * @subpackage Alpha
  * @author     Robert Neu
- * @copyright  Copyright (c) 2015, WP Site Care, LLC
+ * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      1.0.0
  */
 
