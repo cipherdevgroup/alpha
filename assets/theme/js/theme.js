@@ -20,7 +20,7 @@ window.alpha = window.alpha || {};
 			var $videos = $( '#site-inner' );
 			$body.addClass( 'ontouchstart' in window || 'onmsgesturechange' in window ? 'touch' : 'no-touch' );
 			$document.gamajoAccessibleMenu();
-			$document.alphaMobileMenu();
+			$( '#menu-primary' ).alphaMobileMenu();
 			$videos.fitVids();
 		}
 

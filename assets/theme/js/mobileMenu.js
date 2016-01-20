@@ -10,39 +10,32 @@
 (function( $, undefined ) {
 	'use strict';
 
-	var $$,
-		cache = {};
+	$.fn.alphaMobileMenu = function( options ) {
+		var settings = {
+			menuButton: '#menu-toggle-primary',
+			extraMenus: '#menu-secondary'
+		},
+		$body = $( 'body' ),
+		$menuButton, $mainMenu, $extraMenu, $mobileMenu, menuClass;
 
-	$$ = function( selector ) {
-		var temp = cache[selector];
-		if ( undefined !== temp ) {
-			return temp;
+		if ( options ) {
+			$.extend( settings, options );
 		}
-		return cache[selector] = $( selector );
-	};
 
-	$$.clear = function( selector ) {
-		cache[selector] = undefined;
-	};
-
-	$$.fresh = function( selector ) {
-		cache[selector] = undefined;
-		return $$( selector );
-	};
-
-	$.fn.alphaMobileMenu = function() {
-		var $menuButton = $$( '#menu-toggle-primary' ),
-			$mobileMenu = $$( '#menu-primary' ),
-			menuClass   = 'menu-primary';
+		$menuButton = $( settings.menuButton );
+		$mainMenu   = $( this );
+		$extraMenu  = $( settings.extraMenus );
+		$mobileMenu = $mainMenu;
+		menuClass   = 'menu-primary';
 
 		// Return early if we don't have any menus to work with.
-		if ( 0 === $$( '#menu-primary' ).length && 0 === $$( '#menu-secondary' ).length ) {
+		if ( 0 === $mobileMenu.length && 0 === $extraMenu.length ) {
 			return;
 		}
 
 		// Use the secondary menu as the mobile menu if we don't have a primary.
-		if ( 0 === $$( '#menu-primary' ).length ) {
-			$mobileMenu = $$( '#menu-secondary' );
+		if ( 0 === $mobileMenu.length ) {
+			$mobileMenu = $extraMenu;
 			menuClass   = 'menu-secondary';
 		}
 
@@ -78,7 +71,7 @@
 		 * @return {Boolean} Returns true if the menu is open.
 		 */
 		function menuIsOpen() {
-			if ( $$( 'body' ).hasClass( 'menu-open' ) ) {
+			if ( $body.hasClass( 'menu-open' ) ) {
 				return true;
 			}
 			return false;
@@ -92,7 +85,7 @@
 		 * @return {Boolean} Returns true if the menus have been merged.
 		 */
 		function menusMerged() {
-			if ( 0 === $$.fresh( '#menu-primary #secondary' ).length ) {
+			if ( 0 === $mainMenu.find( '#secondary' ).length ) {
 				return false;
 			}
 			return true;
@@ -106,11 +99,12 @@
 		 * @return void
 		 */
 		function mergeMenus() {
-			if ( 0 === $$( '#menu-primary' ).length || 0 === $$( '#menu-secondary' ).length ) {
+			if ( 0 === $mainMenu.length || 0 === $extraMenu.length ) {
 				return;
 			}
+
 			if ( ! menusMerged() && ! menuIsOpen() ) {
-				$$( '#menu-secondary .nav-menu' ).appendTo( '#menu-primary .nav-menu' );
+				$extraMenu.find( '.nav-menu' ).appendTo( $mainMenu.find( '.nav-menu' ) );
 			}
 		}
 
@@ -122,10 +116,13 @@
 		 * @return void
 		 */
 		function splitMenus() {
-			if ( 0 === $$( '#menu-secondary' ).length || 0 === $$( '#menu-primary #secondary' ).length ) {
+			var $appendedMenu = $mainMenu.find( '#secondary' );
+
+			if ( 0 === $extraMenu.length || 0 === $appendedMenu.length ) {
 				return;
 			}
-			$$( '#menu-primary #secondary' ).appendTo( '#menu-secondary .wrap' );
+
+			$appendedMenu.appendTo( $extraMenu.find( '.wrap' ) );
 		}
 
 		/**
@@ -190,7 +187,7 @@
 		function focusMobileMenu() {
 			var nav        = $mobileMenu[0],
 				navID      = $mobileMenu.attr( 'id' ),
-				$items     = $$( '#' + navID + ' a' ),
+				$items     = $( '#' + navID + ' a' ),
 				$firstItem = $items.first(),
 				$lastItem  = $items.last();
 
@@ -273,7 +270,7 @@
 				closeMenu();
 				$mobileMenu.addClass( menuClass );
 				$mobileMenu.removeClass( 'menu-mobile' );
-				$$( 'body' ).removeClass( 'menu-open' );
+				$body.removeClass( 'menu-open' );
 			} else {
 				$mobileMenu.removeClass( menuClass );
 				$mobileMenu.addClass( 'menu-mobile' );
@@ -294,7 +291,7 @@
 			event.preventDefault();
 			openMenu();
 			closeMenu();
-			$$( 'body' ).toggleClass( 'menu-open' );
+			$body.toggleClass( 'menu-open' );
 		}
 
 		/**
@@ -310,6 +307,6 @@
 			})();
 		}
 
-		loadMobileMenu();
+		return loadMobileMenu();
 	};
 }( jQuery ) );
