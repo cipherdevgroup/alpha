@@ -253,9 +253,6 @@
 			if ( ! menuIsOpen() ) {
 				return;
 			}
-			if ( menusMerged() && ! isHidden( $menuButton ) ) {
-				splitMenus();
-			}
 			toggleClasses();
 			toggleAttributes();
 		}
