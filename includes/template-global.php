@@ -213,18 +213,6 @@ function alpha_site_description() {
 }
 
 /**
- * Output an <img> tag of the site logo.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Global::the_logo
- * @return void
- */
-function alpha_logo() {
-	carelib_get( 'template-global' )->the_logo();
-}
-
-/**
  * Output the closing markup for the site's branding elements.
  *
  * @since  0.1.0

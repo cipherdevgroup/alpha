@@ -32,8 +32,6 @@ function alpha_content_width() {
 function alpha_setup() {
 	carelib_get( 'layouts' )->set_default( is_rtl() ? '2c-l' : '2c-r' )->add_support();
 
-	carelib_get( 'site-logo' )->add_support();
-
 	add_theme_support( 'automatic-feed-links' );
 }
 

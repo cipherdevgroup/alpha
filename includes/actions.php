@@ -119,13 +119,6 @@ add_action( 'tha_header_top', 'alpha_branding_open', 10 );
 /**
  * Callback defined in includes/template-global.php
  *
- * @see alpha_logo
- */
-add_action( 'tha_header_top', 'alpha_logo', 12 );
-
-/**
- * Callback defined in includes/template-global.php
- *
  * @see alpha_site_title
  */
 add_action( 'tha_header_top', 'alpha_site_title', 14 );
