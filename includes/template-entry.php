@@ -76,21 +76,6 @@ function alpha_null_the_content() {
 }
 
 /**
- * A custom comment callback to use with WordPress' `comments_template` function.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Comments::comments_callback
- * @param  object  $comment the comment object.
- * @param  array   $args list of arguments passed from wp_list_comments().
- * @param  integer $depth What level the particular comment is.
- * @return void
- */
-function alpha_comments_callback( $comment, $args, $depth ) {
-	carelib_get( 'template-comments' )->comments_callback( $comment, $args, $depth );
-}
-
-/**
  * Output opening markup for the entry article element.
  *
  * @since  0.1.0
@@ -393,6 +378,21 @@ function alpha_post_navigation( $args = array() ) {
 }
 
 /**
+ * A custom comment callback to use with WordPress' `comments_template` function.
+ *
+ * @since  0.1.0
+ * @access public
+ * @uses   CareLib_Template_Comments::comments_callback
+ * @param  object  $comment the comment object.
+ * @param  array   $args list of arguments passed from wp_list_comments().
+ * @param  integer $depth What level the particular comment is.
+ * @return void
+ */
+function alpha_comments_callback( $comment, $args, $depth ) {
+	carelib_get( 'template-comments' )->comments_callback( $comment, $args, $depth );
+}
+
+/**
  * Output the comments template.
  *
  * @since  0.1.0
@@ -400,7 +400,5 @@ function alpha_post_navigation( $args = array() ) {
  * @return void
  */
 function alpha_comments() {
-	if ( apply_filters( 'alpha_display_comments', ! ( is_page() || is_attachment() ) ) ) {
-		comments_template();
-	}
+	carelib_get( 'template-comments' )->comments_template();
 }
