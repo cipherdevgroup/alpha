@@ -12,38 +12,6 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Force the layout on attachment pages.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_force_attachment_layout() {
-	if ( is_attachment() ) {
-		add_filter( 'alpha_get_theme_layout', 'alpha_force_full_narrow_layout' );
-	}
-}
-
-/**
- * Add hooks for displaying all entry meta data and content on attachment pages.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_attachment_entry_content() {
-	if ( is_attachment() ) {
-		add_action( 'tha_entry_top',    'alpha_attachment_image', 4 );
-		add_action( 'tha_entry_top',    'alpha_entry_meta_open',  12 );
-		add_action( 'tha_entry_top',    'alpha_entry_published',  18 );
-		add_action( 'tha_entry_top',    'alpha_entry_meta_close', 26 );
-		add_action( 'tha_entry_bottom', 'alpha_attachment_meta_open',     12 );
-		add_action( 'tha_entry_bottom', 'alpha_attachment_image_gallery', 14 );
-		add_action( 'tha_entry_bottom', 'alpha_attachment_meta_close',    22 );
-	}
-}
-
-/**
  * Output a formatted attachment image.
  *
  * @since  0.1.0

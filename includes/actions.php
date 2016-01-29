@@ -89,13 +89,6 @@ add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
 add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data', 12 );
 
 /**
- * Callback defined in includes/template-attachment.php
- *
- * @see alpha_force_attachment_layout
- */
-add_action( 'tha_head_bottom',  'alpha_force_attachment_layout', 10 );
-
-/**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_skip_to_content
@@ -269,13 +262,6 @@ add_action( 'tha_entry_top', 'alpha_entry_header_open', 8 );
  * @see alpha_entry_title
  */
 add_action( 'tha_entry_top', 'alpha_entry_title', 10 );
-
-/**
- * Callback defined in includes/template-entry.php
- *
- * @see alpha_attachment_entry_content
- */
-add_action( 'tha_entry_before', 'alpha_attachment_entry_content', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
