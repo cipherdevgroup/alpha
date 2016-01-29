@@ -9,20 +9,20 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -103,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "wpsitecare/carelib",
@@ -111,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "70ebabb299f1899661884bca2e63f727a94d23c9"
+                "reference": "e0ff7e11e5856e0ed26ed681a09e23f84552e382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/70ebabb299f1899661884bca2e63f727a94d23c9",
-                "reference": "70ebabb299f1899661884bca2e63f727a94d23c9",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/e0ff7e11e5856e0ed26ed681a09e23f84552e382",
+                "reference": "e0ff7e11e5856e0ed26ed681a09e23f84552e382",
                 "shasum": ""
             },
             "type": "library",
@@ -136,7 +136,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-11-12 06:46:11"
+            "time": "2016-01-29 20:10:47"
         },
         {
             "name": "zamoose/themehookalliance",
