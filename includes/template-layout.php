@@ -2,14 +2,12 @@
 /**
  * Functions for controlling layout options.
  *
- * @package    Alpha\Functions\Layout
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Functions\Layout
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0
  */
-
-defined( 'ABSPATH' ) || exit;
 
 /**
  * Return the full width content slug.
@@ -30,8 +28,7 @@ function alpha_return_full_width_layout() {
  * @return string the slug of the full content layout.
  */
 function alpha_force_full_width_layout() {
-	add_filter( 'alpha_allow_layout_control', '__return_false' );
-	return alpha_return_full_width_layout();
+	return carelib_get( 'layouts' )->force_layout( alpha_return_full_width_layout() );
 }
 
 /**
@@ -53,8 +50,7 @@ function alpha_return_full_narrow_layout() {
  * @return string the slug of the narrow full content layout.
  */
 function alpha_force_full_narrow_layout() {
-	add_filter( 'alpha_allow_layout_control', '__return_false' );
-	return alpha_return_full_narrow_layout();
+	return carelib_get( 'layouts' )->force_layout( alpha_return_full_narrow_layout() );
 }
 
 /**
@@ -76,8 +72,7 @@ function alpha_return_right_sidebar_layout() {
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_right_sidebar_layout() {
-	add_filter( 'alpha_allow_layout_control', '__return_false' );
-	return alpha_return_right_sidebar_layout();
+	return carelib_get( 'layouts' )->force_layout( alpha_return_right_sidebar_layout() );
 }
 
 /**
@@ -99,8 +94,7 @@ function alpha_return_left_sidebar_layout() {
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_left_sidebar_layout() {
-	add_filter( 'alpha_allow_layout_control', '__return_false' );
-	return alpha_return_left_sidebar_layout();
+	return carelib_get( 'layouts' )->force_layout( alpha_return_left_sidebar_layout() );
 }
 
 /**
@@ -112,9 +106,5 @@ function alpha_force_left_sidebar_layout() {
  * @return bool true if the current layout includes a sidebar
  */
 function alpha_layout_has_sidebar() {
-	return ! in_array(
-		carelib_get( 'layouts' )->get_theme_layout(),
-		array( '1c', '1c-narrow' ),
-		true
-	);
+	return carelib_get( 'layouts' )->layout_has_sidebar( array( '1c', '1c-narrow' ) );
 }

@@ -32,8 +32,7 @@ function alpha_get_suffix() {
  * @return string
  */
 function alpha_google_fonts_string( $families, $editor_style = false ) {
-	$string = "https://fonts.googleapis.com/css?family={$families}";
-	return $editor_style ? str_replace( ',', '%2C', $string ) : $string;
+	return carelib_get( 'public-styles' )->google_fonts_string( $families, $editor_style );
 }
 
 /**
