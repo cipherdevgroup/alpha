@@ -254,28 +254,70 @@ add_action( 'tha_entry_top', 'alpha_post_image', 4 );
  *
  * @see alpha_entry_header_open
  */
-add_action( 'tha_entry_top', 'alpha_entry_header_open', 8 );
+add_action( 'tha_entry_top', 'alpha_entry_header', 8 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_header_open
+ */
+add_action( 'alpha_entry_header', 'alpha_entry_header_open', 8 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_title
  */
-add_action( 'tha_entry_top', 'alpha_entry_title', 10 );
+add_action( 'alpha_entry_header', 'alpha_entry_title', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
- * @see alpha_entry_meta
+ * @see alpha_entry_header_meta
  */
-add_action( 'tha_entry_before', 'alpha_entry_meta', 12 );
+add_action( 'alpha_entry_header', 'alpha_entry_header_meta', 12 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_meta_open
+ */
+add_action( 'alpha_entry_header_meta', 'alpha_entry_meta_open', 10 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_author
+ */
+add_action( 'alpha_entry_header_meta', 'alpha_entry_author', 14 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_published
+ */
+add_action( 'alpha_entry_header_meta', 'alpha_entry_published', 18 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_comments_link
+ */
+add_action( 'alpha_entry_header_meta', 'alpha_entry_comments_link', 22 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_meta_close
+ */
+add_action( 'alpha_entry_header_meta', 'alpha_entry_meta_close', 26 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_close
  */
-add_action( 'tha_entry_top', 'alpha_entry_header_close', 30 );
+add_action( 'alpha_entry_header', 'alpha_entry_header_close', 16 );
 
 /**
  * Callback defined in includes/template-entry.php
@@ -303,7 +345,42 @@ add_action( 'tha_entry_content_after', 'alpha_entry_content_close', 10 );
  *
  * @see alpha_entry_footer
  */
-add_action( 'tha_entry_content_after', 'alpha_entry_footer', 10 );
+add_action( 'tha_entry_content_after', 'alpha_entry_footer', 18 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_footer_open
+ */
+add_action( 'alpha_entry_footer', 'alpha_entry_footer_open', 10 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_footer_meta
+ */
+add_action( 'alpha_entry_footer', 'alpha_entry_footer_meta', 14 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_meta_tags
+ */
+add_action( 'alpha_entry_footer_meta', 'alpha_entry_meta_tags', 10 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_meta_categories
+ */
+add_action( 'alpha_entry_footer_meta', 'alpha_entry_meta_categories', 14 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_footer_close
+ */
+add_action( 'alpha_entry_footer', 'alpha_entry_footer_close', 22 );
 
 /**
  * Callback defined in includes/template-entry.php

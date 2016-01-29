@@ -138,21 +138,25 @@ function alpha_entry_title( $args = array() ) {
 }
 
 /**
- * Add hooks for the entry meta on all entries except pages and attachments.
+ * Determine if the current view should contain an entry header.
  *
  * @since  0.1.0
  * @access public
- * @return void
+ * @return bool
  */
-function alpha_entry_meta() {
-	if ( is_page() || is_attachment() ) {
-		return;
-	}
-	add_action( 'tha_entry_top', 'alpha_entry_meta_open',     12 );
-	add_action( 'tha_entry_top', 'alpha_entry_author',        16 );
-	add_action( 'tha_entry_top', 'alpha_entry_published',     18 );
-	add_action( 'tha_entry_top', 'alpha_entry_comments_link', 20 );
-	add_action( 'tha_entry_top', 'alpha_entry_meta_close',    26 );
+function alpha_has_entry_header() {
+	return carelib_get( 'template-entry' )->has_entry_header();
+}
+
+/**
+ * Determine if the current view should contain entry header meta.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return bool
+ */
+function alpha_has_entry_header_meta() {
+	return carelib_get( 'template-entry' )->has_entry_header_meta();
 }
 
 /**
@@ -275,20 +279,25 @@ function alpha_entry_content_close() {
 }
 
 /**
- * Add hooks for the entry footer on all entries except pages and attachments.
+ * Determine if the current view should contain an entry footer.
  *
  * @since  0.1.0
  * @access public
- * @return void
+ * @return bool
  */
-function alpha_entry_footer() {
-	if ( is_page() || is_attachment() ) {
-		return;
-	}
-	add_action( 'tha_entry_bottom', 'alpha_entry_footer_open',     12 );
-	add_action( 'tha_entry_bottom', 'alpha_entry_meta_tags',       16 );
-	add_action( 'tha_entry_bottom', 'alpha_entry_meta_categories', 18 );
-	add_action( 'tha_entry_bottom', 'alpha_entry_footer_close',    26 );
+function alpha_has_entry_footer_meta() {
+	return carelib_get( 'template-entry' )->has_entry_footer_meta();
+}
+
+/**
+ * Determine if the current view should contain an entry footer.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return bool
+ */
+function alpha_has_entry_footer() {
+	return carelib_get( 'template-entry' )->has_entry_footer();
 }
 
 /**
