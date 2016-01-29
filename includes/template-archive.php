@@ -77,7 +77,7 @@ function alpha_archive_title() {
  */
 function alpha_archive_sub_terms() {
 	if ( is_category() || is_tax() ) {
-		get_template_part( 'template-parts/menu/sub-terms' );
+		alpha_menu( 'sub-terms' );
 	}
 }
 
