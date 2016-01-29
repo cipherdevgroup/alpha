@@ -8,6 +8,11 @@
 	}
 }
 
+@mixin equal-heights() {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 // Typography
 //------------------------------------------------------------------------------
 @mixin h1-font-size {
