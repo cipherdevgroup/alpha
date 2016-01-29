@@ -12,18 +12,6 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Wrapper for is_archive which also includes search results.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Archive::is_archive
- * @return bool true if we're on an archive page.
- */
-function alpha_is_archive() {
-	return carelib_get( 'template-archive' )->is_archive();
-}
-
-/**
  * Determine if we're viewing a page which lists multiple entries.
  *
  * @since  0.1.0
@@ -56,19 +44,6 @@ function alpha_is_blog_archive() {
  */
 function alpha_is_blog() {
 	return alpha_is_blog_archive() || is_singular( 'post' );
-}
-
-/**
- * Add a custom action for the archive header.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_archive_header() {
-	if ( alpha_is_archive() ) {
-		do_action( 'alpha_archive_header' );
-	}
 }
 
 /**
