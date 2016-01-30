@@ -317,9 +317,6 @@ function alpha_entry_footer_open() {
  * @return void
  */
 function alpha_entry_meta_tags() {
-	if ( ! has_term( '', 'post_tag' ) ) {
-		return;
-	}
 	alpha_entry_terms(
 		array(
 			'taxonomy' => 'post_tag',
@@ -337,9 +334,6 @@ function alpha_entry_meta_tags() {
  * @return void
  */
 function alpha_entry_meta_categories() {
-	if ( ! has_term( '', 'category' ) ) {
-		return;
-	}
 	alpha_entry_terms(
 		array(
 			'taxonomy' => 'category',
