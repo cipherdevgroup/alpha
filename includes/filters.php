@@ -2,8 +2,8 @@
 /**
  * Functions used to hook global template parts and other markup elements.
  *
- * @package    Alpha\Functions\Hooks
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Functions\Hooks
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

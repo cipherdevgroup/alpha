@@ -8,8 +8,8 @@
  * To modify the markup, you can filter `alpha_index_template` to load a custom
  * framework file rather than the default `framework.php`.
  *
- * @package    Alpha\Templates
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\CoreTemplates
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @see        /includes/vendor/carelib/inc/template-global.php

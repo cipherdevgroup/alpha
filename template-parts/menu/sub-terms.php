@@ -2,8 +2,8 @@
 /**
  * A template to display taxonomy terms.
  *
- * @package    Alpha\TemplateParts
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\TemplateParts\Menu
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

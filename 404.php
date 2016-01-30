@@ -2,8 +2,8 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package    Alpha\Templates
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\CoreTemplates
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0
@@ -25,7 +25,7 @@
 				<h1 <?php alpha_attr( 'entry-title' ); ?>>
 					<?php esc_attr_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?>
 				</h1>
-			</header><!-- .page-header -->
+			</header><!-- .entry-header -->
 
 			<div <?php alpha_attr( 'entry-content' ); ?>>
 

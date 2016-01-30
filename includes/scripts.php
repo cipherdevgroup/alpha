@@ -2,8 +2,8 @@
 /**
  * Load Theme JavaScript and CSS
  *
- * @package    Alpha\Functions\Scripts
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Functions\Scripts
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

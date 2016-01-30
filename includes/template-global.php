@@ -2,8 +2,8 @@
 /**
  * Global template helper functions.
  *
- * @package    Alpha\Functions\TemplateHelpers
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Functions\TemplateHelpers
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

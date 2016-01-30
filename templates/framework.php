@@ -2,8 +2,8 @@
 /**
  * The default framework markup file.
  *
- * @package    Alpha\Templates
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Templates
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

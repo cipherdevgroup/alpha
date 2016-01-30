@@ -2,8 +2,8 @@
 /**
  * Template helper functions and hooks used within the blog section.
  *
- * @package    Alpha\Fucntions\TemplateHelpers
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Fucntions\TemplateHelpers
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

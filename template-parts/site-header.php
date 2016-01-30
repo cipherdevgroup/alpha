@@ -2,8 +2,8 @@
 /**
  * A template part for the site's default header.
  *
- * @package    Alpha\TemplateParts
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\TemplateParts
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0

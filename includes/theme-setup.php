@@ -2,8 +2,8 @@
 /**
  * Theme functions which set up theme elements, defaults, and settings.
  *
- * @package    Alpha\Functions
- * @subpackage Alpha
+ * @package    Alpha
+ * @subpackage Alpha\Functions
  * @author     Robert Neu
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0
