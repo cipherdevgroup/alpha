@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
 /**
  * Set the content width and allow it to be filtered directly.
  *

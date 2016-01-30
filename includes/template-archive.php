@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
 /**
  * Determine if we're viewing a page which lists multiple entries.
  *

@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
 /**
  * The current version of the parent theme. Should match the version in style.css.
  *

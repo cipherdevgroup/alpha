@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
 /**
  * Output a formatted attachment image.
  *

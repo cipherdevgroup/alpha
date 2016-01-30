@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
 /**
  * Make adjustments to the theme when Jetpack is installed and activated.
  * Change the default related posts image size.
