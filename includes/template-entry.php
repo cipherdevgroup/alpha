@@ -47,13 +47,12 @@ function alpha_post_image() {
 	if ( 'post' !== get_post_type() ) {
 		return;
 	}
-	$link = is_singular() ? false : true;
 	alpha_image( apply_filters( 'alpha_post_image',
 		array(
 			'size'         => 'featured',
 			'before'       => '<div class="featured-media image">',
 			'after'        => '</div>',
-			'link_to_post' => $link,
+			'link_to_post' => is_singular() ? false : true,
 		)
 	) );
 }
