@@ -4,7 +4,7 @@
  *
  * @package    Alpha
  * @subpackage Alpha\Templates
- * @author     Robert Neu
+ * @author     WP Site Care
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0
  */

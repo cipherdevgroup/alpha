@@ -10,7 +10,7 @@
  *
  * @package    Alpha
  * @subpackage Alpha\CoreTemplates
- * @author     Robert Neu
+ * @author     WP Site Care
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @see        /includes/vendor/carelib/inc/template-global.php
  * @uses       CareLib_Template_Global::framework()
