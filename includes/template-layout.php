@@ -28,7 +28,7 @@ function alpha_return_full_width_layout() {
  * @return string the slug of the full content layout.
  */
 function alpha_force_full_width_layout() {
-	return carelib_get( 'layouts' )->force_layout( alpha_return_full_width_layout() );
+	return carelib_force_layout( alpha_return_full_width_layout() );
 }
 
 /**
@@ -50,7 +50,7 @@ function alpha_return_full_narrow_layout() {
  * @return string the slug of the narrow full content layout.
  */
 function alpha_force_full_narrow_layout() {
-	return carelib_get( 'layouts' )->force_layout( alpha_return_full_narrow_layout() );
+	return carelib_force_layout( alpha_return_full_narrow_layout() );
 }
 
 /**
@@ -72,7 +72,7 @@ function alpha_return_right_sidebar_layout() {
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_right_sidebar_layout() {
-	return carelib_get( 'layouts' )->force_layout( alpha_return_right_sidebar_layout() );
+	return carelib_force_layout( alpha_return_right_sidebar_layout() );
 }
 
 /**
@@ -94,7 +94,7 @@ function alpha_return_left_sidebar_layout() {
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_left_sidebar_layout() {
-	return carelib_get( 'layouts' )->force_layout( alpha_return_left_sidebar_layout() );
+	return carelib_force_layout( alpha_return_left_sidebar_layout() );
 }
 
 /**
@@ -106,5 +106,5 @@ function alpha_force_left_sidebar_layout() {
  * @return bool true if the current layout includes a sidebar
  */
 function alpha_layout_has_sidebar() {
-	return carelib_get( 'layouts' )->layout_has_sidebar( array( '1c', '1c-narrow' ) );
+	return carelib_layout_has_sidebar( array( '1c', '1c-narrow' ) );
 }

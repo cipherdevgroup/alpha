@@ -17,7 +17,7 @@
  * @return void
  */
 function alpha_archive_header() {
-	carelib_get( 'template-hooks' )->archive_header();
+	carelib_archive_header();
 }
 
 /**
@@ -28,7 +28,7 @@ function alpha_archive_header() {
  * @return void
  */
 function alpha_entry_header() {
-	carelib_get( 'template-hooks' )->entry_header();
+	carelib_entry_header();
 }
 
 /**
@@ -39,7 +39,7 @@ function alpha_entry_header() {
  * @return void
  */
 function alpha_entry_header_meta() {
-	carelib_get( 'template-hooks' )->entry_header_meta();
+	carelib_entry_header_meta();
 }
 
 /**
@@ -50,7 +50,7 @@ function alpha_entry_header_meta() {
  * @return void
  */
 function alpha_entry_footer() {
-	carelib_get( 'template-hooks' )->entry_footer();
+	carelib_entry_footer();
 }
 
 /**
@@ -61,5 +61,5 @@ function alpha_entry_footer() {
  * @return void
  */
 function alpha_entry_footer_meta() {
-	carelib_get( 'template-hooks' )->entry_footer_meta();
+	carelib_entry_footer_meta();
 }

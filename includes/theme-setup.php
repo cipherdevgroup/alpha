@@ -28,7 +28,7 @@ function alpha_content_width() {
  * @return void
  */
 function alpha_setup() {
-	carelib_get( 'layouts' )->set_default( is_rtl() ? '2c-l' : '2c-r' )->add_support();
+	add_theme_support( 'theme-layouts' );
 
 	add_theme_support( 'automatic-feed-links' );
 }
@@ -116,8 +116,10 @@ function alpha_register_layouts() {
 	);
 
 	foreach ( $layouts as $layout => $args ) {
-		carelib_get( 'layouts' )->register_layout( $layout, $args );
+		carelib_register_layout( $layout, $args );
 	}
+
+	carelib_set_default_layout( is_rtl() ? '2c-l' : '2c-r' );
 }
 
 /**
@@ -128,12 +130,12 @@ function alpha_register_layouts() {
  * @return void
  */
 function alpha_register_sidebars() {
-	carelib_get( 'sidebar' )->register( array(
+	carelib_register_sidebar( array(
 		'id'          => 'primary',
 		'name'        => _x( 'Primary Sidebar', 'sidebar', 'alpha' ),
 		'description' => __( 'The main sidebar. It is displayed on either the left or right side of the page based on the chosen layout.', 'alpha' ),
 	) );
-	carelib_get( 'sidebar' )->register( array(
+	carelib_register_sidebar( array(
 		'id'          => 'footer-widgets',
 		'name'        => _x( 'Footer Widgets', 'sidebar', 'alpha' ),
 		'description' => __( 'A widgeted area which displays just before the main site footer on all pages.', 'alpha' ),

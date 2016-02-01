@@ -18,7 +18,7 @@
  * @return bool true if we're on a plural page.
  */
 function alpha_is_plural() {
-	return carelib_get( 'template-archive' )->is_plural();
+	return carelib_is_plural();
 }
 
 /**
@@ -30,7 +30,7 @@ function alpha_is_plural() {
  * @return bool true if we're on a blog archive page.
  */
 function alpha_is_blog_archive() {
-	return carelib_get( 'template-archive' )->is_blog_archive();
+	return carelib_is_blog_archive();
 }
 
 /**
@@ -117,5 +117,5 @@ function alpha_archive_header_close() {
  * @return void
  */
 function alpha_posts_navigation( $args = array() ) {
-	echo carelib_get( 'template-archive' )->get_posts_navigation( $args );
+	echo carelib_get_posts_navigation( $args );
 }

@@ -17,7 +17,7 @@
  * @return string
  */
 function alpha_get_suffix() {
-	return carelib_get( 'public-scripts' )->get_suffix();
+	return carelib_get_suffix();
 }
 
 /**
@@ -30,7 +30,7 @@ function alpha_get_suffix() {
  * @return string
  */
 function alpha_google_fonts_string( $families, $editor_style = false ) {
-	return carelib_get( 'public-styles' )->google_fonts_string( $families, $editor_style );
+	return carelib_google_fonts_string( $families, $editor_style );
 }
 
 /**
@@ -43,6 +43,7 @@ function alpha_google_fonts_string( $families, $editor_style = false ) {
  */
 function alpha_enqueue_styles() {
 	wp_enqueue_style( 'alpha-style' );
+
 	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
 		wp_enqueue_style(
 			'alpha-google-fonts',

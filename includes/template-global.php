@@ -18,7 +18,7 @@
  * @return void
  */
 function alpha_framework( $name = null ) {
-	carelib_get( 'template-global' )->framework( $name );
+	carelib_framework( $name );
 }
 
 /**
@@ -91,7 +91,7 @@ function alpha_branding_open() {
  * @return void
  */
 function alpha_site_title() {
-	echo carelib_get( 'template-global' )->get_site_title();
+	echo carelib_get_site_title();
 }
 
 /**
@@ -103,7 +103,7 @@ function alpha_site_title() {
  * @return void
  */
 function alpha_site_description() {
-	echo carelib_get( 'template-global' )->get_site_description();
+	echo carelib_get_site_description();
 }
 
 /**
@@ -127,7 +127,7 @@ function alpha_branding_close() {
  * @return void
  */
 function alpha_menu( $name = null ) {
-	carelib_get( 'menu' )->template( $name );
+	carelib_get_menu( $name );
 }
 
 /**
@@ -140,7 +140,7 @@ function alpha_menu( $name = null ) {
  * @return string
  */
 function alpha_get_menu_location_name( $location ) {
-	return carelib_get( 'menu' )->get_location_name( $location );
+	return carelib_get_menu_location_name( $location );
 }
 
 /**
@@ -208,7 +208,7 @@ function alpha_menu_secondary() {
  * @return bool true if both our template tag and theme mod return true.
  */
 function alpha_display_breadcrumbs() {
-	return carelib_get( 'template-global' )->display_breadcrumbs();
+	return carelib_display_breadcrumbs();
 }
 
 /**
@@ -241,7 +241,7 @@ function alpha_breadcrumbs() {
  * @return mixed string or an array depending on what arguments are used
  */
 function alpha_get_image( $args = array() ) {
-	return carelib_get( 'image-grabber-api' )->get( $args );
+	return carelib_get_image( $args );
 }
 
 /**
@@ -254,7 +254,7 @@ function alpha_get_image( $args = array() ) {
  * @return void
  */
 function alpha_image( $args = array() ) {
-	echo carelib_get( 'image-grabber-api' )->get( $args );
+	echo alpha_get_image( $args );
 }
 
 /**
@@ -267,7 +267,7 @@ function alpha_image( $args = array() ) {
  * @return void
  */
 function alpha_sidebar( $name = null ) {
-	carelib_get( 'sidebar' )->template( $name );
+	carelib_get_sidebar( $name );
 }
 
 /**
@@ -280,7 +280,7 @@ function alpha_sidebar( $name = null ) {
  * @return string
  */
 function alpha_get_sidebar_name( $id ) {
-	return carelib_get( 'sidebar' )->get_name( $id );
+	return carelib_get_sidebar_name( $id );
 }
 
 /**
@@ -306,7 +306,7 @@ function alpha_primary_sidebar() {
  * @return string an escaped link to the WordPress customizer panel.
  */
 function alpha_get_customizer_link( $args = array() ) {
-	return carelib_get( 'template-global' )->get_customizer_link( $args );
+	return carelib_get_customizer_link( $args );
 }
 
 /**
@@ -345,7 +345,7 @@ function alpha_footer_content() {
 		// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link.
 		__( 'Copyright &#169; %1$s %2$s. Designed by %3$s.', 'alpha' ),
 		date_i18n( 'Y' ),
-		carelib_get( 'template-global' )->get_site_link(),
-		carelib_get( 'template-global' )->get_credit_link()
+		carelib_get_site_link(),
+		carelib_get_credit_link()
 	) );
 }

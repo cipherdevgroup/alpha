@@ -34,5 +34,5 @@ function alpha_attr( $slug, $context = '', $attr = array() ) {
  * @return string the attributes for a given element
  */
 function alpha_get_attr( $slug, $context = '', $attr = array() ) {
-	return carelib_get( 'attributes' )->get_attr( $slug, $context, $attr );
+	return carelib_get_attr( $slug, $context, $attr );
 }
