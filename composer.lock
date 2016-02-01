@@ -111,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "e0ff7e11e5856e0ed26ed681a09e23f84552e382"
+                "reference": "c15d4f57e706816496df72555b7299650a88b222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/e0ff7e11e5856e0ed26ed681a09e23f84552e382",
-                "reference": "e0ff7e11e5856e0ed26ed681a09e23f84552e382",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/c15d4f57e706816496df72555b7299650a88b222",
+                "reference": "c15d4f57e706816496df72555b7299650a88b222",
                 "shasum": ""
             },
             "type": "library",
@@ -131,12 +131,12 @@
                     "homepage": "http://www.wpsitecare.com"
                 }
             ],
-            "description": "A collection of helpful classes to make creating an awesome theme more enjoyable.",
+            "description": "A collection of helpful functions to make creating an awesome theme more enjoyable.",
             "homepage": "https://github.com/wpsitecare/carelib",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-01-29 20:10:47"
+            "time": "2016-02-01 04:47:29"
         },
         {
             "name": "zamoose/themehookalliance",
