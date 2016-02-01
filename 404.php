@@ -58,4 +58,18 @@ add_filter( 'the_content', 'alpha_404_content', 99 );
  */
 remove_action( 'tha_entry_content_after', 'alpha_entry_footer', 18 );
 
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_close
+ */
+remove_action( 'tha_entry_bottom', 'alpha_entry_close', 99 );
+
+/**
+ * Callback defined in includes/template-404.php
+ *
+ * @see alpha_404_entry_close
+ */
+add_action( 'tha_entry_bottom', 'alpha_404_entry_close', 99 );
+
 alpha_framework( '404' );

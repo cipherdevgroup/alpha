@@ -10,14 +10,14 @@
  */
 
 /**
- * Output opening markup for the entry article element.
+ * Output opening markup for the 404 article element.
  *
  * @since  0.1.0
  * @access public
  * @return void
  */
 function alpha_404_entry_open() {
-	echo '<article class="entry error-404 not-found">';
+	echo '<article id="error-404" class="entry error-404 not-found">';
 }
 
 /**
@@ -64,4 +64,15 @@ function alpha_404_content( $content ) {
 	$content .= alpha_get_the_widget( 'WP_Widget_Tag_Cloud' );
 
 	return apply_filters( 'alpha_404_content', $content );
+}
+
+/**
+ * Output closing markup for the 404 article element.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return void
+ */
+function alpha_404_entry_close() {
+	echo '</article><!-- #error-404 -->';
 }
