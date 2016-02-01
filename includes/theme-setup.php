@@ -21,6 +21,17 @@ function alpha_content_width() {
 }
 
 /**
+ * Return the parent theme's textdomain to avoid getting it from the file system.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return string
+ */
+function alpha_get_parent_textdomain() {
+	return 'alpha';
+}
+
+/**
  * Set up theme defaults and add support for WordPress and CareLib features.
  *
  * @since  0.1.0

@@ -12,6 +12,13 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Callback defined in includes/theme-setup.php
+ *
+ * @see alpha_get_parent_textdomain
+ */
+add_filter( 'alpha_parent_textdomain', 'alpha_get_parent_textdomain' );
+
+/**
  * Callback defined in includes/plugins.php
  *
  * @see alpha_related_posts_image
