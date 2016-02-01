@@ -8,58 +8,54 @@
  * @copyright  Copyright (c) 2016, WP Site Care, LLC
  * @since      0.1.0
  */
-?>
-<?php get_header(); ?>
 
-<div <?php alpha_attr( 'site-inner' ); ?>>
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_open
+ */
+remove_action( 'tha_entry_top', 'alpha_entry_open', 0 );
 
-	<?php tha_content_before(); ?>
+/**
+ * Callback defined in includes/template-404.php
+ *
+ * @see alpha_404_entry_open
+ */
+add_action( 'tha_entry_top', 'alpha_404_entry_open', 0 );
 
-	<main <?php alpha_attr( 'content' ); ?>>
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_title
+ */
+remove_action( 'alpha_entry_header', 'alpha_entry_title', 10 );
 
-		<?php tha_content_top(); ?>
+/**
+ * Callback defined in includes/template-404.php
+ *
+ * @see alpha_404_entry_title
+ */
+add_action( 'alpha_entry_header', 'alpha_404_entry_title', 10 );
 
-		<article class="entry error-404 not-found">
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_header_meta
+ */
+remove_action( 'alpha_entry_header', 'alpha_entry_header_meta', 12 );
 
-			<header <?php alpha_attr( 'entry-header' ); ?>>
-				<h1 <?php alpha_attr( 'entry-title' ); ?>>
-					<?php esc_attr_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?>
-				</h1>
-			</header><!-- .entry-header -->
+/**
+ * Callback defined in includes/template-404.php
+ *
+ * @see alpha_404_content
+ */
+add_filter( 'the_content', 'alpha_404_content', 99 );
 
-			<div <?php alpha_attr( 'entry-content' ); ?>>
+/**
+ * Callback defined in includes/template-entry.php
+ *
+ * @see alpha_entry_footer
+ */
+remove_action( 'tha_entry_content_after', 'alpha_entry_footer', 18 );
 
-				<p><?php esc_attr_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha' ); ?></p>
-
-				<?php get_search_form(); ?>
-
-				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-				<?php
-				// Translators: %1$s is a smile emoji.
-				the_widget(
-					'WP_Widget_Archives',
-					'dropdown=1',
-					'after_title=</h2> ' . wpautop( sprintf(
-						__( 'Try looking in the monthly archives. %1$s', 'alpha' ),
-						convert_smilies( ':)' )
-					) )
-				);
-				?>
-
-				<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
-			</div><!-- .entry-content -->
-
-		</article><!-- .error-404 -->
-
-		<?php tha_content_bottom(); ?>
-
-	</main><!-- #content -->
-
-	<?php tha_content_after(); ?>
-
-</div><!-- #site-inner -->
-
-<?php
-get_footer();
+alpha_framework( '404' );
