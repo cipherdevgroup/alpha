@@ -27,15 +27,15 @@
 
 				<?php tha_entry_before(); ?>
 
-					<?php tha_entry_top(); ?>
+				<?php tha_entry_top(); ?>
 
-					<?php tha_entry_content_before(); ?>
+				<?php tha_entry_content_before(); ?>
 
-					<?php alpha_content(); ?>
+				<?php alpha_content(); ?>
 
-					<?php tha_entry_content_after(); ?>
+				<?php tha_entry_content_after(); ?>
 
-					<?php tha_entry_bottom(); ?>
+				<?php tha_entry_bottom(); ?>
 
 				<?php tha_entry_after(); ?>
 
