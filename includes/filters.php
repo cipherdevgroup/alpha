@@ -21,6 +21,6 @@ add_filter( 'alpha_parent_textdomain', 'alpha_get_parent_textdomain' );
 /**
  * Callback defined in includes/plugins.php
  *
- * @see alpha_related_posts_image
+ * @see alpha_get_related_posts_image_size
  */
-add_filter( 'rp4wp_thumbnail_size', 'alpha_related_posts_image' );
+add_filter( 'rp4wp_thumbnail_size', 'alpha_get_related_posts_image_size' );

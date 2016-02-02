@@ -29,8 +29,8 @@ function alpha_get_suffix() {
  * @param  bool   $editor_style set to true if string is being used as editor style.
  * @return string
  */
-function alpha_google_fonts_string( $families, $editor_style = false ) {
-	return carelib_google_fonts_string( $families, $editor_style );
+function alpha_get_google_fonts_string( $families, $editor_style = false ) {
+	return carelib_get_google_fonts_string( $families, $editor_style );
 }
 
 /**
@@ -47,7 +47,7 @@ function alpha_enqueue_styles() {
 	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
 		wp_enqueue_style(
 			'alpha-google-fonts',
-			alpha_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700' ),
+			alpha_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700' ),
 			array(),
 			null
 		);

@@ -85,7 +85,7 @@ function alpha_add_editor_styles() {
 	);
 
 	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
-		$styles[] = alpha_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
+		$styles[] = alpha_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
 	}
 
 	add_editor_style( $styles );

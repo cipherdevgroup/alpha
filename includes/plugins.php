@@ -37,6 +37,6 @@ function alpha_jetpack_setup() {
  * @access public
  * @return string
  */
-function alpha_related_posts_image() {
+function alpha_get_related_posts_image_size() {
 	return 'related-posts';
 }
