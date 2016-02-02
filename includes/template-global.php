@@ -297,30 +297,6 @@ function alpha_primary_sidebar() {
 }
 
 /**
- * Return an arbitrary widget as a template tag.
- *
- * @since 0.1.0
- * @uses  carelib_get_the_widget
- * @param string $widget   The widget's PHP class name (see class-wp-widget.php).
- * @param array  $instance Optional. The widget's instance settings. Default empty array.
- * @param array  $args {
- *     Optional. Array of arguments to configure the display of the widget.
- *
- *     @type string $before_widget HTML content that will be prepended to the widget's HTML output.
- *                                 Default `<div class="widget %s">`, where `%s` is the widget's class name.
- *     @type string $after_widget  HTML content that will be appended to the widget's HTML output.
- *                                 Default `</div>`.
- *     @type string $before_title  HTML content that will be prepended to the widget's title when displayed.
- *                                 Default `<h2 class="widgettitle">`.
- *     @type string $after_title   HTML content that will be appended to the widget's title when displayed.
- *                                 Default `</h2>`.
- * }
- */
-function alpha_get_the_widget( $widget, $instance = array(), $args = array() ) {
-	return carelib_get_the_widget( $widget, $instance, $args );
-}
-
-/**
  * Return a formatted link to the customizer panel.
  *
  * @since  0.1.0
