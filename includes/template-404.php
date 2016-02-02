@@ -28,12 +28,7 @@ function alpha_404_entry_open() {
  * @return void
  */
 function alpha_404_entry_title() {
-	$text = apply_filters( 'alpha_404_entry_title', __( 'Oops! That page can&rsquo;t be found.', 'alpha' ) );
-
-	printf( '<h1 %s>%s</h1>',
-		alpha_get_attr( 'entry-title' ),
-		esc_attr( $text )
-	);
+	echo carelib_get_404_entry_title();
 }
 
 /**
@@ -45,25 +40,7 @@ function alpha_404_entry_title() {
  * @return string $content The modified content.
  */
 function alpha_404_content( $content ) {
-	$content = wpautop( esc_attr__( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha' ) );
-
-	$content .= get_search_form( false );
-
-	$content .= alpha_get_the_widget( 'WP_Widget_Recent_Posts' );
-
-	// Translators: %1$s is a smile emoji.
-	$content .= alpha_get_the_widget(
-		'WP_Widget_Archives',
-		'dropdown=1',
-		'after_title=</h2> ' . wpautop( sprintf(
-			__( 'Try looking in the monthly archives. %1$s', 'alpha' ),
-			convert_smilies( ':)' )
-		) )
-	);
-
-	$content .= alpha_get_the_widget( 'WP_Widget_Tag_Cloud' );
-
-	return apply_filters( 'alpha_404_content', $content );
+	return carelib_get_404_content();
 }
 
 /**
