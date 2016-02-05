@@ -345,7 +345,7 @@ add_action( 'tha_entry_content_after', 'alpha_entry_content_close', 10 );
  *
  * @see alpha_entry_footer
  */
-add_action( 'tha_entry_content_after', 'alpha_entry_footer', 18 );
+add_action( 'tha_entry_bottom', 'alpha_entry_footer', 20 );
 
 /**
  * Callback defined in includes/template-entry.php
