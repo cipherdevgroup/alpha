@@ -229,15 +229,11 @@
 		 * @return void
 		 */
 		function openMenu() {
-			if ( menuIsOpen() ) {
-				return;
+			if ( ! menuIsOpen() ) {
+				toggleClasses();
+				toggleAttributes();
+				focusMobileMenu();
 			}
-			if ( ! menusMerged() ) {
-				mergeMenus();
-			}
-			toggleClasses();
-			toggleAttributes();
-			focusMobileMenu();
 		}
 
 		/**
@@ -247,11 +243,10 @@
 		 * @return void
 		 */
 		function closeMenu() {
-			if ( ! menuIsOpen() ) {
-				return;
+			if ( menuIsOpen() ) {
+				toggleClasses();
+				toggleAttributes();
 			}
-			toggleClasses();
-			toggleAttributes();
 		}
 
 		/**
