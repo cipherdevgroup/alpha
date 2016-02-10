@@ -7,6 +7,9 @@
 // Load Theme Mixins
 @import "mixins/global";
 
+// Load Global Settings
+@import "settings/susy";
+
 // Load Global Variables
 @import "variables/colors";
 @import "variables/layout";
