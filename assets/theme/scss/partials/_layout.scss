@@ -49,38 +49,41 @@
 }
 
 @include min-screen($medium-screen) {
+	@include nested(12) {
+		.layout-1c-narrow .content {
+			@include span(8);
+			@include push(2);
+			@include post(2);
+		}
 
-	.layout-1c-narrow .content {
-		@include pad(15%);
-	}
+		.layout-2c-l .content,
+		.layout-2c-r .content {
+			@include span(8);
+		}
 
-	.layout-2c-l .content,
-	.layout-2c-r .content {
-		@include span(8 of 12);
-	}
+		.layout-2c-l .content {
+			@include last();
+		}
 
-	.layout-2c-l .content {
-		@include last();
-	}
+		/* Primary Sidebar
+		-------------------- */
+		.sidebar {
+			@include span(4);
+		}
 
-	/* Primary Sidebar
-	-------------------- */
-	.sidebar {
-		@include span(4 of 12);
-	}
+		.layout-2c-r .sidebar {
+			@include last();
+		}
 
-	.layout-2c-r .sidebar {
-		@include last();
-	}
+		/* Secondary Sidebar
+		-------------------- */
+		.sidebar-secondary {
+			@include span(2);
+		}
 
-	/* Secondary Sidebar
-	-------------------- */
-	.sidebar-secondary {
-		@include span(2 of 12);
-	}
-
-	.content-sidebar-sidebar .sidebar-secondary {
-		@include last();
+		.content-sidebar-sidebar .sidebar-secondary {
+			@include last();
+		}
 	}
 }
 
