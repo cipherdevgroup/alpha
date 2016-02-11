@@ -1,11 +1,12 @@
 html {
-	font-size: $base-font-size;
+	font-size: 62.5%; // 10px browser default
 }
 
 body {
 	background-color: $base-background-color;
 	color: $base-font-color;
 	font-family: $base-font-family;
+	font-size: $base-font-size;
 	font-weight: 400;
 	line-height: $base-line-height;
 }
