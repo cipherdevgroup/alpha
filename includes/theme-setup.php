@@ -39,8 +39,6 @@ function alpha_get_parent_textdomain() {
  * @return void
  */
 function alpha_setup() {
-	add_theme_support( 'theme-layouts' );
-
 	add_theme_support( 'automatic-feed-links' );
 }
 
