@@ -63,6 +63,13 @@ add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
 /**
  * Callback defined in includes/theme-setup.php
  *
+ * @see alpha_set_default_layout
+ */
+add_action( 'alpha_register_layouts', 'alpha_set_default_layout', 12 );
+
+/**
+ * Callback defined in includes/theme-setup.php
+ *
  * @see alpha_register_sidebars
  */
 add_action( 'widgets_init', 'alpha_register_sidebars', 5 );

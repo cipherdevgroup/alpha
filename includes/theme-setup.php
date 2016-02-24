@@ -97,37 +97,44 @@ function alpha_add_editor_styles() {
  * @return void
  */
 function alpha_register_layouts() {
-	$layouts = array(
-		'2c-r' => array(
-			'label'            => _x( '2 Columns: Right Sidebar', 'theme layout', 'alpha' ),
-			'is_global_layout' => true,
-			'is_post_layout'   => true,
-			'image'            => '%s/images/sidebar-right.svg',
-		),
-		'2c-l' => array(
-			'label'            => _x( '2 Columns: Left Sidebar', 'theme layout', 'alpha' ),
-			'is_global_layout' => true,
-			'is_post_layout'   => true,
-			'image'            => '%s/images/sidebar-left.svg',
-		),
-		'1c' => array(
-			'label'            => _x( '1 Column Wide', 'theme layout', 'alpha' ),
-			'is_global_layout' => true,
-			'is_post_layout'   => true,
-			'image'            => '%s/images/one-column.svg',
-		),
-		'1c-narrow' => array(
-			'label'            => _x( '1 Column Narrow', 'theme layout', 'alpha' ),
-			'is_global_layout' => true,
-			'is_post_layout'   => true,
-			'image'            => '%s/images/one-column-narrow.svg',
-		),
+	carelib_register_layouts(
+		array(
+			'2c-r' => array(
+				'label'            => _x( '2 Columns: Right Sidebar', 'theme layout', 'alpha' ),
+				'is_global_layout' => true,
+				'is_post_layout'   => true,
+				'image'            => '%s/images/sidebar-right.svg',
+			),
+			'2c-l' => array(
+				'label'            => _x( '2 Columns: Left Sidebar', 'theme layout', 'alpha' ),
+				'is_global_layout' => true,
+				'is_post_layout'   => true,
+				'image'            => '%s/images/sidebar-left.svg',
+			),
+			'1c' => array(
+				'label'            => _x( '1 Column Wide', 'theme layout', 'alpha' ),
+				'is_global_layout' => true,
+				'is_post_layout'   => true,
+				'image'            => '%s/images/one-column.svg',
+			),
+			'1c-narrow' => array(
+				'label'            => _x( '1 Column Narrow', 'theme layout', 'alpha' ),
+				'is_global_layout' => true,
+				'is_post_layout'   => true,
+				'image'            => '%s/images/one-column-narrow.svg',
+			),
+		)
 	);
+}
 
-	foreach ( $layouts as $layout => $args ) {
-		carelib_register_layout( $layout, $args );
-	}
-
+/**
+ * Set the default layout for the theme.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return void
+ */
+function alpha_set_default_layout() {
 	carelib_set_default_layout( is_rtl() ? '2c-l' : '2c-r' );
 }
 
