@@ -67,19 +67,6 @@ function alpha_archive_title() {
 }
 
 /**
- * Load the archive sub-terms menu template.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_archive_sub_terms() {
-	if ( is_category() || is_tax() ) {
-		alpha_menu( 'sub-terms' );
-	}
-}
-
-/**
  * Output the archive description.
  *
  * @since  0.1.0

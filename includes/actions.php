@@ -210,16 +210,9 @@ add_action( 'alpha_archive_header', 'alpha_breadcrumbs', 20 );
 /**
  * Callback defined in includes/template-archive.php
  *
- * @see alpha_archive_sub_terms
- */
-add_action( 'alpha_archive_header', 'alpha_archive_sub_terms', 25 );
-
-/**
- * Callback defined in includes/template-archive.php
- *
  * @see alpha_archive_description
  */
-add_action( 'alpha_archive_header', 'alpha_archive_description', 30 );
+add_action( 'alpha_archive_header', 'alpha_archive_description', 25 );
 
 /**
  * Callback defined in includes/template-archive.php
