@@ -11,7 +11,7 @@
 ?>
 <?php tha_header_before(); ?>
 
-<header <?php alpha_attr( 'header' ); ?>>
+<header <?php alpha_attr( 'site-header' ); ?>>
 
 	<div <?php alpha_attr( 'wrap', 'header' ); ?>>
 

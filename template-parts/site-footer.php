@@ -11,7 +11,7 @@
 ?>
 <?php tha_footer_before(); ?>
 
-<footer <?php alpha_attr( 'footer' ); ?>>
+<footer <?php alpha_attr( 'site-footer' ); ?>>
 
 	<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
 
