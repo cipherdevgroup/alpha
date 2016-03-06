@@ -21,6 +21,6 @@
 
 	</div><!-- .wrap -->
 
-</footer><!-- .footer -->
+</footer><!-- .site-footer -->
 
 <?php tha_footer_after(); ?>
