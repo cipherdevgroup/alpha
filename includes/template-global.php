@@ -114,7 +114,7 @@ function alpha_site_description() {
  * @return void
  */
 function alpha_branding_close() {
-	echo '</div><!-- #branding -->';
+	echo '</div><!-- #site-branding -->';
 }
 
 /**
