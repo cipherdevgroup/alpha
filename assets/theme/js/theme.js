@@ -4,31 +4,25 @@
  *
  * Includes all JS which is required within all sections of the theme.
  */
-window.alpha = window.alpha || {};
-
 (function( window, $, undefined ) {
 	'use strict';
 
 	var $document = $( document ),
-		$body     = $( 'body' ),
-		alpha   = window.alpha;
+		$body     = $( 'body' );
 
-	$.extend( alpha, {
+	$body.addClass( 'ontouchstart' in window || 'onmsgesturechange' in window ? 'touch' : 'no-touch' );
 
-		// Global script initialization
-		globalInit: function() {
-			var $videos = $( '#site-inner' );
-			$body.addClass( 'ontouchstart' in window || 'onmsgesturechange' in window ? 'touch' : 'no-touch' );
-			$document.gamajoAccessibleMenu();
-			$( '#menu-primary' ).alphaMobileMenu();
-			$videos.fitVids();
-		}
-
-	});
+	// Global script initialization
+	function globalInit() {
+		var $siteInner = $( '#site-inner' );
+		$document.gamajoAccessibleMenu();
+		$( '#menu-primary' ).alphaMobileMenu();
+		$siteInner.fitVids();
+	}
 
 	// Document ready.
-	jQuery(function() {
+	$document.ready(function() {
 		skipLinkFocus.init();
-		alpha.globalInit();
+		globalInit();
 	});
 })( this, jQuery );
