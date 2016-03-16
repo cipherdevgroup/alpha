@@ -2,11 +2,10 @@
 /**
  * Global template helper functions.
  *
- * @package    Alpha
- * @subpackage Alpha\Functions\TemplateHelpers
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\Functions\TemplateHelpers
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 
 /**

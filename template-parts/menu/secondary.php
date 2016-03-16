@@ -2,11 +2,10 @@
 /**
  * The secondary nav menu template.
  *
- * @package    Alpha
- * @subpackage Alpha\TemplateParts\Menu
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\TemplateParts\Menu
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <nav <?php alpha_attr( 'menu', 'secondary' ); ?>>

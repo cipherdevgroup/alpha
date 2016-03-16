@@ -2,11 +2,10 @@
 /**
  * A template part to display comment pagination.
  *
- * @package    Alpha
- * @subpackage Alpha\TemplateParts\Comment
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\TemplateParts\Comment
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <?php if ( get_option( 'page_comments' ) && 1 < get_comment_pages_count() ) : ?>

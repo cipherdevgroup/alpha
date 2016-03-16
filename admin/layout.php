@@ -2,11 +2,10 @@
 /**
  * Functions for controlling layout options within the admin.
  *
- * @package    Alpha\Admin\Layout
- * @subpackage Alpha
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\Admin\Layout
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 
 defined( 'ABSPATH' ) || exit;

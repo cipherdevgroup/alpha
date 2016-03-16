@@ -2,11 +2,10 @@
 /**
  * A template part to display when comments are closed.
  *
- * @package    Alpha
- * @subpackage Alpha\TemplateParts\Comment
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\TemplateParts\Comment
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <?php if ( pings_open() && ! comments_open() ) : ?>

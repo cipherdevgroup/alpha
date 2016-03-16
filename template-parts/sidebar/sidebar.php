@@ -2,11 +2,10 @@
 /**
  * Primary Sidebar Template
  *
- * @package    Alpha
- * @subpackage Alpha\TemplateParts\Sidebar
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\TemplateParts\Sidebar
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <?php tha_sidebars_before(); ?>

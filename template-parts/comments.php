@@ -2,11 +2,10 @@
 /**
  * The template for displaying comments.
  *
- * @package    Alpha
- * @subpackage Alpha\TemplateParts
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\TemplateParts
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <?php if ( ! post_password_required() ) : ?>

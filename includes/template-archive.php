@@ -2,11 +2,10 @@
 /**
  * Template helper functions and hooks used within the blog section.
  *
- * @package    Alpha
- * @subpackage Alpha\Fucntions\TemplateHelpers
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\Functions\TemplateHelpers
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 
 /**

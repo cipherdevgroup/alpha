@@ -2,11 +2,10 @@
 /**
  * HTML attribute functions and filters.
  *
- * @package    Alpha
- * @subpackage Alpha\Functions\Attributes
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\Functions\Attributes
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 
 /**

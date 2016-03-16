@@ -2,11 +2,10 @@
 /**
  * The default framework markup file.
  *
- * @package    Alpha
- * @subpackage Alpha\Templates
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\Templates
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 ?>
 <?php get_header(); ?>
