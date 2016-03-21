@@ -2,11 +2,10 @@
 /**
  * The template for displaying the attachment pages.
  *
- * @package    Alpha
- * @subpackage Alpha\CoreTemplates
- * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
- * @since      0.1.0
+ * @package   Alpha\CoreTemplates
+ * @author    WP Site Care
+ * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @since     0.1.0
  */
 
 /**
