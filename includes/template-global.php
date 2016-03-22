@@ -12,7 +12,7 @@
  * Load the base theme framework template.
  *
  * @since  0.1.0
- * @uses   CareLib_Template_Global::framework
+ * @uses   carelib_framework
  * @param  string $name The name of the specialized template.
  * @return void
  */
@@ -86,11 +86,11 @@ function alpha_branding_open() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Global::get_site_title
+ * @uses   carelib_get_site_title
  * @return void
  */
-function alpha_site_title() {
-	echo carelib_get_site_title();
+function alpha_site_title( $args = array() ) {
+	echo carelib_get_site_title( $args );
 }
 
 /**
@@ -98,11 +98,11 @@ function alpha_site_title() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Global::get_site_description
+ * @uses   carelib_get_site_description
  * @return void
  */
-function alpha_site_description() {
-	echo carelib_get_site_description();
+function alpha_site_description( $args = array() ) {
+	echo carelib_get_site_description( $args );
 }
 
 /**
@@ -122,7 +122,7 @@ function alpha_branding_close() {
  * @since  0.1.0
  * @access public
  * @param  string $name The name of the menu to load.
- * @uses   CareLib_Menu::template
+ * @uses   carelib_get_menu
  * @return void
  */
 function alpha_menu( $name = null ) {
@@ -134,7 +134,7 @@ function alpha_menu( $name = null ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Menu::get_location_name
+ * @uses   carelib_get_menu_location_name
  * @param  string $location The WordPress menu location to check.
  * @return string
  */
@@ -203,7 +203,7 @@ function alpha_menu_secondary() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Global::display_breadcrumbs
+ * @uses   carelib_display_breadcrumbs
  * @return bool true if both our template tag and theme mod return true.
  */
 function alpha_display_breadcrumbs() {
@@ -235,7 +235,7 @@ function alpha_breadcrumbs() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Image_Grabber_API::get
+ * @uses   carelib_get_image
  * @param  array $args a list of arguments to pass to the image grabber class.
  * @return mixed string or an array depending on what arguments are used
  */
@@ -248,7 +248,7 @@ function alpha_get_image( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Image_Grabber_API::get
+ * @uses   carelib_get_image
  * @param  array $args a list of arguments to pass to the image grabber class.
  * @return void
  */
@@ -261,7 +261,7 @@ function alpha_image( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Sidebar::template
+ * @uses   carelib_get_sidebar
  * @param  string $name the name of the sidebar to load.
  * @return void
  */
@@ -274,7 +274,7 @@ function alpha_sidebar( $name = null ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Sidebar::get_name
+ * @uses   carelib_get_sidebar_name
  * @param  string $id The id of the sidebar to check.
  * @return string
  */
