@@ -50,13 +50,7 @@ function alpha_wrap_close() {
  * @return void
  */
 function alpha_skip_to_content() {
-	echo '<div id="skip-to-content" class="skip-link">';
-	echo apply_filters( 'alpha_skip_to_content',
-		sprintf( '<a href="#content" class="button screen-reader-text">%s</a>',
-			esc_html__( 'Skip to content (Press enter)', 'alpha' )
-		)
-	);
-	echo '</div><!-- #skip-to-content -->';
+	echo carelib_get_skip_link( 'content' );
 }
 
 /**
