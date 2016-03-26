@@ -111,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "22df92b483685edb6d1712b01216d34d79433599"
+                "reference": "0816836e5938e00c80f6fa5a2c94c13c76df1629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/22df92b483685edb6d1712b01216d34d79433599",
-                "reference": "22df92b483685edb6d1712b01216d34d79433599",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/0816836e5938e00c80f6fa5a2c94c13c76df1629",
+                "reference": "0816836e5938e00c80f6fa5a2c94c13c76df1629",
                 "shasum": ""
             },
             "type": "library",
@@ -136,7 +136,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-03-22 04:33:52"
+            "time": "2016-03-26 15:44:54"
         },
         {
             "name": "zamoose/themehookalliance",
