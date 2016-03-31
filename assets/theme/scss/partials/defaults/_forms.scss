@@ -39,13 +39,18 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"],
+select,
 textarea {
 	@extend %text-input-base;
 	@extend %text-input-base-style;
 }
 
 select {
-	@extend %text-input-base-style;
+	appearance: none;
+	background-image: url(images/select-bg.svg);
+	background-repeat: no-repeat;
+	background-position: right $form-input-padding center;
+	background-size: 14px 12px;
 }
 
 input[type="checkbox"],
