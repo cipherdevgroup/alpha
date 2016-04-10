@@ -19,8 +19,8 @@
 		printf( _x( '%s', 'sidebar title', 'alpha' ), alpha_get_sidebar_name( 'primary' ) );
 	?></span>
 
-	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
-		<?php dynamic_sidebar( 'primary' ); ?>
+	<?php if ( is_active_sidebar( carelib_get_primary_sidebar_id() ) ) : ?>
+		<?php dynamic_sidebar( carelib_get_primary_sidebar_id() ); ?>
 	<?php else : ?>
 		<?php
 		the_widget(
