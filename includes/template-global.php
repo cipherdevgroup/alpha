@@ -285,7 +285,7 @@ function alpha_get_sidebar_name( $id ) {
  */
 function alpha_primary_sidebar() {
 	if ( alpha_layout_has_sidebar() ) {
-		alpha_sidebar( 'primary' );
+		alpha_sidebar();
 	}
 }
 
