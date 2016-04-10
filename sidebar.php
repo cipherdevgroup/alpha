@@ -2,7 +2,7 @@
 /**
  * Primary Sidebar Template
  *
- * @package   Alpha\TemplateParts\Sidebar
+ * @package   Alpha\CoreTemplates
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
  * @since     0.1.0
