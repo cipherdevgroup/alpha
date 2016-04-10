@@ -18,7 +18,7 @@
  */
 function alpha_jetpack_setup() {
 	// Return early if Jetpack isn't activated.
-	if ( ! class_exists( 'Jetpack' ) ) {
+	if ( ! class_exists( 'Jetpack', false ) ) {
 		return;
 	}
 
