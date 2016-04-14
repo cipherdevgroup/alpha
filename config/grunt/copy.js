@@ -59,9 +59,9 @@ module.exports = {
 		files: [
 			{
 				expand: true,
-				flatten: true,
+				flatten: false,
 				cwd: '<%= paths.tmp %>images',
-				src: ['*', '!screenshot.png'],
+				src: [ '*', '*/**', '!screenshot.png'],
 				dest: 'images',
 				filter: 'isFile'
 			},
