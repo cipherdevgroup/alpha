@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.24",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
-                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-05 11:42:46"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "wpsitecare/carelib",
@@ -113,12 +113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "6cba348f9593865ab0f8fa9f663053270fd1b2ce"
+                "reference": "22b05387089d3b79b269d243ae3a9f3a46776509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/6cba348f9593865ab0f8fa9f663053270fd1b2ce",
-                "reference": "6cba348f9593865ab0f8fa9f663053270fd1b2ce",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/22b05387089d3b79b269d243ae3a9f3a46776509",
+                "reference": "22b05387089d3b79b269d243ae3a9f3a46776509",
                 "shasum": ""
             },
             "type": "library",
@@ -138,7 +138,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-10 16:02:46"
+            "time": "2016-04-13 19:45:15"
         },
         {
             "name": "zamoose/themehookalliance",
