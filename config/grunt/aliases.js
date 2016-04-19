@@ -33,6 +33,14 @@ module.exports = function() {
 			'newer:cssmin',
 			'newer:copy:css'
 		],
+		'build:css:dist': [
+			'build:dependencies:css',
+			'newer:sass',
+			'newer:postcss',
+			'newer:rtlcss',
+			'newer:wpcss',
+			'newer:copy:css'
+		],
 		'build:images': [
 			'newer:imagemin:images',
 			'newer:copy:images'
@@ -41,6 +49,10 @@ module.exports = function() {
 			'build:dependencies:js',
 			'newer:concat:js',
 			'newer:uglify'
+		],
+		'build:js:dist': [
+			'build:dependencies:js',
+			'newer:concat:js'
 		]
 	};
 
