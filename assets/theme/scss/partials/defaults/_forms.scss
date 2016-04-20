@@ -59,7 +59,8 @@ input[type="radio"] {
 	width: auto;
 }
 
-input {
+input,
+textarea {
 	&::placeholder {
 		color: $form-placeholder-color;
 		opacity: 1;
