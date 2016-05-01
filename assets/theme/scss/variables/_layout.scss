@@ -4,16 +4,16 @@ $max-width: 1140px;
 
 // Global Screen Sizes
 //------------------------------------------------------------------------------
-$smallest-screen:  $max-width - 820px; // 320px;
-$smaller-screen:   $max-width - 660px; // 480px;
-$small-screen:     $max-width - 330px; // 810px;
-$medium-screen:    $max-width - 117px; // 1023px
-$large-screen:     $max-width + 40px;  // 1180px
+$smallest-screen:  320px;
+$smaller-screen:   480px;
+$small-screen:     810px;
+$medium-screen:    1023px;
+$large-screen:     1180px;
 
 // Global Max Width Settings
 //------------------------------------------------------------------------------
-$base-wrap-max-width:    $max-width - 372px; // 768px;
-$wrap-max-width-medium:  $max-width - 180px; // 960px
+$base-wrap-max-width:    768px;
+$wrap-max-width-medium:  960px;
 $wrap-max-width-large:   $max-width;
 
 // Global Spacing
