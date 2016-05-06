@@ -51,7 +51,8 @@ input[type="color"] {
 
 input[type="range"] {
 	appearance: none;
-	margin: 9.8px 0;
+	height: 28px;
+	margin: 10px 0;
 	width: 100%;
 
 	&:focus {
@@ -131,6 +132,7 @@ input[type="range"] {
 		border: 0 none;
 		border-radius: 100%;
 		cursor: pointer;
+		margin-top: 0;
 		height: 28px;
 		width: 28px;
 	}
