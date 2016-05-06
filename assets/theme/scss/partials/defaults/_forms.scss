@@ -45,6 +45,97 @@ textarea {
 	@extend %text-input-base-style;
 }
 
+input[type="color"] {
+	box-sizing: content-box;
+}
+
+input[type="range"] {
+	appearance: none;
+	margin: 9.8px 0;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+
+		&::-ms-fill-lower {
+			background: $form-border-color-focus;
+		}
+
+		&::-ms-fill-upper {
+			background: $form-border-color-focus;
+		}
+
+		&::-webkit-slider-runnable-track {
+			background: $form-border-color-focus;
+		}
+	}
+
+	&::-webkit-slider-runnable-track {
+		background: $form-border-color;
+		border: 0 none;
+		border-radius: $base-border-radius;
+		cursor: pointer;
+		height: 3px;
+		width: 100%;
+	}
+
+	&::-webkit-slider-thumb {
+		appearance: none;
+		background: $base-button-background-color;
+		border: 0 none;
+		border-radius: 100%;
+		cursor: pointer;
+		height: 28px;
+		margin-top: -10px;
+		width: 28px;
+	}
+
+	&::-moz-range-track {
+		background: $form-border-color;
+		border-radius: $base-border-radius;
+		cursor: pointer;
+		height: 3px;
+		width: 100%;
+	}
+
+	&::-moz-range-thumb {
+		background: $base-button-background-color;
+		border: 0 none;
+		border-radius: 100%;
+		cursor: pointer;
+		height: 28px;
+		width: 28px;
+	}
+
+	&::-ms-track {
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+		cursor: pointer;
+		width: 100%;
+		height: 3px;
+	}
+
+	&::-ms-fill-lower {
+		background: $form-border-color;
+		border-radius: $base-border-radius;
+	}
+
+	&::-ms-fill-upper {
+		background: $form-border-color;
+		border-radius: $base-border-radius;
+	}
+
+	&::-ms-thumb {
+		background: $base-button-background-color;
+		border: 0 none;
+		border-radius: 100%;
+		cursor: pointer;
+		height: 28px;
+		width: 28px;
+	}
+}
+
 select {
 	appearance: none;
 	background-image: url(images/select-bg.svg);
