@@ -191,8 +191,7 @@ body {
 	color: $menu-toggle-link-color;
 	cursor: pointer;
 	display: block;
-	float: right;
-	margin: 7px 0;
+	margin: 0 0 0 auto;
 	padding: 0;
 
 	@include min-screen($medium-screen) {

@@ -11,6 +11,15 @@
 	@include min-screen($medium-screen) {
 		padding: 25px 0;
 	}
+
+	.wrap {
+		display: flex;
+		align-items: center;
+
+		@include min-screen($medium-screen) {
+			display: block;
+		}
+	}
 }
 
 /* Title Area
