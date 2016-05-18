@@ -48,7 +48,7 @@ function alpha_post_image() {
 	}
 	alpha_image( apply_filters( 'alpha_post_image',
 		array(
-			'size'         => 'featured',
+			'size'         => 'alpha-featured',
 			'before'       => '<div class="featured-media image">',
 			'after'        => '</div>',
 			'link_to_post' => is_singular() ? false : true,

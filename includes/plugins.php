@@ -37,5 +37,5 @@ function alpha_jetpack_setup() {
  * @return string
  */
 function alpha_get_related_posts_image_size() {
-	return 'related-posts';
+	return 'alpha-related-posts';
 }
