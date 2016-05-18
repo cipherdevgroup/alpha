@@ -49,6 +49,29 @@
 	}
 }
 
+.rtl {
+	.pagination,
+	.page-links {
+		.prev {
+			@include ti-before("\f202", 0);
+		}
+
+		.next {
+			@include ti-after("\f201", 0);
+		}
+	}
+
+	.nav-single {
+		.nav-previous a {
+			@include ti-before("\f202", 10px);
+		}
+
+		.nav-next a {
+			@include ti-after("\f201", 10px);
+		}
+	}
+}
+
 /* Search Form Icons
 --------------------------------------------- */
 
