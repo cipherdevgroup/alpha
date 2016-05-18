@@ -51,6 +51,7 @@ function alpha_setup() {
 function alpha_register_image_sizes() {
 	set_post_thumbnail_size( 175, 130, true );
 	add_image_size( 'alpha-featured',      1025, 600, true );
+	add_image_size( 'alpha-featured-small', 513, 300, true );
 	add_image_size( 'alpha-related-posts',  350, 250, true );
 }
 
