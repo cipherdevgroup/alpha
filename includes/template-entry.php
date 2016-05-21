@@ -200,6 +200,18 @@ function alpha_content() {
 }
 
 /**
+ * Remove all actions from THA entry hooks.
+ *
+ * @since  1.0.0
+ * @access public
+ * @uses   carelib_null_entry_containers()
+ * @return void
+ */
+function alpha_null_entry_containers() {
+	carelib_null_entry_containers();
+}
+
+/**
  * Remove all actions from THA entry hooks and filter the WordPress post
  * content to return null.
  *

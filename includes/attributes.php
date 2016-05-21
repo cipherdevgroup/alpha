@@ -35,3 +35,17 @@ function alpha_attr( $slug, $context = '', $attr = array() ) {
 function alpha_get_attr( $slug, $context = '', $attr = array() ) {
 	return carelib_get_attr( $slug, $context, $attr );
 }
+
+/**
+ * Modify the site inner attributes to allow for full-width pages..
+ *
+ * @since  0.1.0
+ * @access public
+ * @param  array $attr The current attributes.
+ * @return array
+ */
+function alpha_attr_full_width_inner( $attr ) {
+	$attr['class'] = 'full-width-inner';
+
+	return $attr;
+}
