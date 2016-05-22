@@ -252,8 +252,7 @@ img.alignnone,
 /* Screen Readers
 --------------------------------------------- */
 
-.off-screen,
-.screen-reader-text {
+%off-screen {
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -266,6 +265,11 @@ img.alignnone,
 	&:focus {
 		outline: 0;
 	}
+}
+
+.off-screen,
+.screen-reader-text {
+	@extend %off-screen;
 }
 
 .skip-link .screen-reader-text:focus {
