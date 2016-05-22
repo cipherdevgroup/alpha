@@ -40,22 +40,22 @@
 	a {
 		transition: all 0.2s ease-in-out;
 		border-radius: $base-border-radius;
-		color: $page-links-link-color;
+		color: $pagination-link-color;
 		display: inline-block;
 		padding: 5px 15px;
 	}
 
 	span {
-		background: $page-links-current-background-color;
+		background: $pagination-current-background-color;
 	}
 
 	a {
-		background: $page-links-background-color;
+		background: $pagination-background-color;
 
 		&:hover,
 		&:focus {
-			background: $page-links-background-color-hover;
-			color: $page-links-link-color;
+			background: $pagination-background-color-hover;
+			color: $pagination-link-color;
 		}
 	}
 }
@@ -79,9 +79,9 @@
 
 .nav-next a,
 .nav-previous a {
-	background: $nav-single-background-color;
+	background: $pagination-background-color;
 	border-radius: $base-border-radius;
-	color: $nav-single-link-color;
+	color: $pagination-link-color;
 	display: block;
 	margin: 0 0 10px;
 	padding: 16px 20px 14px;
@@ -92,8 +92,8 @@
 .nav-previous a:hover,
 .nav-next a:focus,
 .nav-previous a:focus {
-	background: $nav-single-background-color-hover;
-	color: $nav-single-link-color;
+	background: $pagination-background-color-hover;
+	color: $pagination-link-color;
 }
 
 /* Archive Page Links

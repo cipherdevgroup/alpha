@@ -138,16 +138,6 @@ $pagination-background-color-hover:   $light-fog;
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color:               $base-font-color;
 
-$nav-single-background-color:         $pagination-background-color;
-$nav-single-background-color-hover:   $pagination-background-color-hover;
-$nav-single-link-color:               $pagination-link-color;
-
-$page-links-background-color:         $pagination-background-color;
-$page-links-background-color-hover:   $pagination-background-color-hover;
-$page-links-current-background-color: $pagination-current-background-color;
-$page-links-link-color:               $pagination-link-color;
-
-
 // Base Widget Colors
 //------------------------------------------------------------------------------
 $widget-background-color: $white;
