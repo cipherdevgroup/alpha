@@ -1,7 +1,5 @@
 .footer-widgets {
 	background-color: $footer-widgets-background-color;
-	border-top: 1px solid $footer-widgets-border-color;
-	border-bottom: 1px solid $footer-widgets-border-color;
 	color: $footer-widgets-font-color;
 	font-size: $footer-widgets-font-size;
 	padding: $base-padding 0 10px;
@@ -28,30 +26,6 @@
 		}
 	}
 
-	input {
-		border-color: $footer-widgets-border-color;
-	}
-
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"],
-	.button {
-		background-color: $footer-widgets-button-background-color;
-		color: $footer-widgets-button-font-color;
-
-		&:hover,
-		&:focus {
-			background-color: $footer-widgets-button-background-color-hover;
-			color: $footer-widgets-button-font-color-hover;
-		}
-	}
-
-	th,
-	td {
-		border-bottom-color: $footer-widgets-border-color;
-	}
-
 	li {
 		margin-bottom: 5px;
 		padding-bottom: 5px;
@@ -64,10 +38,5 @@
 
 	.entry {
 		margin-bottom: 10px;
-	}
-
-	.search-form button {
-		border-radius: $base-border-radius;
-		margin: 5px;
 	}
 }
