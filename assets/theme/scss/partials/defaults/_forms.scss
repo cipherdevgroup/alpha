@@ -142,8 +142,9 @@ select {
 	appearance: none;
 	background-image: url(images/select-bg.svg);
 	background-repeat: no-repeat;
-	background-position: right $form-input-padding center;
+	background-position: right 5px center;
 	background-size: 10px;
+	padding-right: 20px;
 }
 
 input[type="checkbox"],
