@@ -1,3 +1,5 @@
+/* General sidebars
+--------------------------------------------- */
 .sidebar {
 	font-size: $widget-font-size;
 
@@ -38,5 +40,50 @@
 			margin: 0;
 			padding: 15px 15px 0;
 		}
+	}
+}
+
+/* Footer Widgets
+--------------------------------------------- */
+.footer-widgets {
+	background-color: $footer-widgets-background-color;
+	color: $footer-widgets-font-color;
+	font-size: $footer-widgets-font-size;
+	padding: $base-padding 0 10px;
+
+	@include min-screen($medium-screen) {
+		.widget {
+			@include span(4 of 12);
+
+			&:nth-of-type(3n) {
+				@include last();
+			}
+		}
+	}
+
+	.widget-title {
+		color: $footer-widgets-heading-color;
+	}
+
+	a {
+		color: $footer-widgets-link-color;
+
+		&:hover {
+			color: $footer-widgets-link-color-hover;
+		}
+	}
+
+	li {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	p:last-child,
+	ul > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.entry {
+		margin-bottom: 10px;
 	}
 }
