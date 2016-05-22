@@ -133,11 +133,6 @@
 --------------------------------------------- */
 .comment-respond {
 	margin-bottom: $base-margin;
-	padding: $comments-padding-small;
-
-	@include min-screen($small-screen) {
-		padding: $comments-padding;
-	}
 
 	label {
 		display: block;
