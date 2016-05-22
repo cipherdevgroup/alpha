@@ -4,12 +4,7 @@
 	font-size: $widget-font-size;
 
 	a {
-		color: $widget-link-color;
-
-		&:hover,
-		&:focus {
-			color: $widget-link-color-hover;
-		}
+		@include alt-link-color();
 	}
 
 	li {
@@ -31,7 +26,7 @@
 /* Footer Widgets
 --------------------------------------------- */
 .footer-widgets {
-	color: $footer-widgets-font-color;
+	color: $base-font-color;
 	font-size: $footer-widgets-font-size;
 	padding: $base-padding 0 10px;
 
@@ -46,15 +41,11 @@
 	}
 
 	.widget-title {
-		color: $footer-widgets-heading-color;
+		color: $base-heading-color;
 	}
 
 	a {
-		color: $footer-widgets-link-color;
-
-		&:hover {
-			color: $footer-widgets-link-color-hover;
-		}
+		@include alt-link-color();
 	}
 
 	li {

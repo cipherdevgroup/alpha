@@ -1,5 +1,5 @@
 .site-header {
-	color: $header-font-color;
+	color: $base-font-color;
 	padding: 10px 0;
 
 	@include min-screen($small-screen) {
@@ -44,12 +44,12 @@
 	a,
 	a:hover,
 	a:focus {
-		color: $header-link-color;
+		color: $base-heading-color;
 	}
 }
 
 .site-description {
-	color: $header-font-color;
+	color: $base-font-color;
 	font-family: $header-font-family;
 	font-size: $site-description-font-size;
 	font-weight: 400;

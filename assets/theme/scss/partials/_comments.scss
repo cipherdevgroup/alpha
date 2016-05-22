@@ -100,12 +100,7 @@
 .comment-meta {
 
 	a {
-		color: $comment-meta-link-color;
-
-		&:hover,
-		&:focus {
-			color: $comment-meta-link-color-hover;
-		}
+		@include alt-link-color();
 	}
 }
 

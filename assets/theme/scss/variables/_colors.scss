@@ -30,10 +30,11 @@ $base-heading-color-hover:        $medium-blue;
 $base-blockquote-color:           $medium-gray;
 $base-link-color:                 $medium-blue;
 $base-link-color-hover:           lighten($base-link-color, 10);
+$base-alt-link-color:             $medium-gray;
+$base-alt-link-color-hover:       $base-link-color;
 $base-selection-background-color: $off-black;
 $base-selection-color:            $white;
 $base-insert-color:               lighten($light-blue, 45);
-$cta-background-color:            $dark-gray;
 
 // Button Colors
 //------------------------------------------------------------------------------
@@ -54,11 +55,6 @@ $form-border-color:       $base-border-color;
 $form-border-color-hover: darken($base-border-color, 5);
 $form-border-color-focus: darken($base-border-color, 20);
 $form-placeholder-color:  darken($base-border-color, 10);
-
-// Header Colors
-//------------------------------------------------------------------------------
-$header-font-color:       $dark-gray;
-$header-link-color:       $off-black;
 
 // Navigation Colors
 //------------------------------------------------------------------------------
@@ -86,8 +82,6 @@ $blockquote-border-color:               $light-fog;
 $code-background-color:                 $light-fog;
 $code-font-color:                       $off-black;
 $entry-meta-font-color:                 $medium-gray;
-$entry-meta-link-color:                 $medium-gray;
-$entry-meta-link-color-hover:           $base-link-color;
 $pre-background-color:                  $light-fog;
 $corner-ribbon-background-color:        $base-accent-color;
 $corner-ribbon-font-color:              $white;
@@ -105,13 +99,9 @@ $intro-paragraph-border-color:     $light-fog;
 $comments-font-color:                       $base-font-color;
 $comment-header-background-color:           $light-fog;
 $comment-author-header-background-color:    lighten($light-blue, 50);
-$comment-meta-link-color:                   $entry-meta-link-color;
-$comment-meta-link-color-hover:             $entry-meta-link-color-hover;
 $comment-table-background-color:            $white;
 $comment-reply-link-background-color:       $light-fog;
 $comment-reply-link-background-color-hover: $white;
-$comment-reply-link-color:                  $base-font-color;
-$comment-reply-link-color-hover:            $base-link-color;
 $allowed-tags-background-color:             $light-fog;
 
 // Pagination Colors
@@ -120,21 +110,3 @@ $pagination-background-color:         $white;
 $pagination-background-color-hover:   $light-fog;
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color:               $base-font-color;
-
-// Base Widget Colors
-//------------------------------------------------------------------------------
-$widget-link-color:       $medium-gray;
-$widget-link-color-hover: $base-link-color;
-
-// Footer Widgets Colors
-//------------------------------------------------------------------------------
-$footer-widgets-font-color:       $base-font-color;
-$footer-widgets-heading-color:    $base-heading-color;
-$footer-widgets-link-color:       $medium-gray;
-$footer-widgets-link-color-hover: $base-link-color-hover;
-
-// Footer Colors
-//------------------------------------------------------------------------------
-$footer-font-color:       $base-font-color;
-$footer-link-color:       $medium-gray;
-$footer-link-color-hover: $base-link-color;

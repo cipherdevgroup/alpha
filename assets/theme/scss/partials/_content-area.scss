@@ -71,12 +71,7 @@
 	}
 
 	a {
-		color: $entry-meta-link-color;
-
-		&:hover,
-		&:focus {
-			color: $entry-meta-link-color-hover;
-		}
+		@include alt-link-color();
 	}
 }
 
