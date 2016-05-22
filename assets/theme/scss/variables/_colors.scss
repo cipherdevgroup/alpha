@@ -71,14 +71,6 @@ $subnav-background-color-hover:   $medium-gray;
 $subnav-link-color:               $light-fog;
 $subnav-link-color-hover:         $white;
 
-$menu-primary-background-color:   $nav-background-color;
-$menu-primary-link-color:         lighten($nav-link-color, 10);
-$menu-primary-link-color-hover:   $base-link-color;
-
-$menu-secondary-background-color: $nav-background-color;
-$menu-secondary-link-color:       lighten($nav-link-color, 10);
-$menu-secondary-link-color-hover: $base-link-color;
-
 // Mobile Menu Colors
 //------------------------------------------------------------------------------
 $menu-toggle-background-color:       transparent;

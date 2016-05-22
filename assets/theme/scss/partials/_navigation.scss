@@ -25,9 +25,7 @@
 	li a:focus,
 	.current-menu-item > a,
 	.current-menu-ancestor > a,
-	.current-menu-parent > a,
-	.sub-menu .current-menu-item > a:hover,
-	.sub-menu .current-menu-item > a:focus {
+	.current-menu-parent > a {
 		color: $nav-link-color-hover;
 	}
 
@@ -53,9 +51,15 @@
 			}
 		}
 
-		.current-menu-item > a:hover,
-		.current-menu-item > a:focus {
+		.current-menu-item > a,
+		.current-menu-ancestor > a,
+		.current-menu-parent > a {
 			color: $subnav-link-color-hover;
+
+			&:hover,
+			&:focus {
+				color: $subnav-link-color-hover;
+			}
 		}
 
 		.sub-menu {
@@ -108,62 +112,29 @@
 	}
 }
 
+.menu-primary,
+.menu-secondary {
+	display: none;
+
+	@include min-screen($medium-screen) {
+		display: block;
+	}
+}
+
 /* Primary Navigation
 --------------------------------------------- */
 
 .menu-primary {
-	display: none;
 
 	@include min-screen($medium-screen) {
 		@include span(9 of 12);
 		@include last();
-		display: block;
 		text-align: right;
 	}
 
 	li > a {
 		padding-top: 23px;
 		padding-bottom: 23px;
-	}
-}
-
-.no-menu {
-	display: none;
-	margin: 0;
-	padding: 2px 0;
-
-	@include min-screen($medium-screen) {
-		display: block;
-	}
-
-	.button {
-		padding: 8px 20px;
-		margin: 8px 0 8px 20px;
-	}
-}
-
-
-/* Secondary Navigation
---------------------------------------------- */
-
-.menu-secondary {
-	background-color: $menu-secondary-background-color;
-	display: none;
-
-	@include min-screen($medium-screen) {
-		display: block;
-	}
-
-	li > a {
-		color: $menu-secondary-link-color;
-	}
-
-	li > a:hover,
-	li > a:focus,
-	.current-menu-item > a,
-	.sub-menu .current-menu-item > a:hover,
-	.sub-menu .current-menu-item > a:focus {
-		color: $menu-secondary-link-color-hover;
 	}
 }
 
