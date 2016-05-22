@@ -57,13 +57,11 @@ $form-placeholder-color:  darken($base-border-color, 10);
 
 // Header Colors
 //------------------------------------------------------------------------------
-$header-background-color: $light-fog;
 $header-font-color:       $dark-gray;
 $header-link-color:       $off-black;
 
 // Navigation Colors
 //------------------------------------------------------------------------------
-$nav-background-color:          $white;
 $nav-link-color:                $dark-gray;
 $nav-link-color-hover:          $base-link-color;
 $subnav-background-color:       $dark-gray;
@@ -84,7 +82,6 @@ $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
 
 // Entry Colors
 //------------------------------------------------------------------------------
-$entry-background-color:                $white;
 $blockquote-border-color:               $light-fog;
 $code-background-color:                 $light-fog;
 $code-font-color:                       $off-black;
@@ -105,9 +102,7 @@ $intro-paragraph-border-color:     $light-fog;
 
 // Comment Section Colors
 //------------------------------------------------------------------------------
-$comments-background-color:                 $white;
 $comments-font-color:                       $base-font-color;
-$comment-background-color:                  $white;
 $comment-header-background-color:           $light-fog;
 $comment-author-header-background-color:    lighten($light-blue, 50);
 $comment-meta-link-color:                   $entry-meta-link-color;
@@ -128,13 +123,11 @@ $pagination-link-color:               $base-font-color;
 
 // Base Widget Colors
 //------------------------------------------------------------------------------
-$widget-background-color: $white;
 $widget-link-color:       $medium-gray;
 $widget-link-color-hover: $base-link-color;
 
 // Footer Widgets Colors
 //------------------------------------------------------------------------------
-$footer-widgets-background-color: $light-fog;
 $footer-widgets-font-color:       $base-font-color;
 $footer-widgets-heading-color:    $base-heading-color;
 $footer-widgets-link-color:       $medium-gray;
@@ -142,7 +135,6 @@ $footer-widgets-link-color-hover: $base-link-color-hover;
 
 // Footer Colors
 //------------------------------------------------------------------------------
-$footer-background-color: $white;
 $footer-font-color:       $base-font-color;
 $footer-link-color:       $medium-gray;
 $footer-link-color-hover: $base-link-color;

@@ -3,7 +3,6 @@
 }
 
 .comment-container {
-	background-color: $comment-background-color;
 	margin-bottom: $base-margin;
 
 	table {
@@ -126,7 +125,6 @@
 --------------------------------------------- */
 .pingback,
 .trackback {
-	background-color: $comment-background-color;
 	margin-bottom: 20px;
 	padding: 10px 20px;
 }
@@ -134,7 +132,6 @@
 /* Comment Respond Form
 --------------------------------------------- */
 .comment-respond {
-	background-color: $comments-background-color;
 	margin-bottom: $base-margin;
 	padding: $comments-padding-small;
 
