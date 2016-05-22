@@ -28,29 +28,19 @@
 	height: 85px;
 	overflow: hidden;
 	position: absolute;
-	top: -1px;
-	right: -1px;
+	top: 0;
+	right: 0;
 	width: 85px;
 
 	.ribbon-content {
-		transform: rotate(45deg);
 		background-color: $corner-ribbon-background-color;
 		color: $corner-ribbon-font-color;
 		font-size: $small-font-size;
 		font-weight: 800;
 		margin: 0;
-		position: relative;
 		padding: 2px 7px;
-		left: -5px;
 		text-align: center;
-		top: 15px;
-		width: 120px;
 	}
-}
-
-.rtl .ribbon-content {
-	/*rtl:ignore*/
-	transform: rotate(-45deg);
 }
 
 .sticky {
