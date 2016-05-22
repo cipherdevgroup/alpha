@@ -19,8 +19,21 @@
 /* Content Highlighter
 --------------------------------------------- */
 
-.featured-content img {
-	width: auto;
+.featured-content {
+
+	img {
+		width: auto;
+	}
+
+	.entry {
+		border-bottom: 2px solid $base-border-color;
+		margin-bottom: 20px;
+		padding: 0 0 24px;
+	}
+
+	.entry-title {
+		font-size: 20px;
+	}
 }
 
 /* Beaver Builder
