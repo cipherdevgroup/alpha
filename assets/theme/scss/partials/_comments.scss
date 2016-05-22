@@ -6,10 +6,6 @@
 	background-color: $comment-background-color;
 	margin-bottom: $base-margin;
 
-	@include min-screen($small-screen) {
-		border: 1px solid $comment-border-color;
-	}
-
 	table {
 		background-color: $comment-table-background-color;
 	}
@@ -31,14 +27,11 @@
 		position: relative;
 
 		@include min-screen($small-screen) {
-			border-bottom: 1px solid $comment-border-color;
 			padding: 10px 20px;
 		}
 
 		&::before,
 		&::after {
-			border-color: transparent;
-			border-style: solid solid outset;
 			content: " ";
 			display: block;
 			height: 0;
@@ -51,18 +44,7 @@
 			width: 0;
 		}
 
-		&::before {
-			border-right-color: transparent;
-			border-width: 8px;
-
-			@include min-screen($small-screen) {
-				border-right-color: $comment-border-color;
-			}
-		}
-
 		&::after {
-			border-right-color: $comment-header-background-color;
-			border-width: 7px;
 			margin-top: -7px;
 			margin-left: 2px;
 			top: 50%;
@@ -89,7 +71,6 @@
 	}
 
 	.comment {
-		border: 0;
 		margin-left: -40px;
 		margin-top: 20px;
 		padding-bottom: 0;
@@ -114,10 +95,6 @@
 .bypostauthor > .comment-container {
 	header {
 		background-color: $comment-author-header-background-color;
-
-		&::after {
-			border-right-color: $comment-author-header-background-color;
-		}
 	}
 }
 
@@ -150,7 +127,6 @@
 .pingback,
 .trackback {
 	background-color: $comment-background-color;
-	border: 1px solid $comment-border-color;
 	margin-bottom: 20px;
 	padding: 10px 20px;
 }
@@ -159,7 +135,6 @@
 --------------------------------------------- */
 .comment-respond {
 	background-color: $comments-background-color;
-	border: 1px solid $comment-border-color;
 	margin-bottom: $base-margin;
 	padding: $comments-padding-small;
 

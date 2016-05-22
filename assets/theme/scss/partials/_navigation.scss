@@ -39,18 +39,27 @@
 		z-index: $sub-menu-z-index;
 
 		a {
-			background-color: $nav-background-color;
-			border: 1px solid $nav-border-color;
-			border-top: 0;
-			color: $nav-link-color;
+			background-color: $subnav-background-color;
+			color: $subnav-link-color;
 			font-size: $subnav-font-size;
 			padding: 20px;
 			position: relative;
 			width: 200px;
+
+			&:hover,
+			&:focus {
+				color: $subnav-link-color-hover;
+				background-color: $subnav-background-color-hover;
+			}
+		}
+
+		.current-menu-item > a:hover,
+		.current-menu-item > a:focus {
+			color: $subnav-link-color-hover;
 		}
 
 		.sub-menu {
-			margin: -55px 0 0 199px;
+			margin: -54px 0 0 200px;
 		}
 	}
 
@@ -102,32 +111,19 @@
 /* Primary Navigation
 --------------------------------------------- */
 
-.site-header .menu-primary {
+.menu-primary {
+	display: none;
+
 	@include min-screen($medium-screen) {
 		@include span(9 of 12);
 		@include last();
+		display: block;
 		text-align: right;
 	}
 
 	li > a {
 		padding-top: 23px;
 		padding-bottom: 23px;
-	}
-
-	.sub-menu {
-		border-top: 1px solid $menu-header-border-color;
-
-		.sub-menu {
-			margin-top: -62px;
-		}
-	}
-}
-
-.menu-primary {
-	display: none;
-
-	@include min-screen($medium-screen) {
-		display: block;
 	}
 }
 
@@ -152,7 +148,6 @@
 
 .menu-secondary {
 	background-color: $menu-secondary-background-color;
-	border-bottom: 1px solid $menu-secondary-border-color;
 	display: none;
 
 	@include min-screen($medium-screen) {
@@ -245,7 +240,6 @@ body {
 		}
 
 		li a {
-			border-bottom: 1px solid $menu-mobile-border-color;
 			color: $menu-mobile-color;
 			padding: $menu-mobile-item-padding;
 		}
@@ -260,7 +254,6 @@ body {
 	.sub-menu,
 	.sub-menu .sub-menu {
 		background: transparent;
-		border-top: 0;
 		box-shadow: none;
 		margin: 0;
 		opacity: 1;
@@ -269,8 +262,6 @@ body {
 
 		li a {
 			background: $menu-mobile-background-color;
-			border: 0;
-			border-bottom: 1px solid $menu-mobile-border-color;
 			color: $menu-mobile-subnav-color;
 			padding: $menu-mobile-item-padding;
 			padding-left: $menu-mobile-item-padding + 10px;

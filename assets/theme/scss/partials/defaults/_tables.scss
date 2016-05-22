@@ -7,12 +7,12 @@ table {
 }
 
 tbody {
-	border-bottom: 1px solid $table-border-color;
+	border-bottom: 1px solid $base-border-color;
 }
 
 td,
 th {
-	border-top: 1px solid $table-border-color;
+	border-top: 1px solid $base-border-color;
 	padding: 10px 0;
 	text-align: left;
 }

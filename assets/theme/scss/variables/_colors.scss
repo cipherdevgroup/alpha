@@ -58,28 +58,24 @@ $form-placeholder-color:  darken($base-border-color, 10);
 // Header Colors
 //------------------------------------------------------------------------------
 $header-background-color: $light-fog;
-$header-border-color:     $base-border-color;
 $header-font-color:       $dark-gray;
 $header-link-color:       $off-black;
 
 // Navigation Colors
 //------------------------------------------------------------------------------
 $nav-background-color:            $white;
-$nav-border-color:                $base-border-color;
 $nav-link-color:                  $dark-gray;
 $nav-link-color-hover:            $base-link-color;
-
-$menu-header-border-color:        $base-border-color;
-$menu-header-color:               $light-gray;
-$menu-header-color-hover:         $base-link-color;
+$subnav-background-color:         $dark-gray;
+$subnav-background-color-hover:   $medium-gray;
+$subnav-link-color:               $light-fog;
+$subnav-link-color-hover:         $white;
 
 $menu-primary-background-color:   $nav-background-color;
-$menu-primary-border-color:       $base-border-color;
 $menu-primary-link-color:         lighten($nav-link-color, 10);
 $menu-primary-link-color-hover:   $base-link-color;
 
 $menu-secondary-background-color: $nav-background-color;
-$menu-secondary-border-color:     $base-border-color;
 $menu-secondary-link-color:       lighten($nav-link-color, 10);
 $menu-secondary-link-color-hover: $base-link-color;
 
@@ -90,7 +86,6 @@ $menu-toggle-background-color-hover: transparent;
 $menu-toggle-link-color:             $off-black;
 $menu-toggle-color-hover:            $light-gray;
 $menu-mobile-background-color:       lighten($off-black, 3);
-$menu-mobile-border-color:           rgba(255, 255, 255, 0.1);
 $menu-mobile-color:                  lighten($nav-link-color, 30);
 $menu-mobile-color-hover:            $base-link-color;
 $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
@@ -98,17 +93,12 @@ $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
 // Entry Colors
 //------------------------------------------------------------------------------
 $entry-background-color:                $white;
-$entry-border-color:                    $base-border-color;
-$entry-sticky-border-color:             $dark-gray;
 $blockquote-border-color:               $light-fog;
-$table-border-color:                    $base-border-color;
 $code-background-color:                 $light-fog;
-$code-border-color:                     darken($base-border-color, 10);
 $code-font-color:                       $off-black;
 $entry-meta-font-color:                 $medium-gray;
 $entry-meta-link-color:                 $medium-gray;
 $entry-meta-link-color-hover:           $base-link-color;
-$entry-meta-link-border-color:          $base-link-color;
 $featured-media-background-color:       $light-fog;
 $pre-background-color:                  $light-fog;
 $corner-ribbon-background-color:        $base-accent-color;
@@ -122,7 +112,6 @@ $gallery-caption-font-color:            $white;
 //------------------------------------------------------------------------------
 $intro-paragraph-border-color:     $light-fog;
 $author-box-background-color:      $white;
-$author-box-border-color:          $base-border-color;
 $author-box-link-color:            $base-link-color;
 $author-box-link-color-hover:      $base-link-color-hover;
 $author-box-meta-link-color:       $entry-meta-link-color;
@@ -139,12 +128,10 @@ $media-player-unmute-button-color: $dark-gray;
 $comments-background-color:                 $white;
 $comments-font-color:                       $base-font-color;
 $comment-background-color:                  $white;
-$comment-border-color:                      $base-border-color;
 $comment-header-background-color:           $light-fog;
 $comment-author-header-background-color:    lighten($light-blue, 50);
 $comment-meta-link-color:                   $entry-meta-link-color;
 $comment-meta-link-color-hover:             $entry-meta-link-color-hover;
-$comment-meta-link-border-color:            $entry-meta-link-border-color;
 $comment-table-background-color:            $white;
 $comment-reply-link-background-color:       $light-fog;
 $comment-reply-link-background-color-hover: $white;
@@ -158,21 +145,16 @@ $pagination-background-color:         $white;
 $pagination-background-color-hover:   $light-fog;
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color:               $base-font-color;
-$pagination-border-color:             $base-border-color;
-$pagination-border-color-hover:       darken($pagination-border-color, 2);
 
 $nav-single-background-color:         $pagination-background-color;
 $nav-single-background-color-hover:   $pagination-background-color-hover;
 $nav-single-link-color:               $pagination-link-color;
-$nav-single-border-color:             $pagination-border-color;
-$nav-single-border-color-hover:       $pagination-border-color-hover;
 
 $page-links-background-color:         $pagination-background-color;
 $page-links-background-color-hover:   $pagination-background-color-hover;
 $page-links-current-background-color: $pagination-current-background-color;
 $page-links-link-color:               $pagination-link-color;
-$page-links-border-color:             $pagination-border-color;
-$page-links-border-color-hover:       $pagination-border-color-hover;
+
 
 // Base Widget Colors
 //------------------------------------------------------------------------------
@@ -192,6 +174,5 @@ $footer-widgets-link-color-hover:              $base-link-color-hover;
 //------------------------------------------------------------------------------
 $footer-background-color: $white;
 $footer-font-color:       $base-font-color;
-$footer-border-color:     $base-border-color;
 $footer-link-color:       $medium-gray;
 $footer-link-color-hover: $base-link-color;

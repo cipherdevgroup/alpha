@@ -9,7 +9,6 @@
 	.page-numbers {
 		transition: all 0.2s ease-in-out;
 		background: $pagination-background-color;
-		border: 1px solid $pagination-border-color;
 		border-radius: $base-border-radius;
 		display: inline-block;
 		margin-bottom: 10px;
@@ -26,7 +25,6 @@
 		&:hover,
 		&:focus {
 			background: $pagination-background-color-hover;
-			border: 1px solid $pagination-border-color-hover;
 		}
 	}
 }
@@ -41,7 +39,6 @@
 	span,
 	a {
 		transition: all 0.2s ease-in-out;
-		border: 1px solid $page-links-border-color;
 		border-radius: $base-border-radius;
 		color: $page-links-link-color;
 		display: inline-block;
@@ -84,7 +81,6 @@
 .nav-previous a {
 	background: $nav-single-background-color;
 	border-radius: $base-border-radius;
-	border: 1px solid $nav-single-border-color;
 	color: $nav-single-link-color;
 	display: block;
 	margin: 0 0 10px;

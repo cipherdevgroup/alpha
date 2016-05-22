@@ -5,19 +5,10 @@
 	margin-bottom: $base-margin;
 	padding: 0;
 	position: relative;
-
-	@include min-screen($small-screen) {
-		padding: $article-padding;
-	}
 }
 
 .content .entry {
 	background-color: $entry-background-color;
-	border-bottom: 1px solid $entry-border-color;
-
-	@include min-screen($small-screen) {
-		border: 1px solid $entry-border-color;
-	}
 }
 
 .entry-title {
@@ -145,12 +136,6 @@
 	display: block;
 	margin: 0 0 $content-margin;
 	overflow: hidden;
-
-	@include min-screen($small-screen) {
-		margin-left: -$base-padding;
-		margin-right: -$base-padding;
-		margin-top: -$base-padding;
-	}
 
 	&.audio {
 		padding: 20px;
