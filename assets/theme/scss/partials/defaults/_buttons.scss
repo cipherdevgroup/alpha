@@ -12,23 +12,23 @@
 }
 
 %base-button-style {
-	background-color: $base-button-background-color;
+	background-color: $base-button-bg-color;
 	color: $base-button-font-color;
 
 	&:hover,
 	&:focus {
-		background-color: $base-button-background-color-hover;
+		background-color: $base-button-bg-color-hover;
 		color: $base-button-font-color-hover;
 	}
 }
 
 %cta-button-style {
-	background-color: $cta-button-background-color;
+	background-color: $cta-button-bg-color;
 	color: $cta-button-font-color;
 
 	&:hover,
 	&:focus {
-		background-color: $cta-button-background-color-hover;
+		background-color: $cta-button-bg-color-hover;
 		color: $cta-button-font-color-hover;
 	}
 }

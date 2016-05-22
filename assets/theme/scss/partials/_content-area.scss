@@ -29,7 +29,7 @@
 	width: 85px;
 
 	.ribbon-content {
-		background-color: $corner-ribbon-background-color;
+		background-color: $corner-ribbon-bg-color;
 		color: $corner-ribbon-font-color;
 		font-size: $small-font-size;
 		font-weight: 800;
@@ -43,7 +43,7 @@
 	.corner-ribbon {
 
 		.ribbon-content {
-			background-color: $sticky-corner-ribbon-background-color;
+			background-color: $sticky-corner-ribbon-bg-color;
 		}
 	}
 }

@@ -37,7 +37,7 @@
 		z-index: $sub-menu-z-index;
 
 		a {
-			background-color: $subnav-background-color;
+			background-color: $subnav-bg-color;
 			color: $subnav-link-color;
 			font-size: $subnav-font-size;
 			padding: 20px;
@@ -47,7 +47,7 @@
 			&:hover,
 			&:focus {
 				color: $subnav-link-color-hover;
-				background-color: $subnav-background-color-hover;
+				background-color: $subnav-bg-color-hover;
 			}
 		}
 
@@ -152,7 +152,7 @@ body {
 }
 
 .menu-toggle {
-	background: $menu-toggle-background-color;
+	background: $menu-toggle-bg-color;
 	border-radius: $base-border-radius;
 	color: $menu-toggle-link-color;
 	cursor: pointer;
@@ -167,7 +167,7 @@ body {
 	&:hover,
 	&:focus,
 	&:active {
-		background: $menu-toggle-background-color-hover;
+		background: $menu-toggle-bg-color-hover;
 		color: $menu-toggle-color-hover;
 		outline: none;
 
@@ -182,7 +182,7 @@ body {
 }
 
 .menu-mobile {
-	background: $menu-mobile-background-color;
+	background: $menu-mobile-bg-color;
 	bottom: 0;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -217,7 +217,7 @@ body {
 
 		li a:hover,
 		li a:focus {
-			background: lighten($menu-mobile-background-color, 3);
+			background: lighten($menu-mobile-bg-color, 3);
 			color: $menu-mobile-color-hover;
 		}
 	}
@@ -232,7 +232,7 @@ body {
 		width: 100%;
 
 		li a {
-			background: $menu-mobile-background-color;
+			background: $menu-mobile-bg-color;
 			color: $menu-mobile-subnav-color;
 			padding: $menu-mobile-item-padding;
 			padding-left: $menu-mobile-item-padding + 10px;
@@ -241,7 +241,7 @@ body {
 
 		li a:hover,
 		li a:focus {
-			background: lighten($menu-mobile-background-color, 3);
+			background: lighten($menu-mobile-bg-color, 3);
 			color: $menu-mobile-color-hover;
 		}
 	}

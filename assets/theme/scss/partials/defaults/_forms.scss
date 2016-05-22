@@ -8,7 +8,7 @@
 }
 
 %text-input-base-style {
-	background-color: $input-background-color;
+	background-color: $input-bg-color;
 	box-shadow: $form-box-shadow;
 	color: $form-font-color;
 
@@ -75,7 +75,7 @@ input[type="range"] {
 
 	&::-webkit-slider-thumb {
 		appearance: none;
-		background: $base-button-background-color;
+		background: $base-button-bg-color;
 		border: 0 none;
 		border-radius: 100%;
 		cursor: pointer;
@@ -93,7 +93,7 @@ input[type="range"] {
 	}
 
 	&::-moz-range-thumb {
-		background: $base-button-background-color;
+		background: $base-button-bg-color;
 		border: 0 none;
 		border-radius: 100%;
 		cursor: pointer;
@@ -121,7 +121,7 @@ input[type="range"] {
 	}
 
 	&::-ms-thumb {
-		background: $base-button-background-color;
+		background: $base-button-bg-color;
 		border: 0 none;
 		border-radius: 100%;
 		cursor: pointer;

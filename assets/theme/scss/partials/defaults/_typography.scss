@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: $base-background-color;
+	background-color: $base-bg-color;
 	color: $base-font-color;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
@@ -22,7 +22,7 @@ textarea:focus,
 }
 
 ::selection {
-	background-color: $base-selection-background-color;
+	background-color: $base-selection-bg-color;
 	color: $base-selection-color;
 }
 
@@ -63,7 +63,7 @@ hr {
 }
 
 pre {
-	background: $pre-background-color;
+	background: $pre-bg-color;
 	color: $base-heading-color;
 	font-family: $monospace;
 	font-size: $base-font-size;

@@ -8,7 +8,7 @@
 
 	.page-numbers {
 		transition: all 0.2s ease-in-out;
-		background: $pagination-background-color;
+		background: $pagination-bg-color;
 		border-radius: $base-border-radius;
 		display: inline-block;
 		margin-bottom: 10px;
@@ -16,7 +16,7 @@
 	}
 
 	.current {
-		background: $pagination-current-background-color;
+		background: $pagination-current-bg-color;
 	}
 
 	a {
@@ -24,7 +24,7 @@
 
 		&:hover,
 		&:focus {
-			background: $pagination-background-color-hover;
+			background: $pagination-bg-color-hover;
 		}
 	}
 }
@@ -46,15 +46,15 @@
 	}
 
 	span {
-		background: $pagination-current-background-color;
+		background: $pagination-current-bg-color;
 	}
 
 	a {
-		background: $pagination-background-color;
+		background: $pagination-bg-color;
 
 		&:hover,
 		&:focus {
-			background: $pagination-background-color-hover;
+			background: $pagination-bg-color-hover;
 			color: $pagination-link-color;
 		}
 	}
@@ -79,7 +79,7 @@
 
 .nav-next a,
 .nav-previous a {
-	background: $pagination-background-color;
+	background: $pagination-bg-color;
 	border-radius: $base-border-radius;
 	color: $pagination-link-color;
 	display: block;
@@ -92,7 +92,7 @@
 .nav-previous a:hover,
 .nav-next a:focus,
 .nav-previous a:focus {
-	background: $pagination-background-color-hover;
+	background: $pagination-bg-color-hover;
 	color: $pagination-link-color;
 }
 

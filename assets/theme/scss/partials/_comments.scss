@@ -6,7 +6,7 @@
 	margin-bottom: $base-margin;
 
 	table {
-		background-color: $comment-table-background-color;
+		background-color: $comment-table-bg-color;
 	}
 }
 
@@ -19,7 +19,7 @@
 	}
 
 	header {
-		background-color: $comment-header-background-color;
+		background-color: $comment-header-bg-color;
 		clear: both;
 		font-size: $base-font-size;
 		padding: 5px;
@@ -93,7 +93,7 @@
 
 .bypostauthor > .comment-container {
 	header {
-		background-color: $comment-author-header-background-color;
+		background-color: $comment-author-header-bg-color;
 	}
 }
 
@@ -145,7 +145,7 @@
 }
 
 .form-allowed-tags {
-	background-color: $allowed-tags-background-color;
+	background-color: $allowed-tags-bg-color;
 	font-size: $base-font-size;
 	padding: 10px;
 

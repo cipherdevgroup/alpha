@@ -210,7 +210,7 @@ img.alignnone,
 
 	.gallery-caption {
 		transition: all 0.2s ease-in-out;
-		background: transparentize($gallery-caption-background-color, 0.5);
+		background: transparentize($gallery-caption-bg-color, 0.5);
 		color: $gallery-caption-font-color;
 		font-size: $gallery-caption-font-size;
 		line-height: 1.65;
