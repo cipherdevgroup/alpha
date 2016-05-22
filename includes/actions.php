@@ -95,13 +95,6 @@ add_action( 'wp_enqueue_scripts', 'alpha_enqueue_scripts', 10 );
 add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data', 12 );
 
 /**
- * Callback defined in includes/plugins.php
- *
- * @see grays_bust_beaver_dam
- */
-add_action( 'tha_head_bottom', 'alpha_bust_beaver_dam' );
-
-/**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_skip_to_content

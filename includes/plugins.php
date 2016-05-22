@@ -54,35 +54,3 @@ function alpha_is_beaver_enabled() {
 
 	return FLBuilderModel::is_builder_enabled();
 }
-
-/**
- * Remove things which get in the way of Beaver Builder when it's active.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_bust_beaver_dam() {
-	if ( alpha_is_beaver_enabled() ) {
-		/**
-		 * Callback defined in includes/template-layout.php
-		 *
-		 * @see alpha_force_full_width_layout
-		 */
-		add_filter( 'alpha_get_theme_layout', 'alpha_force_full_width_layout', 15 );
-
-		/**
-		 * Callback defined in includes/attributes.php
-		 *
-		 * @see alpha_attr_full_width_inner
-		 */
-		add_filter( 'alpha_attr_site-inner', 'alpha_attr_full_width_inner', 10 );
-
-		/**
-		 * Callback defined in includes/template-entry.php
-		 *
-		 * @see alpha_null_entry_containers
-		 */
-		add_action( 'tha_content_while_before', 'alpha_null_entry_containers', 10 );
-	}
-}
