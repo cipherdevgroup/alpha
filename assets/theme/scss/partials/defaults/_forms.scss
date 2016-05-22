@@ -138,13 +138,17 @@ input[type="range"] {
 	}
 }
 
-select {
+%select-base {
 	appearance: none;
 	background-image: url(images/select-bg.svg);
 	background-repeat: no-repeat;
 	background-position: right 5px center;
 	background-size: 10px;
 	padding-right: 20px;
+}
+
+select {
+	@extend %select-base;
 }
 
 input[type="checkbox"],
