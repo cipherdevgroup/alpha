@@ -45,6 +45,17 @@
 	}
 }
 
+@mixin alt-link-color {
+	a {
+		color: $base-alt-link-color;
+
+		&:hover,
+		&:focus {
+			color: $base-alt-link-color-hover;
+		}
+	}
+}
+
 // Icons
 //------------------------------------------------------------------------------
 @mixin icon-before($glyph, $family, $margin) {
