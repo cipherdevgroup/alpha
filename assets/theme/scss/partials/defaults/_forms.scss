@@ -1,7 +1,6 @@
 %text-input-base {
+	border: 0;
 	border-radius: $base-border-radius;
-	border-width: 1px;
-	border-style: solid;
 	font-size: $form-font-size;
 	font-weight: 400;
 	padding: $form-input-padding;
@@ -10,16 +9,10 @@
 
 %text-input-base-style {
 	background-color: $input-background-color;
-	border-color: $form-border-color;
 	box-shadow: $form-box-shadow;
 	color: $form-font-color;
 
-	&:hover {
-		border-color: $form-border-color-hover;
-	}
-
 	&:focus {
-		border-color: $form-border-color-focus;
 		box-shadow: $form-box-shadow-focus;
 		outline: none;
 	}
