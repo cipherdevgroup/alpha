@@ -22,3 +22,10 @@
 .featured-content img {
 	width: auto;
 }
+
+/* Beaver Builder
+--------------------------------------------- */
+.fl-builder-settings-fields select,
+.fl-builder-settings-fields select:focus {
+	@extend %select-base;
+}
