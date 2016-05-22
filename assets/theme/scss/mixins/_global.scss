@@ -46,13 +46,11 @@
 }
 
 @mixin alt-link-color {
-	a {
-		color: $base-alt-link-color;
+	color: $base-alt-link-color;
 
-		&:hover,
-		&:focus {
-			color: $base-alt-link-color-hover;
-		}
+	&:hover,
+	&:focus {
+		color: $base-alt-link-color-hover;
 	}
 }
 
