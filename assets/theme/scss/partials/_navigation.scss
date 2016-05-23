@@ -10,6 +10,10 @@
 		text-align: left;
 	}
 
+	> .menu-item > a {
+		text-transform: uppercase;
+	}
+
 	li > a {
 		color: $nav-link-color;
 		display: block;
@@ -67,48 +71,11 @@
 		}
 	}
 
-	.menu-item:hover,
-	.menu-item-hover,
-	.menu-item:focus {
-		position: static;
-	}
-
 	.menu-item:hover > .sub-menu,
 	.menu-item-hover > .sub-menu,
 	.menu-item:focus > .sub-menu {
 		left: auto;
 		opacity: 1;
-	}
-
-	> .menu-item > a {
-		text-transform: uppercase;
-	}
-
-	> .first > a {
-		padding-left: 0;
-	}
-
-	> .last > a {
-		padding-right: 0;
-	}
-
-	> .right {
-		color: $nav-link-color;
-		float: right;
-		list-style-type: none;
-
-		> a {
-			display: inline;
-			padding: 0;
-		}
-	}
-
-	> .rss > a {
-		margin-left: 48px;
-	}
-
-	> .search {
-		padding: 10px 0 0;
 	}
 }
 
