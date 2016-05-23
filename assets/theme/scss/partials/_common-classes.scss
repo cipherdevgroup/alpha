@@ -64,7 +64,7 @@
 --------------------------------------------- */
 
 .archive-title {
-	font-size: $archive-title-size;
+	@include h1-font-size();
 	font-weight: 600;
 }
 

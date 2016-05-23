@@ -46,10 +46,6 @@ $header-font-family:         $heading-font-family;
 $site-title-font-size:       $h2-font-size;
 $site-description-font-size: $base-font-size;
 
-// Archive Font Properties
-//------------------------------------------------------------------------------
-$archive-title-size: $h1-font-size;
-
 // Menu Font Properties
 //------------------------------------------------------------------------------
 $nav-font-size:         $base-font-size;
@@ -57,23 +53,7 @@ $subnav-font-size:      $medium-font-size;
 $pagination-font-size:  $base-font-size;
 $menu-toggle-font-size: 40px;
 
-// Form Font Properties
-//------------------------------------------------------------------------------
-$form-font-size:   $base-font-size;
-$form-font-family: $base-font-family;
-
 // Entry Font Properties
 //------------------------------------------------------------------------------
 $gallery-caption-font-size: $small-font-size;
 $wp-caption-font-size:      $small-font-size;
-
-// Widget Font Properties
-//------------------------------------------------------------------------------
-$widget-title-size: $h4-font-size;
-$widget-font-size: $medium-font-size;
-$footer-widgets-font-size: $widget-font-size;
-
-
-// Footer Font Properties
-//------------------------------------------------------------------------------
-$footer-font-size: $medium-font-size;

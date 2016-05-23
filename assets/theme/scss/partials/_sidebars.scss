@@ -1,7 +1,7 @@
 /* General sidebars
 --------------------------------------------- */
 .sidebar {
-	font-size: $widget-font-size;
+	font-size: $medium-font-size;
 
 	a {
 		@include alt-link-color();
@@ -27,7 +27,7 @@
 --------------------------------------------- */
 .footer-widgets {
 	color: $base-font-color;
-	font-size: $footer-widgets-font-size;
+	font-size: $medium-font-size;
 	padding: $base-padding 0 10px;
 
 	@include min-screen($medium-screen) {

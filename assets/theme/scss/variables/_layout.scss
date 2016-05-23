@@ -31,24 +31,13 @@ $site-inner-padding: 30px;
 //------------------------------------------------------------------------------
 $content-margin:         26px;
 $content-margin-small:   16px;
-$article-padding:        $base-padding $base-padding ($base-padding - $content-margin);
-$article-padding-small:  $base-padding-small $base-padding-small ($base-padding-small - $content-margin-small);
-
-$author-box-padding:       $article-padding;
-$author-box-padding-small: $article-padding-small;
 
 // Comment Spacing
 //------------------------------------------------------------------------------
-$comments-padding:        $article-padding;
-$comments-padding-small:  $article-padding-small;
 $comment-padding:         20px 20px 0;
 $comment-padding-small:   10px 10 0;
 $comment-margin:          20px;
 $comment-margin-small:    10px;
-
-// Widget Spacing
-//------------------------------------------------------------------------------
-$widget-padding: 30px;
 
 // Navigation Spacing
 //------------------------------------------------------------------------------
