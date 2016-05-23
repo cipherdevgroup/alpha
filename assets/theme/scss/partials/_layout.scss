@@ -1,23 +1,7 @@
 /* Site Containers
 --------------------------------------------- */
 
-.site-container {
-	position: relative;
-}
-
-.site-inner {
-	clear: both;
-	padding-top: 5%;
-	word-wrap: break-word;
-	word-break: normal;
-
-	@include min-screen($smaller-screen) {
-		padding-top: $site-inner-padding;
-	}
-}
-
-.site-inner,
-.wrap {
+%wrap {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: $base-wrap-max-width;
@@ -36,6 +20,26 @@
 	@include min-screen($large-screen) {
 		max-width: $wrap-max-width-large;
 	}
+}
+
+.site-container {
+	position: relative;
+}
+
+.site-inner {
+	@extend %wrap;
+	clear: both;
+	padding-top: 5%;
+	word-wrap: break-word;
+	word-break: normal;
+
+	@include min-screen($smaller-screen) {
+		padding-top: $site-inner-padding;
+	}
+}
+
+.wrap {
+	@extend %wrap;
 }
 
 /* Content
