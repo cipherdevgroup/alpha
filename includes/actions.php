@@ -25,13 +25,6 @@ add_action( 'after_setup_theme', 'alpha_content_width', 0 );
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
 
 /**
- * Callback defined in includes/plugins.php
- *
- * @see alpha_jetpack_setup
- */
-add_action( 'after_setup_theme', 'alpha_jetpack_setup', 12 );
-
-/**
  * Callback defined in includes/theme-setup.php
  *
  * @see alpha_register_image_sizes

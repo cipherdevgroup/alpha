@@ -9,27 +9,6 @@
  */
 
 /**
- * Make adjustments to the theme when Jetpack is installed and activated.
- * Change the default related posts image size.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_jetpack_setup() {
-	// Return early if Jetpack isn't activated.
-	if ( ! class_exists( 'Jetpack', false ) ) {
-		return;
-	}
-
-	// Add support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'footer'    => 'page',
-	) );
-}
-
-/**
  * Change the default related posts image size.
  *
  * @since  0.1.0
