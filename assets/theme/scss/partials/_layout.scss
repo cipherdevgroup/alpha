@@ -38,11 +38,8 @@
 	}
 }
 
-/* Column Widths and Positions
---------------------------------------------- */
-
 /* Content
--------------------- */
+--------------------------------------------- */
 
 .layout-1c-narrow .content {
 	padding: 0;
@@ -65,23 +62,11 @@
 			@include last();
 		}
 
-		/* Primary Sidebar
-		-------------------- */
 		.sidebar {
 			@include span(4);
 		}
 
 		.layout-2c-r .sidebar {
-			@include last();
-		}
-
-		/* Secondary Sidebar
-		-------------------- */
-		.sidebar-secondary {
-			@include span(2);
-		}
-
-		.content-sidebar-sidebar .sidebar-secondary {
 			@include last();
 		}
 	}
