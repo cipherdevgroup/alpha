@@ -12,12 +12,12 @@
 
 	a {
 		color: $base-heading-color;
-	}
-}
 
-.entry-title a:hover,
-.entry-title a:focus {
-	color: $base-heading-color-hover;
+		&:hover,
+		&:focus {
+			color: $base-heading-color-hover;
+		}
+	}
 }
 
 .corner-ribbon {
@@ -36,15 +36,6 @@
 		margin: 0;
 		padding: 2px 7px;
 		text-align: center;
-	}
-}
-
-.sticky {
-	.corner-ribbon {
-
-		.ribbon-content {
-			background-color: $sticky-corner-ribbon-bg-color;
-		}
 	}
 }
 
@@ -116,10 +107,6 @@
 	display: block;
 	margin: 0 0 $content-margin;
 	overflow: hidden;
-
-	&.audio {
-		padding: 20px;
-	}
 
 	> a {
 		display: block;
