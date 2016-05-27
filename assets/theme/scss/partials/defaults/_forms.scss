@@ -39,7 +39,7 @@ textarea {
 }
 
 input[type="color"] {
-	box-sizing: content-box;
+	padding: $form-input-padding / 2;
 }
 
 input[type="range"] {
