@@ -321,6 +321,13 @@ add_action( 'tha_entry_content_before', 'alpha_entry_content_open', 10 );
 /**
  * Callback defined in includes/template-entry.php
  *
+ * @see alpha_content
+ */
+add_action( 'alpha_entry_content', 'alpha_content', 10 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
  * @see alpha_link_pages
  */
 add_action( 'tha_entry_content_after', 'alpha_link_pages', 5 );

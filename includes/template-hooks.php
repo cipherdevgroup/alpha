@@ -42,6 +42,17 @@ function alpha_entry_header_meta() {
 }
 
 /**
+ * Add a custom hook for the entry meta.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return void
+ */
+function alpha_entry_content() {
+	carelib_entry_content();
+}
+
+/**
  * Add a custom hook for the entry footer if the current view has an entry footer.
  *
  * @since  0.1.0

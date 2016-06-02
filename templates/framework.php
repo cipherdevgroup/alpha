@@ -30,7 +30,7 @@
 
 				<?php tha_entry_content_before(); ?>
 
-				<?php alpha_content(); ?>
+				<?php alpha_entry_content(); ?>
 
 				<?php tha_entry_content_after(); ?>
 
