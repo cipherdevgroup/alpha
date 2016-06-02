@@ -36,22 +36,23 @@ function alpha_sticky_banner() {
 }
 
 /**
- * Output the featured post image within archives.
+ * Output the featured image for all post types except pages and attachments.
  *
  * @since  0.1.0
  * @access public
  * @return void
  */
-function alpha_post_image() {
-	if ( 'post' !== get_post_type() ) {
+function alpha_featured_image() {
+	if ( in_array( get_post_type(), array( 'page', 'attachment' ), true ) ) {
 		return;
 	}
-	alpha_image( apply_filters( 'alpha_post_image',
+
+	alpha_image( apply_filters( 'alpha_featured_image',
 		array(
 			'size'         => 'alpha-featured',
 			'before'       => '<div class="featured-media image">',
 			'after'        => '</div>',
-			'link_to_post' => is_singular() ? false : true,
+			'link_to_post' => ! is_singular(),
 		)
 	) );
 }

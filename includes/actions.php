@@ -237,9 +237,9 @@ add_action( 'tha_entry_top', 'alpha_sticky_banner', 2 );
 /**
  * Callback defined in includes/template-entry.php
  *
- * @see alpha_post_image
+ * @see alpha_featured_image
  */
-add_action( 'tha_entry_top', 'alpha_post_image', 4 );
+add_action( 'tha_entry_top', 'alpha_featured_image', 4 );
 
 /**
  * Callback defined in includes/template-entry.php
