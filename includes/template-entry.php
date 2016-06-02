@@ -213,44 +213,6 @@ function alpha_null_entry_containers() {
 }
 
 /**
- * Remove all actions from THA entry hooks and filter the WordPress post
- * content to return null.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Entry::null_entry
- * @return void
- */
-function alpha_null_entry() {
-	carelib_null_entry();
-}
-
-/**
- * Filter the WordPress content to null between the entry_content_before
- * and entry_content_after hook locations.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Entry::null_entry_content
- * @return void
- */
-function alpha_null_entry_content() {
-	carelib_null_entry_content();
-}
-
-/**
- * Hookable wrapper around a filter to null the WordPress core post content.
- *
- * @since  0.1.0
- * @access public
- * @uses   CareLib_Template_Entry::null_the_content
- * @return void
- */
-function alpha_null_the_content() {
-	carelib_null_the_content();
-}
-
-/**
  * Output singular entry pagination links.
  *
  * @since  0.1.0
