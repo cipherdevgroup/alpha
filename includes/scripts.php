@@ -84,3 +84,23 @@ function alpha_rtl_add_data() {
 	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
 	wp_style_add_data( 'alpha-style', 'suffix', alpha_get_suffix() );
 }
+
+/**
+ * Add custom styles to the WordPress editor to give a better representation of
+ * what the front of the site will look like.
+ *
+ * @since  0.1.0
+ * @access public
+ * @return void
+ */
+function alpha_add_editor_styles() {
+	$styles = array(
+		'css/editor-style' . alpha_get_suffix() . '.css',
+	);
+
+	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
+		$styles[] = alpha_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
+	}
+
+	add_editor_style( $styles );
+}

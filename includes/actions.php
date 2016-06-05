@@ -39,7 +39,7 @@ add_action( 'init', 'alpha_register_image_sizes', 5 );
 add_action( 'init', 'alpha_register_nav_menus', 10 );
 
 /**
- * Callback defined in includes/theme-setup.php
+ * Callback defined in includes/scripts.php
  *
  * @see alpha_add_editor_styles
  */
