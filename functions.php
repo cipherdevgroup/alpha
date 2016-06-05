@@ -54,6 +54,7 @@ require_once PARENT_THEME_DIR . 'includes/filters.php';
 
 if ( is_admin() ) {
 	require_once PARENT_THEME_DIR . 'admin/layout.php';
+	require_once PARENT_THEME_DIR . 'admin/filters.php';
 }
 
 /**
