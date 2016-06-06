@@ -42,7 +42,7 @@ function alpha_entry_header_meta() {
 }
 
 /**
- * Add a custom hook for the entry meta.
+ * Add a custom hook for the entry content.
  *
  * @since  0.1.0
  * @access public
