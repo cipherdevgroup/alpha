@@ -10,7 +10,7 @@
 ?>
 <li <?php alpha_attr( 'comment' ); ?>>
 
-	<article>
+	<article <?php alpha_attr( 'comment-container', 'ping' ); ?>>
 
 		<header <?php alpha_attr( 'comment-meta' ); ?>>
 			<cite <?php alpha_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
