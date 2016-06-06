@@ -10,7 +10,7 @@
 ?>
 <?php if ( get_option( 'page_comments' ) && 1 < get_comment_pages_count() ) : ?>
 
-	<nav id="comments-nav" class="comments-nav pagination" role="navigation" aria-labelledby="comments-nav-title">
+	<nav id="comments-nav" class="comments-nav pagination" aria-labelledby="comments-nav-title">
 
 		<h3 id="comments-nav-title" class="screen-reader-text"><?php esc_html_e( 'Comments Navigation', 'alpha' ); ?></h3>
 
