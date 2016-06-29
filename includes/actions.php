@@ -146,13 +146,6 @@ add_action( 'tha_header_bottom', 'alpha_menu_primary', 10 );
 /**
  * Callback defined in includes/template-global.php
  *
- * @see alpha_menu_fallback
- */
-add_action( 'tha_header_bottom', 'alpha_menu_fallback', 10 );
-
-/**
- * Callback defined in includes/template-global.php
- *
  * @see alpha_menu_secondary
  */
 add_action( 'tha_header_after', 'alpha_menu_secondary', 10 );

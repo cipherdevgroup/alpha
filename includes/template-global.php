@@ -166,20 +166,6 @@ function alpha_menu_primary() {
 }
 
 /**
- * Display the site's primary menu fallback for logged-in users who can edit
- * theme options.
- *
- * @since  0.1.0
- * @access public
- * @return void
- */
-function alpha_menu_fallback() {
-	if ( ! has_nav_menu( 'primary' ) && current_user_can( 'edit_theme_options' ) ) {
-		alpha_menu( 'fallback-primary' );
-	}
-}
-
-/**
  * Load the site's secondary menu template.
  *
  * @since  0.1.0
