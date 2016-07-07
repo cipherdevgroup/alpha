@@ -2,14 +2,14 @@
   "name": "wpsitecare/alpha",
   "description": "The WP Site Care Starter theme.",
   "keywords": ["wordpress", "theme", "wpsitecare"],
-  "homepage": "http://www.wpsitecare.com",
+  "homepage": "https://www.wpsitecare.com",
   "type": "wordpress-theme",
   "license": "GPL-2.0+",
   "authors": [
     {
       "name": "Robert Neu",
       "email": "rob@wpsitecare.com",
-      "homepage": "http://www.wpsitecare.com"
+      "homepage": "https://www.wpsitecare.com"
     }
   ],
   "support": {
