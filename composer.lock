@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "748ee7206a71cc979742ef246b8f0e24",
-    "content-hash": "fc520767170354f6fdee8faa2a204716",
+    "hash": "268dddc9a31f10ccfcf809f2582007b6",
+    "content-hash": "4a3831de04294f9f231f2a38243fe95b",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.25",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
-                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
                 "shasum": ""
             },
             "require": {
@@ -65,6 +65,7 @@
                 "MODX Evo",
                 "Mautic",
                 "OXID",
+                "RadPHP",
                 "SMF",
                 "Thelia",
                 "WolfCMS",
@@ -80,6 +81,7 @@
                 "dokuwiki",
                 "drupal",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
@@ -105,20 +107,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-07-05 06:18:20"
         },
         {
             "name": "wpsitecare/carelib",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "ac77d25b293f07ddc7c8f82a66c99ac35c200bfb"
+                "reference": "a82079b7dcf5414fc4f00b3f6352ddb45148728e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/ac77d25b293f07ddc7c8f82a66c99ac35c200bfb",
-                "reference": "ac77d25b293f07ddc7c8f82a66c99ac35c200bfb",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/a82079b7dcf5414fc4f00b3f6352ddb45148728e",
+                "reference": "a82079b7dcf5414fc4f00b3f6352ddb45148728e",
                 "shasum": ""
             },
             "type": "library",
@@ -130,7 +132,7 @@
                 {
                     "name": "Robert Neu",
                     "email": "rob@wpsitecare.com",
-                    "homepage": "http://www.wpsitecare.com"
+                    "homepage": "https://www.wpsitecare.com"
                 }
             ],
             "description": "A collection of helpful functions to make creating an awesome theme more enjoyable.",
@@ -138,7 +140,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-06-06 22:28:00"
+            "time": "2016-08-01 23:05:18"
         },
         {
             "name": "zamoose/themehookalliance",
@@ -177,7 +179,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wpsitecare/carelib": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,
