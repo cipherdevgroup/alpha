@@ -24,6 +24,7 @@ function alpha_return_full_width_layout() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_force_layout
  * @return string the slug of the full content layout.
  */
 function alpha_force_full_width_layout() {
@@ -46,6 +47,7 @@ function alpha_return_full_narrow_layout() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_force_layout
  * @return string the slug of the narrow full content layout.
  */
 function alpha_force_full_narrow_layout() {
@@ -68,6 +70,7 @@ function alpha_return_right_sidebar_layout() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_force_layout
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_right_sidebar_layout() {
@@ -90,6 +93,7 @@ function alpha_return_left_sidebar_layout() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_force_layout
  * @return string the slug of the right sidebar layout.
  */
 function alpha_force_left_sidebar_layout() {
@@ -101,7 +105,7 @@ function alpha_force_left_sidebar_layout() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Layouts::get_theme_layout
+ * @uses   carelib_layout_has_sidebar
  * @return bool true if the current layout includes a sidebar
  */
 function alpha_layout_has_sidebar() {

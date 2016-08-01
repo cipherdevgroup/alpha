@@ -62,7 +62,7 @@ function alpha_featured_image() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_entry_title
+ * @uses   carelib_get_entry_title
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
@@ -75,6 +75,7 @@ function alpha_entry_title( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_has_entry_header
  * @return bool
  */
 function alpha_has_entry_header() {
@@ -86,6 +87,7 @@ function alpha_has_entry_header() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_has_entry_header_meta
  * @return bool
  */
 function alpha_has_entry_header_meta() {
@@ -119,7 +121,7 @@ function alpha_entry_meta_open() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_entry_author
+ * @uses   carelib_get_entry_author
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
@@ -132,7 +134,7 @@ function alpha_entry_author( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_entry_published
+ * @uses   carelib_get_entry_published
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
@@ -145,7 +147,7 @@ function alpha_entry_published( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_entry_comments_link
+ * @uses   carelib_get_entry_comments_link
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
@@ -193,7 +195,7 @@ function alpha_entry_content_open() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_content
+ * @uses   carelib_get_content
  * @return void
  */
 function alpha_content() {
@@ -274,7 +276,7 @@ function alpha_entry_footer_open() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_entry_terms
+ * @uses   carelib_get_entry_terms
  * @param  array $args a list of arguments to pass to the entry terms method.
  * @return void
  */
@@ -343,7 +345,7 @@ function alpha_entry_close() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Entry::get_post_navigation
+ * @uses   carelib_get_post_navigation
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
@@ -356,7 +358,7 @@ function alpha_post_navigation( $args = array() ) {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Comments::comments_callback
+ * @uses   carelib_comments_callback
  * @param  object  $comment the comment object.
  * @param  array   $args list of arguments passed from wp_list_comments().
  * @param  integer $depth What level the particular comment is.
@@ -371,6 +373,7 @@ function alpha_comments_callback( $comment, $args, $depth ) {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_comments_load_template
  * @return void
  */
 function alpha_comments() {

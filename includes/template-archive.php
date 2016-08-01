@@ -13,7 +13,7 @@
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Archive::is_plural
+ * @uses   carelib_is_plural
  * @return bool true if we're on a plural page.
  */
 function alpha_is_plural() {
@@ -25,7 +25,7 @@ function alpha_is_plural() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Archive::is_blog_archive
+ * @uses   carelib_is_blog_archive
  * @return bool true if we're on a blog archive page.
  */
 function alpha_is_blog_archive() {
@@ -37,6 +37,7 @@ function alpha_is_blog_archive() {
  *
  * @since  0.1.0
  * @access public
+ * @uses   carelib_is_blog_archive
  * @return bool true if we're on a blog archive page or a singular post.
  */
 function alpha_is_blog() {
@@ -98,7 +99,7 @@ function alpha_archive_header_close() {
  *
  * @since  0.1.0
  * @access public
- * @uses   CareLib_Template_Archive::get_posts_navigation
+ * @uses   carelib_get_posts_navigation
  * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
