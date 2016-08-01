@@ -19,7 +19,7 @@
     "vendor-dir": "assets/composer"
   },
   "require": {
-    "wpsitecare/carelib": "dev-master",
+    "wpsitecare/carelib": "~1.0",
     "zamoose/themehookalliance": "dev-master",
     "composer/installers": "~1.0"
   }
