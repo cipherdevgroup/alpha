@@ -1,1 +1,5 @@
-# Changelog for Alpha
+# Changelog
+
+## 1.0.0
+
+Initial release!
