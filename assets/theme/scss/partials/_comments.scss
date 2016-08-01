@@ -11,10 +11,10 @@
 }
 
 .comment {
-	position: relative;
 	padding-left: 40px;
+	position: relative;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		padding-left: 60px;
 	}
 
@@ -25,7 +25,7 @@
 		padding: 5px;
 		position: relative;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			padding: 10px 20px;
 		}
 
@@ -44,8 +44,8 @@
 		}
 
 		&::after {
-			margin-top: -7px;
 			margin-left: 2px;
+			margin-top: -7px;
 			top: 50%;
 		}
 
@@ -59,12 +59,12 @@
 	}
 
 	.avatar {
-		position: absolute;
 		left: 0;
 		margin: 0;
+		position: absolute;
 		width: 30px;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			width: 48px;
 		}
 	}
@@ -74,7 +74,7 @@
 		margin-top: 20px;
 		padding-bottom: 0;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			margin-left: -30px;
 		}
 	}
@@ -84,7 +84,7 @@
 	}
 
 	footer {
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			padding: 0 20px 20px;
 		}
 	}
@@ -111,7 +111,7 @@
 	clear: both;
 	padding-top: 10px;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		padding: $comment-padding;
 	}
 }
@@ -137,7 +137,7 @@
 		display: block;
 		width: 100%;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			display: inline-block;
 			width: auto;
 		}
@@ -149,7 +149,7 @@
 	font-size: $base-font-size;
 	padding: 10px;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		padding: 20px;
 	}
 }

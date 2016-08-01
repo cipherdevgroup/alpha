@@ -8,7 +8,7 @@
 	margin: 0.7rem 0.5rem 0 0;
 }
 
-@include min-screen($small-screen) {
+@include min-screen( $small-screen ) {
 	.pull-quote {
 		max-width: 60%;
 

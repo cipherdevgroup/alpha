@@ -29,21 +29,21 @@ $base-heading-color:        $off-black;
 $base-heading-color-hover:  $medium-blue;
 $base-blockquote-color:     $medium-gray;
 $base-link-color:           $medium-blue;
-$base-link-color-hover:     lighten($base-link-color, 10);
+$base-link-color-hover:     lighten( $base-link-color, 10 );
 $base-alt-link-color:       $medium-gray;
 $base-alt-link-color-hover: $base-link-color;
 $base-selection-bg-color:   $off-black;
 $base-selection-color:      $white;
-$base-insert-color:         lighten($light-blue, 45);
+$base-insert-color:         lighten( $light-blue, 45 );
 
 // Button Colors
 //------------------------------------------------------------------------------
 $base-button-bg-color:         $off-black;
-$base-button-bg-color-hover:   lighten($base-button-bg-color, 10);
+$base-button-bg-color-hover:   lighten( $base-button-bg-color, 10 );
 $base-button-font-color:       $white;
 $base-button-font-color-hover: $white;
 $cta-button-bg-color:          $light-blue;
-$cta-button-bg-color-hover:    lighten($cta-button-bg-color, 10);
+$cta-button-bg-color-hover:    lighten( $cta-button-bg-color, 10 );
 $cta-button-font-color:        $white;
 $cta-button-font-color-hover:  $white;
 
@@ -52,9 +52,9 @@ $cta-button-font-color-hover:  $white;
 $input-bg-color:          $light-fog;
 $form-font-color:         $base-font-color;
 $form-border-color:       $base-border-color;
-$form-border-color-hover: darken($base-border-color, 5);
-$form-border-color-focus: darken($base-border-color, 20);
-$form-placeholder-color:  darken($base-border-color, 10);
+$form-border-color-hover: darken( $base-border-color, 5 );
+$form-border-color-focus: darken( $base-border-color, 20 );
+$form-placeholder-color:  darken( $base-border-color, 10 );
 
 // Navigation Colors
 //------------------------------------------------------------------------------
@@ -71,10 +71,10 @@ $menu-toggle-bg-color:       transparent;
 $menu-toggle-bg-color-hover: transparent;
 $menu-toggle-link-color:     $off-black;
 $menu-toggle-color-hover:    $light-gray;
-$menu-mobile-bg-color:       lighten($off-black, 3);
-$menu-mobile-color:          lighten($nav-link-color, 30);
+$menu-mobile-bg-color:       lighten( $off-black, 3 );
+$menu-mobile-color:          lighten( $nav-link-color, 30 );
 $menu-mobile-color-hover:    $base-link-color;
-$menu-mobile-subnav-color:   lighten($nav-link-color, 15);
+$menu-mobile-subnav-color:   lighten( $nav-link-color, 15 );
 
 // Entry Colors
 //------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ $intro-paragraph-border-color:     $light-fog;
 //------------------------------------------------------------------------------
 $comments-font-color:               $base-font-color;
 $comment-header-bg-color:           $light-fog;
-$comment-author-header-bg-color:    lighten($light-blue, 50);
+$comment-author-header-bg-color:    lighten( $light-blue, 50 );
 $comment-table-bg-color:            $white;
 $comment-reply-link-bg-color:       $light-fog;
 $comment-reply-link-bg-color-hover: $white;
@@ -106,5 +106,5 @@ $allowed-tags-bg-color:             $light-fog;
 //------------------------------------------------------------------------------
 $pagination-bg-color:         $white;
 $pagination-bg-color-hover:   $light-fog;
-$pagination-current-bg-color: darken($light-fog, 4);
+$pagination-current-bg-color: darken( $light-fog, 4 );
 $pagination-link-color:       $base-font-color;

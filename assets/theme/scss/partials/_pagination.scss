@@ -7,12 +7,12 @@
 	text-align: center;
 
 	.page-numbers {
-		transition: all 0.2s ease-in-out;
 		background: $pagination-bg-color;
 		border-radius: $base-border-radius;
 		display: inline-block;
 		margin-bottom: 10px;
 		padding: 10px 20px;
+		transition: all 0.2s ease-in-out;
 	}
 
 	.current {
@@ -38,11 +38,11 @@
 
 	span,
 	a {
-		transition: all 0.2s ease-in-out;
 		border-radius: $base-border-radius;
 		color: $pagination-link-color;
 		display: inline-block;
 		padding: 5px 15px;
+		transition: all 0.2s ease-in-out;
 	}
 
 	span {
@@ -65,14 +65,14 @@
 --------------------------------------------- */
 .nav-next a {
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		float: right;
 	}
 }
 
 .nav-previous a {
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		float: left;
 	}
 }
@@ -100,8 +100,8 @@
 --------------------------------------------- */
 
 .nav-archive {
-	display: block;
 	clear: both;
+	display: block;
 	font-size: $pagination-font-size;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
@@ -114,8 +114,8 @@
 --------------------------------------------- */
 
 .nav-single {
-	display: block;
 	clear: both;
+	display: block;
 	font-size: $pagination-font-size;
 	letter-spacing: 1px;
 	margin-bottom: 20px;

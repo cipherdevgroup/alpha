@@ -19,7 +19,7 @@
 		display: block;
 		padding: 25px 15px;
 
-		@include min-screen($large-screen) {
+		@include min-screen( $large-screen ) {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
@@ -50,8 +50,8 @@
 
 			&:hover,
 			&:focus {
-				color: $subnav-link-color-hover;
 				background-color: $subnav-bg-color-hover;
+				color: $subnav-link-color-hover;
 			}
 		}
 
@@ -83,7 +83,7 @@
 .menu-secondary {
 	display: none;
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		display: block;
 	}
 }
@@ -93,15 +93,15 @@
 
 .menu-primary {
 
-	@include min-screen($medium-screen) {
-		@include span(9 of 12);
+	@include min-screen( $medium-screen ) {
+		@include span( 9 of 12 );
 		@include last();
 		text-align: right;
 	}
 
 	li > a {
-		padding-top: 23px;
 		padding-bottom: 23px;
+		padding-top: 23px;
 	}
 }
 
@@ -109,9 +109,9 @@
 --------------------------------------------- */
 
 body {
-	transition: left $responsive-menu-transition;
-	position: relative;
 	left: 0;
+	position: relative;
+	transition: left $responsive-menu-transition;
 
 	&.menu-open {
 		left: -260px;
@@ -127,7 +127,7 @@ body {
 	margin: 0 0 0 auto;
 	padding: 0;
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		display: none;
 	}
 
@@ -138,7 +138,7 @@ body {
 		color: $menu-toggle-color-hover;
 		outline: none;
 
-		@include min-screen($medium-screen) {
+		@include min-screen( $medium-screen ) {
 			display: none;
 		}
 	}
@@ -155,8 +155,8 @@ body {
 	overflow-y: auto;
 	position: fixed;
 	right: -260px;
-	transition: right $responsive-menu-transition;
 	top: 0;
+	transition: right $responsive-menu-transition;
 	width: 260px;
 	z-index: $menu-mobile-z-index;
 
@@ -184,7 +184,7 @@ body {
 
 		li a:hover,
 		li a:focus {
-			background: lighten($menu-mobile-bg-color, 3);
+			background: lighten( $menu-mobile-bg-color, 3 );
 			color: $menu-mobile-color-hover;
 		}
 	}
@@ -208,7 +208,7 @@ body {
 
 		li a:hover,
 		li a:focus {
-			background: lighten($menu-mobile-bg-color, 3);
+			background: lighten( $menu-mobile-bg-color, 3 );
 			color: $menu-mobile-color-hover;
 		}
 	}

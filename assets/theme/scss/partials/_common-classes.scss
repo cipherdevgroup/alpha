@@ -8,20 +8,20 @@
 	input[type=search] {
 		appearance: none;
 		font-size: $base-font-size;
-		padding: 10px;
 		margin: 0;
+		padding: 10px;
 		width: 100%;
 	}
 
 	button[type=submit] {
-		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		bottom: 0;
 		outline: none;
 		padding: 0 20px;
 		position: absolute;
-		top: 0;
 		right: 0;
-		bottom: 0;
+		top: 0;
 
 		&::before {
 			font-size: $base-font-size;
@@ -54,7 +54,7 @@
 	display: block;
 }
 
-@include min-screen($smaller-screen) {
+@include min-screen( $smaller-screen ) {
 	.alignleft .avatar {
 		margin-right: 24px;
 	}
@@ -85,16 +85,16 @@ img.centered,
 .alignright,
 img.alignnone,
 .alignnone {
-	max-width: 100%;
 	display: block;
 	margin: 0 auto $content-margin-small;
+	max-width: 100%;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		margin-bottom: $content-margin;
 	}
 }
 
-@include min-screen($smaller-screen) {
+@include min-screen( $smaller-screen ) {
 	.alignleft {
 		float: left;
 		text-align: left;
@@ -133,22 +133,22 @@ img.alignnone,
 
 .wp-smiley,
 .emoji {
-	display: inline;
+	background: none;
 	border: 0;
 	box-shadow: none;
+	display: inline;
 	height: 1em;
-	width: 1em;
 	margin: 0 0.2em;
-	vertical-align: -0.1em;
-	background: none;
 	padding: 0;
+	vertical-align: -0.1em;
+	width: 1em;
 }
 
 /* WordPress Galleries
 --------------------------------------------- */
 
 .gallery {
-	@include container(12);
+	@include container( 12 );
 
 	img {
 		width: auto;
@@ -164,53 +164,52 @@ img.alignnone,
 	position: relative;
 	text-align: center;
 
-	@include min-screen($small-screen) {
-		@include nested(12) {
+	@include min-screen( $small-screen ) {
+		@include nested( 12 ) {
 			.gallery-columns-2 &,
 			.gallery-col-2 & {
-				@include gallery(6);
+				@include gallery( 6 );
 			}
 
 			.gallery-columns-3 &,
 			.gallery-col-3 & {
-				@include gallery(4);
+				@include gallery( 4 );
 			}
 
 			.gallery-columns-4 &,
 			.gallery-col-4 & {
-				@include gallery(3);
+				@include gallery( 3 );
 			}
 
 			.gallery-columns-5 &,
 			.gallery-col-5 & {
-				@include gallery(2.4);
+				@include gallery( 2.4 );
 			}
 
 			.gallery-columns-6 &,
 			.gallery-col-6 & {
-				@include gallery(2);
+				@include gallery( 2 );
 			}
 
 			.gallery-columns-7 &,
 			.gallery-col-7 & {
-				@include gallery(1.71);
+				@include gallery( 1.71 );
 			}
 
 			.gallery-columns-8 &,
 			.gallery-col-8 & {
-				@include gallery(1.5);
+				@include gallery( 1.5 );
 			}
 
 			.gallery-columns-9 &,
 			.gallery-col-9 & {
-				@include gallery(1.33);
+				@include gallery( 1.33 );
 			}
 		}
 	}
 
 	.gallery-caption {
-		transition: all 0.2s ease-in-out;
-		background: transparentize($gallery-caption-bg-color, 0.5);
+		background: transparentize( $gallery-caption-bg-color, 0.5 );
 		color: $gallery-caption-font-color;
 		font-size: $gallery-caption-font-size;
 		line-height: 1.65;
@@ -218,22 +217,23 @@ img.alignnone,
 		overflow: hidden;
 		padding: 10px;
 		position: absolute;
-		visibility: hidden;
-		width: 100%;
 		text-overflow: ellipsis;
+		transition: all 0.2s ease-in-out;
+		visibility: hidden;
 		white-space: nowrap;
+		width: 100%;
 	}
 
 	&:hover .gallery-caption,
 	&:focus .gallery-caption {
-		transform: translate(0, -100%);
-		visibility: visible;
 		opacity: 1;
+		transform: translate( 0, -100% );
+		visibility: visible;
 
 		&:hover,
 		&:focus {
-			white-space: normal;
 			overflow: visible;
+			white-space: normal;
 		}
 	}
 }
@@ -244,8 +244,8 @@ img.alignnone,
 }
 
 .gallery-icon img {
-	width: 100%;
 	margin: 0 auto;
+	width: 100%;
 }
 
 
@@ -254,7 +254,7 @@ img.alignnone,
 
 %off-screen {
 	border: 0;
-	clip: rect(0 0 0 0);
+	clip: rect( 0 0 0 0 );
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
@@ -288,7 +288,7 @@ img.alignnone,
 	.menu-mobile {
 		top: 46px;
 
-		@include min-screen(782px) { // Thanks WordPress.
+		@include min-screen( 782px ) { // Thanks WordPress.
 			top: 32px;
 		}
 	}

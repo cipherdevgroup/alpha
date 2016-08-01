@@ -24,8 +24,8 @@
 	height: 85px;
 	overflow: hidden;
 	position: absolute;
-	top: 0;
 	right: 0;
+	top: 0;
 	width: 85px;
 
 	.ribbon-content {
@@ -84,7 +84,7 @@
 .entry-header .entry-meta {
 	margin-bottom: $content-margin-small;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		margin-bottom: $content-margin;
 	}
 }

@@ -8,16 +8,16 @@
 	padding-left: 5%;
 	padding-right: 5%;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		max-width: $wrap-max-width-medium;
 	}
 
-	@include min-screen($large-screen) {
+	@include min-screen( $large-screen ) {
 		max-width: $wrap-max-width-large;
 	}
 }
@@ -30,10 +30,10 @@
 	@extend %wrap;
 	clear: both;
 	padding-top: 5%;
-	word-wrap: break-word;
 	word-break: normal;
+	word-wrap: break-word;
 
-	@include min-screen($smaller-screen) {
+	@include min-screen( $smaller-screen ) {
 		padding-top: $site-inner-padding;
 	}
 }
@@ -49,17 +49,17 @@
 	padding: 0;
 }
 
-@include min-screen($medium-screen) {
-	@include nested(12) {
+@include min-screen( $medium-screen ) {
+	@include nested( 12 ) {
 		.layout-1c-narrow .content {
-			@include span(8);
-			@include push(2);
-			@include post(2);
+			@include span( 8 );
+			@include push( 2 );
+			@include post( 2 );
 		}
 
 		.layout-2c-l .content,
 		.layout-2c-r .content {
-			@include span(8);
+			@include span( 8 );
 		}
 
 		.layout-2c-l .content {
@@ -67,7 +67,7 @@
 		}
 
 		.sidebar {
-			@include span(4);
+			@include span( 4 );
 		}
 
 		.layout-2c-r .sidebar {
@@ -84,38 +84,38 @@
 /* Column Classes
 --------------------------------------------- */
 
-@include min-screen($small-screen) {
-	@include nested(12) {
+@include min-screen( $small-screen ) {
+	@include nested( 12 ) {
 		.one-half,
 		.three-sixths,
 		.two-fourths {
-			@include span(6);
+			@include span( 6 );
 		}
 
 		.one-third,
 		.two-sixths {
-			@include span(4);
+			@include span( 4 );
 		}
 
 		.four-sixths,
 		.two-thirds {
-			@include span(8);
+			@include span( 8 );
 		}
 
 		.one-fourth {
-			@include span(3);
+			@include span( 3 );
 		}
 
 		.three-fourths {
-			@include span(9);
+			@include span( 9 );
 		}
 
 		.one-sixth {
-			@include span(2);
+			@include span( 2 );
 		}
 
 		.five-sixths {
-			@include span(10);
+			@include span( 10 );
 		}
 	}
 

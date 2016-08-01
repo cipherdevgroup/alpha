@@ -2,19 +2,19 @@
 	color: $base-font-color;
 	padding: 10px 0;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		padding: 15px 0;
 	}
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		padding: 25px 0;
 	}
 
 	.wrap {
-		display: flex;
 		align-items: center;
+		display: flex;
 
-		@include min-screen($medium-screen) {
+		@include min-screen( $medium-screen ) {
 			display: block;
 		}
 	}
@@ -29,8 +29,8 @@
 	margin-right: 0;
 	width: auto;
 
-	@include min-screen($medium-screen) {
-		@include span(3 of 12);
+	@include min-screen( $medium-screen ) {
+		@include span( 3 of 12 );
 	}
 }
 
@@ -65,7 +65,7 @@
 --------------------------------------------- */
 
 .header-right {
-	@include span(9 of 12);
+	@include span( 9 of 12 );
 	@include last();
 	text-align: right;
 

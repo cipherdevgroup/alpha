@@ -27,9 +27,9 @@ textarea:focus,
 }
 
 a {
-	transition: color 0.1s linear;
 	color: $base-link-color;
 	text-decoration: none;
+	transition: color 0.1s linear;
 
 	&:hover {
 		color: $base-link-color-hover;
@@ -46,7 +46,7 @@ p {
 	margin: 0 0 $content-margin-small;
 	padding: 0;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		margin-bottom: $content-margin;
 	}
 }

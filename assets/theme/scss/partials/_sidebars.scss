@@ -30,9 +30,9 @@
 	font-size: $medium-font-size;
 	padding: $base-padding 0 10px;
 
-	@include min-screen($medium-screen) {
+	@include min-screen( $medium-screen ) {
 		.widget {
-			@include span(4 of 12);
+			@include span( 4 of 12 );
 
 			&:nth-of-type(3n) {
 				@include last();

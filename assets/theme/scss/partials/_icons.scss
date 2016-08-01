@@ -1,14 +1,16 @@
 @font-face {
 	font-family: "themicons";
-	src: url("fonts/themicons.woff2") format("woff2"),
-		url("fonts/themicons.woff") format("woff"),
-		url("fonts/themicons.ttf") format("truetype");
+	src: url( "fonts/themicons.woff2" ) format( "woff2" ),
+		url( "fonts/themicons.woff" ) format( "woff" ),
+		url( "fonts/themicons.ttf" ) format( "truetype" );
 	font-weight: normal;
 	font-style: normal;
 }
 
 %icon-base {
 	display: inline-block;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 	font-style: normal;
 	font-weight: normal;
 	line-height: inherit;
@@ -16,8 +18,6 @@
 	text-decoration: none;
 	text-transform: none;
 	vertical-align: middle;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 }
 
 /* Pagination Icons
@@ -26,26 +26,26 @@
 .pagination,
 .page-links {
 	.prev {
-		@include ti-before("\f201", 0);
+		@include ti-before( "\f201", 0 );
 	}
 
 	.next {
-		@include ti-after("\f202", 0);
+		@include ti-after( "\f202", 0 );
 	}
 
-	.prev:before,
-	.next:after {
+	.prev::before,
+	.next::after {
 		line-height: 1;
 	}
 }
 
 .nav-single {
 	.nav-previous a {
-		@include ti-before("\f201", 10px);
+		@include ti-before( "\f201", 10px );
 	}
 
 	.nav-next a {
-		@include ti-after("\f202", 10px);
+		@include ti-after( "\f202", 10px );
 	}
 }
 
@@ -53,21 +53,21 @@
 	.pagination,
 	.page-links {
 		.prev {
-			@include ti-before("\f202", 0);
+			@include ti-before( "\f202", 0 );
 		}
 
 		.next {
-			@include ti-after("\f201", 0);
+			@include ti-after( "\f201", 0 );
 		}
 	}
 
 	.nav-single {
 		.nav-previous a {
-			@include ti-before("\f202", 10px);
+			@include ti-before( "\f202", 10px );
 		}
 
 		.nav-next a {
-			@include ti-after("\f201", 10px);
+			@include ti-after( "\f201", 10px );
 		}
 	}
 }
@@ -77,7 +77,7 @@
 
 .search-form {
 	button[type=submit] {
-		@include ti-before("\f21d", 0);
+		@include ti-before( "\f21d", 0 );
 	}
 }
 
@@ -85,10 +85,10 @@
 --------------------------------------------- */
 
 .menu-toggle {
-	@include ti-before("\f212", 0);
+	@include ti-before( "\f212", 0 );
 
 	&.activated {
-		@include ti-before("\f20c", 0);
+		@include ti-before( "\f20c", 0 );
 	}
 }
 
@@ -97,10 +97,10 @@
 
 .entry-meta {
 	&.categories .entry-terms {
-		@include ti-before("\f21b");
+		@include ti-before( "\f21b" );
 	}
 
 	&.tags .entry-terms {
-		@include ti-before("\f21c");
+		@include ti-before( "\f21c" );
 	}
 }

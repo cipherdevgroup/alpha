@@ -2,9 +2,9 @@
 //------------------------------------------------------------------------------
 @mixin clearfix {
 	&::after {
+		clear: both;
 		content: " ";
 		display: block;
-		clear: both;
 	}
 }
 
@@ -13,8 +13,8 @@
 	flex-wrap: wrap;
 }
 
-@mixin between-screen($lower-extent, $max-extent) {
-	@include screen($lower-extent, $max-extent - 1px) {
+@mixin between-screen( $lower-extent, $max-extent ) {
+	@include screen( $lower-extent, $max-extent - 1px ) {
 		@content;
 	}
 }
@@ -24,7 +24,7 @@
 @mixin h1-font-size {
 	font-size: $h1-font-size-small;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		font-size: $h1-font-size;
 	}
 }
@@ -32,7 +32,7 @@
 @mixin h2-font-size {
 	font-size: $h2-font-size-small;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		font-size: $h2-font-size;
 	}
 }
@@ -40,7 +40,7 @@
 @mixin h3-font-size {
 	font-size: $h3-font-size-small;
 
-	@include min-screen($small-screen) {
+	@include min-screen( $small-screen ) {
 		font-size: $h3-font-size;
 	}
 }
@@ -62,8 +62,8 @@
 
 // Icons
 //------------------------------------------------------------------------------
-@mixin icon-before($glyph, $family, $margin) {
-	&:before {
+@mixin icon-before( $glyph, $family, $margin ) {
+	&::before {
 		@extend %icon-base;
 		content: $glyph;
 		font-family: $family;
@@ -71,8 +71,8 @@
 	}
 }
 
-@mixin icon-after($glyph, $family, $margin) {
-	&:after {
+@mixin icon-after( $glyph, $family, $margin ) {
+	&::after {
 		@extend %icon-base;
 		content: $glyph;
 		font-family: $family;
@@ -80,12 +80,12 @@
 	}
 }
 
-@mixin ti-before($glyph, $margin: 5px) {
-	@include icon-before($glyph, 'themicons', $margin);
+@mixin ti-before( $glyph, $margin: 5px ) {
+	@include icon-before( $glyph, 'themicons', $margin );
 }
 
-@mixin ti-after($glyph, $margin: 5px) {
-	@include icon-after($glyph, 'themicons', $margin);
+@mixin ti-after( $glyph, $margin: 5px ) {
+	@include icon-after( $glyph, 'themicons', $margin );
 }
 
 // Content Area
@@ -97,7 +97,7 @@
 	> dl {
 		margin-bottom: $content-margin-small;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			margin-bottom: $content-margin;
 		}
 	}
@@ -106,7 +106,7 @@
 	ul {
 		margin-left: 20px;
 
-		@include min-screen($small-screen) {
+		@include min-screen( $small-screen ) {
 			margin-left: $base-padding;
 		}
 	}
@@ -135,8 +135,8 @@
 	}
 
 	table {
-		border-collapse: separate;
 		border: 1px solid $base-border-color;
+		border-collapse: separate;
 		border-left: 0;
 		margin: 20px 0;
 		width: 100%;
@@ -165,11 +165,11 @@
 	}
 
 	.wp-caption .wp-caption-text {
-		margin: 10px 0;
 		font-size: $wp-caption-font-size;
-		text-transform: uppercase;
 		letter-spacing: 1px;
 		line-height: 1.2;
+		margin: 10px 0;
+		text-transform: uppercase;
 	}
 
 	.search-form {
