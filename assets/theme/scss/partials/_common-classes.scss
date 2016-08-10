@@ -105,20 +105,20 @@ img.alignnone,
 		text-align: right;
 
 		.avatar {
-			margin-left: 24px;
+			margin-left: 30px;
 		}
 	}
 
 	a.alignleft,
 	img.alignleft,
 	.wp-caption.alignleft {
-		margin: 0 24px $content-margin 0;
+		margin: 0 30px 50px 0;
 	}
 
 	a.alignright,
 	img.alignright,
 	.wp-caption.alignright {
-		margin: 0 0 $content-margin 24px;
+		margin: 0 0 50px 30px;
 	}
 }
 
