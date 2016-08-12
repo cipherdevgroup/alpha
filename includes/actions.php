@@ -174,13 +174,6 @@ add_action( 'alpha_archive_header', 'alpha_archive_header_open', 5 );
 /**
  * Callback defined in includes/template-archive.php
  *
- * @see alpha_wrap_open
- */
-add_action( 'alpha_archive_header', 'alpha_wrap_open', 10 );
-
-/**
- * Callback defined in includes/template-archive.php
- *
  * @see alpha_archive_title
  */
 add_action( 'alpha_archive_header', 'alpha_archive_title', 15 );
@@ -198,13 +191,6 @@ add_action( 'alpha_archive_header', 'alpha_breadcrumbs', 20 );
  * @see alpha_archive_description
  */
 add_action( 'alpha_archive_header', 'alpha_archive_description', 25 );
-
-/**
- * Callback defined in includes/template-archive.php
- *
- * @see alpha_wrap_close
- */
-add_action( 'alpha_archive_header', 'alpha_wrap_close', 95 );
 
 /**
  * Callback defined in includes/template-archive.php
