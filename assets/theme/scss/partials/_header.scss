@@ -60,16 +60,3 @@
 .site-title {
 	margin-bottom: 0;
 }
-
-/* Header Right
---------------------------------------------- */
-
-.header-right {
-	@include span( 9 of 12 );
-	@include last();
-	text-align: right;
-
-	.widget {
-		margin: 0;
-	}
-}
