@@ -8,7 +8,7 @@
 	'use strict';
 
 	var $document = $( document ),
-		$body     = $( 'body' );
+		$body     = $( document.body );
 
 	$body.addClass( 'ontouchstart' in window || 'onmsgesturechange' in window ? 'touch' : 'no-touch' );
 
