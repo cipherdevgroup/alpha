@@ -8,13 +8,20 @@
 	}
 }
 
-@mixin equal-heights() {
+@mixin equal-heights {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 @mixin between-screen( $lower-extent, $max-extent ) {
 	@include screen( $lower-extent, $max-extent - 1px ) {
+		@content;
+	}
+}
+
+@mixin hover {
+	&:hover,
+	&:focus {
 		@content;
 	}
 }
@@ -45,17 +52,10 @@
 	}
 }
 
-@mixin hover {
-	&:hover,
-	&:focus {
-		@content;
-	}
-}
-
 @mixin alt-link-color {
 	color: $base-alt-link-color;
 
-	@include hover() {
+	@include hover {
 		color: $base-alt-link-color-hover;
 	}
 }
@@ -90,7 +90,7 @@
 
 // Content Area
 //------------------------------------------------------------------------------
-@mixin entry-content() {
+@mixin entry-content {
 	p,
 	> ol,
 	> ul,
