@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2016, WP Site Care, LLC
  * @license   MIT
  */
-(function( $, undefined ) {
+(function( window, $, undefined ) {
 	'use strict';
 
 	$.fn.alphaMobileMenu = function( options ) {
@@ -15,7 +15,7 @@
 			menuButton: '#menu-toggle-primary',
 			extraMenus: '#menu-secondary'
 		},
-		$body = $( 'body' ),
+		$body = $( document.body ),
 		$menuButton, $mainMenu, $extraMenu, $mobileMenu, menuClass;
 
 		if ( options ) {
@@ -304,4 +304,4 @@
 
 		return loadMobileMenu();
 	};
-}( jQuery ) );
+})( this, jQuery );
