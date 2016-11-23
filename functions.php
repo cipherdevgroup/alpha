@@ -52,6 +52,13 @@ require_once PARENT_THEME_DIR . 'includes/theme-setup.php';
 require_once PARENT_THEME_DIR . 'includes/actions.php';
 require_once PARENT_THEME_DIR . 'includes/filters.php';
 
+if ( function_exists( 'WC' ) ) {
+	require_once PARENT_THEME_DIR . 'includes/woocommerce/template-global.php';
+	require_once PARENT_THEME_DIR . 'includes/woocommerce/template-hooks.php';
+	require_once PARENT_THEME_DIR . 'includes/woocommerce/actions.php';
+	require_once PARENT_THEME_DIR . 'includes/woocommerce/filters.php';
+}
+
 if ( is_admin() ) {
 	require_once PARENT_THEME_DIR . 'admin/layout.php';
 	require_once PARENT_THEME_DIR . 'admin/filters.php';
