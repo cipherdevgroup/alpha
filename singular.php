@@ -19,9 +19,9 @@ if ( alpha_is_beaver_enabled() ) {
 	/**
 	 * Callback defined in includes/attributes.php
 	 *
-	 * @see alpha_attr_full_width_inner
+	 * @see carelib_attr_full_width_inner
 	 */
-	add_filter( 'carelib_attr_site-inner', 'alpha_attr_full_width_inner', 10 );
+	add_filter( 'carelib_attr_site-inner', 'carelib_attr_full_width_inner', 10 );
 
 	/**
 	 * Callback defined in includes/template-entry.php
