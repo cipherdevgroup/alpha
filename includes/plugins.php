@@ -18,18 +18,3 @@
 function alpha_get_related_posts_image_size() {
 	return 'alpha-related-posts';
 }
-
-/**
- * Determine if Beaver Builder is active within the current loop.
- *
- * @since  0.1.0
- * @access public
- * @return bool True if Beaver Builder is active.
- */
-function alpha_is_beaver_enabled() {
-	if ( ! is_callable( array( 'FLBuilderModel', 'is_builder_enabled' ) ) ) {
-		return false;
-	}
-
-	return FLBuilderModel::is_builder_enabled();
-}

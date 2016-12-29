@@ -31,7 +31,7 @@
 
 					<?php carelib_entry_content_before(); ?>
 
-					<?php alpha_wc_content(); ?>
+					<?php carelib_wc_content(); ?>
 
 					<?php carelib_entry_content_after(); ?>
 
@@ -43,7 +43,7 @@
 
 			<?php carelib_content_while_after(); ?>
 
-		<?php elseif ( ! is_product() && ! alpha_wc_product_subcategories() ) : ?>
+		<?php elseif ( ! is_product() && ! carelib_wc_product_subcategories() ) : ?>
 
 			<?php wc_get_template( 'loop/no-products-found.php' ); ?>
 

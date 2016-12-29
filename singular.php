@@ -8,7 +8,7 @@
  * @since     0.1.0
  */
 
-if ( alpha_is_beaver_enabled() ) {
+if ( carelib_is_beaver_enabled() ) {
 	/**
 	 * Callback defined in includes/template-layout.php
 	 *
