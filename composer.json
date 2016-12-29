@@ -20,7 +20,6 @@
   },
   "require": {
     "wpsitecare/carelib": "~1.0",
-    "zamoose/themehookalliance": "dev-master",
     "composer/installers": "~1.0"
   }
 }
