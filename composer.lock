@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "eea5dabb1452812f0b7393d64487ff5164a200ec"
+                "reference": "2b7e3a37c82762f1c09a4254d75b04b58e203195"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/eea5dabb1452812f0b7393d64487ff5164a200ec",
-                "reference": "eea5dabb1452812f0b7393d64487ff5164a200ec",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/2b7e3a37c82762f1c09a4254d75b04b58e203195",
+                "reference": "2b7e3a37c82762f1c09a4254d75b04b58e203195",
                 "shasum": ""
             },
             "type": "library",
@@ -145,7 +145,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-12-29 04:47:48"
+            "time": "2016-12-29 06:33:17"
         }
     ],
     "packages-dev": [],
