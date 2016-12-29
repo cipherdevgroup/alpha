@@ -42,18 +42,17 @@ require_once PARENT_THEME_DIR . 'includes/template-entry.php';
 require_once PARENT_THEME_DIR . 'includes/template-global.php';
 require_once PARENT_THEME_DIR . 'includes/template-layout.php';
 require_once PARENT_THEME_DIR . 'includes/theme-setup.php';
-require_once PARENT_THEME_DIR . 'includes/actions.php';
-require_once PARENT_THEME_DIR . 'includes/filters.php';
+require_once PARENT_THEME_DIR . 'includes/hooks.php';
+require_once PARENT_THEME_DIR . 'includes/hooks-template.php';
 
 if ( carelib_is_woocommerce_active() ) {
 	require_once PARENT_THEME_DIR . 'includes/woocommerce/template-global.php';
-	require_once PARENT_THEME_DIR . 'includes/woocommerce/actions.php';
-	require_once PARENT_THEME_DIR . 'includes/woocommerce/filters.php';
+	require_once PARENT_THEME_DIR . 'includes/woocommerce/hooks.php';
 }
 
 if ( is_admin() ) {
 	require_once PARENT_THEME_DIR . 'admin/layout.php';
-	require_once PARENT_THEME_DIR . 'admin/filters.php';
+	require_once PARENT_THEME_DIR . 'admin/hooks.php';
 }
 
 /**
