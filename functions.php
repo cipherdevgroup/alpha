@@ -45,7 +45,6 @@ require_once PARENT_THEME_DIR . 'includes/template-archive.php';
 require_once PARENT_THEME_DIR . 'includes/template-attachment.php';
 require_once PARENT_THEME_DIR . 'includes/template-entry.php';
 require_once PARENT_THEME_DIR . 'includes/template-global.php';
-require_once PARENT_THEME_DIR . 'includes/template-hooks.php';
 require_once PARENT_THEME_DIR . 'includes/template-layout.php';
 require_once PARENT_THEME_DIR . 'includes/theme-setup.php';
 require_once PARENT_THEME_DIR . 'includes/actions.php';
