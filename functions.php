@@ -40,7 +40,6 @@ require_once PARENT_THEME_DIR . 'includes/plugins.php';
 require_once PARENT_THEME_DIR . 'includes/scripts.php';
 require_once PARENT_THEME_DIR . 'includes/template-404.php';
 require_once PARENT_THEME_DIR . 'includes/template-archive.php';
-require_once PARENT_THEME_DIR . 'includes/template-attachment.php';
 require_once PARENT_THEME_DIR . 'includes/template-entry.php';
 require_once PARENT_THEME_DIR . 'includes/template-global.php';
 require_once PARENT_THEME_DIR . 'includes/template-layout.php';

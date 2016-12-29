@@ -18,9 +18,9 @@ add_filter( 'carelib_get_theme_layout', 'alpha_force_full_narrow_layout' );
 /**
  * Callback defined in includes/template-attachment.php
  *
- * @see alpha_attachment_image
+ * @see carelib_attachment_image
  */
-add_action( 'carelib_entry_top', 'alpha_attachment_image', 4 );
+add_action( 'carelib_entry_top', 'carelib_attachment_image', 4 );
 
 /**
  * Callback defined in includes/template-entry.php
@@ -35,26 +35,5 @@ remove_action( 'carelib_entry_header_meta', 'alpha_entry_author', 14 );
  * @see alpha_entry_comments_link
  */
 remove_action( 'carelib_entry_header_meta', 'alpha_entry_comments_link', 22 );
-
-/**
- * Callback defined in includes/template-attachment.php
- *
- * @see alpha_attachment_meta_open
- */
-add_action( 'carelib_entry_content_after', 'alpha_attachment_meta_open', 12 );
-
-/**
- * Callback defined in includes/template-attachment.php
- *
- * @see alpha_attachment_image_gallery
- */
-add_action( 'carelib_entry_content_after', 'alpha_attachment_image_gallery', 14 );
-
-/**
- * Callback defined in includes/template-attachment.php
- *
- * @see alpha_attachment_meta_close
- */
-add_action( 'carelib_entry_content_after', 'alpha_attachment_meta_close', 16 );
 
 carelib_framework();
