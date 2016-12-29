@@ -47,7 +47,7 @@ function alpha_featured_image() {
 		return;
 	}
 
-	alpha_image( apply_filters( 'alpha_featured_image',
+	carelib_image( apply_filters( 'alpha_featured_image',
 		array(
 			'size'         => 'alpha-featured',
 			'before'       => '<div class="featured-media image">',
@@ -67,7 +67,7 @@ function alpha_featured_image() {
  * @return void
  */
 function alpha_entry_title( $args = array() ) {
-	echo carelib_get_entry_title( $args );
+	carelib_entry_title( $args );
 }
 
 /**
@@ -126,7 +126,7 @@ function alpha_entry_meta_open() {
  * @return void
  */
 function alpha_entry_author( $args = array() ) {
-	echo carelib_get_entry_author( $args );
+	carelib_entry_author( $args );
 }
 
 /**
@@ -139,7 +139,7 @@ function alpha_entry_author( $args = array() ) {
  * @return void
  */
 function alpha_entry_published( $args = array() ) {
-	echo carelib_get_entry_published( $args );
+	carelib_entry_published( $args );
 }
 
 /**
@@ -152,7 +152,7 @@ function alpha_entry_published( $args = array() ) {
  * @return void
  */
 function alpha_entry_comments_link( $args = array() ) {
-	echo carelib_get_entry_comments_link( $args );
+	carelib_entry_comments_link( $args );
 }
 
 /**
@@ -199,7 +199,7 @@ function alpha_entry_content_open() {
  * @return void
  */
 function alpha_content() {
-	echo carelib_get_content();
+	carelib_content();
 }
 
 /**
@@ -238,19 +238,6 @@ function alpha_entry_footer_open() {
 }
 
 /**
- * Display a formatted markup block with information about the entry's terms.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_get_entry_terms
- * @param  array $args a list of arguments to pass to the entry terms method.
- * @return void
- */
-function alpha_entry_terms( $args = array() ) {
-	echo carelib_get_entry_terms( $args );
-}
-
-/**
  * Output formatted data about the current entry's post tag taxonomy terms.
  *
  * @since  0.1.0
@@ -258,7 +245,7 @@ function alpha_entry_terms( $args = array() ) {
  * @return void
  */
 function alpha_entry_meta_tags() {
-	alpha_entry_terms(
+	carelib_entry_terms(
 		array(
 			'taxonomy' => 'post_tag',
 			'before'   => '<p class="entry-meta tags">',
@@ -275,7 +262,7 @@ function alpha_entry_meta_tags() {
  * @return void
  */
 function alpha_entry_meta_categories() {
-	alpha_entry_terms(
+	carelib_entry_terms(
 		array(
 			'taxonomy' => 'category',
 			'before'   => '<p class="entry-meta categories">',
@@ -316,5 +303,5 @@ function alpha_entry_close() {
  * @return void
  */
 function alpha_post_navigation( $args = array() ) {
-	echo carelib_get_post_navigation( $args );
+	carelib_post_navigation( $args );
 }

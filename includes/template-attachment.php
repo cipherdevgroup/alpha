@@ -16,7 +16,7 @@
  * @return void
  */
 function alpha_attachment_image() {
-	echo carelib_get_attachment_image();
+	carelib_attachment_image();
 }
 
 /**

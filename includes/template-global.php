@@ -9,18 +9,6 @@
  */
 
 /**
- * Load the base theme framework template.
- *
- * @since  0.1.0
- * @uses   carelib_framework
- * @param  string $name The name of the specialized template.
- * @return void
- */
-function alpha_framework( $name = null ) {
-	carelib_framework( $name );
-}
-
-/**
  * Output the opening tag for a wrapping <div>.
  *
  * @since  0.1.0
@@ -84,7 +72,7 @@ function alpha_branding_open() {
  * @return void
  */
 function alpha_site_title( $args = array() ) {
-	echo carelib_get_site_title( $args );
+	carelib_site_title( $args );
 }
 
 /**
@@ -96,7 +84,7 @@ function alpha_site_title( $args = array() ) {
  * @return void
  */
 function alpha_site_description( $args = array() ) {
-	echo carelib_get_site_description( $args );
+	carelib_site_description( $args );
 }
 
 /**
@@ -108,19 +96,6 @@ function alpha_site_description( $args = array() ) {
  */
 function alpha_branding_close() {
 	echo '</div><!-- #site-branding -->';
-}
-
-/**
- * Return the name of a given WordPress menu location.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_get_menu_location_name
- * @param  string $location The WordPress menu location to check.
- * @return string
- */
-function alpha_get_menu_location_name( $location ) {
-	return carelib_get_menu_location_name( $location );
 }
 
 /**
@@ -183,19 +158,6 @@ function alpha_breadcrumbs() {
 			'</nav>'
 		);
 	}
-}
-
-/**
- * Display a featured image using CareLib's advanced image grabber class.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_get_image
- * @param  array $args a list of arguments to pass to the image grabber class.
- * @return void
- */
-function alpha_image( $args = array() ) {
-	echo carelib_get_image( $args );
 }
 
 /**

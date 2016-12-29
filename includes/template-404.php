@@ -27,7 +27,7 @@ function alpha_404_entry_open() {
  * @return void
  */
 function alpha_404_entry_title() {
-	echo carelib_get_404_entry_title();
+	carelib_404_entry_title();
 }
 
 /**
