@@ -3,13 +3,13 @@
 The WP Site Care starter theme.
 
 __Contributors:__ [Robert Neu](https://github.com/robneu), [Ozzy Rodriguez](https://github.com/ozzyrod), [Jose Castaneda](https://github.com/jocastaneda)  
-__Requires:__ WordPress 4.5  
-__Tested up to:__ WordPress 4.5  
+__Requires:__ WordPress 4.7  
+__Tested up to:__ WordPress 4.7  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)  
 
 Alpha is a battle-tested starter theme for WordPress, built from the ground-up for custom development projects at WP Site Care. Alpha is designed to be modular and facilitate code reuse across projects without the constraint of a parent theme framework like Genesis.
 
-It uses the [Theme Hook Alliance](https://github.com/zamoose/themehookalliance) hooks and our drop-in theme framework [CareLib](https://github.com/wpsitecare/carelib) for templating. Alpha also integrates Grunt, SCSS, Bower, and Composer for workflow automation.
+It uses our drop-in theme framework [CareLib](https://github.com/wpsitecare/carelib) for templating. Alpha also integrates Grunt, SCSS, Bower, and Composer for workflow automation.
 
 For more information about how to use Alpha, take a look at our [Wiki](https://github.com/wpsitecare/carelib/wiki) or give us a shout on [Twitter](https://twitter.com/wpsitecare).
 
