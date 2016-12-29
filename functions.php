@@ -9,8 +9,6 @@
  * @since      0.1.0
  */
 
-$GLOBALS['carelib_prefix'] = 'alpha';
-
 /**
  * The current version of the parent theme. Should match the version in style.css.
  *
