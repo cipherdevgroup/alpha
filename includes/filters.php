@@ -16,10 +16,3 @@ defined( 'WPINC' ) || die;
  * @see alpha_get_parent_textdomain
  */
 add_filter( 'carelib_parent_textdomain', 'alpha_get_parent_textdomain' );
-
-/**
- * Callback defined in includes/plugins.php
- *
- * @see alpha_get_related_posts_image_size
- */
-add_filter( 'rp4wp_thumbnail_size', 'alpha_get_related_posts_image_size' );

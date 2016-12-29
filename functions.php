@@ -35,7 +35,6 @@ define( 'PARENT_THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'PARENT_THEME_URI', trailingslashit( get_template_directory_uri() ) );
 
 require_once PARENT_THEME_DIR . 'includes/vendor/carelib/carelib.php';
-require_once PARENT_THEME_DIR . 'includes/plugins.php';
 require_once PARENT_THEME_DIR . 'includes/scripts.php';
 require_once PARENT_THEME_DIR . 'includes/template-404.php';
 require_once PARENT_THEME_DIR . 'includes/template-archive.php';
