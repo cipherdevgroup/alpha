@@ -8,16 +8,16 @@
  * @since     0.1.0
  */
 ?>
-<li <?php alpha_attr( 'comment' ); ?>>
+<li <?php carelib_attr( 'comment' ); ?>>
 
 	<?php echo get_avatar( $comment, 90 ); ?>
 
-	<article <?php alpha_attr( 'comment-container' ); ?>>
+	<article <?php carelib_attr( 'comment-container' ); ?>>
 
-		<header <?php alpha_attr( 'comment-meta' ); ?>>
-			<cite <?php alpha_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
-			<a <?php alpha_attr( 'comment-permalink' ); ?>>
-				<time <?php alpha_attr( 'comment-published' ); ?>>
+		<header <?php carelib_attr( 'comment-meta' ); ?>>
+			<cite <?php carelib_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
+			<a <?php carelib_attr( 'comment-permalink' ); ?>>
+				<time <?php carelib_attr( 'comment-published' ); ?>>
 					<?php
 					printf(
 						esc_attr__( '%s ago', 'alpha' ),
@@ -29,7 +29,7 @@
 			<?php edit_comment_link(); ?>
 		</header><!-- .comment-meta -->
 
-		<div <?php alpha_attr( 'comment-content' ); ?>>
+		<div <?php carelib_attr( 'comment-content' ); ?>>
 			<?php if ( ! $comment->comment_approved ) : ?>
 				<p class="alert">
 					<?php esc_attr_e( 'Your comment is awaiting moderation.', 'alpha' ); ?>

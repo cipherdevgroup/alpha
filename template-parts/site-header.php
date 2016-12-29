@@ -10,9 +10,9 @@
 ?>
 <?php carelib_header_before(); ?>
 
-<header <?php alpha_attr( 'site-header' ); ?>>
+<header <?php carelib_attr( 'site-header' ); ?>>
 
-	<div <?php alpha_attr( 'wrap', 'header' ); ?>>
+	<div <?php carelib_attr( 'wrap', 'header' ); ?>>
 
 		<?php carelib_header_top(); ?>
 

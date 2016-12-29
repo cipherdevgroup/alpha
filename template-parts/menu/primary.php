@@ -8,12 +8,12 @@
  * @since     0.1.0
  */
 ?>
-<nav <?php alpha_attr( 'menu', 'primary' ); ?>>
+<nav <?php carelib_attr( 'menu', 'primary' ); ?>>
 
 	<span id="menu-primary-title" class="screen-reader-text">
 		<?php
 		// Translators: %s is the nav menu name. This is the nav menu title shown to screen readers.
-		printf( _x( '%s', 'nav menu title', 'alpha' ), alpha_get_menu_location_name( 'primary' ) );
+		printf( _x( '%s', 'nav menu title', 'alpha' ), carelib_get_menu_location_name( 'primary' ) );
 		?>
 	</span>
 

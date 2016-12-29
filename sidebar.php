@@ -10,7 +10,7 @@
 ?>
 <?php carelib_sidebars_before(); ?>
 
-<aside <?php alpha_attr( 'sidebar', 'primary' ); ?>>
+<aside <?php carelib_attr( 'sidebar', 'primary' ); ?>>
 
 	<?php carelib_sidebar_top(); ?>
 

@@ -18,6 +18,6 @@
 <?php carelib_head_bottom(); ?>
 </head>
 
-<body <?php alpha_attr( 'body' ); ?>>
+<body <?php carelib_attr( 'body' ); ?>>
 
 	<?php carelib_body_top(); ?>

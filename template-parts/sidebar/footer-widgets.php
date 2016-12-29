@@ -8,8 +8,8 @@
  * @since     0.1.0
  */
 ?>
-<div <?php alpha_attr( 'footer-widgets' ); ?>>
-	<div <?php alpha_attr( 'wrap', 'footer-widgets' ); ?>>
+<div <?php carelib_attr( 'footer-widgets' ); ?>>
+	<div <?php carelib_attr( 'wrap', 'footer-widgets' ); ?>>
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
 	</div>
 </div><!-- #footer-widgets -->

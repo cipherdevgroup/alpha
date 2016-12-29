@@ -8,14 +8,14 @@
  * @since     0.1.0
  */
 ?>
-<li <?php alpha_attr( 'comment' ); ?>>
+<li <?php carelib_attr( 'comment' ); ?>>
 
-	<article <?php alpha_attr( 'comment-container', 'ping' ); ?>>
+	<article <?php carelib_attr( 'comment-container', 'ping' ); ?>>
 
-		<header <?php alpha_attr( 'comment-meta' ); ?>>
-			<cite <?php alpha_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
-			<a <?php alpha_attr( 'comment-permalink' ); ?>>
-				<time <?php alpha_attr( 'comment-published' ); ?>>
+		<header <?php carelib_attr( 'comment-meta' ); ?>>
+			<cite <?php carelib_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
+			<a <?php carelib_attr( 'comment-permalink' ); ?>>
+				<time <?php carelib_attr( 'comment-published' ); ?>>
 					<?php
 					printf(
 						esc_attr__( '%s ago', 'alpha' ),

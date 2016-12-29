@@ -10,9 +10,9 @@
 ?>
 <?php carelib_footer_before(); ?>
 
-<footer <?php alpha_attr( 'site-footer' ); ?>>
+<footer <?php carelib_attr( 'site-footer' ); ?>>
 
-	<div <?php alpha_attr( 'wrap', 'footer' ); ?>>
+	<div <?php carelib_attr( 'wrap', 'footer' ); ?>>
 
 		<?php carelib_footer_top(); ?>
 

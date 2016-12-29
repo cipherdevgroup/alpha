@@ -11,11 +11,11 @@
 ?>
 <?php get_header( 'shop' ); ?>
 
-<div <?php alpha_attr( 'site-inner' ); ?>>
+<div <?php carelib_attr( 'site-inner' ); ?>>
 
 	<?php carelib_content_before(); ?>
 
-	<main <?php alpha_attr( 'content' ); ?>>
+	<main <?php carelib_attr( 'content' ); ?>>
 
 		<?php carelib_content_top(); ?>
 
