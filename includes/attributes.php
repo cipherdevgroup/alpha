@@ -9,20 +9,6 @@
  */
 
 /**
- * Output an HTML element's attributes.
- *
- * @since  0.1.0
- * @access public
- * @param  string $slug the slug/ID of the element (e.g., 'sidebar').
- * @param  string $context a specific context (e.g., 'primary').
- * @param  array  $attr A list of attributes to be merged.
- * @return void
- */
-function alpha_attr( $slug, $context = '', $attr = array() ) {
-	echo carelib_get_attr( $slug, $context, $attr );
-}
-
-/**
  * Modify the site inner attributes to allow for full-width pages..
  *
  * @since  0.1.0
