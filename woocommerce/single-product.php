@@ -18,4 +18,4 @@ add_action( 'carelib_content_before', 'alpha_wc_before_main_content', 8 );
 
 add_action( 'carelib_content_after',  'alpha_wc_after_main_content', 8 );
 
-alpha_framework( 'shop' );
+carelib_framework( 'shop' );

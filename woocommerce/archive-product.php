@@ -41,4 +41,4 @@ add_action( 'carelib_content_after',        'alpha_wc_after_main_content',      
 
 add_action( 'carelib_content_while_after',  'alpha_product_loop_end',  10 );
 
-alpha_framework( 'shop' );
+carelib_framework( 'shop' );

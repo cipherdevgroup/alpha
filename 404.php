@@ -71,4 +71,4 @@ remove_action( 'carelib_entry_bottom', 'alpha_entry_close', 99 );
  */
 add_action( 'carelib_entry_bottom', 'alpha_404_entry_close', 99 );
 
-alpha_framework( '404' );
+carelib_framework( '404' );

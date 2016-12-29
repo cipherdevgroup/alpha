@@ -57,4 +57,4 @@ add_action( 'carelib_entry_content_after', 'alpha_attachment_image_gallery', 14 
  */
 add_action( 'carelib_entry_content_after', 'alpha_attachment_meta_close', 16 );
 
-alpha_framework();
+carelib_framework();

@@ -31,4 +31,4 @@ if ( alpha_is_beaver_enabled() ) {
 	add_action( 'carelib_content_while_before', 'carelib_null_entry_containers', 10 );
 }
 
-alpha_framework();
+carelib_framework();
