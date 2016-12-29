@@ -19,7 +19,7 @@
     "vendor-dir": "assets/composer"
   },
   "require": {
-    "wpsitecare/carelib": "~1.0",
+    "wpsitecare/carelib": "dev-master",
     "composer/installers": "~1.0"
   }
 }
