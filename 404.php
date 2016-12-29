@@ -27,21 +27,21 @@ add_action( 'carelib_entry_top', 'alpha_404_entry_open', 0 );
  *
  * @see alpha_entry_title
  */
-remove_action( 'alpha_entry_header', 'alpha_entry_title', 10 );
+remove_action( 'carelib_entry_header', 'alpha_entry_title', 10 );
 
 /**
  * Callback defined in includes/template-404.php
  *
  * @see alpha_404_entry_title
  */
-add_action( 'alpha_entry_header', 'alpha_404_entry_title', 10 );
+add_action( 'carelib_entry_header', 'alpha_404_entry_title', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_meta
  */
-remove_action( 'alpha_entry_header', 'carelib_entry_header_meta', 12 );
+remove_action( 'carelib_entry_header', 'carelib_entry_header_meta', 12 );
 
 /**
  * Callback defined in includes/template-404.php

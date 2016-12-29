@@ -13,7 +13,7 @@
  *
  * @see alpha_force_full_narrow_layout
  */
-add_filter( 'alpha_get_theme_layout', 'alpha_force_full_narrow_layout' );
+add_filter( 'carelib_get_theme_layout', 'alpha_force_full_narrow_layout' );
 
 /**
  * Callback defined in includes/template-attachment.php
