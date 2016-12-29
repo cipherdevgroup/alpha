@@ -9,30 +9,6 @@
  */
 
 /**
- * Return a suffix to load minified JavaScript on production.
- *
- * @since  0.1.0
- * @access public
- * @return string
- */
-function alpha_get_suffix() {
-	return carelib_get_suffix();
-}
-
-/**
- * Build a Google Fonts string.
- *
- * @since  0.1.0
- * @access public
- * @param  string $families the font families to include.
- * @param  bool   $editor_style set to true if string is being used as editor style.
- * @return string
- */
-function alpha_get_google_fonts_string( $families, $editor_style = false ) {
-	return carelib_get_google_fonts_string( $families, $editor_style );
-}
-
-/**
  * Load a minified version of the theme's stylesheet along with any other
  * required theme CSS files.
  *
@@ -41,12 +17,12 @@ function alpha_get_google_fonts_string( $families, $editor_style = false ) {
  * @return void
  */
 function alpha_enqueue_styles() {
-	wp_enqueue_style( 'alpha-style' );
+	wp_enqueue_style( 'carelib-style' );
 
 	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
 		wp_enqueue_style(
 			'alpha-google-fonts',
-			alpha_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700' ),
+			carelib_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700' ),
 			array(),
 			null
 		);
@@ -61,7 +37,7 @@ function alpha_enqueue_styles() {
  * @return void
  */
 function alpha_enqueue_scripts() {
-	$suffix  = alpha_get_suffix();
+	$suffix  = carelib_get_suffix();
 
 	wp_enqueue_script(
 		'alpha-general',
@@ -81,8 +57,8 @@ function alpha_enqueue_scripts() {
  * @return void
  */
 function alpha_rtl_add_data() {
-	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
-	wp_style_add_data( 'alpha-style', 'suffix', alpha_get_suffix() );
+	wp_style_add_data( 'carelib-style', 'rtl', 'replace' );
+	wp_style_add_data( 'carelib-style', 'suffix', carelib_get_suffix() );
 }
 
 /**
@@ -95,11 +71,11 @@ function alpha_rtl_add_data() {
  */
 function alpha_add_editor_styles() {
 	$styles = array(
-		'css/editor-style' . alpha_get_suffix() . '.css',
+		'css/editor-style' . carelib_get_suffix() . '.css',
 	);
 
 	if ( apply_filters( 'alpha_enable_google_fonts', true ) ) {
-		$styles[] = alpha_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
+		$styles[] = carelib_get_google_fonts_string( 'Raleway:400,600|Lato:400,400italic,700', true );
 	}
 
 	add_editor_style( $styles );

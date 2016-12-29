@@ -25,7 +25,7 @@
 			'menu_id'         => 'secondary',
 			'menu_class'      => 'nav-menu secondary',
 			'fallback_cb'     => '',
-			'items_wrap'      => '<div ' . alpha_get_attr( 'wrap', 'secondary-menu' ) . '><ul id="%s" class="%s">%s</ul></div>',
+			'items_wrap'      => '<div ' . carelib_get_attr( 'wrap', 'secondary-menu' ) . '><ul id="%s" class="%s">%s</ul></div>',
 		)
 	);
 	?>

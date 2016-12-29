@@ -8,15 +8,15 @@
  * @since     0.1.0
  */
 ?>
-<?php tha_sidebars_before(); ?>
+<?php carelib_sidebars_before(); ?>
 
 <aside <?php alpha_attr( 'sidebar', 'primary' ); ?>>
 
-	<?php tha_sidebar_top(); ?>
+	<?php carelib_sidebar_top(); ?>
 
 	<span id="sidebar-primary-title" class="screen-reader-text"><?php
 		// Translators: %s is the sidebar name. This is the sidebar title shown to screen readers.
-		printf( _x( '%s', 'sidebar title', 'alpha' ), alpha_get_sidebar_name( 'primary' ) );
+		printf( _x( '%s', 'sidebar title', 'alpha' ), carelib_get_sidebar_name( 'primary' ) );
 	?></span>
 
 	<?php if ( is_active_sidebar( carelib_get_primary_sidebar_id() ) ) : ?>
@@ -41,9 +41,9 @@
 		?>
 	<?php endif; // End widgets check. ?>
 
-	<?php tha_sidebar_bottom(); ?>
+	<?php carelib_sidebar_bottom(); ?>
 
 </aside><!-- #sidebar-primary -->
 
 <?php
-tha_sidebars_after();
+carelib_sidebars_after();

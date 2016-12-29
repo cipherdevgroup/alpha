@@ -9,42 +9,6 @@
  */
 
 /**
- * Determine if we're viewing a page which lists multiple entries.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_is_plural
- * @return bool true if we're on a plural page.
- */
-function alpha_is_plural() {
-	return carelib_is_plural();
-}
-
-/**
- * Determine if we're viewing a blog section archive.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_is_blog_archive
- * @return bool true if we're on a blog archive page.
- */
-function alpha_is_blog_archive() {
-	return carelib_is_blog_archive();
-}
-
-/**
- * Determine if we're viewing anything within the blog section.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_is_blog_archive
- * @return bool true if we're on a blog archive page or a singular post.
- */
-function alpha_is_blog() {
-	return alpha_is_blog_archive() || is_singular( 'post' );
-}
-
-/**
  * Output the opening markup for the archive header.
  *
  * @since  0.1.0
@@ -52,7 +16,7 @@ function alpha_is_blog() {
  * @return void
  */
 function alpha_archive_header_open() {
-	echo '<div ' . alpha_get_attr( 'archive-header' ) . '>';
+	echo '<div ' . carelib_get_attr( 'archive-header' ) . '>';
 }
 
 /**
@@ -63,7 +27,7 @@ function alpha_archive_header_open() {
  * @return void
  */
 function alpha_archive_title() {
-	echo '<h1 ' . alpha_get_attr( 'archive-title' ) . '>' . get_the_archive_title() . '</h1>';
+	echo '<h1 ' . carelib_get_attr( 'archive-title' ) . '>' . get_the_archive_title() . '</h1>';
 }
 
 /**
@@ -76,7 +40,7 @@ function alpha_archive_title() {
 function alpha_archive_description() {
 	if ( ! is_paged() && $desc = get_the_archive_description() ) {
 		printf( '<div %s>%s</div><!-- .archive-description -->',
-			alpha_get_attr( 'archive-description' ),
+			carelib_get_attr( 'archive-description' ),
 			$desc
 		);
 	}

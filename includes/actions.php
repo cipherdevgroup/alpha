@@ -50,14 +50,14 @@ add_action( 'init', 'alpha_add_editor_styles', 10 );
  *
  * @see alpha_register_layouts
  */
-add_action( 'alpha_register_layouts', 'alpha_register_layouts', 10 );
+add_action( 'carelib_register_layouts', 'alpha_register_layouts', 10 );
 
 /**
  * Callback defined in includes/theme-setup.php
  *
  * @see alpha_set_default_layout
  */
-add_action( 'alpha_register_layouts', 'alpha_set_default_layout', 12 );
+add_action( 'carelib_register_layouts', 'alpha_set_default_layout', 12 );
 
 /**
  * Callback defined in includes/theme-setup.php
@@ -92,326 +92,326 @@ add_action( 'wp_enqueue_scripts', 'alpha_rtl_add_data', 12 );
  *
  * @see alpha_skip_to_content
  */
-add_action( 'tha_body_top', 'alpha_skip_to_content', 5 );
+add_action( 'carelib_body_top', 'alpha_skip_to_content', 5 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_header
  */
-add_action( 'tha_body_top', 'alpha_header', 10 );
+add_action( 'carelib_body_top', 'alpha_header', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_branding_open
  */
-add_action( 'tha_header_top', 'alpha_branding_open', 10 );
+add_action( 'carelib_header_top', 'alpha_branding_open', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_site_title
  */
-add_action( 'tha_header_top', 'alpha_site_title', 14 );
+add_action( 'carelib_header_top', 'alpha_site_title', 14 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_site_description
  */
-add_action( 'tha_header_top', 'alpha_site_description', 16 );
+add_action( 'carelib_header_top', 'alpha_site_description', 16 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_branding_close
  */
-add_action( 'tha_header_top', 'alpha_branding_close', 20 );
+add_action( 'carelib_header_top', 'alpha_branding_close', 20 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_menu_toggle
  */
-add_action( 'tha_header_top', 'alpha_menu_toggle', 22 );
+add_action( 'carelib_header_top', 'alpha_menu_toggle', 22 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_menu_primary
  */
-add_action( 'tha_header_bottom', 'alpha_menu_primary', 10 );
+add_action( 'carelib_header_bottom', 'alpha_menu_primary', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_menu_secondary
  */
-add_action( 'tha_header_after', 'alpha_menu_secondary', 10 );
+add_action( 'carelib_header_after', 'alpha_menu_secondary', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_breadcrumbs
  */
-add_action( 'tha_content_top', 'alpha_breadcrumbs', 10 );
+add_action( 'carelib_content_top', 'alpha_breadcrumbs', 10 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_archive_header
  */
-add_action( 'tha_content_top', 'alpha_archive_header', 12 );
+add_action( 'carelib_content_top', 'carelib_archive_header', 12 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_archive_header_open
  */
-add_action( 'alpha_archive_header', 'alpha_archive_header_open', 5 );
+add_action( 'carelib_archive_header', 'alpha_archive_header_open', 5 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_archive_title
  */
-add_action( 'alpha_archive_header', 'alpha_archive_title', 15 );
+add_action( 'carelib_archive_header', 'alpha_archive_title', 15 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_breadcrumbs
  */
-add_action( 'alpha_archive_header', 'alpha_breadcrumbs', 20 );
+add_action( 'carelib_archive_header', 'alpha_breadcrumbs', 20 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_archive_description
  */
-add_action( 'alpha_archive_header', 'alpha_archive_description', 25 );
+add_action( 'carelib_archive_header', 'alpha_archive_description', 25 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_archive_header_close
  */
-add_action( 'alpha_archive_header', 'alpha_archive_header_close', 100 );
+add_action( 'carelib_archive_header', 'alpha_archive_header_close', 100 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_open
  */
-add_action( 'tha_entry_top', 'alpha_entry_open', 0 );
+add_action( 'carelib_entry_top', 'alpha_entry_open', 0 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_sticky_banner
  */
-add_action( 'tha_entry_top', 'alpha_sticky_banner', 2 );
+add_action( 'carelib_entry_top', 'alpha_sticky_banner', 2 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_featured_image
  */
-add_action( 'tha_entry_top', 'alpha_featured_image', 4 );
+add_action( 'carelib_entry_top', 'alpha_featured_image', 4 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_open
  */
-add_action( 'tha_entry_top', 'alpha_entry_header', 8 );
+add_action( 'carelib_entry_top', 'carelib_entry_header', 8 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_open
  */
-add_action( 'alpha_entry_header', 'alpha_entry_header_open', 8 );
+add_action( 'carelib_entry_header', 'alpha_entry_header_open', 8 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_title
  */
-add_action( 'alpha_entry_header', 'alpha_entry_title', 10 );
+add_action( 'carelib_entry_header', 'alpha_entry_title', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_meta
  */
-add_action( 'alpha_entry_header', 'alpha_entry_header_meta', 12 );
+add_action( 'carelib_entry_header', 'carelib_entry_header_meta', 12 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_meta_open
  */
-add_action( 'alpha_entry_header_meta', 'alpha_entry_meta_open', 10 );
+add_action( 'carelib_entry_header_meta', 'alpha_entry_meta_open', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_author
  */
-add_action( 'alpha_entry_header_meta', 'alpha_entry_author', 14 );
+add_action( 'carelib_entry_header_meta', 'alpha_entry_author', 14 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_published
  */
-add_action( 'alpha_entry_header_meta', 'alpha_entry_published', 18 );
+add_action( 'carelib_entry_header_meta', 'alpha_entry_published', 18 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_comments_link
  */
-add_action( 'alpha_entry_header_meta', 'alpha_entry_comments_link', 22 );
+add_action( 'carelib_entry_header_meta', 'alpha_entry_comments_link', 22 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_meta_close
  */
-add_action( 'alpha_entry_header_meta', 'alpha_entry_meta_close', 26 );
+add_action( 'carelib_entry_header_meta', 'alpha_entry_meta_close', 26 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_header_close
  */
-add_action( 'alpha_entry_header', 'alpha_entry_header_close', 16 );
+add_action( 'carelib_entry_header', 'alpha_entry_header_close', 16 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_content_open
  */
-add_action( 'tha_entry_content_before', 'alpha_entry_content_open', 10 );
+add_action( 'carelib_entry_content_before', 'alpha_entry_content_open', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_content
  */
-add_action( 'alpha_entry_content', 'alpha_content', 10 );
+add_action( 'carelib_entry_content', 'alpha_content', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_link_pages
  */
-add_action( 'tha_entry_content_after', 'alpha_link_pages', 5 );
+add_action( 'carelib_entry_content_after', 'alpha_link_pages', 5 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_content_close
  */
-add_action( 'tha_entry_content_after', 'alpha_entry_content_close', 10 );
+add_action( 'carelib_entry_content_after', 'alpha_entry_content_close', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_footer
  */
-add_action( 'tha_entry_bottom', 'alpha_entry_footer', 20 );
+add_action( 'carelib_entry_bottom', 'carelib_entry_footer', 20 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_footer_open
  */
-add_action( 'alpha_entry_footer', 'alpha_entry_footer_open', 10 );
+add_action( 'carelib_entry_footer', 'alpha_entry_footer_open', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_footer_meta
  */
-add_action( 'alpha_entry_footer', 'alpha_entry_footer_meta', 14 );
+add_action( 'carelib_entry_footer', 'carelib_entry_footer_meta', 14 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_meta_tags
  */
-add_action( 'alpha_entry_footer_meta', 'alpha_entry_meta_tags', 10 );
+add_action( 'carelib_entry_footer_meta', 'alpha_entry_meta_tags', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_meta_categories
  */
-add_action( 'alpha_entry_footer_meta', 'alpha_entry_meta_categories', 14 );
+add_action( 'carelib_entry_footer_meta', 'alpha_entry_meta_categories', 14 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_footer_close
  */
-add_action( 'alpha_entry_footer', 'alpha_entry_footer_close', 22 );
+add_action( 'carelib_entry_footer', 'alpha_entry_footer_close', 22 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_entry_close
  */
-add_action( 'tha_entry_bottom', 'alpha_entry_close', 99 );
+add_action( 'carelib_entry_bottom', 'alpha_entry_close', 99 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_post_navigation
  */
-add_action( 'tha_entry_after', 'alpha_post_navigation', 10 );
+add_action( 'carelib_entry_after', 'alpha_post_navigation', 10 );
 
 /**
  * Callback defined in includes/template-entry.php
  *
  * @see alpha_comments
  */
-add_action( 'tha_entry_after', 'alpha_comments', 14 );
+add_action( 'carelib_entry_after', 'carelib_comments_load_template', 14 );
 
 /**
  * Callback defined in includes/template-archive.php
  *
  * @see alpha_posts_navigation
  */
-add_action( 'tha_content_while_after', 'alpha_posts_navigation', 10 );
+add_action( 'carelib_content_while_after', 'alpha_posts_navigation', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_primary_sidebar
  */
-add_action( 'tha_content_after', 'alpha_primary_sidebar', 10 );
+add_action( 'carelib_content_after', 'alpha_primary_sidebar', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_footer_widgets
  */
-add_action( 'tha_footer_before', 'alpha_footer_widgets', 10 );
+add_action( 'carelib_footer_before', 'alpha_footer_widgets', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_footer
  */
-add_action( 'tha_body_bottom', 'alpha_footer', 10 );
+add_action( 'carelib_body_bottom', 'alpha_footer', 10 );
 
 /**
  * Callback defined in includes/template-global.php
  *
  * @see alpha_footer_content
  */
-add_action( 'tha_footer_bottom', 'alpha_footer_content', 10 );
+add_action( 'carelib_footer_bottom', 'alpha_footer_content', 10 );

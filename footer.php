@@ -10,7 +10,7 @@
  * @since     0.1.0
  */
 ?>
-	<?php tha_body_bottom(); ?>
+	<?php carelib_body_bottom(); ?>
 	<?php wp_footer(); ?>
 
 </body>

@@ -116,7 +116,7 @@ function alpha_product_loop_end() {
  */
 function alpha_wc_page_title() {
 	if ( apply_filters( 'woocommerce_show_page_title', true ) ) {
-		echo '<h1 ' . alpha_get_attr( 'archive-title' ) . '>';
+		echo '<h1 ' . carelib_get_attr( 'archive-title' ) . '>';
 		woocommerce_page_title();
 		echo '</h1>';
 	}

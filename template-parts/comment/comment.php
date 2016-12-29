@@ -41,7 +41,7 @@
 		<?php
 		comment_reply_link( array_merge( $args, array(
 			'depth'  => $depth,
-			'before' => sprintf( '<footer %s>', alpha_get_attr( 'comment-meta' ) ),
+			'before' => sprintf( '<footer %s>', carelib_get_attr( 'comment-meta' ) ),
 			'after'  => '</footer>',
 		) ) );
 		?>

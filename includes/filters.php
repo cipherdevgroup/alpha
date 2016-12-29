@@ -15,7 +15,7 @@ defined( 'WPINC' ) || die;
  *
  * @see alpha_get_parent_textdomain
  */
-add_filter( 'alpha_parent_textdomain', 'alpha_get_parent_textdomain' );
+add_filter( 'carelib_parent_textdomain', 'alpha_get_parent_textdomain' );
 
 /**
  * Callback defined in includes/plugins.php

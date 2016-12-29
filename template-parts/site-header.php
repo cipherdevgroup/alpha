@@ -8,18 +8,18 @@
  * @since     0.1.0
  */
 ?>
-<?php tha_header_before(); ?>
+<?php carelib_header_before(); ?>
 
 <header <?php alpha_attr( 'site-header' ); ?>>
 
 	<div <?php alpha_attr( 'wrap', 'header' ); ?>>
 
-		<?php tha_header_top(); ?>
+		<?php carelib_header_top(); ?>
 
-		<?php tha_header_bottom(); ?>
+		<?php carelib_header_bottom(); ?>
 
 	</div><!-- .wrap -->
 
 </header><!-- #header -->
 
-<?php tha_header_after(); ?>
+<?php carelib_header_after(); ?>

@@ -9,15 +9,15 @@
  */
 ?>
 <!DOCTYPE html>
-<?php tha_html_before(); ?>
+<?php carelib_html_before(); ?>
 <html <?php language_attributes( 'html' ); ?>>
 
 <head>
-<?php tha_head_top(); ?>
+<?php carelib_head_top(); ?>
 <?php wp_head(); ?>
-<?php tha_head_bottom(); ?>
+<?php carelib_head_bottom(); ?>
 </head>
 
 <body <?php alpha_attr( 'body' ); ?>>
 
-	<?php tha_body_top(); ?>
+	<?php carelib_body_top(); ?>

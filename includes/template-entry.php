@@ -16,7 +16,7 @@
  * @return void
  */
 function alpha_entry_open() {
-	echo '<article ' . alpha_get_attr( 'post' ) . '>';
+	echo '<article ' . carelib_get_attr( 'post' ) . '>';
 }
 
 /**
@@ -29,7 +29,7 @@ function alpha_entry_open() {
 function alpha_sticky_banner() {
 	if ( ! is_singular() && is_sticky() ) {
 		printf( '<div %s><p class="ribbon-content">%s<p></div>',
-			alpha_get_attr( 'corner-ribbon', 'sticky' ),
+			carelib_get_attr( 'corner-ribbon', 'sticky' ),
 			esc_html__( 'Featured', 'alpha' )
 		);
 	}
@@ -102,7 +102,7 @@ function alpha_has_entry_header_meta() {
  * @return void
  */
 function alpha_entry_header_open() {
-	echo '<header ' . alpha_get_attr( 'entry-header' ) . '>';
+	echo '<header ' . carelib_get_attr( 'entry-header' ) . '>';
 }
 
 /**
@@ -113,7 +113,7 @@ function alpha_entry_header_open() {
  * @return void
  */
 function alpha_entry_meta_open() {
-	echo '<p ' . alpha_get_attr( 'entry-meta' ) . '>';
+	echo '<p ' . carelib_get_attr( 'entry-meta' ) . '>';
 }
 
 /**
@@ -186,7 +186,7 @@ function alpha_entry_header_close() {
  */
 function alpha_entry_content_open() {
 	$attr = is_singular() ? 'content' : 'summary';
-	echo '<div ' . alpha_get_attr( "entry-{$attr}" ) . '>';
+	echo '<div ' . carelib_get_attr( "entry-{$attr}" ) . '>';
 }
 
 /**
@@ -200,18 +200,6 @@ function alpha_entry_content_open() {
  */
 function alpha_content() {
 	echo carelib_get_content();
-}
-
-/**
- * Remove all actions from THA entry hooks.
- *
- * @since  1.0.0
- * @access public
- * @uses   carelib_null_entry_containers()
- * @return void
- */
-function alpha_null_entry_containers() {
-	carelib_null_entry_containers();
 }
 
 /**
@@ -239,28 +227,6 @@ function alpha_entry_content_close() {
 }
 
 /**
- * Determine if the current view should contain an entry footer.
- *
- * @since  0.1.0
- * @access public
- * @return bool
- */
-function alpha_has_entry_footer_meta() {
-	return carelib_has_entry_footer_meta();
-}
-
-/**
- * Determine if the current view should contain an entry footer.
- *
- * @since  0.1.0
- * @access public
- * @return bool
- */
-function alpha_has_entry_footer() {
-	return carelib_has_entry_footer();
-}
-
-/**
  * Output the opening markup for the entry footer element.
  *
  * @since  0.1.0
@@ -268,7 +234,7 @@ function alpha_has_entry_footer() {
  * @return void
  */
 function alpha_entry_footer_open() {
-	echo '<footer ' . alpha_get_attr( 'entry-footer' ) . '>';
+	echo '<footer ' . carelib_get_attr( 'entry-footer' ) . '>';
 }
 
 /**
@@ -351,31 +317,4 @@ function alpha_entry_close() {
  */
 function alpha_post_navigation( $args = array() ) {
 	echo carelib_get_post_navigation( $args );
-}
-
-/**
- * A custom comment callback to use with WordPress' `comments_template` function.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_comments_callback
- * @param  object  $comment the comment object.
- * @param  array   $args list of arguments passed from wp_list_comments().
- * @param  integer $depth What level the particular comment is.
- * @return void
- */
-function alpha_comments_callback( $comment, $args, $depth ) {
-	carelib_comments_callback( $comment, $args, $depth );
-}
-
-/**
- * Output the comments template.
- *
- * @since  0.1.0
- * @access public
- * @uses   carelib_comments_load_template
- * @return void
- */
-function alpha_comments() {
-	carelib_comments_load_template();
 }

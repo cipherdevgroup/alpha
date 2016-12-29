@@ -26,9 +26,9 @@ if ( alpha_is_beaver_enabled() ) {
 	/**
 	 * Callback defined in includes/template-entry.php
 	 *
-	 * @see alpha_null_entry_containers
+	 * @see carelib_null_entry_containers
 	 */
-	add_action( 'tha_content_while_before', 'alpha_null_entry_containers', 10 );
+	add_action( 'carelib_content_while_before', 'carelib_null_entry_containers', 10 );
 }
 
 alpha_framework();

@@ -27,7 +27,7 @@ function alpha_attachment_image() {
  * @return void
  */
 function alpha_attachment_meta_open() {
-	echo '<div ' . alpha_get_attr( 'attachment-meta' ) . '>';
+	echo '<div ' . carelib_get_attr( 'attachment-meta' ) . '>';
 }
 
 /**

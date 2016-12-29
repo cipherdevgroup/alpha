@@ -10,7 +10,7 @@
 ?>
 <?php if ( ! post_password_required() ) : ?>
 
-	<?php tha_comments_before(); ?>
+	<?php carelib_comments_before(); ?>
 
 	<section id="comments" class="comments-area">
 
@@ -23,7 +23,7 @@
 				wp_list_comments(
 					array(
 						'style'    => 'ol',
-						'callback' => 'alpha_comments_callback',
+						'callback' => 'carelib_comments_callback',
 					)
 				);
 				?>
@@ -43,6 +43,6 @@
 
 	</section><!-- #comments -->
 
-	<?php tha_comments_after(); ?>
+	<?php carelib_comments_after(); ?>
 
 <?php endif; ?>
