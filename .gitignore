@@ -17,14 +17,3 @@
 # Third-party dependencies
 assets/bower/
 assets/composer/
-
-# Generated theme files
-/assets/theme/scss/generated/
-/css/
-/fonts/
-/includes/vendor/
-/images/
-/js/
-/languages/
-/style*.*
-/screenshot.png
