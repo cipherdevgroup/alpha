@@ -63,11 +63,10 @@ function alpha_featured_image() {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_entry_title
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_entry_title( $args = array() ) {
-	carelib_entry_title( $args );
+function alpha_entry_title() {
+	carelib_entry_title();
 }
 
 /**
@@ -122,11 +121,10 @@ function alpha_entry_meta_open() {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_entry_author
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_entry_author( $args = array() ) {
-	carelib_entry_author( $args );
+function alpha_entry_author() {
+	carelib_entry_author();
 }
 
 /**
@@ -135,11 +133,10 @@ function alpha_entry_author( $args = array() ) {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_entry_published
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_entry_published( $args = array() ) {
-	carelib_entry_published( $args );
+function alpha_entry_published() {
+	carelib_entry_published();
 }
 
 /**
@@ -148,11 +145,10 @@ function alpha_entry_published( $args = array() ) {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_entry_comments_link
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_entry_comments_link( $args = array() ) {
-	carelib_entry_comments_link( $args );
+function alpha_entry_comments_link() {
+	carelib_entry_comments_link();
 }
 
 /**
@@ -299,9 +295,8 @@ function alpha_entry_close() {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_post_navigation
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_post_navigation( $args = array() ) {
-	carelib_post_navigation( $args );
+function alpha_post_navigation() {
+	carelib_post_navigation();
 }

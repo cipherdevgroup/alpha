@@ -64,9 +64,8 @@ function alpha_archive_header_close() {
  * @since  0.1.0
  * @access public
  * @uses   carelib_get_posts_navigation
- * @param  array $args A list of arguments to be merged with defaults.
  * @return void
  */
-function alpha_posts_navigation( $args = array() ) {
-	carelib_posts_navigation( $args );
+function alpha_posts_navigation() {
+	carelib_posts_navigation();
 }

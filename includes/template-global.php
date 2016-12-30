@@ -71,8 +71,8 @@ function alpha_branding_open() {
  * @uses   carelib_get_site_title
  * @return void
  */
-function alpha_site_title( $args = array() ) {
-	carelib_site_title( $args );
+function alpha_site_title() {
+	carelib_site_title();
 }
 
 /**
@@ -83,8 +83,8 @@ function alpha_site_title( $args = array() ) {
  * @uses   carelib_get_site_description
  * @return void
  */
-function alpha_site_description( $args = array() ) {
-	carelib_site_description( $args );
+function alpha_site_description() {
+	carelib_site_description();
 }
 
 /**
