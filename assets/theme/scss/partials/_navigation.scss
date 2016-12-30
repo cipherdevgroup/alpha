@@ -114,7 +114,11 @@ body {
 	transition: left $responsive-menu-transition;
 
 	&.menu-open {
+		height: 100%;
 		left: -260px;
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
 	}
 }
 

@@ -2160,7 +2160,11 @@ body {
 }
 
 body.menu-open {
+  height: 100%;
   left: -260px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .menu-toggle {
