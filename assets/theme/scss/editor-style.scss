@@ -1,8 +1,8 @@
 // Load Susy
-@import "../../bower/scss/susy/susy";
+@import "vendor/susy/susy";
 
 // Load Media Queries Mixins
-@import "../../bower/scss/media-queries";
+@import "vendor/media-queries";
 
 // Load Theme Mixins
 @import "mixins/global";

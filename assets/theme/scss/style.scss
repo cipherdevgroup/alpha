@@ -12,10 +12,10 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 // Load Susy
-@import "../../bower/scss/susy/susy";
+@import "vendor/susy/susy";
 
 // Load Media Queries Mixins
-@import "../../bower/scss/media-queries";
+@import "vendor/media-queries";
 
 // Load Theme Mixins
 @import "mixins/global";
@@ -33,7 +33,7 @@
 /*
 HTML5 Reset
 ----------------------------------------------------------------------------- */
-@import "../../bower/scss/normalize";
+@import "vendor/normalize";
 
 
 /*
