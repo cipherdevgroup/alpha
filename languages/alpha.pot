@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alpha 1.0.0\n"
 "Report-Msgid-Bugs-To: WP Site Care <translations@wpsitecare.com>\n"
-"POT-Creation-Date: 2016-12-30 01:21:27+00:00\n"
+"POT-Creation-Date: 2016-12-30 01:29:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,6 +44,208 @@ msgstr ""
 msgid ""
 "A widgeted area which displays just before the main site footer on all "
 "pages."
+msgstr ""
+
+#: includes/vendor/carelib/admin/metabox-post-layouts.php:48
+#: includes/vendor/carelib/customize/register.php:44
+msgid "Layout"
+msgstr ""
+
+#: includes/vendor/carelib/admin/templates/metabox-post-layouts.php:22
+msgid "Default Layout"
+msgstr ""
+
+#: includes/vendor/carelib/customize/register.php:65
+msgid "Global Layout"
+msgstr ""
+
+#: includes/vendor/carelib/customize/register.php:84
+msgid "Breadcrumbs"
+msgstr ""
+
+#: includes/vendor/carelib/customize/register.php:85
+msgid "Choose where you would like breadcrumbs to display."
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:22
+msgid "Single Entries"
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:26
+msgid "Pages"
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:30
+msgid "Blog Page"
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:34
+#: includes/vendor/carelib/includes/template-archive.php:67
+msgid "Archives"
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:38
+msgid "404 Page"
+msgstr ""
+
+#: includes/vendor/carelib/includes/breadcrumbs.php:42
+msgid "Attachment/Media Pages"
+msgstr ""
+
+#: includes/vendor/carelib/includes/search-form.php:41
+msgid "Search site"
+msgstr ""
+
+#: includes/vendor/carelib/includes/search-form.php:46
+msgid "Search this website"
+msgstr ""
+
+#: includes/vendor/carelib/includes/search-form.php:62
+#: includes/vendor/carelib/includes/search-form.php:65
+msgid "Search"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-404.php:46
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-404.php:53
+#. Translators: %1$s is a smile emoji.
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:102
+#. Translators: 1 is the week number and 2 is the year.
+msgid "Week %1$s of %2$s"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:140
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:164
+#. Translators: %s is the search query. The HTML entities are opening and
+#. closing curly quotes.
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:269
+msgid "Newer Posts"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:270
+msgid "Older Posts"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:273
+msgid "Previous Page"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:277
+msgid "Next Page"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:200
+msgid "% Comments"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:201
+msgid "1 Comment"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:202
+msgid "Leave a Comment"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:386
+#. Translators: Used as a placeholder for untitled posts on non-singular views.
+msgid "(Untitled)"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:616
+msgid "Previous"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:617
+msgid "Next"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-global.php:132
+msgid "Skip to %s (Press enter)"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-global.php:300
+msgid "Free WordPress Theme by"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-global.php:317
+#. Translators: 1 is current year, 2 is site name/link, 3 is the theme author
+#. name/link.
+msgid "Copyright &#169; %1$s %2$s. Free WordPress Theme by %3$s"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-global.php:349
+msgid "http://wordpress.org"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-global.php:350
+msgid "WordPress"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:55
+msgid "Drop Cap"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:60
+msgid "Pull Quote Left"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:66
+msgid "Pull Quote Right"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:72
+msgid "Intro Paragraph"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:78
+#: includes/vendor/carelib/includes/tinymce.php:111
+msgid "Call to Action"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:85
+msgid "Feature Box"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:92
+msgid "Code Block"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:96
+msgid "Buttons"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:99
+msgid "Standard"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:105
+msgid "Standard Block"
+msgstr ""
+
+#: includes/vendor/carelib/includes/tinymce.php:117
+msgid "Call to Action Block"
+msgstr ""
+
+#: includes/vendor/carelib/includes/woocommerce/template-global.php:143
+msgid "Placeholder"
 msgstr ""
 
 #: includes/woocommerce/template-global.php:21
@@ -158,6 +360,69 @@ msgstr ""
 #: includes/theme-setup.php:136
 msgctxt "sidebar"
 msgid "Footer Widgets"
+msgstr ""
+
+#: includes/vendor/carelib/includes/attributes.php:211
+#. Translators: The %s is the sidebar name. This is used for the 'aria-label'
+#. attribute.
+msgctxt "sidebar aria label"
+msgid "%s Sidebar"
+msgstr ""
+
+#: includes/vendor/carelib/includes/attributes.php:272
+#. Translators: The %s is the menu name. This is used for the 'aria-label'
+#. attribute.
+msgctxt "nav menu aria label"
+msgid "%s Menu"
+msgstr ""
+
+#: includes/vendor/carelib/includes/attributes.php:374
+#. Translators: Post date/time "title" attribute.
+msgctxt "post time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""
+
+#: includes/vendor/carelib/includes/attributes.php:418
+#. Translators: Comment date/time "title" attribute.
+msgctxt "comment time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:89
+#: includes/vendor/carelib/includes/template-archive.php:104
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:103
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:116
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:127
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:140
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-archive.php:151
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: includes/vendor/carelib/includes/template-entry.php:513
+#. Translators: Separates tags, categories, etc. when displaying a post.
+msgctxt "taxonomy terms separator"
+msgid ", "
 msgstr ""
 
 #: sidebar.php:19
