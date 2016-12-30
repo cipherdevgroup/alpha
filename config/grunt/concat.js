@@ -4,7 +4,7 @@ module.exports = {
 		files: [
 			{
 				src: [
-					'<%= paths.bower %>/js/concat/**/*.js',
+					'<%= paths.authorAssets %>/js/vendor/theme/**/*.js',
 					'<%= paths.authorAssets %>js/mobileMenu.js',
 					'<%= paths.authorAssets %>js/theme.js'
 				],

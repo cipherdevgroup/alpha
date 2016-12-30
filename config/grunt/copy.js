@@ -23,6 +23,41 @@ module.exports = {
 				],
 				dest: 'css/',
 				filter: 'isFile'
+			},
+			{
+				expand: true,
+				flatten: true,
+				cwd: '<%= paths.bower%>',
+				src: [
+					'normalize-css/normalize.css',
+					'sass-mediaqueries/_media-queries.scss'
+				],
+				dest: '<%= paths.authorAssets%>scss/vendor/'
+			},
+			{
+				expand: true,
+				flatten: false,
+				cwd: '<%= paths.bower%>susy/sass/',
+				src: [
+					'*.scss',
+					'**/*.scss'
+				],
+				dest: '<%= paths.authorAssets%>scss/vendor/susy/'
+			}
+		]
+	},
+	js: {
+		files: [
+			{
+				expand: true,
+				flatten: true,
+				cwd: '<%= paths.bower%>',
+				src: [
+					'skip-link-focus/skip-link-focus.js',
+					'fitvids/jquery.fitvids.js',
+					'accessible-menu/dist/jquery.accessible-menu.js'
+				],
+				dest: '<%= paths.authorAssets%>js/vendor/theme/'
 			}
 		]
 	},
@@ -83,56 +118,6 @@ module.exports = {
 				src: ['*.po'],
 				dest: '<%= paths.theme%><%= paths.languages %>',
 				filter: 'isFile'
-			}
-		]
-	},
-	bowercss: {
-		files: [
-			{
-				expand: true,
-				flatten: true,
-				cwd: 'bower_components/',
-				src: [
-					'normalize-css/normalize.css',
-					'sass-mediaqueries/_media-queries.scss'
-				],
-				dest: '<%= paths.bower%>scss/'
-			},
-			{
-				expand: true,
-				flatten: false,
-				cwd: 'bower_components/susy/sass/',
-				src: [
-					'*.scss',
-					'**/*.scss'
-				],
-				dest: '<%= paths.bower%>scss/susy/'
-			}
-		]
-	},
-	bowerjs: {
-		files: [
-			{
-				expand: true,
-				flatten: true,
-				cwd: 'bower_components/',
-				src: [
-					'skip-link-focus/skip-link-focus.js',
-					'fitvids/jquery.fitvids.js',
-					'accessible-menu/dist/jquery.accessible-menu.js'
-				],
-				dest: '<%= paths.bower%>js/concat'
-			}
-		]
-	},
-	bowerfonts: {
-		files: [
-			{
-				expand: true,
-				flatten: true,
-				cwd: 'bower_components/themicons/dist/fonts/',
-				src: ['**/*', '!**/*.html'],
-				dest: '<%= paths.bower%>fonts/'
 			}
 		]
 	}
