@@ -5,34 +5,12 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.tmp %>',
-				src: [
-					'style*.css',
-					'style*.map'
-				],
-				dest: '',
-				filter: 'isFile'
-			},
-			{
-				expand: true,
-				flatten: true,
-				cwd: '<%= paths.tmp %>',
-				src: [
-					'editor-style*.css',
-					'editor-style*.map'
-				],
-				dest: 'css/',
-				filter: 'isFile'
-			},
-			{
-				expand: true,
-				flatten: true,
 				cwd: '<%= paths.bower%>',
 				src: [
 					'normalize-css/normalize.css',
 					'sass-mediaqueries/_media-queries.scss'
 				],
-				dest: '<%= paths.authorAssets%>scss/vendor/'
+				dest: '<%= paths.cssSrc%>vendor/'
 			},
 			{
 				expand: true,
@@ -42,7 +20,7 @@ module.exports = {
 					'*.scss',
 					'**/*.scss'
 				],
-				dest: '<%= paths.authorAssets%>scss/vendor/susy/'
+				dest: '<%= paths.cssSrc%>vendor/susy/'
 			}
 		]
 	},
@@ -57,7 +35,7 @@ module.exports = {
 					'fitvids/jquery.fitvids.js',
 					'accessible-menu/dist/jquery.accessible-menu.js'
 				],
-				dest: '<%= paths.authorAssets%>js/vendor/theme/'
+				dest: '<%= paths.jsSrc%>vendor/theme/'
 			}
 		]
 	},
@@ -67,10 +45,9 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: [
-					'<%= paths.authorAssets %>fonts/**/*',
-					'<%= paths.bower %>fonts/**/*'
+					'<%= paths.fontsSrc %>**/*'
 				],
-				dest: 'fonts/'
+				dest: '<%= paths.fonts %>'
 			}
 		]
 	},
@@ -91,24 +68,7 @@ module.exports = {
 		]
 	},
 	images: {
-		files: [
-			{
-				expand: true,
-				flatten: false,
-				cwd: '<%= paths.tmp %>images',
-				src: [ '*', '*/**', '!screenshot.png'],
-				dest: 'images',
-				filter: 'isFile'
-			},
-			{
-				expand: true,
-				flatten: true,
-				cwd: '<%= paths.tmp %>images',
-				src: ['screenshot.png'],
-				dest: '',
-				filter: 'isFile'
-			}
-		]
+		files: []
 	},
 	languages: {
 		files: [

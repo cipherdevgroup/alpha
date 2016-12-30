@@ -4,11 +4,11 @@ module.exports = {
 		files: [
 			{
 				src: [
-					'<%= paths.authorAssets %>/js/vendor/theme/**/*.js',
-					'<%= paths.authorAssets %>js/mobileMenu.js',
-					'<%= paths.authorAssets %>js/theme.js'
+					'<%= paths.jsSrc %>vendor/theme/**/*.js',
+					'<%= paths.jsSrc %>mobileMenu.js',
+					'<%= paths.jsSrc %>theme.js'
 				],
-				dest: 'js/theme.js'
+				dest: '<%= paths.js %>theme.js'
 			}
 		]
 	}
