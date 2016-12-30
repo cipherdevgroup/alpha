@@ -68,5 +68,5 @@ function alpha_archive_header_close() {
  * @return void
  */
 function alpha_posts_navigation( $args = array() ) {
-	echo carelib_get_posts_navigation( $args );
+	carelib_posts_navigation( $args );
 }
