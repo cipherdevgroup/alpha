@@ -276,20 +276,6 @@ function AlphaMobileMenu( $ ) {
 		menuClass = $mobileMenu.attr( 'class' );
 	}
 
-	/**
-	 * Debounce a window resize event.
-	 *
-	 * @since  0.2.0
-	 * @return {Boolean} Returns true if the menu is open.
-	 */
-	function debouncedResize( c, t ) {
-		onresize = function() {
-			clearTimeout( t );
-			t = setTimeout( c, 100 );
-		};
-		return c;
-	}
-
 	function isElementInViewport( el ) {
 		var rect = el[0].getBoundingClientRect();
 		var $window = $( window );
@@ -303,15 +289,15 @@ function AlphaMobileMenu( $ ) {
 	}
 
 	/**
-	 * Check whether or not a given element is visible.
+	 * Check whether or not the menu is in a mobile state.
 	 *
-	 * @param  {object} $object a jQuery object to check
-	 * @return {bool} true if the current element is hidden
+	 * @return {bool} true if the menu has been made mobile.
 	 */
-	function isHidden( $object ) {
-		var element = $object[0];
+	this.isMenuMobile = function() {
+		var element = settings.menuButton[0];
+
 		return ( null === element.offsetParent );
-	}
+	};
 
 	/**
 	 * Check whether or not the mobile menu is currently open and visible.
@@ -319,7 +305,7 @@ function AlphaMobileMenu( $ ) {
 	 * @since  0.1.0
 	 * @return {Boolean} Returns true if the menu is open.
 	 */
-	this.menuIsOpen = function() {
+	this.isMenuOpen = function() {
 		if ( isElementInViewport( $mobileMenu ) ) {
 			return true;
 		}
@@ -334,55 +320,13 @@ function AlphaMobileMenu( $ ) {
 	 * @since  0.1.0
 	 * @return {Boolean} Returns true if the menus have been merged.
 	 */
-	function menusMerged() {
+	this.areMenusMerged = function() {
 		if ( 0 === $mobileMenu.find( '.appended' ).length ) {
 			return false;
 		}
 
 		return true;
-	}
-
-	/**
-	 * Prepare our mobile menu by merging our existing menus together if we
-	 * have more than one.
-	 *
-	 * @since  0.1.0
-	 * @return void
-	 */
-	function mergeMenus() {
-		var $extras = settings.extraMenus;
-
-		if ( 0 !== $extras.length && ! menusMerged() && ! that.menuIsOpen() ) {
-			var $main = $mobileMenu.find( 'ul:first' );
-
-			$extras.find( 'ul:first' ).children( 'li' ).each( function() {
-				var $that = $( this );
-				$that.addClass( 'appended' );
-				$that.appendTo( $main );
-			});
-		}
-	}
-
-	/**
-	 * If we have two menus which have been merged, split them back into two
-	 * separate menus using the same format as before they were merged.
-	 *
-	 * @since  0.1.0
-	 * @return void
-	 */
-	function splitMenus() {
-		var $appendedItems = $mobileMenu.find( '.appended' );
-
-		if ( 0 === $appendedItems.length ) {
-			return;
-		}
-
-		$appendedItems.each( function() {
-			var $that = $( this );
-			$that.removeClass( 'appended' );
-			$that.appendTo( settings.extraMenus.find( 'ul:first' ) );
-		});
-	}
+	};
 
 	/**
 	 * Force the focus state of either the mobile menu or the menu button
@@ -429,7 +373,7 @@ function AlphaMobileMenu( $ ) {
 			if ( 9 !== e.keyCode ) {
 				return;
 			}
-			if ( that.menuIsOpen() && settings.menuButton[0] === e.target && ! e.shiftKey ) {
+			if ( that.isMenuOpen() && settings.menuButton[0] === e.target && ! e.shiftKey ) {
 				$firstItem.focus();
 				return false;
 			}
@@ -477,55 +421,96 @@ function AlphaMobileMenu( $ ) {
 	};
 
 	/**
-	 * Split or merge our existing menus based on screen width and force the
-	 * menu to close if the screen is larger than the specified width for a
-	 * mobile menu to be displayed.
+	 * Prepare our mobile menu by merging our existing menus together if we
+	 * have more than one.
 	 *
 	 * @since  0.1.0
 	 * @return void
 	 */
-	function reflowMenus() {
-		if ( isHidden( settings.menuButton ) ) {
-			if ( menusMerged() ) {
-				splitMenus();
-			}
+	function maybeMergeMenus() {
+		var $extras = settings.extraMenus;
 
-			that.closeMenu();
+		if ( 0 !== $extras.length && ! that.areMenusMerged() ) {
+			var $main = $mobileMenu.find( 'ul:first' );
 
-			if ( settings.resetClass ) {
-				$mobileMenu.addClass( menuClass );
-			}
-
-			$mobileMenu.removeClass( settings.mobileMenuClass );
-		} else {
-			if ( settings.resetClass ) {
-				$mobileMenu.removeClass( menuClass );
-			}
-
-			$mobileMenu.addClass( settings.mobileMenuClass );
-
-			if ( ! menusMerged() ) {
-				mergeMenus();
-			}
+			$extras.find( 'ul:first' ).children( 'li' ).each( function() {
+				var $that = $( this );
+				$that.addClass( 'appended' );
+				$that.appendTo( $main );
+			});
 		}
 	}
+
+	/**
+	 * If we have two menus which have been merged, split them back into two
+	 * separate menus using the same format as before they were merged.
+	 *
+	 * @since  0.1.0
+	 * @return void
+	 */
+	function maybeSplitMenus() {
+		var $appendedItems = $mobileMenu.find( '.appended' );
+
+		if ( 0 === $appendedItems.length ) {
+			return;
+		}
+
+		$appendedItems.each( function() {
+			var $that = $( this );
+			$that.removeClass( 'appended' );
+			$that.appendTo( settings.extraMenus.find( 'ul:first' ) );
+		});
+	}
+
+	this.createMobileMenu = function() {
+		if ( settings.resetClass ) {
+			$mobileMenu.removeClass( menuClass );
+		}
+
+		$mobileMenu.addClass( settings.mobileMenuClass );
+
+		maybeMergeMenus();
+	};
+
+	this.destroyMobileMenu = function() {
+		that.closeMenu();
+
+		if ( settings.resetClass ) {
+			$mobileMenu.addClass( menuClass );
+		}
+
+		$mobileMenu.removeClass( settings.mobileMenuClass );
+
+		maybeSplitMenus();
+	};
 
 	/**
 	 * Fire all methods required to either open or close the mobile menu.
 	 *
 	 * @since  0.1.0
-	 * @param {object} event The current event being fired.
 	 * @return void
 	 */
-	this.toggleMenu = function( event ) {
-		event.preventDefault();
-
-		if ( that.menuIsOpen() ) {
+	this.toggleMenu = function() {
+		if ( that.isMenuOpen() ) {
 			that.closeMenu();
 		} else {
 			that.openMenu();
 		}
 	};
+
+	/**
+	 * Debounce a window resize event.
+	 *
+	 * @since  0.2.0
+	 * @return {Boolean} Returns true if the menu is open.
+	 */
+	function debouncedResize( c, t ) {
+		onresize = function() {
+			clearTimeout( t );
+			t = setTimeout( c, 100 );
+		};
+		return c;
+	}
 
 	/**
 	 * Load all of our mobile menu functionality.
@@ -538,10 +523,18 @@ function AlphaMobileMenu( $ ) {
 		setupVars();
 
 		if ( 0 !== $mobileMenu.length ) {
-			settings.menuButton.on( 'click', that.toggleMenu );
 			debouncedResize(function() {
-				reflowMenus();
+				if ( that.isMenuMobile() ) {
+					that.destroyMobileMenu();
+				} else {
+					that.createMobileMenu();
+				}
 			})();
+
+			settings.menuButton.on( 'click', function( event ) {
+				event.preventDefault();
+				that.toggleMenu();
+			});
 		}
 	};
 }
