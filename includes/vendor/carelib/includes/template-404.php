@@ -13,14 +13,17 @@
  *
  * @since  1.0.0
  * @access public
+ * @param  string $text Text to be used for the 404 entry title.
  * @return string The 404 entry title.
  */
-function carelib_get_404_entry_title() {
-	$text = apply_filters( 'carelib_404_entry_title', __( 'Oops! That page can&rsquo;t be found.', 'alpha' ) );
+function carelib_get_404_entry_title( $text = false ) {
+	if ( ! $text ) {
+		$text = __( 'Oops! That page can&rsquo;t be found.', 'alpha' );
+	}
 
 	return sprintf( '<h1 %s>%s</h1>',
 		carelib_get_attr( 'entry-title' ),
-		esc_attr( $text )
+		esc_attr( apply_filters( 'carelib_404_entry_title', $text ) )
 	);
 }
 
@@ -29,10 +32,11 @@ function carelib_get_404_entry_title() {
  *
  * @since  2.0.0
  * @access public
+ * @param  string $text Text to be used for the 404 entry title.
  * @return void
  */
-function carelib_404_entry_title() {
-	echo carelib_get_404_entry_title();
+function carelib_404_entry_title( $text = false ) {
+	echo carelib_get_404_entry_title( $text );
 }
 
 /**

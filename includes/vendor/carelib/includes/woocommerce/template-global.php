@@ -27,7 +27,7 @@ function carelib_wc_is_plural() {
  * @return bool True if viewing any single WooCommerce entry or page.
  */
 function carelib_wc_is_singular() {
-	return is_page( array( 'my-account', 'cart', 'checkout' ) ) || is_product();
+	return is_cart() || is_checkout() || is_account_page() || is_product();
 }
 
 /**
@@ -138,7 +138,7 @@ function carelib_wc_get_product_image( $post_id = false ) {
 		$post_id = get_the_ID();
 	}
 
-	$image = sprintf( '<img src="%s" alt="%s" />hello',
+	$image = sprintf( '<img src="%s" alt="%s" />',
 		wc_placeholder_img_src(),
 		__( 'Placeholder', 'alpha' )
 	);
