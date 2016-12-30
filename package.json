@@ -25,7 +25,7 @@
     "url": "https://github.com/wpsitecare/alpha.git"
   },
   "devDependencies": {
-    "sitecare-theme-config": "wpsitecare/sitecare-theme-config",
+    "sitecare-theme-config": "wpsitecare/sitecare-theme-config#2.1.0",
     "load-project-config": "~0.2.0"
   }
 }
