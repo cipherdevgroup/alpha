@@ -558,7 +558,7 @@ function AlphaParentTheme( $ ) {
 	};
 
 	this.init = function() {
-		var $siteInner = $( document.getElementById( 'menu-primary' ) );
+		var $siteInner = $( document.getElementById( 'site-inner' ) );
 
 		skipLinkFocus.init();
 		$( document ).gamajoAccessibleMenu();
