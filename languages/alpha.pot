@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alpha 1.0.0\n"
 "Report-Msgid-Bugs-To: WP Site Care <translations@wpsitecare.com>\n"
-"POT-Creation-Date: 2016-12-30 01:29:44+00:00\n"
+"POT-Creation-Date: 2016-12-30 04:53:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -105,17 +105,17 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: includes/vendor/carelib/includes/template-404.php:19
+#: includes/vendor/carelib/includes/template-404.php:21
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: includes/vendor/carelib/includes/template-404.php:46
+#: includes/vendor/carelib/includes/template-404.php:50
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the "
 "links below or a search?"
 msgstr ""
 
-#: includes/vendor/carelib/includes/template-404.php:53
+#: includes/vendor/carelib/includes/template-404.php:57
 #. Translators: %1$s is a smile emoji.
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
