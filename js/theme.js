@@ -335,9 +335,10 @@ function AlphaMobileMenu( $ ) {
 	 * @return {Boolean} Returns true if the menus have been merged.
 	 */
 	function menusMerged() {
-		if ( 0 === settings.mainMenu.find( '#secondary' ).length ) {
+		if ( 0 === $mobileMenu.find( '.appended' ).length ) {
 			return false;
 		}
+
 		return true;
 	}
 
@@ -349,12 +350,16 @@ function AlphaMobileMenu( $ ) {
 	 * @return void
 	 */
 	function mergeMenus() {
-		if ( 0 === settings.mainMenu.length || 0 === settings.extraMenus.length ) {
-			return;
-		}
+		var $extras = settings.extraMenus;
 
-		if ( ! menusMerged() && ! that.menuIsOpen() ) {
-			settings.extraMenus.find( '.nav-menu' ).appendTo( settings.mainMenu.find( '.nav-menu' ) );
+		if ( 0 !== $extras.length && ! menusMerged() && ! that.menuIsOpen() ) {
+			var $main = $mobileMenu.find( 'ul:first' );
+
+			$extras.find( 'ul:first' ).children( 'li' ).each( function() {
+				var $that = $( this );
+				$that.addClass( 'appended' );
+				$that.appendTo( $main );
+			});
 		}
 	}
 
@@ -366,13 +371,17 @@ function AlphaMobileMenu( $ ) {
 	 * @return void
 	 */
 	function splitMenus() {
-		var $appendedMenu = settings.mainMenu.find( '#secondary' );
+		var $appendedItems = $mobileMenu.find( '.appended' );
 
-		if ( 0 === settings.extraMenus.length || 0 === $appendedMenu.length ) {
+		if ( 0 === $appendedItems.length ) {
 			return;
 		}
 
-		$appendedMenu.appendTo( settings.extraMenus.find( '.wrap' ) );
+		$appendedItems.each( function() {
+			var $that = $( this );
+			$that.removeClass( 'appended' );
+			$that.appendTo( settings.extraMenus.find( 'ul:first' ) );
+		});
 	}
 
 	/**
