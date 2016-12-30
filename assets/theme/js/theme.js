@@ -18,15 +18,16 @@ function AlphaParentTheme( $ ) {
 
 		skipLinkFocus.init();
 		$( document ).gamajoAccessibleMenu();
-		$( document.getElementById( 'menu-primary' ) ).alphaMobileMenu();
 		$siteInner.fitVids();
 	};
 }
 
 var AlphaParentTheme = new AlphaParentTheme( jQuery );
+var AlphaMobileMenu = new AlphaMobileMenu( jQuery );
 
 AlphaParentTheme.detectTouch();
 
 jQuery( document ).ready(function() {
 	AlphaParentTheme.init();
+	AlphaMobileMenu.init();
 });
