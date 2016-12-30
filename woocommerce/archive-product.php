@@ -23,22 +23,59 @@ remove_action( 'carelib_archive_header', 'alpha_archive_title', 15 );
 remove_action( 'carelib_archive_header', 'alpha_archive_description', 25 );
 
 /**
- * Callback defined in includes/template-entry.php
+ * Callback defined in carelib/includes/woocommerce/template-global.php
  *
  * @see carelib_null_entry_containers
  */
 add_action( 'carelib_content_while_before', 'carelib_null_entry_containers', 5 );
 
-add_action( 'carelib_content_while_before', 'alpha_product_loop_start', 8 );
+/**
+ * Callback defined in carelib/includes/woocommerce/template-global.php
+ *
+ * @see carelib_wc_product_loop_start
+ */
+add_action( 'carelib_content_while_before', 'carelib_wc_product_loop_start', 8 );
+
+/**
+ * Callback defined in carelib/includes/woocommerce/template-global.php
+ *
+ * @see woocommerce_product_subcategories
+ */
 add_action( 'carelib_content_while_before', 'woocommerce_product_subcategories', 10 );
-add_action( 'carelib_content_before',       'alpha_wc_before_main_content', 8 );
 
-add_action( 'carelib_archive_header',  'alpha_wc_page_title',                  15 );
+/**
+ * Callback defined in carelib/includes/woocommerce/template-hooks.php
+ *
+ * @see carelib_wc_before_main_content
+ */
+add_action( 'carelib_content_before', 'carelib_wc_before_main_content', 8 );
 
-add_action( 'carelib_archive_header',  'alpha_wc_archive_description',         30 );
+/**
+ * Callback defined in carelib/includes/woocommerce/template-global.php
+ *
+ * @see carelib_wc_page_title
+ */
+add_action( 'carelib_archive_header', 'carelib_wc_page_title', 15 );
 
-add_action( 'carelib_content_after',        'alpha_wc_after_main_content',           8 );
+/**
+ * Callback defined in carelib/includes/woocommerce/template-hooks.php
+ *
+ * @see carelib_wc_archive_description
+ */
+add_action( 'carelib_archive_header', 'carelib_wc_archive_description', 30 );
 
-add_action( 'carelib_content_while_after',  'alpha_product_loop_end',  10 );
+/**
+ * Callback defined in carelib/includes/woocommerce/template-hooks.php
+ *
+ * @see carelib_wc_after_main_content
+ */
+add_action( 'carelib_content_after', 'carelib_wc_after_main_content', 8 );
+
+/**
+ * Callback defined in carelib/includes/woocommerce/template-global.php
+ *
+ * @see carelib_wc_product_loop_end
+ */
+add_action( 'carelib_content_while_after', 'carelib_wc_product_loop_end', 10 );
 
 carelib_framework( 'shop' );
