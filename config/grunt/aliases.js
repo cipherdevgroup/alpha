@@ -18,20 +18,17 @@ module.exports = function() {
 			'newer:copy:php'
 		],
 		'build:fonts': [
-			'build:dependencies:fonts',
-			'newer:copy:fonts'
+			'build:dependencies:fonts'
 		],
 		'build:css': [
 			'build:dependencies:css',
 			'newer:sass',
 			'newer:postcss',
 			'newer:rtlcss',
-			'newer:cssmin',
-			'newer:copy:css'
+			'newer:cssmin'
 		],
 		'build:images': [
-			'newer:imagemin:images',
-			'newer:copy:images'
+			'newer:imagemin:images'
 		],
 		'build:js': [
 			'build:dependencies:js',
