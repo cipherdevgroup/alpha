@@ -290,6 +290,18 @@ function AlphaMobileMenu( $ ) {
 		return c;
 	}
 
+	function isElementInViewport( el ) {
+		var rect = el[0].getBoundingClientRect();
+		var $window = $( window );
+
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= $window.height() &&
+			rect.right <= $window.width()
+		);
+	}
+
 	/**
 	 * Check whether or not a given element is visible.
 	 *
@@ -307,12 +319,13 @@ function AlphaMobileMenu( $ ) {
 	 * @since  0.1.0
 	 * @return {Boolean} Returns true if the menu is open.
 	 */
-	function menuIsOpen() {
-		if ( $body.hasClass( settings.menuOpenClass ) ) {
+	this.menuIsOpen = function() {
+		if ( isElementInViewport( $mobileMenu ) ) {
 			return true;
 		}
+
 		return false;
-	}
+	};
 
 	/**
 	 * Check whether or not our existing menus have been merged into a
@@ -340,7 +353,7 @@ function AlphaMobileMenu( $ ) {
 			return;
 		}
 
-		if ( ! menusMerged() && ! menuIsOpen() ) {
+		if ( ! menusMerged() && ! that.menuIsOpen() ) {
 			settings.extraMenus.find( '.nav-menu' ).appendTo( settings.mainMenu.find( '.nav-menu' ) );
 		}
 	}
@@ -363,50 +376,6 @@ function AlphaMobileMenu( $ ) {
 	}
 
 	/**
-	 * Toggle all classes related to a menu being in an open or closed state
-	 * except for the body class as it is used as a guide for whether or
-	 * not the mobile menu has been opened.
-	 *
-	 * @since  0.1.0
-	 * @return void
-	 */
-	function toggleClasses() {
-		$mobileMenu.toggleClass( 'visible' );
-		settings.menuButton.toggleClass( 'activated' );
-	}
-
-	/**
-	 * Toggle aria attributes.
-	 *
-	 * @since  0.2.0
-	 * @param  {button} $object passed through
-	 * @param  {aria-xx} attribute aria attribute to toggle
-	 * @return {bool}
-	 */
-	function toggleAria( $object, attribute ) {
-		$object.attr( attribute, function( index, value ) {
-			return 'false' === value ? 'true' : 'false';
-		});
-	}
-
-	/**
-	 * Toggle all attributes related to a menu being in an open or closed
-	 * state. Most of these changes are made for a11y reasons.
-	 *
-	 * @since  0.1.0
-	 * @return void
-	 */
-	function toggleAttributes() {
-		toggleAria( settings.menuButton, 'aria-pressed' );
-		toggleAria( settings.menuButton, 'aria-expanded' );
-		if ( $mobileMenu.attr( 'tabindex' ) ) {
-			$mobileMenu.removeAttr( 'tabindex' );
-		} else {
-			$mobileMenu.attr( 'tabindex', '0' );
-		}
-	}
-
-	/**
 	 * Force the focus state of either the mobile menu or the menu button
 	 * when a user is tabbing through the mobile menu.
 	 *
@@ -422,11 +391,10 @@ function AlphaMobileMenu( $ ) {
 	 * @return {booleen} false when focus has been changed.
 	 */
 	function focusMobileMenu() {
-		var nav        = $mobileMenu[0],
-			navID      = $mobileMenu.attr( 'id' ),
-			$items     = $( '#' + navID + ' a' ),
-			$firstItem = $items.first(),
-			$lastItem  = $items.last();
+		var nav        = $mobileMenu[0];
+		var $items     = $( '#' + $mobileMenu.attr( 'id' ) + ' a' );
+		var $firstItem = $items.first();
+		var $lastItem  = $items.last();
 
 		$mobileMenu.focus();
 
@@ -452,7 +420,7 @@ function AlphaMobileMenu( $ ) {
 			if ( 9 !== e.keyCode ) {
 				return;
 			}
-			if ( menuIsOpen() && settings.menuButton[0] === e.target && ! e.shiftKey ) {
+			if ( that.menuIsOpen() && settings.menuButton[0] === e.target && ! e.shiftKey ) {
 				$firstItem.focus();
 				return false;
 			}
@@ -465,13 +433,20 @@ function AlphaMobileMenu( $ ) {
 	 * @since  0.1.0
 	 * @return void
 	 */
-	function openMenu() {
-		if ( ! menuIsOpen() ) {
-			toggleClasses();
-			toggleAttributes();
-			focusMobileMenu();
-		}
-	}
+	this.openMenu = function() {
+		var $button = settings.menuButton;
+
+		$mobileMenu.addClass( 'visible' );
+		$mobileMenu.attr( 'tabindex', '0' );
+
+		$button.addClass( 'activated' );
+		$button.attr( 'aria-pressed', 'true' );
+		$button.attr( 'aria-expanded', 'true' );
+
+		$body.addClass( settings.menuOpenClass );
+
+		focusMobileMenu();
+	};
 
 	/**
 	 * Fires all methods required to close the mobile menu.
@@ -479,12 +454,18 @@ function AlphaMobileMenu( $ ) {
 	 * @since  0.1.0
 	 * @return void
 	 */
-	function closeMenu() {
-		if ( menuIsOpen() ) {
-			toggleClasses();
-			toggleAttributes();
-		}
-	}
+	this.closeMenu = function() {
+		var $button = settings.menuButton;
+
+		$mobileMenu.removeClass( 'visible' );
+		$mobileMenu.removeAttr( 'tabindex' );
+
+		$button.removeClass( 'activated' );
+		$button.attr( 'aria-pressed', 'false' );
+		$button.attr( 'aria-expanded', 'false' );
+
+		$body.removeClass( settings.menuOpenClass );
+	};
 
 	/**
 	 * Split or merge our existing menus based on screen width and force the
@@ -500,14 +481,13 @@ function AlphaMobileMenu( $ ) {
 				splitMenus();
 			}
 
-			closeMenu();
+			that.closeMenu();
 
 			if ( settings.resetClass ) {
 				$mobileMenu.addClass( menuClass );
 			}
 
 			$mobileMenu.removeClass( settings.mobileMenuClass );
-			$body.removeClass( settings.menuOpenClass );
 		} else {
 			if ( settings.resetClass ) {
 				$mobileMenu.removeClass( menuClass );
@@ -528,12 +508,15 @@ function AlphaMobileMenu( $ ) {
 	 * @param {object} event The current event being fired.
 	 * @return void
 	 */
-	function toggleMenu( event ) {
+	this.toggleMenu = function( event ) {
 		event.preventDefault();
-		openMenu();
-		closeMenu();
-		$body.toggleClass( settings.menuOpenClass );
-	}
+
+		if ( that.menuIsOpen() ) {
+			that.closeMenu();
+		} else {
+			that.openMenu();
+		}
+	};
 
 	/**
 	 * Load all of our mobile menu functionality.
@@ -544,8 +527,9 @@ function AlphaMobileMenu( $ ) {
 	this.init = function( options ) {
 		setupOptions( options );
 		setupVars();
+
 		if ( 0 !== $mobileMenu.length ) {
-			settings.menuButton.on( 'click', toggleMenu );
+			settings.menuButton.on( 'click', that.toggleMenu );
 			debouncedResize(function() {
 				reflowMenus();
 			})();
