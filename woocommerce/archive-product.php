@@ -30,6 +30,13 @@ remove_action( 'carelib_archive_header', 'alpha_archive_description', 25 );
 add_action( 'carelib_content_while_before', 'carelib_null_entry_containers', 5 );
 
 /**
+ * Callback defined in carelib/includes/woocommerce/template-hooks.php
+ *
+ * @see carelib_wc_before_shop_loop
+ */
+add_action( 'carelib_content_while_before', 'carelib_wc_before_shop_loop', 6 );
+
+/**
  * Callback defined in carelib/includes/woocommerce/template-global.php
  *
  * @see carelib_wc_product_loop_start
@@ -77,5 +84,12 @@ add_action( 'carelib_content_after', 'carelib_wc_after_main_content', 8 );
  * @see carelib_wc_product_loop_end
  */
 add_action( 'carelib_content_while_after', 'carelib_wc_product_loop_end', 10 );
+
+/**
+ * Callback defined in carelib/includes/woocommerce/template-global.php
+ *
+ * @see carelib_wc_after_shop_loop
+ */
+add_action( 'carelib_content_while_after', 'carelib_wc_after_shop_loop', 12 );
 
 carelib_framework( 'shop' );
