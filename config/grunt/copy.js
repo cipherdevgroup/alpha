@@ -48,6 +48,16 @@ module.exports = {
 					'<%= paths.fontsSrc %>**/*'
 				],
 				dest: '<%= paths.fonts %>'
+			},
+			{
+				expand: true,
+				flatten: true,
+				cwd: '<%= paths.bower%>',
+				src: [
+					'themicons/dist/fonts/*',
+					'!themicons/dist/fonts/*.html'
+				],
+				dest: '<%= paths.fonts %>'
 			}
 		]
 	},
