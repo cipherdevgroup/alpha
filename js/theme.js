@@ -247,7 +247,7 @@ function AlphaMobileMenu( $ ) {
 	'use strict';
 
 	var that = this;
-	var $body = $( document.body );
+	var $root = $( document.documentElement );
 	var settings, $mobileMenu, menuClass;
 
 	function setupOptions( options ) {
@@ -396,7 +396,7 @@ function AlphaMobileMenu( $ ) {
 		$button.attr( 'aria-pressed', 'true' );
 		$button.attr( 'aria-expanded', 'true' );
 
-		$body.addClass( settings.menuOpenClass );
+		$root.addClass( settings.menuOpenClass );
 
 		focusMobileMenu();
 	};
@@ -417,7 +417,7 @@ function AlphaMobileMenu( $ ) {
 		$button.attr( 'aria-pressed', 'false' );
 		$button.attr( 'aria-expanded', 'false' );
 
-		$body.removeClass( settings.menuOpenClass );
+		$root.removeClass( settings.menuOpenClass );
 	};
 
 	/**

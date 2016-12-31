@@ -108,17 +108,23 @@
 /* Responsive Menu
 --------------------------------------------- */
 
+%stop-scroll {
+	height: 100%;
+	overflow-y: hidden;
+}
+
 body {
 	left: 0;
 	position: relative;
 	transition: left $responsive-menu-transition;
+}
 
-	&.menu-open {
-		height: 100%;
+.menu-open {
+	@extend %stop-scroll;
+
+	body {
+		@extend %stop-scroll;
 		left: -260px;
-		overflow-y: hidden;
-		position: fixed;
-		width: 100%;
 	}
 }
 
@@ -156,7 +162,7 @@ body {
 	background: $menu-mobile-bg-color;
 	bottom: 0;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 	position: fixed;
 	right: -260px;
 	top: 0;

@@ -2152,6 +2152,11 @@ Site Navigation
 
 /* Responsive Menu
 --------------------------------------------- */
+.menu-open, .menu-open body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 body {
   left: 0;
   position: relative;
@@ -2159,12 +2164,8 @@ body {
   transition: left 0.4s ease-in-out;
 }
 
-body.menu-open {
-  height: 100%;
+.menu-open body {
   left: -260px;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
 
 .menu-toggle {
@@ -2204,7 +2205,7 @@ body.menu-open {
   background: #232627;
   bottom: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: fixed;
   right: -260px;
   top: 0;
