@@ -116,7 +116,7 @@ body {
 	&.menu-open {
 		height: 100%;
 		left: -260px;
-		overflow: hidden;
+		overflow-y: hidden;
 		position: fixed;
 		width: 100%;
 	}
