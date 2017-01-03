@@ -499,17 +499,37 @@ function AlphaMobileMenu( $ ) {
 	};
 
 	/**
-	 * Debounce a window resize event.
+	 * Returns a function, that, as long as it continues to be invoked, will not
+	 * be triggered. The function will be called after it stops being called for
+	 * N milliseconds.
 	 *
-	 * @since  0.2.0
-	 * @return {Boolean} Returns true if the menu is open.
+	 * @source underscore.js
+	 * @see http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+	 * @param {Function} func to wrap
+	 * @param {Number} wait in ms (`100`)
 	 */
-	function debouncedResize( c, t ) {
-		onresize = function() {
-			clearTimeout( t );
-			t = setTimeout( c, 100 );
+	function debounce( func, wait ) {
+		var timeout;
+
+		return function() {
+			var context = this;
+			var args = arguments;
+
+			clearTimeout( timeout );
+
+			timeout = setTimeout( function() {
+				timeout = null;
+				func.apply( context, args );
+			}, wait );
 		};
-		return c;
+	}
+
+	function initMenu() {
+		if ( that.isMenuMobile() ) {
+			that.destroyMobileMenu();
+		} else {
+			that.createMobileMenu();
+		}
 	}
 
 	/**
@@ -523,13 +543,8 @@ function AlphaMobileMenu( $ ) {
 		setupVars();
 
 		if ( 0 !== $mobileMenu.length ) {
-			debouncedResize(function() {
-				if ( that.isMenuMobile() ) {
-					that.destroyMobileMenu();
-				} else {
-					that.createMobileMenu();
-				}
-			})();
+			initMenu();
+			window.onresize = debounce( initMenu, 200 );
 
 			settings.menuButton.on( 'click', function( event ) {
 				event.preventDefault();
