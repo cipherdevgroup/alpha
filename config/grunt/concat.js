@@ -7,7 +7,7 @@ module.exports = {
 					'<%= paths.jsSrc %>vendor/theme/**/*.js',
 					'<%= paths.jsSrc %>mobileMenu.js',
 					'<%= paths.jsSrc %>theme.js',
-					'<%= paths.jsSrc %>theme-bootstrap.js'
+					'<%= paths.jsSrc %>theme-init.js'
 				],
 				dest: '<%= paths.js %>theme.js'
 			}
