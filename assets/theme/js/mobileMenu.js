@@ -19,6 +19,7 @@ function AlphaMobileMenu( $ ) {
 			mainMenu: $( document.getElementById( 'menu-primary' ) ),
 			menuButton: $( document.getElementById( 'menu-toggle-primary' ) ),
 			extraMenus: $( document.getElementById( 'menu-secondary' ) ),
+			activeClass: 'activated',
 			mobileMenuClass: 'menu-mobile',
 			menuOpenClass:  'menu-open',
 			resetClass: true
@@ -156,7 +157,7 @@ function AlphaMobileMenu( $ ) {
 		$mobileMenu.addClass( 'visible' );
 		$mobileMenu.attr( 'tabindex', '0' );
 
-		$button.addClass( 'activated' );
+		$button.addClass( settings.activeClass );
 		$button.attr( 'aria-pressed', 'true' );
 		$button.attr( 'aria-expanded', 'true' );
 
@@ -177,7 +178,7 @@ function AlphaMobileMenu( $ ) {
 		$mobileMenu.removeClass( 'visible' );
 		$mobileMenu.removeAttr( 'tabindex' );
 
-		$button.removeClass( 'activated' );
+		$button.removeClass( settings.activeClass );
 		$button.attr( 'aria-pressed', 'false' );
 		$button.attr( 'aria-expanded', 'false' );
 
