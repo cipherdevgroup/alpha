@@ -128,15 +128,10 @@ body {
 	}
 }
 
-.menu-toggle,
-.sub-menu-toggle {
-	background: $menu-toggle-bg-color;
-	border-radius: $base-border-radius;
-	color: $menu-toggle-link-color;
+%toggle-button-base {
 	cursor: pointer;
 	display: block;
 	margin: 0 0 0 auto;
-	padding: 0;
 
 	@include min-screen( $medium-screen ) {
 		display: none;
@@ -145,8 +140,6 @@ body {
 	&:hover,
 	&:focus,
 	&:active {
-		background: $menu-toggle-bg-color-hover;
-		color: $menu-toggle-color-hover;
 		outline: none;
 
 		@include min-screen( $medium-screen ) {
@@ -156,6 +149,17 @@ body {
 }
 
 .menu-toggle {
+	@extend %toggle-button-base;
+	background: $menu-toggle-bg-color;
+	color: $menu-toggle-link-color;
+	padding: 0;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $menu-toggle-bg-color-hover;
+		color: $menu-toggle-color-hover;
+	}
 
 	&::before {
 		font-size: 35px;
@@ -163,20 +167,25 @@ body {
 }
 
 .sub-menu-toggle {
+	@extend %toggle-button-base;
+	background: transparent;
 	bottom: 0;
 	color: $menu-mobile-color;
 	margin: 0;
+	padding: 0 10px;
 	position: absolute;
 	right: 0;
 	top: 0;
 
-	&::before {
-		font-size: 30px;
+	&:focus,
+	&:hover,
+	&:active {
+		background: transparent;
+		color: $menu-mobile-color-hover;
 	}
 
-	&:focus,
-	&:hover {
-		color: $menu-mobile-color-hover;
+	&::before {
+		font-size: 30px;
 	}
 }
 

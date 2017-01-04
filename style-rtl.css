@@ -2180,41 +2180,37 @@ body {
   right: -260px;
 }
 
-.menu-toggle,
-.sub-menu-toggle {
-  background: transparent;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  color: #1c1e1f;
+.menu-toggle, .sub-menu-toggle {
   cursor: pointer;
   display: block;
   margin: 0 auto 0 0;
-  padding: 0;
 }
 
 @media only screen and (min-width: 1023px) {
-  .menu-toggle,
-  .sub-menu-toggle {
+  .menu-toggle, .sub-menu-toggle {
     display: none;
   }
 }
 
-.menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active,
-.sub-menu-toggle:hover,
-.sub-menu-toggle:focus,
-.sub-menu-toggle:active {
-  background: transparent;
-  color: #a4a5a5;
+.menu-toggle:hover, .sub-menu-toggle:hover, .menu-toggle:focus, .sub-menu-toggle:focus, .menu-toggle:active, .sub-menu-toggle:active {
   outline: none;
 }
 
 @media only screen and (min-width: 1023px) {
-  .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active,
-  .sub-menu-toggle:hover,
-  .sub-menu-toggle:focus,
-  .sub-menu-toggle:active {
+  .menu-toggle:hover, .sub-menu-toggle:hover, .menu-toggle:focus, .sub-menu-toggle:focus, .menu-toggle:active, .sub-menu-toggle:active {
     display: none;
   }
+}
+
+.menu-toggle {
+  background: transparent;
+  color: #1c1e1f;
+  padding: 0;
+}
+
+.menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
+  background: transparent;
+  color: #a4a5a5;
 }
 
 .menu-toggle::before {
@@ -2222,20 +2218,23 @@ body {
 }
 
 .sub-menu-toggle {
+  background: transparent;
   bottom: 0;
   color: #919aa6;
   margin: 0;
+  padding: 0 1rem;
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.sub-menu-toggle::before {
-  font-size: 3rem;
+.sub-menu-toggle:focus, .sub-menu-toggle:hover, .sub-menu-toggle:active {
+  background: transparent;
+  color: #1079c2;
 }
 
-.sub-menu-toggle:focus, .sub-menu-toggle:hover {
-  color: #1079c2;
+.sub-menu-toggle::before {
+  font-size: 3rem;
 }
 
 .menu-mobile {
