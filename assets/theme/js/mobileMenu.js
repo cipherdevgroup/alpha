@@ -116,7 +116,7 @@ function AlphaMobileMenu( $ ) {
 	 */
 	function focusMobileMenu() {
 		var nav        = $mobileMenu[0];
-		var $items     = $( '#' + $mobileMenu.attr( 'id' ) + ' a' );
+		var $items     = $mobileMenu.find( 'a' );
 		var $firstItem = $items.first();
 		var $lastItem  = $items.last();
 
