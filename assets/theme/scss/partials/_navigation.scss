@@ -128,7 +128,8 @@ body {
 	}
 }
 
-.menu-toggle {
+.menu-toggle,
+.sub-menu-toggle {
 	background: $menu-toggle-bg-color;
 	border-radius: $base-border-radius;
 	color: $menu-toggle-link-color;
@@ -152,9 +153,30 @@ body {
 			display: none;
 		}
 	}
+}
+
+.menu-toggle {
 
 	&::before {
-		font-size: $menu-toggle-font-size;
+		font-size: 35px;
+	}
+}
+
+.sub-menu-toggle {
+	bottom: 0;
+	color: $menu-mobile-color;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	&::before {
+		font-size: 30px;
+	}
+
+	&:focus,
+	&:hover {
+		color: $menu-mobile-color-hover;
 	}
 }
 
@@ -190,12 +212,21 @@ body {
 		li a {
 			color: $menu-mobile-color;
 			padding: $menu-mobile-item-padding;
+			position: relative;
 		}
 
 		li a:hover,
 		li a:focus {
 			background: lighten( $menu-mobile-bg-color, 3 );
 			color: $menu-mobile-color-hover;
+		}
+	}
+
+	.sub-menu {
+		display: none;
+
+		&.activated {
+			display: block;
 		}
 	}
 

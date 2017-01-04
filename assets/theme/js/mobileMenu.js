@@ -19,6 +19,12 @@ function AlphaMobileMenu( $ ) {
 			mainMenu: $( document.getElementById( 'menu-primary' ) ),
 			menuButton: $( document.getElementById( 'menu-toggle-primary' ) ),
 			extraMenus: $( document.getElementById( 'menu-secondary' ) ),
+			submenuButton: $( '<button />', {
+				'class': 'sub-menu-toggle',
+				'aria-expanded': false,
+				'aria-pressed': false,
+				role: 'button'
+			}),
 			activeClass: 'activated',
 			mobileMenuClass: 'menu-mobile',
 			menuOpenClass:  'menu-open',
@@ -185,6 +191,14 @@ function AlphaMobileMenu( $ ) {
 		$root.removeClass( settings.menuOpenClass );
 	};
 
+	function addSubmenuButtons() {
+		var $button = settings.submenuButton;
+
+		if ( 0 === $mobileMenu.find( $button ).length ) {
+			$mobileMenu.find( 'li ul' ).prev( 'a' ).append( $button );
+		}
+	}
+
 	/**
 	 * Prepare our mobile menu by merging our existing menus together if we
 	 * have more than one.
@@ -235,6 +249,7 @@ function AlphaMobileMenu( $ ) {
 		$mobileMenu.addClass( settings.mobileMenuClass );
 
 		maybeMergeMenus();
+		addSubmenuButtons();
 	};
 
 	this.destroyMobileMenu = function() {
@@ -262,6 +277,21 @@ function AlphaMobileMenu( $ ) {
 			that.openMenu();
 		}
 	};
+
+	/**
+	 * Fire all methods required to either open or close a sub menu.
+	 *
+	 * @since  0.1.0
+	 * @param {object} event The current event being fired.
+	 * @return void
+	 */
+	function toggleSubMenu( event ) {
+		var $button = $( event.target );
+
+		event.preventDefault();
+		$button.toggleClass( settings.activeClass );
+		$button.parent().next( 'ul' ).toggleClass( settings.activeClass );
+	}
 
 	/**
 	 * Returns a function, that, as long as it continues to be invoked, will not
@@ -309,7 +339,10 @@ function AlphaMobileMenu( $ ) {
 
 		if ( 0 !== $mobileMenu.length ) {
 			initMenu();
+
 			window.onresize = debounce( initMenu, 200 );
+
+			$( '.' + settings.submenuButton.attr( 'class' ) ).on( 'click', toggleSubMenu );
 
 			settings.menuButton.on( 'click', function( event ) {
 				event.preventDefault();

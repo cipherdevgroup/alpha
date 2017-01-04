@@ -96,6 +96,14 @@
 	@include ti-before( "\f218" );
 }
 
+.sub-menu-toggle {
+	@include ti-before( "\f208", 0 );
+
+	&.activated {
+		@include ti-before( "\f20b", 0 );
+	}
+}
+
 /* Meta Icons
 --------------------------------------------- */
 
