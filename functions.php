@@ -5,7 +5,7 @@
  * @package    Alpha
  * @subpackage Alpha\Functions
  * @author     WP Site Care
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
+ * @copyright  Copyright (c) 2017, WP Site Care, LLC
  * @since      1.0.0
  */
 
