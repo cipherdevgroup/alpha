@@ -5,14 +5,14 @@
  * @package   Alpha\Functions\Scripts
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
- * @since     0.1.0
+ * @since     1.0.0
  */
 
 /**
  * Load a minified version of the theme's stylesheet along with any other
  * required theme CSS files.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -32,7 +32,7 @@ function alpha_enqueue_styles() {
 /**
  * Register and load JavaScript files.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -52,7 +52,7 @@ function alpha_enqueue_scripts() {
  * Replace the default theme stylesheet with a RTL version when a RTL
  * language is being used.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -65,7 +65,7 @@ function alpha_rtl_add_data() {
  * Add custom styles to the WordPress editor to give a better representation of
  * what the front of the site will look like.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */

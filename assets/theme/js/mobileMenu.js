@@ -73,7 +73,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Check whether or not the mobile menu is currently open and visible.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return {Boolean} Returns true if the menu is open.
 	 */
 	this.isMenuOpen = function() {
@@ -88,7 +88,7 @@ function AlphaMobileMenu( $ ) {
 	 * Check whether or not our existing menus have been merged into a
 	 * single menu for mobile display.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return {Boolean} Returns true if the menus have been merged.
 	 */
 	this.areMenusMerged = function() {
@@ -110,7 +110,7 @@ function AlphaMobileMenu( $ ) {
 	 * focus is restored to the mobile menu button so the menu can be
 	 * closed by pressing enter.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @todo   Maybe split this into multiple functions
 	 * @return {booleen} false when focus has been changed.
 	 */
@@ -154,7 +154,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Fire all methods required to open the mobile menu.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	this.openMenu = function() {
@@ -175,7 +175,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Fires all methods required to close the mobile menu.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	this.closeMenu = function() {
@@ -203,7 +203,7 @@ function AlphaMobileMenu( $ ) {
 	 * Prepare our mobile menu by merging our existing menus together if we
 	 * have more than one.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	function maybeMergeMenus() {
@@ -224,7 +224,7 @@ function AlphaMobileMenu( $ ) {
 	 * If we have two menus which have been merged, split them back into two
 	 * separate menus using the same format as before they were merged.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	function maybeSplitMenus() {
@@ -267,7 +267,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Fire all methods required to either open or close the mobile menu.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	this.toggleMenu = function() {
@@ -281,7 +281,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Fire all methods required to either open or close a sub menu.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @param {object} event The current event being fired.
 	 * @return void
 	 */
@@ -330,7 +330,7 @@ function AlphaMobileMenu( $ ) {
 	/**
 	 * Load all of our mobile menu functionality.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @return void
 	 */
 	this.init = function( options ) {

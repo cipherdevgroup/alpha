@@ -5,7 +5,7 @@
  * @package   Alpha\CoreTemplates
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
- * @since     0.1.0
+ * @since     1.0.0
  */
 ?>
 <!DOCTYPE html>

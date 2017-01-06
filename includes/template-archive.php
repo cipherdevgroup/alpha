@@ -5,13 +5,13 @@
  * @package   Alpha\Functions\TemplateHelpers
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
- * @since     0.1.0
+ * @since     1.0.0
  */
 
 /**
  * Output the opening markup for the archive header.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -22,7 +22,7 @@ function alpha_archive_header_open() {
 /**
  * Output the archive title.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -33,7 +33,7 @@ function alpha_archive_title() {
 /**
  * Output the archive description.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -49,7 +49,7 @@ function alpha_archive_description() {
 /**
  * Output the closing markup for the archive header.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -61,7 +61,7 @@ function alpha_archive_header_close() {
  * Helper function to build a newer/older or paginated navigation element within
  * a loop of multiple entries.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_posts_navigation
  * @return void

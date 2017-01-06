@@ -5,13 +5,13 @@
  * @package   Alpha\Functions\TemplateHelpers
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
- * @since     0.1.0
+ * @since     1.0.0
  */
 
 /**
  * Output the opening tag for a wrapping <div>.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -22,7 +22,7 @@ function alpha_wrap_open() {
 /**
  * Close out the closing tag for a wrapping <div>.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -33,7 +33,7 @@ function alpha_wrap_close() {
 /**
  * Output skip-to-content link markup for screen readers.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -44,7 +44,7 @@ function alpha_skip_to_content() {
 /**
  * Load the site header template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -55,7 +55,7 @@ function alpha_header() {
 /**
  * Output the opening markup for the site's branding elements.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -66,7 +66,7 @@ function alpha_branding_open() {
 /**
  * Display the linked site title wrapped in an `<h1>` or `<p>` tag.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_site_title
  * @return void
@@ -78,7 +78,7 @@ function alpha_site_title() {
 /**
  * Display the site description wrapped in a `<p>` tag.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_site_description
  * @return void
@@ -90,7 +90,7 @@ function alpha_site_description() {
 /**
  * Output the closing markup for the site's branding elements.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -101,7 +101,7 @@ function alpha_branding_close() {
 /**
  * Output the markup for the primary menu toggle button.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -117,7 +117,7 @@ function alpha_menu_toggle() {
 /**
  * Load the site's primary menu template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -130,7 +130,7 @@ function alpha_menu_primary() {
 /**
  * Load the site's secondary menu template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -143,7 +143,7 @@ function alpha_menu_secondary() {
 /**
  * Load the breadcrumbs template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -163,7 +163,7 @@ function alpha_breadcrumbs() {
 /**
  * Load the primary sidebar on all multi-column layouts.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -176,7 +176,7 @@ function alpha_primary_sidebar() {
 /**
  * Load the site-wide footer widgets template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -189,7 +189,7 @@ function alpha_footer_widgets() {
 /**
  * Load the site footer template.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -200,7 +200,7 @@ function alpha_footer() {
 /**
  * Display the theme's footer credit links.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */

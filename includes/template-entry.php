@@ -5,13 +5,13 @@
  * @package   Alpha\Functions\TemplateHelpers
  * @author    WP Site Care
  * @copyright Copyright (c) 2016, WP Site Care, LLC
- * @since     0.1.0
+ * @since     1.0.0
  */
 
 /**
  * Output opening markup for the entry article element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -22,7 +22,7 @@ function alpha_entry_open() {
 /**
  * Output markup for a sticky ribbon on sticky posts in archive views.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -38,7 +38,7 @@ function alpha_sticky_banner() {
 /**
  * Output the featured image for all post types except pages and attachments.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -60,7 +60,7 @@ function alpha_featured_image() {
 /**
  * Output a formatted entry title.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_entry_title
  * @return void
@@ -72,7 +72,7 @@ function alpha_entry_title() {
 /**
  * Determine if the current view should contain an entry header.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_has_entry_header
  * @return bool
@@ -84,7 +84,7 @@ function alpha_has_entry_header() {
 /**
  * Determine if the current view should contain entry header meta.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_has_entry_header_meta
  * @return bool
@@ -96,7 +96,7 @@ function alpha_has_entry_header_meta() {
 /**
  * Output the opening markup for the entry header element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -107,7 +107,7 @@ function alpha_entry_header_open() {
 /**
  * Output the opening markup for the entry meta element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -118,7 +118,7 @@ function alpha_entry_meta_open() {
 /**
  * Output formatted information about an entry's author.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_entry_author
  * @return void
@@ -130,7 +130,7 @@ function alpha_entry_author() {
 /**
  * Output a post's formatted published date.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_entry_published
  * @return void
@@ -142,7 +142,7 @@ function alpha_entry_published() {
 /**
  * Output a formatted link to the current entry comments.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_entry_comments_link
  * @return void
@@ -154,7 +154,7 @@ function alpha_entry_comments_link() {
 /**
  * Output the closing markup for the entry meta element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -165,7 +165,7 @@ function alpha_entry_meta_close() {
 /**
  * Output the closing markup for the entry header element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -176,7 +176,7 @@ function alpha_entry_header_close() {
 /**
  * Output the opening markup for the entry content element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -189,7 +189,7 @@ function alpha_entry_content_open() {
  * Display either an excerpt or the content depending on what page the user is
  * currently viewing.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_content
  * @return void
@@ -201,7 +201,7 @@ function alpha_content() {
 /**
  * Output singular entry pagination links.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -214,7 +214,7 @@ function alpha_link_pages() {
 /**
  * Output the closing markup for the entry content element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -225,7 +225,7 @@ function alpha_entry_content_close() {
 /**
  * Output the opening markup for the entry footer element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -236,7 +236,7 @@ function alpha_entry_footer_open() {
 /**
  * Output formatted data about the current entry's post tag taxonomy terms.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -253,7 +253,7 @@ function alpha_entry_meta_tags() {
 /**
  * Output formatted data about the current entry's category taxonomy terms.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -270,7 +270,7 @@ function alpha_entry_meta_categories() {
 /**
  * Output the closing markup for the entry footer element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -281,7 +281,7 @@ function alpha_entry_footer_close() {
 /**
  * Output closing markup for the entry article element.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
@@ -292,7 +292,7 @@ function alpha_entry_close() {
 /**
  * Output a next and previous post navigation element on single entries.
  *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @uses   carelib_get_post_navigation
  * @return void
