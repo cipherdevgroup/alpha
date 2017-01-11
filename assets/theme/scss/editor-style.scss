@@ -36,10 +36,6 @@ SiteCare Styles
 
 
 body {
+	@include entry-content;
 	max-width: span( 9 of 12 );
 }
-
-/*
-Content Area
------------------------------------------------------------------------------ */
-@include entry-content();
