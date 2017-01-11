@@ -13,6 +13,6 @@ defined( 'WPINC' ) || die;
 /**
  * Callback defined in admin/layout.php
  *
- * @see alpha_get_forced_post_ids
+ * @see carelib_forced_post_ids
  */
-add_filter( 'alpha_forced_post_ids', 'alpha_get_forced_post_ids', 10 );
+add_filter( 'carelib_forced_post_ids', 'alpha_get_forced_post_ids', 10 );
