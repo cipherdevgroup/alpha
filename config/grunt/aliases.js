@@ -13,6 +13,10 @@ module.exports = function() {
 			'clean:js',
 			'copy:js'
 		],
+		'build:dependencies:images': [
+			'clean:images',
+			'copy:images'
+		],
 		'build:dependencies:php': [
 			'clean:php',
 			'newer:copy:php'
@@ -28,6 +32,7 @@ module.exports = function() {
 			'newer:cssmin'
 		],
 		'build:images': [
+			'build:dependencies:images',
 			'newer:imagemin:images'
 		],
 		'build:js': [
