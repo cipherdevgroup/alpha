@@ -1252,61 +1252,58 @@ body {
   max-width: 73.6842105263%;
 }
 
-/*
-Content Area
------------------------------------------------------------------------------ */
-p,
-> ol,
-> ul,
-> dl {
+body p,
+body > ol,
+body > ul,
+body > dl {
   margin-bottom: 1.6rem;
 }
 
 @media only screen and (min-width: 810px) {
-  p,
-  > ol,
-  > ul,
-  > dl {
+  body p,
+  body > ol,
+  body > ul,
+  body > dl {
     margin-bottom: 2.6rem;
   }
 }
 
-ol,
-ul {
+body ol,
+body ul {
   margin-left: 2rem;
 }
 
 @media only screen and (min-width: 810px) {
-  ol,
-  ul {
+  body ol,
+  body ul {
     margin-left: 4rem;
   }
 }
 
-li {
+body li {
   margin-bottom: 1%;
 }
 
-ol > li {
+body ol > li {
   list-style-type: decimal;
 }
 
-ul > li {
+body ul > li {
   list-style-type: disc;
 }
 
-li ol,
-li ul {
+body li ol,
+body li ul {
   margin-top: 1%;
 }
 
-blockquote {
+body blockquote {
   border-left: 7px solid #f3f3f4;
   margin: 4% 5% 4% 0;
   padding: 0 0 0 5%;
 }
 
-table {
+body table {
   border: 1px solid #e0e0e0;
   border-collapse: separate;
   border-left: 0;
@@ -1314,8 +1311,8 @@ table {
   width: 100%;
 }
 
-table th,
-table td {
+body table th,
+body table td {
   border-left: 1px solid #e0e0e0;
   border-top: 1px solid #e0e0e0;
   line-height: 1.2;
@@ -1324,19 +1321,19 @@ table td {
   vertical-align: top;
 }
 
-table thead:first-child tr:first-child th,
-table tbody:first-child tr:first-child th,
-table tbody:first-child tr:first-child td {
+body table thead:first-child tr:first-child th,
+body table tbody:first-child tr:first-child th,
+body table tbody:first-child tr:first-child td {
   border-top: 0 none;
 }
 
-code {
+body code {
   background: #f3f3f4;
   color: #1c1e1f;
   padding: 0.2rem 0.4rem;
 }
 
-.wp-caption .wp-caption-text {
+body .wp-caption .wp-caption-text {
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -1344,7 +1341,7 @@ code {
   text-transform: uppercase;
 }
 
-.search-form {
+body .search-form {
   margin-bottom: 2.6rem;
 }
 /*# sourceMappingURL=editor-style.css.map */
