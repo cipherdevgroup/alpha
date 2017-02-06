@@ -220,25 +220,15 @@ function carelib_archive_title( $title ) {
 function carelib_archive_description( $desc ) {
 	if ( is_home() && ! is_front_page() ) {
 		$desc = get_post_field( 'post_content', get_queried_object_id(), 'raw' );
-	}
-
-	if ( is_category() ) {
+	} elseif ( is_category() ) {
 		$desc = get_term_field( 'description', get_queried_object_id(), 'category', 'raw' );
-	}
-
-	if ( is_tag() ) {
+	} elseif ( is_tag() ) {
 		$desc = get_term_field( 'description', get_queried_object_id(), 'post_tag', 'raw' );
-	}
-
-	if ( is_tax() ) {
+	} elseif ( is_tax() ) {
 		$desc = get_term_field( 'description', get_queried_object_id(), get_query_var( 'taxonomy' ), 'raw' );
-	}
-
-	if ( is_author() ) {
+	} elseif ( is_author() ) {
 		$desc = get_the_author_meta( 'description', get_query_var( 'author' ) );
-	}
-
-	if ( is_post_type_archive() ) {
+	} elseif ( is_post_type_archive() ) {
 		$desc = get_post_type_object( get_query_var( 'post_type' ) )->description;
 	}
 

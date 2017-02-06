@@ -10,8 +10,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-global $wp_embed;
-
 /**
  * Callback defined in WordPress core.
  *
@@ -241,14 +239,14 @@ add_filter( 'carelib_attr_comment-published', 'carelib_attr_comment_published', 
 add_filter( 'carelib_attr_comment-permalink', 'carelib_attr_comment_permalink', 5 );
 
 /**
- * Callback defined in includes/template-hierarchy.php
+ * Callback defined in includes/template-load.php
  *
  * @see carelib_index_include
  */
 add_filter( 'template_include', 'carelib_index_include', 95 );
 
 /**
- * Callback defined in includes/template-hierarchy.php
+ * Callback defined in includes/template-load.php
  *
  * Doesn't work b/c bug with get_query_template().
  *
@@ -257,14 +255,14 @@ add_filter( 'template_include', 'carelib_index_include', 95 );
 add_filter( 'front_page_template', 'carelib_front_page_template', 5 );
 
 /**
- * Callback defined in includes/template-hierarchy.php
+ * Callback defined in includes/template-load.php
  *
  * @see carelib_front_page_template
  */
 add_filter( 'frontpage_template', 'carelib_front_page_template', 5 );
 
 /**
- * Callback defined in includes/template-hierarchy.php
+ * Callback defined in includes/template-comments.php
  *
  * @see carelib_comments_template
  */

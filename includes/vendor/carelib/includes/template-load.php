@@ -9,6 +9,41 @@
  */
 
 /**
+ * Override WP's default index.php template.
+ *
+ * Because we don't really use index.php, this prevents searching for
+ * templates multiple times when trying to load the default template.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  string $template
+ * @return string $template
+ */
+function carelib_index_include( $template ) {
+	if ( get_index_template() === $template ) {
+		return carelib_framework( apply_filters( 'carelib_index_template', null ) );
+	}
+	return $template;
+}
+
+/**
+ * Fix for the front page template handling in WordPress core.
+ *
+ * This overwrites "front-page.php" template if posts are to be shown on
+ * the front page. This way, the "front-page.php" template will only ever
+ * be used if an actual page is supposed to be shown on the front.
+ *
+ * @link   http://www.chipbennett.net/2013/09/14/home-page-and-front-page-and-templates-oh-my/
+ * @since  1.0.0
+ * @access public
+ * @param  string $template
+ * @return string
+ */
+function carelib_front_page_template( $template ) {
+	return is_home() ? '' : $template;
+}
+
+/**
  * Load a template part and inject WP's default template variables as well as
  * custom template data passed in by the user.
  *

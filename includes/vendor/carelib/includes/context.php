@@ -35,39 +35,47 @@ function _carelib_get_context() {
 		$context[] = 'blog';
 	}
 
-	if ( is_singular() ) {
-		$context[] = 'singular';
-		$context[] = "singular-{$object->post_type}";
-		$context[] = "singular-{$object->post_type}-{$object_id}";
-	} elseif ( is_archive() ) {
-		$context[] = 'archive';
+	if ( carelib_is_plural() ) {
+		$context[] = 'plural';
 
-		if ( is_post_type_archive() ) {
-			$post_type = get_query_var( 'post_type' );
+		if ( is_search() ) {
+			$context[] = 'search';
+		} elseif ( is_archive() ) {
+			$context[] = 'archive';
 
-			if ( is_array( $post_type ) ) {
-				reset( $post_type );
+			if ( is_post_type_archive() ) {
+				$post_type = get_query_var( 'post_type' );
+
+				if ( is_array( $post_type ) ) {
+					reset( $post_type );
+				}
+
+				$context[] = "archive-{$post_type}";
+			} elseif ( is_tax() || is_category() || is_tag() ) {
+				$context[] = 'taxonomy';
+				$context[] = "taxonomy-{$object->taxonomy}";
+				$context[] = "taxonomy-{$object->taxonomy}-" . sanitize_html_class( $object->slug, $object->term_id );
+			} elseif ( is_author() ) {
+				$context[] = 'user';
+			} elseif ( is_date() ) {
+				$context[] = 'date';
+			} elseif ( is_time() ) {
+				$context[] = 'time';
 			}
-
-			$context[] = "archive-{$post_type}";
-		} elseif ( is_tax() || is_category() || is_tag() ) {
-			$context[] = 'taxonomy';
-			$context[] = "taxonomy-{$object->taxonomy}";
-			$context[] = "taxonomy-{$object->taxonomy}-" . sanitize_html_class( $object->slug, $object->term_id );
-		} elseif ( is_author() ) {
-			$context[] = 'user';
-		} elseif ( is_date() ) {
-			$context[] = 'date';
-		} elseif ( is_time() ) {
-			$context[] = 'time';
 		}
-	} elseif ( is_search() ) {
-		$context[] = 'search';
-	} elseif ( is_404() ) {
-		$context[] = 'error-404';
+	} else {
+		if ( is_singular() ) {
+			$context[] = 'singular';
+			$context[] = "singular-{$object->post_type}";
+			$context[] = "singular-{$object->post_type}-{$object_id}";
+		} elseif ( is_404() ) {
+			$context[] = 'error-404';
+		}
 	}
 
-	return array_map( 'esc_attr', apply_filters( 'context', array_unique( $context ) ) );
+	$context = (array) apply_filters( 'carelib_context', $context );
+
+	return array_map( 'esc_attr', array_unique( $context ) );
 }
 
 /**
@@ -117,13 +125,31 @@ function carelib_body_class_filter( $classes, $class ) {
 		$classes[] = 'admin-bar';
 	}
 
-	// Plural/multiple-post view (opposite of singular).
-	if ( carelib_is_plural() ) {
-		$classes[] = 'plural';
+	$context = _carelib_get_context();
+
+	if ( in_array( 'singular', $context, true ) ) {
+
+		// Get the queried post object.
+		$post = get_queried_object();
+
+		// Checks for custom template.
+		$template = str_replace(
+			array(
+				"{$post->post_type}-template-",
+				"{$post->post_type}-",
+			),
+			'',
+			basename( get_page_template_slug( $post ), '.php' )
+		);
+		if ( $template ) {
+			$classes[] = "{$post->post_type}-template-{$template}";
+		} else {
+			$classes[] = "{$post->post_type}-template-default";
+		}
 	}
 
 	// Merge base contextual classes with $classes.
-	$classes = array_merge( $classes, _carelib_get_context() );
+	$classes = array_merge( $classes, $context );
 
 	// Theme layouts.
 	if ( carelib_has_layouts() ) {

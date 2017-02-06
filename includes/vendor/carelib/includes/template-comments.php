@@ -79,3 +79,34 @@ function carelib_comments_load_template() {
 		comments_template();
 	}
 }
+
+/**
+ * Override the default comments template.
+ *
+ * This filter allows for a "comments-{$post_type}.php" template based on
+ * the post type of the current single post view. If this template is not
+ * found, it falls back to the default "comments.php" template.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  string $template The comments template file name.
+ * @return string $template The theme comments template after all templates have been checked for.
+ */
+function carelib_comments_template( $template ) {
+	$templates = array();
+	$post_type = get_post_type();
+
+	// Allow for custom templates entered into comments_template( $file ).
+	$template = str_replace( carelib_get_parent_dir(), '', $template );
+
+	if ( 'comments.php' !== $template ) {
+		$templates[] = $template;
+	}
+
+	$templates[] = "template-parts/comments-{$post_type}.php";
+	$templates[] = 'template-parts/comments.php';
+	$templates[] = 'comments.php';
+
+	// Return the found template.
+	return locate_template( $templates );
+}

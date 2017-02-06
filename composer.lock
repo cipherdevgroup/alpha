@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c05565fae81cd3af480cd1f43fd22b8",
     "content-hash": "0f700bc4534cdf96272393816d1d5c64",
     "packages": [
         {
@@ -112,7 +111,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13 20:53:52"
+            "time": "2016-08-13T20:53:52+00:00"
         },
         {
             "name": "wpsitecare/carelib",
@@ -120,12 +119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "22a21e43065fa79637418ee12b6e55e344593198"
+                "reference": "d4de5dd38fd6e3c04096f100fdaa92c9f225096f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/22a21e43065fa79637418ee12b6e55e344593198",
-                "reference": "22a21e43065fa79637418ee12b6e55e344593198",
+                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/d4de5dd38fd6e3c04096f100fdaa92c9f225096f",
+                "reference": "d4de5dd38fd6e3c04096f100fdaa92c9f225096f",
                 "shasum": ""
             },
             "type": "library",
@@ -145,7 +144,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-12-30 03:49:27"
+            "time": "2017-02-03 23:27:18"
         }
     ],
     "packages-dev": [],
