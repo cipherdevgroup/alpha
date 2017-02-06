@@ -248,13 +248,13 @@ function AlphaMobileMenu( $ ) {
 
 	var that = this;
 	var $root = $( document.documentElement );
-	var settings, $mobileMenu, menuClass;
+	var settings, $mobileMenu, $menuButton, menuClass;
 
 	function setupOptions( options ) {
 		settings = {
 			mainMenu: $( document.getElementById( 'menu-primary' ) ),
-			menuButton: $( document.getElementById( 'menu-toggle-primary' ) ),
 			extraMenus: $( document.getElementById( 'menu-secondary' ) ),
+			menuButton: $( document.getElementById( 'menu-toggle-primary' ) ),
 			submenuButton: $( '<button />', {
 				'class': 'sub-menu-toggle',
 				'aria-expanded': false,
@@ -280,6 +280,8 @@ function AlphaMobileMenu( $ ) {
 			$mobileMenu = settings.extraMenus;
 		}
 
+		$menuButton = settings.menuButton;
+
 		menuClass = $mobileMenu.attr( 'class' );
 	}
 
@@ -301,7 +303,11 @@ function AlphaMobileMenu( $ ) {
 	 * @return {bool} true if the menu has been made mobile.
 	 */
 	this.isMenuMobile = function() {
-		var element = settings.menuButton[0];
+		var element = $menuButton[0];
+
+		if ( 'undefined' === typeof element ) {
+			return false;
+		}
 
 		return ( null === element.offsetParent );
 	};
@@ -365,22 +371,22 @@ function AlphaMobileMenu( $ ) {
 			}
 			// Tabbing forwards and tabbing out of the last link.
 			if ( $lastItem[0] === e.target && ! e.shiftKey ) {
-				settings.menuButton.focus();
+				$menuButton.focus();
 				return false;
 			}
 			// Tabbing backwards and tabbing out of the first link or the menu.
 			if ( ( $firstItem[0] === e.target || nav === e.target ) && e.shiftKey ) {
-				settings.menuButton.focus();
+				$menuButton.focus();
 				return false;
 			}
 		});
 
-		settings.menuButton.on( 'keydown', function( e ) {
+		$menuButton.on( 'keydown', function( e ) {
 			// Return early if we're not using the tab key.
 			if ( 9 !== e.keyCode ) {
 				return;
 			}
-			if ( that.isMenuOpen() && settings.menuButton[0] === e.target && ! e.shiftKey ) {
+			if ( that.isMenuOpen() && $menuButton[0] === e.target && ! e.shiftKey ) {
 				$firstItem.focus();
 				return false;
 			}
@@ -394,7 +400,7 @@ function AlphaMobileMenu( $ ) {
 	 * @return void
 	 */
 	this.openMenu = function() {
-		var $button = settings.menuButton;
+		var $button = $menuButton;
 
 		$mobileMenu.addClass( 'visible' );
 		$mobileMenu.attr( 'tabindex', '0' );
@@ -415,7 +421,7 @@ function AlphaMobileMenu( $ ) {
 	 * @return void
 	 */
 	this.closeMenu = function() {
-		var $button = settings.menuButton;
+		var $button = $menuButton;
 
 		$mobileMenu.removeClass( 'visible' );
 		$mobileMenu.removeAttr( 'tabindex' );
@@ -543,14 +549,14 @@ function AlphaMobileMenu( $ ) {
 		var timeout;
 
 		return function() {
-			var context = this;
+			var that = this;
 			var args = arguments;
 
 			clearTimeout( timeout );
 
 			timeout = setTimeout( function() {
 				timeout = null;
-				func.apply( context, args );
+				func.apply( that, args );
 			}, wait );
 		};
 	}
@@ -573,14 +579,14 @@ function AlphaMobileMenu( $ ) {
 		setupOptions( options );
 		setupVars();
 
-		if ( 0 !== $mobileMenu.length ) {
+		if ( 0 !== $mobileMenu.length && 0 !== $menuButton.length ) {
 			initMenu();
 
 			window.onresize = debounce( initMenu, 200 );
 
 			$( '.' + settings.submenuButton.attr( 'class' ) ).on( 'click', toggleSubMenu );
 
-			settings.menuButton.on( 'click', function( event ) {
+			$menuButton.on( 'click', function( event ) {
 				event.preventDefault();
 				that.toggleMenu();
 			});
