@@ -70,30 +70,6 @@ function alpha_entry_title() {
 }
 
 /**
- * Determine if the current view should contain an entry header.
- *
- * @since  1.0.0
- * @access public
- * @uses   carelib_has_entry_header
- * @return bool
- */
-function alpha_has_entry_header() {
-	return carelib_has_entry_header();
-}
-
-/**
- * Determine if the current view should contain entry header meta.
- *
- * @since  1.0.0
- * @access public
- * @uses   carelib_has_entry_header_meta
- * @return bool
- */
-function alpha_has_entry_header_meta() {
-	return carelib_has_entry_header_meta();
-}
-
-/**
  * Output the opening markup for the entry header element.
  *
  * @since  1.0.0
