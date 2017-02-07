@@ -15,11 +15,6 @@
       "url": "https://www.wpsitecare.com"
     }
   ],
-  "pot": {
-    "reportmsgidbugsto": "WP Site Care <translations@wpsitecare.com>",
-    "lasttranslator": "WP Site Care <translations@wpsitecare.com>",
-    "languageteam": "WP Site Care <translations@wpsitecare.com>"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wpsitecare/alpha.git"
