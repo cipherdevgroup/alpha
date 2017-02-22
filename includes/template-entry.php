@@ -49,10 +49,10 @@ function alpha_featured_image() {
 
 	carelib_image( apply_filters( 'alpha_featured_image',
 		array(
-			'size'         => 'alpha-featured',
-			'before'       => '<div class="featured-media image">',
-			'after'        => '</div>',
-			'link_to_post' => ! is_singular(),
+			'size'   => 'alpha-featured',
+			'before' => '<div class="featured-media image">',
+			'after'  => '</div>',
+			'link'   => ! is_singular(),
 		)
 	) );
 }
