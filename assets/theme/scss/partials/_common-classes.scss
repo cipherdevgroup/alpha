@@ -6,6 +6,7 @@
 	position: relative;
 
 	input[type=search] {
+		@include icon-before( "\f21d", 0 );
 		appearance: none;
 		font-size: $base-font-size;
 		margin: 0;

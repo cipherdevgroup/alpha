@@ -64,6 +64,14 @@
 	a {
 		@include alt-link-color();
 	}
+
+	&.categories .entry-terms {
+		@include icon-before( "\f21b" );
+	}
+
+	&.tags .entry-terms {
+		@include icon-before( "\f21c" );
+	}
 }
 
 .entry-terms {
@@ -165,4 +173,20 @@
 			padding: 5px 0;
 		}
 	}
+}
+
+.social-icon-facebook span {
+	@include icon-before( "\f104" );
+}
+
+.social-icon-twitter span {
+	@include icon-before( "\f114" );
+}
+
+.social-icon-gplus span {
+	@include icon-before( "\f108" );
+}
+
+.social-icon-rss span {
+	@include icon-before( "\f20e" );
 }

@@ -60,20 +60,81 @@
 	}
 }
 
+/* General Pagination
+--------------------------------------------- */
 
-/* Page Links
+.pagination,
+.page-links {
+	.prev {
+		@include icon-before( "\f201", 0 );
+	}
+
+	.next {
+		@include icon-after( "\f202", 0 );
+	}
+
+	.rtl & {
+		.prev {
+			@include icon-before( "\f202", 0 );
+		}
+
+		.next {
+			@include icon-after( "\f201", 0 );
+		}
+	}
+}
+
+/* Archive Next/Prev Links
+--------------------------------------------- */
+
+.nav-archive {
+	clear: both;
+	display: block;
+	font-size: $pagination-font-size;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/* Single Entry Next/Prev Links
+--------------------------------------------- */
+
+.nav-single {
+	clear: both;
+	display: block;
+	font-size: $pagination-font-size;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/* General Next/Prev Links
 --------------------------------------------- */
 .nav-next a {
+	@include icon-before( "\f201", 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: right;
 	}
+
+	.rtl & {
+		@include icon-after( "\f201", 10px );
+	}
 }
 
 .nav-previous a {
+	@include icon-after( "\f202", 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: left;
+	}
+
+	.rtl & {
+		@include icon-before( "\f202", 10px );
 	}
 }
 
@@ -94,32 +155,4 @@
 .nav-previous a:focus {
 	background: $pagination-bg-color-hover;
 	color: $pagination-link-color;
-}
-
-/* Archive Page Links
---------------------------------------------- */
-
-.nav-archive {
-	clear: both;
-	display: block;
-	font-size: $pagination-font-size;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	padding: 0;
-	text-transform: uppercase;
-}
-
-/* Single Entry Page Links
---------------------------------------------- */
-
-.nav-single {
-	clear: both;
-	display: block;
-	font-size: $pagination-font-size;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	padding: 0;
-	text-transform: uppercase;
 }

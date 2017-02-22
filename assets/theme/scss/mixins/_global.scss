@@ -62,7 +62,7 @@
 
 // Icons
 //------------------------------------------------------------------------------
-@mixin icon-before( $glyph, $family, $margin ) {
+@mixin icon-before( $glyph, $margin: 5px, $family: "themicons" ) {
 	&::before {
 		@extend %icon-base;
 		content: $glyph;
@@ -71,21 +71,13 @@
 	}
 }
 
-@mixin icon-after( $glyph, $family, $margin ) {
+@mixin icon-after( $glyph, $margin: 5px, $family: "themicons" ) {
 	&::after {
 		@extend %icon-base;
 		content: $glyph;
 		font-family: $family;
 		margin-left: $margin;
 	}
-}
-
-@mixin ti-before( $glyph, $margin: 5px ) {
-	@include icon-before( $glyph, 'themicons', $margin );
-}
-
-@mixin ti-after( $glyph, $margin: 5px ) {
-	@include icon-after( $glyph, 'themicons', $margin );
 }
 
 // Content Area
