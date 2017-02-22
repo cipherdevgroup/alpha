@@ -266,6 +266,19 @@ function alpha_entry_close() {
 }
 
 /**
+ * Load a template for an author box on singular entries.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function alpha_author_box_singular() {
+	if ( is_singular( 'post' ) ) {
+		get_template_part( 'template-parts/content/author-box', 'singular' );
+	}
+}
+
+/**
  * Output a next and previous post navigation element on single entries.
  *
  * @since  1.0.0

@@ -116,3 +116,22 @@
 		@include ti-before( "\f21c" );
 	}
 }
+
+/* Author Box Icons
+--------------------------------------------- */
+
+.social-icon-facebook span {
+	@include ti-before( "\f104" );
+}
+
+.social-icon-twitter span {
+	@include ti-before( "\f114" );
+}
+
+.social-icon-gplus span {
+	@include ti-before( "\f108" );
+}
+
+.social-icon-rss span {
+	@include ti-before( "\f20e" );
+}

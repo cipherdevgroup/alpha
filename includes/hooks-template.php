@@ -293,6 +293,13 @@ add_action( 'carelib_entry_bottom', 'alpha_entry_close', 99 );
 /**
  * Callback defined in includes/template-entry.php
  *
+ * @see alpha_author_box_singular
+ */
+add_action( 'carelib_entry_after', 'alpha_author_box_singular', 8 );
+
+/**
+ * Callback defined in includes/template-entry.php
+ *
  * @see alpha_post_navigation
  */
 add_action( 'carelib_entry_after', 'alpha_post_navigation', 10 );
