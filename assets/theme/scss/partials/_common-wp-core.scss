@@ -1,0 +1,170 @@
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+	display: block;
+	position: relative;
+
+	input[type=search] {
+		@include icon-before( "\f21d", 0 );
+		appearance: none;
+		font-size: $base-font-size;
+		margin: 0;
+		padding: 10px;
+		width: 100%;
+	}
+
+	button[type=submit] {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		bottom: 0;
+		outline: none;
+		padding: 0 20px;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		&::before {
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+}
+
+/* Post Password Form
+--------------------------------------------- */
+
+.post-password-form {
+
+	input {
+		display: block;
+		width: 100%;
+	}
+
+	input[type="password"] {
+		margin-bottom: 20px;
+	}
+}
+
+/* WordPress Galleries
+--------------------------------------------- */
+
+.gallery {
+	@include container( 12 );
+
+	img {
+		width: auto;
+	}
+}
+
+.gallery-item {
+	line-height: 0;
+	list-style: none;
+	margin: 0 0 2.35765%;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-align: center;
+
+	@include min-screen( $small-screen ) {
+		@include nested( 12 ) {
+			.gallery-columns-2 &,
+			.gallery-col-2 & {
+				@include gallery( 6 );
+			}
+
+			.gallery-columns-3 &,
+			.gallery-col-3 & {
+				@include gallery( 4 );
+			}
+
+			.gallery-columns-4 &,
+			.gallery-col-4 & {
+				@include gallery( 3 );
+			}
+
+			.gallery-columns-5 &,
+			.gallery-col-5 & {
+				@include gallery( 2.4 );
+			}
+
+			.gallery-columns-6 &,
+			.gallery-col-6 & {
+				@include gallery( 2 );
+			}
+
+			.gallery-columns-7 &,
+			.gallery-col-7 & {
+				@include gallery( 1.71 );
+			}
+
+			.gallery-columns-8 &,
+			.gallery-col-8 & {
+				@include gallery( 1.5 );
+			}
+
+			.gallery-columns-9 &,
+			.gallery-col-9 & {
+				@include gallery( 1.33 );
+			}
+		}
+	}
+
+	.gallery-caption {
+		background: transparentize( $gallery-caption-bg-color, 0.5 );
+		color: $gallery-caption-font-color;
+		font-size: $gallery-caption-font-size;
+		line-height: 1.65;
+		opacity: 0;
+		overflow: hidden;
+		padding: 10px;
+		position: absolute;
+		text-overflow: ellipsis;
+		transition: all 0.2s ease-in-out;
+		visibility: hidden;
+		white-space: nowrap;
+		width: 100%;
+	}
+
+	&:hover .gallery-caption,
+	&:focus .gallery-caption {
+		opacity: 1;
+		transform: translate( 0, -100% );
+		visibility: visible;
+
+		&:hover,
+		&:focus {
+			overflow: visible;
+			white-space: normal;
+		}
+	}
+}
+
+.gallery-icon a {
+	display: block;
+	line-height: 0;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Admin Bar
+--------------------------------------------- */
+
+.admin-bar {
+	.menu-mobile {
+		top: 46px;
+
+		@include min-screen( 782px ) { // Thanks WordPress.
+			top: 32px;
+		}
+	}
+}
+
+.menu-open {
+	#wpadminbar { // Thanks again WordPress.
+		position: fixed;
+	}
+}

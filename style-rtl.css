@@ -1212,56 +1212,32 @@ Structure and Layout
 /*
 Common Classes
 ----------------------------------------------------------------------------- */
-/* Search Form
+/* Screen Readers
 --------------------------------------------- */
-.search-form {
-	display: block;
-	position: relative;
+.off-screen,
+.screen-reader-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
 }
 
-.search-form input[type=search] {
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
-	font-size: 1.6rem;
-	margin: 0;
-	padding: 1rem;
-	width: 100%;
+.off-screen:focus,
+.screen-reader-text:focus {
+	outline: 0;
 }
 
-.search-form input[type=search]::before {
-	content: "";
-	font-family: "themicons";
-	margin-left: 0;
-}
-
-.search-form button[type=submit] {
-	-webkit-border-bottom-right-radius: 0;
-	        border-bottom-right-radius: 0;
-	-webkit-border-top-right-radius: 0;
-	        border-top-right-radius: 0;
-	bottom: 0;
-	outline: none;
-	padding: 0 2rem;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.search-form button[type=submit]::before {
-	font-size: 1.6rem;
-	line-height: 1.625;
-}
-
-/* Post Password Form
---------------------------------------------- */
-.post-password-form input {
-	display: block;
-	width: 100%;
-}
-
-.post-password-form input[type="password"] {
-	margin-bottom: 2rem;
+.skip-link .screen-reader-text:focus {
+	clip: auto;
+	height: auto;
+	margin: 2rem;
+	padding: 1.5rem;
+	width: auto;
+	z-index: 100;
 }
 
 /* Avatar
@@ -1278,28 +1254,7 @@ Common Classes
 	}
 }
 
-/* Archives
---------------------------------------------- */
-.archive-title {
-	font-size: 3.2rem;
-	font-weight: 600;
-}
-
-@media only screen and (min-width: 810px) {
-	.archive-title {
-		font-size: 4rem;
-	}
-}
-
-.archive-description {
-	margin-bottom: 3rem;
-}
-
-.archive-description p:last-child {
-	margin-bottom: 0;
-}
-
-/* WordPress Images
+/* Image Styles
 --------------------------------------------- */
 img.centered,
 .aligncenter,
@@ -1363,6 +1318,85 @@ img.alignnone,
 	padding: 0;
 	vertical-align: -0.1em;
 	width: 1em;
+}
+
+/* Typography Formats
+--------------------------------------------- */
+.dropcap {
+	float: right;
+	font-size: 300%;
+	line-height: 0.6;
+	margin: 0.7rem 0 0 0.5rem;
+}
+
+@media only screen and (min-width: 810px) {
+	.pull-quote {
+		max-width: 60%;
+	}
+	.pull-quote.alignright {
+		border-right: 0;
+		border-left: 7px solid #f3f3f4;
+		margin: 3rem 5% 3rem 0;
+		padding: 0 0 0 5%;
+	}
+}
+
+.intro-pagragraph {
+	border-bottom: 1px solid #f3f3f4;
+	border-top: 1px solid #f3f3f4;
+	padding: 2rem 0;
+}
+
+/* Search Form
+--------------------------------------------- */
+.search-form {
+	display: block;
+	position: relative;
+}
+
+.search-form input[type=search] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 1rem;
+	width: 100%;
+}
+
+.search-form input[type=search]::before {
+	content: "";
+	font-family: "themicons";
+	margin-left: 0;
+}
+
+.search-form button[type=submit] {
+	-webkit-border-bottom-right-radius: 0;
+	        border-bottom-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	        border-top-right-radius: 0;
+	bottom: 0;
+	outline: none;
+	padding: 0 2rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.search-form button[type=submit]::before {
+	font-size: 1.6rem;
+	line-height: 1.625;
+}
+
+/* Post Password Form
+--------------------------------------------- */
+.post-password-form input {
+	display: block;
+	width: 100%;
+}
+
+.post-password-form input[type="password"] {
+	margin-bottom: 2rem;
 }
 
 /* WordPress Galleries
@@ -1751,34 +1785,6 @@ img.alignnone,
 	width: 100%;
 }
 
-/* Screen Readers
---------------------------------------------- */
-.off-screen,
-.screen-reader-text {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-}
-
-.off-screen:focus,
-.screen-reader-text:focus {
-	outline: 0;
-}
-
-.skip-link .screen-reader-text:focus {
-	clip: auto;
-	height: auto;
-	margin: 2rem;
-	padding: 1.5rem;
-	width: auto;
-	z-index: 100;
-}
-
 /* Admin Bar
 --------------------------------------------- */
 .admin-bar .menu-mobile {
@@ -1820,36 +1826,6 @@ Icons
 	text-decoration: none;
 	text-transform: none;
 	vertical-align: middle;
-}
-
-/*
-SiteCare Styles
------------------------------------------------------------------------------ */
-/* Typography Formats
---------------------------------------------- */
-.dropcap {
-	float: right;
-	font-size: 300%;
-	line-height: 0.6;
-	margin: 0.7rem 0 0 0.5rem;
-}
-
-@media only screen and (min-width: 810px) {
-	.pull-quote {
-		max-width: 60%;
-	}
-	.pull-quote.alignright {
-		border-right: 0;
-		border-left: 7px solid #f3f3f4;
-		margin: 3rem 5% 3rem 0;
-		padding: 0 0 0 5%;
-	}
-}
-
-.intro-pagragraph {
-	border-bottom: 1px solid #f3f3f4;
-	border-top: 1px solid #f3f3f4;
-	padding: 2rem 0;
 }
 
 /*
@@ -2246,6 +2222,27 @@ body {
 /*
 Content Area
 ----------------------------------------------------------------------------- */
+/* Archives
+--------------------------------------------- */
+.archive-title {
+	font-size: 3.2rem;
+	font-weight: 600;
+}
+
+@media only screen and (min-width: 810px) {
+	.archive-title {
+		font-size: 4rem;
+	}
+}
+
+.archive-description {
+	margin-bottom: 3rem;
+}
+
+.archive-description p:last-child {
+	margin-bottom: 0;
+}
+
 /* Entries
 --------------------------------------------- */
 .entry {
@@ -2556,69 +2553,7 @@ Content Area
 /*
 Pagination
 ----------------------------------------------------------------------------- */
-/* Archive Pagination
---------------------------------------------- */
-.pagination {
-	display: block;
-	margin-bottom: 2rem;
-	text-align: center;
-}
-
-.pagination .page-numbers {
-	background: #fff;
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
-	display: inline-block;
-	margin-bottom: 1rem;
-	padding: 1rem 2rem;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.pagination .current {
-	background: #e8e8ea;
-}
-
-.pagination a {
-	color: #474e57;
-}
-
-.pagination a:hover, .pagination a:focus {
-	background: #f3f3f4;
-}
-
-/* Single Post Pagination
---------------------------------------------- */
-.page-links {
-	display: block;
-	margin: 3rem 0;
-}
-
-.page-links span,
-.page-links a {
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
-	color: #474e57;
-	display: inline-block;
-	padding: 0.5rem 1.5rem;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.page-links span {
-	background: #e8e8ea;
-}
-
-.page-links a {
-	background: #fff;
-}
-
-.page-links a:hover, .page-links a:focus {
-	background: #f3f3f4;
-	color: #474e57;
-}
-
-/* General Pagination
+/* Pagination
 --------------------------------------------- */
 .pagination .prev::before,
 .page-links .prev::before {
@@ -2648,33 +2583,67 @@ Pagination
 	margin-right: 0;
 }
 
-/* Archive Next/Prev Links
+/* Archive Pagination
 --------------------------------------------- */
-.nav-archive {
-	clear: both;
-	display: block;
-	font-size: 1.6rem;
-	letter-spacing: 1px;
+.pagination {
 	margin-bottom: 2rem;
-	overflow: hidden;
-	padding: 0;
-	text-transform: uppercase;
+	text-align: center;
 }
 
-/* Single Entry Next/Prev Links
---------------------------------------------- */
-.nav-single {
-	clear: both;
-	display: block;
-	font-size: 1.6rem;
-	letter-spacing: 1px;
-	margin-bottom: 2rem;
-	overflow: hidden;
-	padding: 0;
-	text-transform: uppercase;
+.pagination .page-numbers {
+	background: #fff;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 1rem;
+	padding: 1rem 2rem;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-/* General Next/Prev Links
+.pagination .current {
+	background: #e8e8ea;
+}
+
+.pagination a {
+	color: #474e57;
+}
+
+.pagination a:hover, .pagination a:focus {
+	background: #f3f3f4;
+}
+
+/* Single Entry Pagination
+--------------------------------------------- */
+.page-links {
+	margin: 3rem 0;
+}
+
+.page-links span,
+.page-links a {
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	color: #474e57;
+	display: inline-block;
+	padding: 0.5rem 1.5rem;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.page-links span {
+	background: #e8e8ea;
+}
+
+.page-links a {
+	background: #fff;
+}
+
+.page-links a:hover, .page-links a:focus {
+	background: #f3f3f4;
+	color: #474e57;
+}
+
+/* Next/Prev Links
 --------------------------------------------- */
 .nav-next a::before {
 	content: "";
@@ -2724,12 +2693,37 @@ Pagination
 	text-align: center;
 }
 
-.nav-next a:hover,
+.nav-next a:hover, .nav-next a:focus,
 .nav-previous a:hover,
-.nav-next a:focus,
 .nav-previous a:focus {
 	background: #f3f3f4;
 	color: #474e57;
+}
+
+/* Archive Next/Prev Links
+--------------------------------------------- */
+.nav-archive {
+	clear: both;
+	display: block;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/* Single Entry Next/Prev Links
+--------------------------------------------- */
+.nav-single {
+	clear: both;
+	display: block;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
 }
 
 /*

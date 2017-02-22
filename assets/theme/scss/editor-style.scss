@@ -28,13 +28,6 @@ Common Classes
 ----------------------------------------------------------------------------- */
 @import "partials/common-classes";
 
-
-/*
-SiteCare Styles
------------------------------------------------------------------------------ */
-@import "partials/sitecare";
-
-
 body {
 	@include entry-content;
 	max-width: span( 9 of 12 );
