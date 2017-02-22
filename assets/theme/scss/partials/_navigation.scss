@@ -150,7 +150,7 @@ body {
 
 .menu-toggle {
 	@extend %toggle-button-base;
-	@include icon-before( "\f212", 0 );
+	@include icon-before( $ionicon-var-navicon, 0 );
 	background: $menu-toggle-bg-color;
 	color: $menu-toggle-link-color;
 	padding: 0;
@@ -167,13 +167,13 @@ body {
 	}
 
 	&.activated {
-		@include icon-before( "\f20c", 0 );
+		@include icon-before( $ionicon-var-close, 0 );
 	}
 }
 
 .sub-menu-toggle {
 	@extend %toggle-button-base;
-	@include icon-before( "\f208", 0 );
+	@include icon-before( $ionicon-var-chevron-down, 0 );
 	background: transparent;
 	bottom: 0;
 	color: $menu-mobile-color;
@@ -196,7 +196,7 @@ body {
 	}
 
 	&.activated {
-		@include icon-before( "\f20b", 0 );
+		@include icon-before( $ionicon-var-chevron-up, 0 );
 	}
 }
 
@@ -283,5 +283,5 @@ body {
 --------------------------------------------- */
 
 .cart-contents {
-	@include icon-before( "\f218" );
+	@include icon-before( $ionicon-var-ios-cart );
 }

@@ -22,6 +22,7 @@
 
 // Load Global Settings
 @import "settings/susy";
+@import "settings/ionicons";
 
 // Load Global Variables
 @import "variables/colors";
@@ -47,18 +48,19 @@ Structure and Layout
 ----------------------------------------------------------------------------- */
 @import "partials/layout";
 
+/*
+Icons
+----------------------------------------------------------------------------- */
+@import "vendor/ionicons/ionicons-variables";
+@import "vendor/ionicons/ionicons-font";
+@import "partials/icons";
+
 
 /*
 Common Classes
 ----------------------------------------------------------------------------- */
 @import "partials/common-classes";
 @import "partials/common-wp-core";
-
-
-/*
-Icons
------------------------------------------------------------------------------ */
-@import "partials/icons";
 
 
 /*

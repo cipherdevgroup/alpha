@@ -21,6 +21,16 @@ module.exports = {
 					'**/*.scss'
 				],
 				dest: '<%= paths.cssSrc%>vendor/susy/'
+			},
+			{
+				expand: true,
+				flatten: false,
+				cwd: '<%= paths.bower%>ionicons/scss',
+				src: [
+					'*.scss',
+					'**/*.scss'
+				],
+				dest: '<%= paths.cssSrc%>vendor/ionicons/'
 			}
 		]
 	},
@@ -54,8 +64,7 @@ module.exports = {
 				flatten: true,
 				cwd: '<%= paths.bower%>',
 				src: [
-					'themicons/dist/fonts/*',
-					'!themicons/dist/fonts/*.html'
+					'ionicons/fonts/*'
 				],
 				dest: '<%= paths.fonts %>'
 			}

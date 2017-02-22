@@ -4,20 +4,20 @@
 .pagination,
 .page-links {
 	.prev {
-		@include icon-before( "\f201", 0 );
+		@include icon-before( $ionicon-var-arrow-left-c, 0 );
 	}
 
 	.next {
-		@include icon-after( "\f202", 0 );
+		@include icon-after( $ionicon-var-arrow-right-c, 0 );
 	}
 
 	.rtl & {
 		.prev {
-			@include icon-before( "\f202", 0 );
+			@include icon-before( $ionicon-var-arrow-left-c, 0 );
 		}
 
 		.next {
-			@include icon-after( "\f201", 0 );
+			@include icon-after( $ionicon-var-arrow-right-c, 0 );
 		}
 	}
 }
@@ -84,26 +84,26 @@
 --------------------------------------------- */
 
 .nav-next a {
-	@include icon-before( "\f201", 10px );
+	@include icon-before( $ionicon-var-arrow-right-c, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: right;
 	}
 
 	.rtl & {
-		@include icon-after( "\f201", 10px );
+		@include icon-after( $ionicon-var-arrow-right-c, 10px );
 	}
 }
 
 .nav-previous a {
-	@include icon-after( "\f202", 10px );
+	@include icon-after( $ionicon-var-arrow-left-c, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: left;
 	}
 
 	.rtl & {
-		@include icon-before( "\f202", 10px );
+		@include icon-before( $ionicon-var-arrow-left-c, 10px );
 	}
 }
 

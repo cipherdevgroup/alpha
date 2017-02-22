@@ -62,7 +62,7 @@
 
 // Icons
 //------------------------------------------------------------------------------
-@mixin icon-before( $glyph, $margin: 5px, $family: "themicons" ) {
+@mixin icon-before( $glyph, $margin: 5px, $family: "Ionicons" ) {
 	&::before {
 		@extend %icon-base;
 		content: $glyph;
@@ -71,7 +71,7 @@
 	}
 }
 
-@mixin icon-after( $glyph, $margin: 5px, $family: "themicons" ) {
+@mixin icon-after( $glyph, $margin: 5px, $family: "Ionicons" ) {
 	&::after {
 		@extend %icon-base;
 		content: $glyph;

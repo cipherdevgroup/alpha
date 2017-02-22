@@ -1210,6 +1210,48 @@ Structure and Layout
 }
 
 /*
+Icons
+----------------------------------------------------------------------------- */
+@font-face {
+	font-family: "Ionicons";
+	src: url("fonts/ionicons.eot?v=2.0.0");
+	src: url("fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("fonts/ionicons.woff?v=2.0.0") format("woff"), url("fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ion {
+	display: inline-block;
+	font-family: "Ionicons";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-rendering: auto;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.search-form button[type=submit]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before, .pagination .prev::before,
+.page-links .prev::before, .pagination .next::after,
+.page-links .next::after, .rtl .pagination .prev::before, .rtl
+.page-links .prev::before, .rtl .pagination .next::after, .rtl
+.page-links .next::after, .nav-next a::before, .rtl .nav-next a::after, .nav-previous a::after, .rtl .nav-previous a::before {
+	display: inline-block;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	line-height: inherit;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+}
+
+/*
 Common Classes
 ----------------------------------------------------------------------------- */
 /* Screen Readers
@@ -1364,12 +1406,6 @@ img.alignnone,
 	width: 100%;
 }
 
-.search-form input[type=search]::before {
-	content: "";
-	font-family: "themicons";
-	margin-left: 0;
-}
-
 .search-form button[type=submit] {
 	-webkit-border-bottom-right-radius: 0;
 	        border-bottom-right-radius: 0;
@@ -1381,6 +1417,12 @@ img.alignnone,
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+.search-form button[type=submit]::before {
+	content: "";
+	font-family: "Ionicons";
+	margin-left: 0;
 }
 
 .search-form button[type=submit]::before {
@@ -1802,33 +1844,6 @@ img.alignnone,
 }
 
 /*
-Icons
------------------------------------------------------------------------------ */
-@font-face {
-	font-family: "themicons";
-	src: url("fonts/themicons.woff2") format("woff2"), url("fonts/themicons.woff") format("woff"), url("fonts/themicons.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-.search-form input[type=search]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before, .pagination .prev::before,
-.page-links .prev::before, .pagination .next::after,
-.page-links .next::after, .rtl .pagination .prev::before, .rtl
-.page-links .prev::before, .rtl .pagination .next::after, .rtl
-.page-links .next::after, .nav-next a::before, .rtl .nav-next a::after, .nav-previous a::after, .rtl .nav-previous a::before {
-	display: inline-block;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
-	font-weight: normal;
-	line-height: inherit;
-	speak: none;
-	text-decoration: none;
-	text-transform: none;
-	vertical-align: middle;
-}
-
-/*
 Site Header
 ----------------------------------------------------------------------------- */
 .site-header {
@@ -2076,8 +2091,8 @@ body {
 }
 
 .menu-toggle::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
@@ -2091,8 +2106,8 @@ body {
 }
 
 .menu-toggle.activated::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
@@ -2109,8 +2124,8 @@ body {
 }
 
 .sub-menu-toggle::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
@@ -2124,8 +2139,8 @@ body {
 }
 
 .sub-menu-toggle.activated::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
@@ -2214,8 +2229,8 @@ body {
 /* WooCommerce Menu
 --------------------------------------------- */
 .cart-contents::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
@@ -2404,14 +2419,14 @@ Content Area
 }
 
 .entry-meta.categories .entry-terms::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
 .entry-meta.tags .entry-terms::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
@@ -2527,26 +2542,26 @@ Content Area
 }
 
 .social-icon-facebook span::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
 .social-icon-twitter span::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
 .social-icon-gplus span::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
 .social-icon-rss span::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0.5rem;
 }
 
@@ -2557,29 +2572,29 @@ Pagination
 --------------------------------------------- */
 .pagination .prev::before,
 .page-links .prev::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
 .pagination .next::after,
 .page-links .next::after {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-right: 0;
 }
 
 .rtl .pagination .prev::before, .rtl
 .page-links .prev::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 0;
 }
 
 .rtl .pagination .next::after, .rtl
 .page-links .next::after {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-right: 0;
 }
 
@@ -2646,8 +2661,8 @@ Pagination
 /* Next/Prev Links
 --------------------------------------------- */
 .nav-next a::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 1rem;
 }
 
@@ -2658,14 +2673,14 @@ Pagination
 }
 
 .rtl .nav-next a::after {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-right: 1rem;
 }
 
 .nav-previous a::after {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-right: 1rem;
 }
 
@@ -2676,8 +2691,8 @@ Pagination
 }
 
 .rtl .nav-previous a::before {
-	content: "";
-	font-family: "themicons";
+	content: "";
+	font-family: "Ionicons";
 	margin-left: 1rem;
 }
 

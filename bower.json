@@ -7,9 +7,9 @@
     "normalize-css": "~4.2",
     "fitvids": "~1.1",
     "accessible-menu": "GaryJones/accessible-menu#master",
-    "themicons": "cedaro/themicons#2.1.0",
     "skip-link-focus": "~0.1.0",
     "sass-mediaqueries": "~1.6.1",
-    "susy": "~2.2.9"
+    "susy": "~2.2.9",
+    "Ionicons": "ionicons#^2.0.1"
   }
 }

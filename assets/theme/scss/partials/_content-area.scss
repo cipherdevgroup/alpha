@@ -78,15 +78,15 @@
 	}
 
 	a {
-		@include alt-link-color();
+		@include alt-link-color;
 	}
 
 	&.categories .entry-terms {
-		@include icon-before( "\f21b" );
+		@include icon-before( $ionicon-var-folder );
 	}
 
 	&.tags .entry-terms {
-		@include icon-before( "\f21c" );
+		@include icon-before( $ionicon-var-pricetags );
 	}
 }
 
@@ -192,17 +192,17 @@
 }
 
 .social-icon-facebook span {
-	@include icon-before( "\f104" );
+	@include icon-before( $ionicon-var-social-facebook );
 }
 
 .social-icon-twitter span {
-	@include icon-before( "\f114" );
+	@include icon-before( $ionicon-var-social-twitter );
 }
 
 .social-icon-gplus span {
-	@include icon-before( "\f108" );
+	@include icon-before( $ionicon-var-social-googleplus );
 }
 
 .social-icon-rss span {
-	@include icon-before( "\f20e" );
+	@include icon-before( $ionicon-var-social-rss );
 }
