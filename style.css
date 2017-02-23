@@ -2135,7 +2135,7 @@ body {
 }
 
 .sub-menu-toggle::before {
-	font-size: 3rem;
+	font-size: 1.8rem;
 }
 
 .sub-menu-toggle.activated::before {
