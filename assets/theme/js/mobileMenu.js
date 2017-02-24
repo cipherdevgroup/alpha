@@ -346,7 +346,7 @@ function AlphaMobileMenu( $ ) {
 		if ( 0 !== $mobileMenu.length && 0 !== $menuButton.length ) {
 			initMenu();
 
-			window.onresize = debounce( initMenu, 200 );
+			$( window ).resize( debounce( initMenu, 200 ) );
 
 			$( '.' + settings.submenuButton.attr( 'class' ) ).on( 'click', toggleSubMenu );
 
