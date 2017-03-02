@@ -69,6 +69,13 @@ add_action( 'carelib_register_layouts', 'alpha_set_default_layout', 12 );
 /**
  * Callback defined in includes/theme-setup.php
  *
+ * @see alpha_content_width_full
+ */
+add_filter( 'alpha_content_width', 'alpha_content_width_full', 10 );
+
+/**
+ * Callback defined in includes/theme-setup.php
+ *
  * @see alpha_register_sidebars
  */
 add_action( 'widgets_init', 'alpha_register_sidebars', 5 );

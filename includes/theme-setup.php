@@ -16,7 +16,23 @@
  * @return void
  */
 function alpha_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'alpha_content_width', 1140 );
+	$GLOBALS['content_width'] = apply_filters( 'alpha_content_width', 740 );
+}
+
+/**
+ * Modify the content width on full layout pages.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  int $width The current content width.
+ * @return int $width The current content width.
+ */
+function alpha_content_width_full( $width ) {
+	if ( '1c' === carelib_get_theme_layout() ) {
+		$width = 1140;
+	}
+
+	return $width;
 }
 
 /**
