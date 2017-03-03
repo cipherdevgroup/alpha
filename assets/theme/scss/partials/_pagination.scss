@@ -84,26 +84,26 @@
 --------------------------------------------- */
 
 .nav-next a {
-	@include icon-before( $ionicon-var-arrow-right-c, 10px );
+	@include icon-after( $ionicon-var-arrow-right-c, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: right;
 	}
 
 	.rtl & {
-		@include icon-after( $ionicon-var-arrow-right-c, 10px );
+		@include icon-before( $ionicon-var-arrow-right-c, 10px );
 	}
 }
 
 .nav-previous a {
-	@include icon-after( $ionicon-var-arrow-left-c, 10px );
+	@include icon-before( $ionicon-var-arrow-left-c, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: left;
 	}
 
 	.rtl & {
-		@include icon-before( $ionicon-var-arrow-left-c, 10px );
+		@include icon-after( $ionicon-var-arrow-left-c, 10px );
 	}
 }
 

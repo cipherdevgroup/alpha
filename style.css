@@ -1238,7 +1238,7 @@ Icons
 .page-links .prev::before, .pagination .next::after,
 .page-links .next::after, .rtl .pagination .prev::before, .rtl
 .page-links .prev::before, .rtl .pagination .next::after, .rtl
-.page-links .next::after, .nav-next a::before, .rtl .nav-next a::after, .nav-previous a::after, .rtl .nav-previous a::before {
+.page-links .next::after, .nav-next a::after, .rtl .nav-next a::before, .nav-previous a::before, .rtl .nav-previous a::after {
 	display: inline-block;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -2660,10 +2660,10 @@ Pagination
 
 /* Next/Prev Links
 --------------------------------------------- */
-.nav-next a::before {
+.nav-next a::after {
 	content: "";
 	font-family: "Ionicons";
-	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 @media only screen and (min-width: 1023px) {
@@ -2672,16 +2672,16 @@ Pagination
 	}
 }
 
-.rtl .nav-next a::after {
+.rtl .nav-next a::before {
 	content: "";
 	font-family: "Ionicons";
-	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
-.nav-previous a::after {
+.nav-previous a::before {
 	content: "";
 	font-family: "Ionicons";
-	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 @media only screen and (min-width: 1023px) {
@@ -2690,10 +2690,10 @@ Pagination
 	}
 }
 
-.rtl .nav-previous a::before {
+.rtl .nav-previous a::after {
 	content: "";
 	font-family: "Ionicons";
-	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .nav-next a,
