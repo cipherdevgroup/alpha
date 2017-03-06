@@ -19,8 +19,17 @@
     "type": "git",
     "url": "https://github.com/wpsitecare/alpha.git"
   },
+  "dependencies": {
+    "accessible-menu": "GaryJones/accessible-menu#master",
+    "ionicons": "^2.0.1",
+    "normalize.css": "^4.0.0",
+    "sass-mediaqueries": "^1.6.1",
+    "skip-link-focus": "^0.1.0",
+    "susy": "^2.2.12",
+    "vanilla-fitvids": "^1.1.0"
+  },
   "devDependencies": {
-    "sitecare-theme-config": "wpsitecare/sitecare-theme-config#3.1.0",
+    "sitecare-theme-config": "wpsitecare/sitecare-theme-config",
     "load-project-config": "~0.2.0"
   }
 }

@@ -5,9 +5,9 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.bower%>',
+				cwd: '<%= paths.node%>',
 				src: [
-					'normalize-css/normalize.css',
+					'normalize.css/normalize.css',
 					'sass-mediaqueries/_media-queries.scss'
 				],
 				dest: '<%= paths.cssSrc%>vendor/'
@@ -15,7 +15,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: false,
-				cwd: '<%= paths.bower%>susy/sass/',
+				cwd: '<%= paths.node%>susy/sass/',
 				src: [
 					'*.scss',
 					'**/*.scss'
@@ -25,7 +25,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: false,
-				cwd: '<%= paths.bower%>ionicons/scss',
+				cwd: '<%= paths.node%>ionicons/scss',
 				src: [
 					'*.scss',
 					'**/*.scss'
@@ -39,10 +39,10 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.bower%>',
+				cwd: '<%= paths.node%>',
 				src: [
 					'skip-link-focus/skip-link-focus.js',
-					'fitvids/jquery.fitvids.js',
+					'vanilla-fitvids/jquery.fitvids.js',
 					'accessible-menu/dist/jquery.accessible-menu.js'
 				],
 				dest: '<%= paths.jsSrc%>vendor/theme/'
@@ -62,7 +62,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.bower%>',
+				cwd: '<%= paths.node%>',
 				src: [
 					'ionicons/fonts/*'
 				],
