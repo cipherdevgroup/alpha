@@ -9,7 +9,7 @@ __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 Alpha is a battle-tested starter theme for WordPress, built from the ground-up for custom development projects at WP Site Care. Alpha is designed to be modular and facilitate code reuse across projects without the constraint of a parent theme framework like Genesis.
 
-It uses our drop-in theme framework [CareLib](https://github.com/wpsitecare/carelib) for templating. Alpha also integrates Grunt, SCSS, Bower, and Composer for workflow automation.
+It uses our drop-in theme framework [CareLib](https://github.com/wpsitecare/carelib) for templating and SCSS for style pre-processing. Alpha also integrates npm, Grunt, and Composer for workflow automation.
 
 For more information about how to use Alpha, take a look at our [Wiki](https://github.com/wpsitecare/carelib/wiki) or give us a shout on [Twitter](https://twitter.com/wpsitecare).
 
