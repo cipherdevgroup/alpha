@@ -35,24 +35,19 @@ For more information about how to use Alpha, take a look at our [Wiki](https://g
 			<td><a href="https://getcomposer.org/download/">getcomposer.org</a></td>
 		</tr>
 		<tr>
-			<td>Node.js 4.x</td>
+			<td>Node.js 7.x</td>
 			<td><code>node -v</code></td>
 			<td><a href="http://nodejs.org/">nodejs.org</a></td>
 		</tr>
 		<tr>
-			<td>npm.js 3.x</td>
-			<td><code>npm -v</code></td>
-			<td><code>npm install -g npm</code></td>
+			<td>npm.js 4.x or yarn 0.2.x</td>
+			<td><code>npm -v or yarn -v</code></td>
+			<td><code>npm install -g npm or <a href="https://yarnpkg.com/en/docs/instal">Install Yarn</a></code></td>
 		</tr>
 		<tr>
-			<td>Grunt CLI >= 0.1.13</td>
+			<td>Grunt CLI 1.x</td>
 			<td><code>grunt -V</code></td>
 			<td><code>npm install -g grunt-cli</td>
-		</tr>
-		<tr>
-			<td>Bower 1.7.x</td>
-			<td><code>bower -v</code></td>
-			<td><code>npm install -g bower</code></td>
 		</tr>
 	</tbody>
 </table>
