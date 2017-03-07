@@ -29,7 +29,7 @@
     "vanilla-fitvids": "^1.1.0"
   },
   "devDependencies": {
-    "sitecare-theme-config": "wpsitecare/sitecare-theme-config",
+    "sitecare-theme-config": "wpsitecare/sitecare-theme-config#4.0.0",
     "load-project-config": "~0.2.0"
   }
 }
