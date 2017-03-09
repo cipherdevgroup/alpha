@@ -310,6 +310,7 @@ textarea {
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
 	font-size: 1.6rem;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	padding: 1rem;
 	width: 100%;
@@ -335,6 +336,10 @@ textarea {
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 	        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 	color: #474e57;
+	-webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+	transition: -webkit-box-shadow 0.1s ease-in-out;
+	transition: box-shadow 0.1s ease-in-out;
+	transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
 }
 
 input[type="color"]:focus,
@@ -465,6 +470,7 @@ select {
 	background-repeat: no-repeat;
 	-webkit-background-size: 10px 10px;
 	        background-size: 10px;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-right: 2rem;
 }
 
