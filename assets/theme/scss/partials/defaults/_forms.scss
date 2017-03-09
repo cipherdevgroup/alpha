@@ -1,7 +1,8 @@
 %text-input-base {
 	border: 0;
 	border-radius: $base-border-radius;
-	font-size: $base-font-size;
+	font-size: $form-font-size;
+	font-family: $form-font-family;
 	font-weight: 400;
 	padding: $form-input-padding;
 	width: 100%;
@@ -138,6 +139,7 @@ input[type="range"] {
 	background-position: right 5px center;
 	background-repeat: no-repeat;
 	background-size: 10px;
+	font-family: $form-font-family;
 	padding-right: 20px;
 }
 

@@ -743,6 +743,7 @@ textarea {
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
 	font-size: 1.6rem;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	padding: 1rem;
 	width: 100%;
@@ -903,6 +904,7 @@ select, .fl-builder-settings-fields select,
 	background-repeat: no-repeat;
 	-webkit-background-size: 10px 10px;
 	        background-size: 10px;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-left: 2rem;
 }
 
