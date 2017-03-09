@@ -480,17 +480,6 @@ body {
 	line-height: 1.625;
 }
 
-button,
-input:focus,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-textarea:focus,
-.button {
-	-webkit-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
-}
-
 ::-moz-selection {
 	background-color: #1c1e1f;
 	color: #fff;
@@ -779,6 +768,10 @@ textarea {
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 	        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 	color: #474e57;
+	-webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+	transition: -webkit-box-shadow 0.1s ease-in-out;
+	transition: box-shadow 0.1s ease-in-out;
+	transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
 }
 
 input[type="color"]:focus,
@@ -1022,6 +1015,8 @@ input[type="submit"],
 	padding: 1.6rem 2.4rem;
 	text-align: center;
 	text-transform: uppercase;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
 	width: auto;
 }
 

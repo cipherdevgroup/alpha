@@ -11,16 +11,6 @@ body {
 	line-height: $base-line-height;
 }
 
-button,
-input:focus,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-textarea:focus,
-.button {
-	transition: all 0.1s ease-in-out;
-}
-
 ::selection {
 	background-color: $base-selection-bg-color;
 	color: $base-selection-color;

@@ -11,6 +11,7 @@
 	background-color: $input-bg-color;
 	box-shadow: $form-box-shadow;
 	color: $form-font-color;
+	transition: box-shadow 0.1s ease-in-out;
 
 	&:focus {
 		box-shadow: $form-box-shadow-focus;
