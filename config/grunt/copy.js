@@ -5,32 +5,32 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.node%>',
+				cwd: '<%= paths.node %>',
 				src: [
 					'normalize.css/normalize.css',
 					'sass-mediaqueries/_media-queries.scss'
 				],
-				dest: '<%= paths.cssVend%>'
+				dest: '<%= paths.cssVend %>'
 			},
 			{
 				expand: true,
 				flatten: false,
-				cwd: '<%= paths.node%>susy/sass/',
+				cwd: '<%= paths.node %>susy/sass/',
 				src: [
 					'*.scss',
 					'**/*.scss'
 				],
-				dest: '<%= paths.cssVend%>susy/'
+				dest: '<%= paths.cssVend %>susy/'
 			},
 			{
 				expand: true,
 				flatten: false,
-				cwd: '<%= paths.node%>ionicons/scss',
+				cwd: '<%= paths.node %>ionicons/scss',
 				src: [
 					'*.scss',
 					'**/*.scss'
 				],
-				dest: '<%= paths.cssVend%>ionicons/'
+				dest: '<%= paths.cssVend %>ionicons/'
 			}
 		]
 	},
@@ -39,13 +39,13 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.node%>',
+				cwd: '<%= paths.node %>',
 				src: [
 					'skip-link-focus/skip-link-focus.js',
 					'vanilla-fitvids/jquery.fitvids.js',
 					'accessible-menu/dist/jquery.accessible-menu.js'
 				],
-				dest: '<%= paths.jsVend%>theme/'
+				dest: '<%= paths.jsVend %>theme/'
 			}
 		]
 	},
@@ -62,7 +62,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				cwd: '<%= paths.node%>',
+				cwd: '<%= paths.node %>',
 				src: [
 					'ionicons/fonts/*'
 				],
@@ -76,7 +76,7 @@ module.exports = {
 				expand: true,
 				cwd: '<%= paths.node %>carelib',
 				src: ['**/*'],
-				dest: '<%= paths.phpVend%>carelib/'
+				dest: '<%= paths.phpVend %>carelib/'
 			}
 		]
 	},
@@ -89,7 +89,7 @@ module.exports = {
 				expand: true,
 				cwd: '<%= paths.assets %><%= paths.languages %>',
 				src: ['*.po'],
-				dest: '<%= paths.theme%><%= paths.languages %>',
+				dest: '<%= paths.theme %><%= paths.languages %>',
 				filter: 'isFile'
 			}
 		]
