@@ -10,7 +10,7 @@ module.exports = {
 					'normalize.css/normalize.css',
 					'sass-mediaqueries/_media-queries.scss'
 				],
-				dest: '<%= paths.cssSrc%>vendor/'
+				dest: '<%= paths.cssVend%>'
 			},
 			{
 				expand: true,
@@ -20,7 +20,7 @@ module.exports = {
 					'*.scss',
 					'**/*.scss'
 				],
-				dest: '<%= paths.cssSrc%>vendor/susy/'
+				dest: '<%= paths.cssVend%>susy/'
 			},
 			{
 				expand: true,
@@ -30,7 +30,7 @@ module.exports = {
 					'*.scss',
 					'**/*.scss'
 				],
-				dest: '<%= paths.cssSrc%>vendor/ionicons/'
+				dest: '<%= paths.cssVend%>ionicons/'
 			}
 		]
 	},
@@ -45,7 +45,7 @@ module.exports = {
 					'vanilla-fitvids/jquery.fitvids.js',
 					'accessible-menu/dist/jquery.accessible-menu.js'
 				],
-				dest: '<%= paths.jsSrc%>vendor/theme/'
+				dest: '<%= paths.jsVend%>theme/'
 			}
 		]
 	},
@@ -76,7 +76,7 @@ module.exports = {
 				expand: true,
 				cwd: '<%= paths.node %>carelib',
 				src: ['**/*'],
-				dest: 'includes/vendor/carelib'
+				dest: '<%= paths.phpVend%>carelib/'
 			}
 		]
 	},

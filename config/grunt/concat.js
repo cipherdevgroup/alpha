@@ -4,7 +4,7 @@ module.exports = {
 		files: [
 			{
 				src: [
-					'<%= paths.jsSrc %>vendor/theme/**/*.js',
+					'<%= paths.jsVend %>theme/**/*.js',
 					'<%= paths.jsSrc %>mobileMenu.js',
 					'<%= paths.jsSrc %>theme.js',
 					'<%= paths.jsSrc %>theme-init.js'
