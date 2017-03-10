@@ -74,7 +74,7 @@ module.exports = {
 		files: [
 			{
 				expand: true,
-				cwd: '<%= paths.composer %>wpsitecare/carelib',
+				cwd: '<%= paths.node %>carelib',
 				src: ['**/*'],
 				dest: 'includes/vendor/carelib'
 			}

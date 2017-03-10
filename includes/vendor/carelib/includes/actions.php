@@ -39,6 +39,13 @@ add_action( 'updated_post_meta', 'carelib_delete_image_cache_by_meta', 10, 2 );
 add_action( 'added_post_meta', 'carelib_delete_image_cache_by_meta', 10, 2 );
 
 /**
+ * Callback defined in includes/layouts.php
+ *
+ * @see carelib_do_register_layouts
+ */
+add_action( 'after_setup_theme', 'carelib_do_register_layouts', -10 );
+
+/**
  * Callback defined in includes/language.php
  *
  * @see carelib_load_locale_functions
@@ -72,13 +79,6 @@ add_action( 'init', 'carelib_post_type_support', 15 );
  * @see carelib_register_layouts_meta
  */
 add_action( 'init', 'carelib_register_layouts_meta', 15 );
-
-/**
- * Callback defined in includes/layouts.php
- *
- * @see carelib_do_register_layouts
- */
-add_action( 'init', 'carelib_do_register_layouts', 95 );
 
 /**
  * Compatibility for when a theme doesn't register any sidebars.

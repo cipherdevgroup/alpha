@@ -1,0 +1,21 @@
+{
+  "name": "carelib",
+  "description": "A collection of helpful functions to make creating an awesome theme more enjoyable.",
+  "version": "1.0.0",
+  "copyright": "2017",
+  "license": "GPL-2.0+",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/wpsitecare/carelib/issues"
+  },
+  "contributors": [
+    {
+      "name": "Robert Neu",
+      "url": "https://www.wpsitecare.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpsitecare/carelib.git"
+  }
+}

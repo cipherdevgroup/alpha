@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f700bc4534cdf96272393816d1d5c64",
+    "content-hash": "0787a55c0fcb3a47c33fd43fed4ccc69",
     "packages": [
         {
             "name": "composer/installers",
@@ -112,47 +112,12 @@
                 "zikula"
             ],
             "time": "2016-08-13T20:53:52+00:00"
-        },
-        {
-            "name": "wpsitecare/carelib",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wpsitecare/carelib.git",
-                "reference": "d4de5dd38fd6e3c04096f100fdaa92c9f225096f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wpsitecare/carelib/zipball/d4de5dd38fd6e3c04096f100fdaa92c9f225096f",
-                "reference": "d4de5dd38fd6e3c04096f100fdaa92c9f225096f",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Robert Neu",
-                    "email": "rob@wpsitecare.com",
-                    "homepage": "https://www.wpsitecare.com"
-                }
-            ],
-            "description": "A collection of helpful functions to make creating an awesome theme more enjoyable.",
-            "homepage": "https://github.com/wpsitecare/carelib",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2017-02-03 23:27:18"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "wpsitecare/carelib": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
