@@ -30,11 +30,6 @@ For more information about how to use Alpha, take a look at our [Wiki](https://g
 			<td><a href="http://php.net/manual/en/install.php">php.net</a></td>
 		</tr>
 		<tr>
-			<td>Composer >= 1.0.x</td>
-			<td><code>composer -V</code></td>
-			<td><a href="https://getcomposer.org/download/">getcomposer.org</a></td>
-		</tr>
-		<tr>
 			<td>Node.js 7.x</td>
 			<td><code>node -v</code></td>
 			<td><a href="http://nodejs.org/">nodejs.org</a></td>
