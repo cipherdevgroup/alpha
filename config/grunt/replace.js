@@ -19,10 +19,8 @@ module.exports = {
 				expand: true,
 				src: [
 					'**/*.{php,scss,css,js,html,txt,md,json}',
-					'!<%= paths.bower %>**/*',
+					'!<%= paths.node %>**/*',
 					'!<%= paths.composer %>**/*',
-					'!node_modules/**',
-					'!bower_components/**',
 					'!.sass-cache/**',
 					'!dist/**',
 					'!logs/**',
