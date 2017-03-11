@@ -1,0 +1,63 @@
+/* Author Box
+--------------------------------------------- */
+.author-box {
+	@include clearfix;
+	margin-bottom: $base-margin;
+
+	.avatar-wrap {
+		@include min-screen( $medium-screen ) {
+			@include span( 2 of 12 );
+		}
+	}
+
+	.avatar {
+		border-radius: $base-border-radius;
+		margin: 0 auto;
+	}
+
+	.author-info {
+		@include min-screen( $medium-screen ) {
+			@include span( last 10 of 12 );
+		}
+
+		p:last-of-type {
+			margin-bottom: 10px;
+		}
+	}
+
+	.social-icons {
+		li {
+			display: inline-block;
+			font-size: 14px;
+			letter-spacing: 2px;
+			margin-right: 20px;
+			text-transform: uppercase;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			@include alt-link-color;
+			display: block;
+			padding: 5px 0;
+		}
+	}
+}
+
+.social-icon-facebook span {
+	@include icon-before( $ionicon-var-social-facebook );
+}
+
+.social-icon-twitter span {
+	@include icon-before( $ionicon-var-social-twitter );
+}
+
+.social-icon-gplus span {
+	@include icon-before( $ionicon-var-social-googleplus );
+}
+
+.social-icon-rss span {
+	@include icon-before( $ionicon-var-social-rss );
+}

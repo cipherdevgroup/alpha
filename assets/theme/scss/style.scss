@@ -20,16 +20,17 @@
 // Load Theme Mixins
 @import "mixins/global";
 
-// Load Global Settings
-@import "settings/susy";
-@import "settings/ionicons";
-
 // Load Global Variables
 @import "variables/colors";
 @import "variables/layout";
 @import "variables/misc";
 @import "variables/typography";
 @import "variables/z-index";
+@import "vendor/ionicons/ionicons-variables";
+
+// Load Global Settings
+@import "settings/susy";
+@import "settings/ionicons";
 
 /*
 HTML5 Reset
@@ -51,7 +52,6 @@ Structure and Layout
 /*
 Icons
 ----------------------------------------------------------------------------- */
-@import "vendor/ionicons/ionicons-variables";
 @import "vendor/ionicons/ionicons-font";
 @import "partials/icons";
 
@@ -78,7 +78,8 @@ Site Navigation
 /*
 Content Area
 ----------------------------------------------------------------------------- */
-@import "partials/content-area";
+@import "partials/archives";
+@import "partials/entries";
 
 
 /*
@@ -115,3 +116,9 @@ Site Footer
 Plugins
 ----------------------------------------------------------------------------- */
 @import "partials/plugins";
+
+
+/*
+Blocks
+----------------------------------------------------------------------------- */
+@import "partials/blocks/author-box";

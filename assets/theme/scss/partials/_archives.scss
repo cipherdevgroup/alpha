@@ -1,0 +1,15 @@
+/* Archives
+--------------------------------------------- */
+
+.archive-title {
+	@include h1-font-size();
+	font-weight: 600;
+}
+
+.archive-description {
+	margin-bottom: $base-margin;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
