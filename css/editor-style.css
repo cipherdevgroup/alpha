@@ -310,7 +310,6 @@ textarea {
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
 	font-size: 1.6rem;
-	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	padding: 1rem;
 	width: 100%;
@@ -361,6 +360,13 @@ textarea:focus {
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(160, 160, 160, 0.7);
 	        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(160, 160, 160, 0.7);
 	outline: none;
+}
+
+input,
+optgroup,
+select,
+textarea {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 input[type="color"] {
@@ -470,7 +476,6 @@ select {
 	background-repeat: no-repeat;
 	-webkit-background-size: 10px 10px;
 	        background-size: 10px;
-	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-right: 2rem;
 }
 
