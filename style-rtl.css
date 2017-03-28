@@ -797,13 +797,6 @@ textarea:focus {
 	outline: none;
 }
 
-input,
-optgroup,
-select,
-textarea {
-	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 input[type="color"] {
 	padding: 0.5rem;
 }
