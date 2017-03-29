@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 1.0.0
  */
-define( 'CARELIB_VERSION', '1.0.0' );
+define( 'CARELIB_VERSION', '2.0.0' );
 
 /**
  * The absolute path to CareLib's root directory with a trailing slash.
@@ -123,7 +123,26 @@ add_action( 'after_setup_theme', 'carelib_init', -95 );
  * @return void
  */
 function carelib_init() {
-	require_once CARELIB_DIR . 'includes/init.php';
+	/**
+	 * Provide reliable access to the library's functions before the global
+	 * actions, filters, and classes are initialized.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 */
+	do_action( 'carelib_before_init' );
+
+	require_once CARELIB_DIR . 'includes/actions.php';
+	require_once CARELIB_DIR . 'includes/filters.php';
+
+	/**
+	 * Provide reliable access to the library's functions before the global
+	 * actions, filters, and classes are initialized.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 */
+	do_action( 'carelib_after_init' );
 }
 
 add_action( 'after_setup_theme', 'carelib_admin_init', -95 );
@@ -136,7 +155,25 @@ add_action( 'after_setup_theme', 'carelib_admin_init', -95 );
  */
 function carelib_admin_init() {
 	if ( is_admin() ) {
-		require_once CARELIB_DIR . 'admin/init.php';
+		/**
+		 * Provide reliable access to the library's functions before the global
+		 * actions, filters, and classes are initialized.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 */
+		do_action( 'carelib_admin_before_init' );
+
+		require_once CARELIB_DIR . 'admin/actions.php';
+
+		/**
+		 * Provide reliable access to the library's functions before the global
+		 * actions, filters, and classes are initialized.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 */
+		do_action( 'carelib_admin_after_init' );
 	}
 }
 
@@ -150,6 +187,29 @@ add_action( 'after_setup_theme', 'carelib_customize_init', -95 );
  */
 function carelib_customize_init() {
 	if ( is_customize_preview() ) {
-		require_once CARELIB_DIR . 'customize/init.php';
+		/**
+		 * Provide reliable access to the library's functions before the global
+		 * actions, filters, and classes are initialized.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 */
+		do_action( 'carelib_customize_before_init' );
+
+		require_once CARELIB_DIR . 'customize/control-radio-image.php';
+		require_once CARELIB_DIR . 'customize/control-layout.php';
+		require_once CARELIB_DIR . 'customize/register.php';
+		require_once CARELIB_DIR . 'customize/scripts.php';
+		require_once CARELIB_DIR . 'customize/styles.php';
+		require_once CARELIB_DIR . 'customize/actions.php';
+
+		/**
+		 * Provide reliable access to the library's functions before the global
+		 * actions, filters, and classes are initialized.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 */
+		do_action( 'carelib_customize_after_init' );
 	}
 }
