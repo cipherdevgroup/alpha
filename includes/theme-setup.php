@@ -56,6 +56,9 @@ function alpha_get_parent_textdomain() {
 function alpha_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
 }
 
 /**
