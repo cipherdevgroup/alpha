@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alpha 0.1.0\n"
 "Report-Msgid-Bugs-To: https://www.wpsitecare.com/contact/\n"
-"POT-Creation-Date: 2017-03-11 19:21:49+00:00\n"
+"POT-Creation-Date: 2017-05-02 20:24:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,13 +34,13 @@ msgstr ""
 msgid "Copyright &#169; %1$s %2$s. Designed by %3$s."
 msgstr ""
 
-#: includes/theme-setup.php:148
+#: includes/theme-setup.php:151
 msgid ""
 "The main sidebar. It is displayed on either the left or right side of the "
 "page based on the chosen layout."
 msgstr ""
 
-#: includes/theme-setup.php:153
+#: includes/theme-setup.php:156
 msgid ""
 "A widgeted area which displays just before the main site footer on all "
 "pages."
@@ -326,42 +326,42 @@ msgstr ""
 msgid "The WP Site Care Starter Theme."
 msgstr ""
 
-#: includes/theme-setup.php:83
+#: includes/theme-setup.php:86
 msgctxt "nav menu location"
 msgid "Primary Menu"
 msgstr ""
 
-#: includes/theme-setup.php:84
+#: includes/theme-setup.php:87
 msgctxt "nav menu location"
 msgid "Secondary Menu"
 msgstr ""
 
-#: includes/theme-setup.php:99
+#: includes/theme-setup.php:102
 msgctxt "theme layout"
 msgid "2 Columns: Right Sidebar"
 msgstr ""
 
-#: includes/theme-setup.php:105
+#: includes/theme-setup.php:108
 msgctxt "theme layout"
 msgid "2 Columns: Left Sidebar"
 msgstr ""
 
-#: includes/theme-setup.php:111
+#: includes/theme-setup.php:114
 msgctxt "theme layout"
 msgid "1 Column Wide"
 msgstr ""
 
-#: includes/theme-setup.php:117
+#: includes/theme-setup.php:120
 msgctxt "theme layout"
 msgid "1 Column Narrow"
 msgstr ""
 
-#: includes/theme-setup.php:147
+#: includes/theme-setup.php:150
 msgctxt "sidebar"
 msgid "Primary Sidebar"
 msgstr ""
 
-#: includes/theme-setup.php:152
+#: includes/theme-setup.php:155
 msgctxt "sidebar"
 msgid "Footer Widgets"
 msgstr ""
