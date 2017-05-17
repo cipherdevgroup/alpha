@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "accessible-menu": "GaryJones/accessible-menu#master",
-    "carelib": "wpsitecare/carelib#master",
+    "carelib": "wpsitecare/carelib#2.0.0",
     "ionicons": "^2.0.1",
     "normalize.css": "^7.0.0",
     "sass-mediaqueries": "^1.6.1",

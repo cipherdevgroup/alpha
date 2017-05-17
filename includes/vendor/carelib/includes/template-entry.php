@@ -610,7 +610,7 @@ function carelib_get_post_navigation( $args = array() ) {
 
 	$defaults = apply_filters( 'carelib_post_navigation_defaults',
 		array(
-			'post_types'     => array(),
+			'post_types'     => array( 'post' ),
 			'prev_format'    => '<span class="nav-previous">%link</span>',
 			'next_format'    => '<span class="nav-next">%link</span>',
 			'prev_text'      => __( 'Previous', 'alpha' ) . esc_html( $name ),

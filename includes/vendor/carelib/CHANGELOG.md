@@ -24,6 +24,7 @@ Anyway, enough rambling. Here are the key changes since 1.0.0:
 - Added custom hooks that mirror the hooks used in THA
 - Added a number of echoing functions for themes to use when printing CareLib functions
 - Removed our attachment image gallery function
+- Limited the post navigation to only posts by default
 - Added some basic support for WooCommerce when it's active
 - Added a helper to check if Beaver Builder is active on a given page
 - Added a package.json file to allow the library to be managed via npm 🤔
