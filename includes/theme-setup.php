@@ -9,6 +9,17 @@
  */
 
 /**
+ * Return the parent theme's textdomain to avoid getting it from the file system.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return string
+ */
+function alpha_get_parent_textdomain() {
+	return 'alpha';
+}
+
+/**
  * Set the content width and allow it to be filtered directly.
  *
  * @since  1.0.0
@@ -33,17 +44,6 @@ function alpha_content_width_full( $width ) {
 	}
 
 	return $width;
-}
-
-/**
- * Return the parent theme's textdomain to avoid getting it from the file system.
- *
- * @since  1.0.0
- * @access public
- * @return string
- */
-function alpha_get_parent_textdomain() {
-	return 'alpha';
 }
 
 /**

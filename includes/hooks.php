@@ -27,6 +27,13 @@ add_action( 'after_setup_theme', 'alpha_content_width', 0 );
 /**
  * Callback defined in includes/theme-setup.php
  *
+ * @see alpha_content_width_full
+ */
+add_filter( 'alpha_content_width', 'alpha_content_width_full', 10 );
+
+/**
+ * Callback defined in includes/theme-setup.php
+ *
  * @see alpha_setup
  */
 add_action( 'after_setup_theme', 'alpha_setup', 10 );
@@ -65,13 +72,6 @@ add_action( 'carelib_register_layouts', 'alpha_register_layouts', 10 );
  * @see alpha_set_default_layout
  */
 add_action( 'carelib_register_layouts', 'alpha_set_default_layout', 12 );
-
-/**
- * Callback defined in includes/theme-setup.php
- *
- * @see alpha_content_width_full
- */
-add_filter( 'alpha_content_width', 'alpha_content_width_full', 10 );
 
 /**
  * Callback defined in includes/theme-setup.php
