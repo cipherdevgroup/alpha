@@ -15,8 +15,9 @@
 *.png  -text diff
 
 # Treat font files as binary.
-*.otf  binary
-*.eot  binary
-*.svg  binary
-*.ttf  binary
-*.woff binary
+*.otf   binary
+*.eot   binary
+*.svg   binary
+*.ttf   binary
+*.woff  binary
+*.woff2 binary
