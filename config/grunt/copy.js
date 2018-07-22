@@ -10,7 +10,10 @@ module.exports = {
 					'normalize.css/normalize.css',
 					'sass-mediaqueries/_media-queries.scss'
 				],
-				dest: '<%= paths.cssVend %>'
+				dest: '<%= paths.cssVend %>',
+				rename: function( dest, src ) {
+					return dest + src.replace( '.css', '.scss' );
+				}
 			},
 			{
 				expand: true,

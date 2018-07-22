@@ -5,7 +5,7 @@ module.exports = function( grunt ) {
 	'use strict';
 
 	var loader = require( 'load-project-config' ),
-		config = require( 'sitecare-theme-config' );
+		config = require( 'cipher-theme-config' );
 
 	loader( grunt, config ).init();
 };

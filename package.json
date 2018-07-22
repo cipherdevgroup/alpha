@@ -7,21 +7,21 @@
   "license": "GPL-2.0+",
   "private": true,
   "bugs": {
-    "url": "https://github.com/wpsitecare/alpha/issues"
+    "url": "https://github.com/cipherdevgroup/alpha/issues"
   },
   "contributors": [
     {
       "name": "Robert Neu",
-      "url": "https://www.wpsitecare.com"
+      "url": "https://cipherdevelopment.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wpsitecare/alpha.git"
+    "url": "https://github.com/cipherdevgroup/alpha.git"
   },
   "dependencies": {
     "accessible-menu": "GaryJones/accessible-menu#master",
-    "carelib": "wpsitecare/carelib#2.0.0",
+    "carelib": "cipherdevgroup/carelib#2.0.0",
     "ionicons": "^2.0.1",
     "normalize.css": "^7.0.0",
     "sass-mediaqueries": "^1.6.1",
@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "load-project-config": "~0.2.0",
-    "sitecare-theme-config": "wpsitecare/sitecare-theme-config#4.1.0"
+    "cipher-theme-config": "cipherdevgroup/cipher-theme-config"
   }
 }
