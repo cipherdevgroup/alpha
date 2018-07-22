@@ -23,7 +23,7 @@
     "accessible-menu": "GaryJones/accessible-menu#master",
     "carelib": "cipherdevgroup/carelib#2.0.0",
     "ionicons": "^2.0.1",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
     "sass-mediaqueries": "^1.6.1",
     "skip-link-focus": "^0.1.0",
     "susy": "^2.2.12",
