@@ -1,5 +1,5 @@
 /**
- * Skip Link Focus v0.1.0
+ * Skip Link Focus v1.0.0
  * https://github.com/cedaro/skip-link-focus
  *
  * @copyright Modifications Copyright (c) 2015 Cedaro, LLC
@@ -25,10 +25,13 @@
 }( this, function() {
 	'use strict';
 
-	function init() {
-		if ( window && /webkit|opera|msie/i.test( window.navigator.userAgent ) && window.addEventListener ) {
+	function init( options ) {
+		options = options || {};
+		options.selector = options.selector || '.skip-link';
+
+		if ( window && /webkit|opera|msie|trident/i.test( navigator.userAgent ) && window.addEventListener ) {
 			var i,
-				skipLinks = window.document.querySelectorAll( '.skip-link' );
+				skipLinks = window.document.querySelectorAll( options.selector );
 
 			window.addEventListener( 'hashchange', function() {
 				skipToElement( location.hash.substring( 1 ) );
@@ -37,6 +40,11 @@
 			// Fix for when the address bar already contains a hash.
 			for ( i = 0; i < skipLinks.length; ++i ) {
 				skipLinks[ i ].addEventListener( 'click', skipLinkClickHandler );
+			}
+
+			// Handle initial hash.
+			if ( location.hash && location.hash.substring( 1 ) ) {
+				skipToElement( location.hash.substring( 1 ) );
 			}
 		}
 	}
