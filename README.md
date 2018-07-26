@@ -4,7 +4,7 @@ The Cipher Development starter theme.
 
 __Contributors:__ [Robert Neu](https://github.com/robneu), [Ozzy Rodriguez](https://github.com/ozzyrod), [Jose Castaneda](https://github.com/jocastaneda)  
 __Requires:__ WordPress 4.7  
-__Tested up to:__ WordPress 4.7  
+__Tested up to:__ WordPress 4.9  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)  
 
 Alpha is a battle-tested starter theme for WordPress, built from the ground-up for custom development projects at Cipher Development. Alpha is designed to be modular and facilitate code reuse across projects without the constraint of a parent theme framework like Genesis.
