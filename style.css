@@ -2398,7 +2398,7 @@ Pagination
 
 .pagination .next::after,
 .page-links .next::after {
-	content: \f061;
+	content: "\f061";
 	font-family: "Font Awesome 5 Free";
 	margin-left: 0;
 }
@@ -2412,7 +2412,7 @@ Pagination
 
 .rtl .pagination .next::after, .rtl
 .page-links .next::after {
-	content: \f061;
+	content: "\f061";
 	font-family: "Font Awesome 5 Free";
 	margin-left: 0;
 }
@@ -2480,7 +2480,7 @@ Pagination
 /* Next/Prev Links
 --------------------------------------------- */
 .nav-next a::after {
-	content: \f061;
+	content: "\f061";
 	font-family: "Font Awesome 5 Free";
 	margin-left: 1rem;
 }
@@ -2510,7 +2510,7 @@ Pagination
 }
 
 .rtl .nav-previous a::after {
-	content: \f060;
+	content: "\f060";
 	font-family: "Font Awesome 5 Free";
 	margin-left: 1rem;
 }
