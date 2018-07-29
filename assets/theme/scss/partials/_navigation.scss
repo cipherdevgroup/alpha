@@ -150,7 +150,7 @@ body {
 
 .menu-toggle {
 	@extend %toggle-button-base;
-	@include icon-before( $ionicon-var-navicon, 0 );
+	@include icon-before( $fa-var-bars, 0 );
 	background: $menu-toggle-bg-color;
 	color: $menu-toggle-link-color;
 	padding: 0;
@@ -167,13 +167,13 @@ body {
 	}
 
 	&.activated {
-		@include icon-before( $ionicon-var-close, 0 );
+		@include icon-before( $fa-var-times, 0 );
 	}
 }
 
 .sub-menu-toggle {
 	@extend %toggle-button-base;
-	@include icon-before( $ionicon-var-chevron-down, 0 );
+	@include icon-before( $fa-var-chevron-down, 0 );
 	background: transparent;
 	bottom: 0;
 	color: $menu-mobile-color;
@@ -196,7 +196,7 @@ body {
 	}
 
 	&.activated {
-		@include icon-before( $ionicon-var-chevron-up, 0 );
+		@include icon-before( $fa-var-chevron-up, 0 );
 	}
 }
 
@@ -283,5 +283,5 @@ body {
 --------------------------------------------- */
 
 .cart-contents {
-	@include icon-before( $ionicon-var-ios-cart );
+	@include icon-before( $fa-var-shopping-cart );
 }

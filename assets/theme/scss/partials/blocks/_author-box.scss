@@ -47,17 +47,17 @@
 }
 
 .social-icon-facebook span {
-	@include icon-before( $ionicon-var-social-facebook );
+	@include icon-before( $fa-var-facebook-f, 5px, "Font Awesome 5 Brands" );
 }
 
 .social-icon-twitter span {
-	@include icon-before( $ionicon-var-social-twitter );
+	@include icon-before( $fa-var-twitter, 5px, "Font Awesome 5 Brands" );
 }
 
 .social-icon-gplus span {
-	@include icon-before( $ionicon-var-social-googleplus );
+	@include icon-before( $fa-var-google-plus-g, 5px, "Font Awesome 5 Brands" );
 }
 
 .social-icon-rss span {
-	@include icon-before( $ionicon-var-social-rss );
+	@include icon-before( $fa-var-rss, 5px );
 }

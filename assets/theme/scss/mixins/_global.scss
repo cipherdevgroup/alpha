@@ -62,16 +62,16 @@
 
 // Icons
 //------------------------------------------------------------------------------
-@mixin icon-before( $glyph, $margin: 5px, $family: "Ionicons" ) {
+@mixin icon-before( $glyph, $margin: 5px, $family: "Font Awesome 5 Free" ) {
 	&::before {
 		@extend %icon-base;
-		content: $glyph;
+		content: fa-content( $glyph );
 		font-family: $family;
 		margin-right: $margin;
 	}
 }
 
-@mixin icon-after( $glyph, $margin: 5px, $family: "Ionicons" ) {
+@mixin icon-after( $glyph, $margin: 5px, $family: "Font Awesome 5 Free" ) {
 	&::after {
 		@extend %icon-base;
 		content: $glyph;

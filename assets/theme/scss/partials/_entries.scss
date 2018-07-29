@@ -85,11 +85,11 @@
 	}
 
 	&.categories .entry-terms {
-		@include icon-before( $ionicon-var-folder );
+		@include icon-before( $fa-var-folder );
 	}
 
 	&.tags .entry-terms {
-		@include icon-before( $ionicon-var-pricetags );
+		@include icon-before( $fa-var-tags );
 	}
 
 	.entry-header & {

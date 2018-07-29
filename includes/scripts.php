@@ -27,6 +27,13 @@ function alpha_enqueue_styles() {
 			null
 		);
 	}
+
+	wp_enqueue_style(
+		'alpha-font-awesome',
+		'//use.fontawesome.com/releases/v5.2.0/css/all.css',
+		array(),
+		'5.2.0'
+	);
 }
 
 /**
