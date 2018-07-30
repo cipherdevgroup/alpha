@@ -620,6 +620,21 @@ h6,
 	font-size: 1.6rem;
 }
 
+.search-form button[type=submit]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .pagination .prev::before,
+.page-links .prev::before, .pagination .next::after,
+.page-links .next::after, .rtl .pagination .prev::before, .rtl .page-links .prev::before, .rtl .pagination .next::after, .rtl .page-links .next::after, .nav-next a::after, .rtl .nav-next a::before, .nav-previous a::before, .rtl .nav-previous a::after, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: inherit;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+}
+
 /* Media Objects
 --------------------------------------------- */
 embed,
@@ -1134,24 +1149,6 @@ Structure and Layout
 		float: left;
 		margin-left: 0;
 	}
-}
-
-/*
-Icons
------------------------------------------------------------------------------ */
-.search-form button[type=submit]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .pagination .prev::before,
-.page-links .prev::before, .pagination .next::after,
-.page-links .next::after, .rtl .pagination .prev::before, .rtl .page-links .prev::before, .rtl .pagination .next::after, .rtl .page-links .next::after, .nav-next a::after, .rtl .nav-next a::before, .nav-previous a::before, .rtl .nav-previous a::after, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-weight: normal;
-	line-height: inherit;
-	speak: none;
-	text-decoration: none;
-	text-transform: none;
-	vertical-align: middle;
 }
 
 /*
