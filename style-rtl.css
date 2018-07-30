@@ -1146,7 +1146,7 @@ Icons
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: normal;
 	line-height: inherit;
 	speak: none;
 	text-decoration: none;
@@ -1325,7 +1325,7 @@ img.alignnone,
 .search-form button[type=submit]::before {
 	content: "\f002";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .search-form button[type=submit]::before {
@@ -1996,7 +1996,7 @@ body {
 .menu-toggle::before {
 	content: "\f0c9";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
@@ -2011,7 +2011,7 @@ body {
 .menu-toggle.activated::before {
 	content: "\f00d";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .sub-menu-toggle {
@@ -2029,7 +2029,7 @@ body {
 .sub-menu-toggle::before {
 	content: "\f078";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .sub-menu-toggle:focus, .sub-menu-toggle:hover, .sub-menu-toggle:active {
@@ -2044,7 +2044,7 @@ body {
 .sub-menu-toggle.activated::before {
 	content: "\f077";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .menu-mobile {
@@ -2134,6 +2134,7 @@ body {
 .cart-contents::before {
 	content: "\f07a";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 0.5rem;
 }
 
@@ -2342,12 +2343,14 @@ Content Area
 .entry-meta.categories .entry-terms::before {
 	content: "\f07b";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 0.5rem;
 }
 
 .entry-meta.tags .entry-terms::before {
 	content: "\f02c";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 0.5rem;
 }
 
@@ -2393,28 +2396,28 @@ Pagination
 .page-links .prev::before {
 	content: "\f060";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .pagination .next::after,
 .page-links .next::after {
 	content: "\f061";
 	font-family: "Font Awesome 5 Free";
-	margin-right: 0;
+	font-weight: 900;
 }
 
 .rtl .pagination .prev::before, .rtl
 .page-links .prev::before {
 	content: "\f060";
 	font-family: "Font Awesome 5 Free";
-	margin-left: 0;
+	font-weight: 900;
 }
 
 .rtl .pagination .next::after, .rtl
 .page-links .next::after {
 	content: "\f061";
 	font-family: "Font Awesome 5 Free";
-	margin-right: 0;
+	font-weight: 900;
 }
 
 /* Archive Pagination
@@ -2482,6 +2485,7 @@ Pagination
 .nav-next a::after {
 	content: "\f061";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 1rem;
 }
 
@@ -2494,12 +2498,14 @@ Pagination
 .rtl .nav-next a::before {
 	content: "\f061";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 1rem;
 }
 
 .nav-previous a::before {
 	content: "\f060";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 1rem;
 }
 
@@ -2512,6 +2518,7 @@ Pagination
 .rtl .nav-previous a::after {
 	content: "\f060";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 1rem;
 }
 
@@ -3046,24 +3053,28 @@ Blocks
 .social-icon-facebook span::before {
 	content: "\f39e";
 	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-left: 0.5rem;
 }
 
 .social-icon-twitter span::before {
 	content: "\f099";
 	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-left: 0.5rem;
 }
 
 .social-icon-gplus span::before {
 	content: "\f0d5";
 	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-left: 0.5rem;
 }
 
 .social-icon-rss span::before {
 	content: "\f09e";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 0.5rem;
 }
 /*# sourceMappingURL=style-rtl.css.map */

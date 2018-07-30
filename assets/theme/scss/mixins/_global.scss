@@ -62,21 +62,53 @@
 
 // Icons
 //------------------------------------------------------------------------------
-@mixin icon-before( $glyph, $margin: 5px, $family: "Font Awesome 5 Free" ) {
+@mixin icon( $glyph ) {
+	@extend %icon-base;
+	content: fa-content( $glyph );
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+@mixin icon-before( $glyph, $margin: 5px ) {
 	&::before {
-		@extend %icon-base;
-		content: fa-content( $glyph );
-		font-family: $family;
-		margin-right: $margin;
+		@include icon( $glyph );
+		@if $margin != 0 {
+			margin-right: $margin;
+		}
 	}
 }
 
-@mixin icon-after( $glyph, $margin: 5px, $family: "Font Awesome 5 Free" ) {
+@mixin icon-after( $glyph, $margin: 5px ) {
 	&::after {
-		@extend %icon-base;
-		content: fa-content( $glyph );
-		font-family: $family;
-		margin-left: $margin;
+		@include icon( $glyph );
+		@if $margin != 0 {
+			margin-left: $margin;
+		}
+	}
+}
+
+@mixin brand-icon( $glyph ) {
+	@extend %icon-base;
+	content: fa-content( $glyph );
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+}
+
+@mixin brand-icon-before( $glyph, $margin: 5px ) {
+	&::before {
+		@include brand-icon( $glyph );
+		@if $margin != 0 {
+			margin-right: $margin;
+		}
+	}
+}
+
+@mixin brand-icon-after( $glyph, $margin: 5px ) {
+	&::after {
+		@include brand-icon( $glyph );
+		@if $margin != 0 {
+			margin-left: $margin;
+		}
 	}
 }
 
