@@ -4,20 +4,20 @@
 .pagination,
 .page-links {
 	.prev {
-		@include icon-before( $ionicon-var-arrow-left-c, 0 );
+		@include icon-before( $fa-var-arrow-left, 0 );
 	}
 
 	.next {
-		@include icon-after( $ionicon-var-arrow-right-c, 0 );
+		@include icon-after( $fa-var-arrow-right, 0 );
 	}
 
 	.rtl & {
 		.prev {
-			@include icon-before( $ionicon-var-arrow-left-c, 0 );
+			@include icon-before( $fa-var-arrow-left, 0 );
 		}
 
 		.next {
-			@include icon-after( $ionicon-var-arrow-right-c, 0 );
+			@include icon-after( $fa-var-arrow-right, 0 );
 		}
 	}
 }
@@ -84,26 +84,26 @@
 --------------------------------------------- */
 
 .nav-next a {
-	@include icon-after( $ionicon-var-arrow-right-c, 10px );
+	@include icon-after( $fa-var-arrow-right, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: right;
 	}
 
 	.rtl & {
-		@include icon-before( $ionicon-var-arrow-right-c, 10px );
+		@include icon-before( $fa-var-arrow-right, 10px );
 	}
 }
 
 .nav-previous a {
-	@include icon-before( $ionicon-var-arrow-left-c, 10px );
+	@include icon-before( $fa-var-arrow-left, 10px );
 
 	@include min-screen( $medium-screen ) {
 		float: left;
 	}
 
 	.rtl & {
-		@include icon-after( $ionicon-var-arrow-left-c, 10px );
+		@include icon-after( $fa-var-arrow-left, 10px );
 	}
 }
 

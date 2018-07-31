@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Theme Name:  Alpha
  * Version:     0.1.0
@@ -621,6 +620,21 @@ h6,
 	font-size: 1.6rem;
 }
 
+.search-form button[type=submit]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .pagination .prev::before,
+.page-links .prev::before, .pagination .next::after,
+.page-links .next::after, .rtl .pagination .prev::before, .rtl .page-links .prev::before, .rtl .pagination .next::after, .rtl .page-links .next::after, .nav-next a::after, .rtl .nav-next a::before, .nav-previous a::before, .rtl .nav-previous a::after, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: inherit;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+}
+
 /* Media Objects
 --------------------------------------------- */
 embed,
@@ -1138,46 +1152,6 @@ Structure and Layout
 }
 
 /*
-Icons
------------------------------------------------------------------------------ */
-@font-face {
-	font-family: "Ionicons";
-	src: url("fonts/ionicons.eot?v=2.0.1");
-	src: url("fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("fonts/ionicons.woff?v=2.0.1") format("woff"), url("fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-
-.ion {
-	display: inline-block;
-	font-family: "Ionicons";
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-rendering: auto;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.search-form button[type=submit]::before, .menu-toggle::before, .menu-toggle.activated::before, .sub-menu-toggle::before, .sub-menu-toggle.activated::before, .cart-contents::before, .entry-meta.categories .entry-terms::before, .entry-meta.tags .entry-terms::before, .pagination .prev::before,
-.page-links .prev::before, .pagination .next::after,
-.page-links .next::after, .rtl .pagination .prev::before, .rtl .page-links .prev::before, .rtl .pagination .next::after, .rtl .page-links .next::after, .nav-next a::after, .rtl .nav-next a::before, .nav-previous a::before, .rtl .nav-previous a::after, .social-icon-facebook span::before, .social-icon-twitter span::before, .social-icon-gplus span::before, .social-icon-rss span::before {
-	display: inline-block;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
-	font-weight: normal;
-	line-height: inherit;
-	speak: none;
-	text-decoration: none;
-	text-transform: none;
-	vertical-align: middle;
-}
-
-/*
 Common Classes
 ----------------------------------------------------------------------------- */
 /* Screen Readers
@@ -1346,9 +1320,9 @@ img.alignnone,
 }
 
 .search-form button[type=submit]::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f002";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .search-form button[type=submit]::before {
@@ -2017,9 +1991,9 @@ body {
 }
 
 .menu-toggle::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f0c9";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
@@ -2032,9 +2006,9 @@ body {
 }
 
 .menu-toggle.activated::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f00d";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .sub-menu-toggle {
@@ -2050,9 +2024,9 @@ body {
 }
 
 .sub-menu-toggle::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f078";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .sub-menu-toggle:focus, .sub-menu-toggle:hover, .sub-menu-toggle:active {
@@ -2065,9 +2039,9 @@ body {
 }
 
 .sub-menu-toggle.activated::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f077";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .menu-mobile {
@@ -2155,8 +2129,9 @@ body {
 /* WooCommerce Menu
 --------------------------------------------- */
 .cart-contents::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f07a";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 0.5rem;
 }
 
@@ -2363,14 +2338,16 @@ Content Area
 }
 
 .entry-meta.categories .entry-terms::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f07b";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 0.5rem;
 }
 
 .entry-meta.tags .entry-terms::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f02c";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 0.5rem;
 }
 
@@ -2414,30 +2391,30 @@ Pagination
 --------------------------------------------- */
 .pagination .prev::before,
 .page-links .prev::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f060";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .pagination .next::after,
 .page-links .next::after {
-	content: "";
-	font-family: "Ionicons";
-	margin-left: 0;
+	content: "\f061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .rtl .pagination .prev::before, .rtl
 .page-links .prev::before {
-	content: "";
-	font-family: "Ionicons";
-	margin-right: 0;
+	content: "\f060";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .rtl .pagination .next::after, .rtl
 .page-links .next::after {
-	content: "";
-	font-family: "Ionicons";
-	margin-left: 0;
+	content: "\f061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 /* Archive Pagination
@@ -2503,8 +2480,9 @@ Pagination
 /* Next/Prev Links
 --------------------------------------------- */
 .nav-next a::after {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 1rem;
 }
 
@@ -2515,14 +2493,16 @@ Pagination
 }
 
 .rtl .nav-next a::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 1rem;
 }
 
 .nav-previous a::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f060";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 1rem;
 }
 
@@ -2533,8 +2513,9 @@ Pagination
 }
 
 .rtl .nav-previous a::after {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f060";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 1rem;
 }
 
@@ -3067,26 +3048,30 @@ Blocks
 }
 
 .social-icon-facebook span::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f39e";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-right: 0.5rem;
 }
 
 .social-icon-twitter span::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f099";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-right: 0.5rem;
 }
 
 .social-icon-gplus span::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f0d5";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
 	margin-right: 0.5rem;
 }
 
 .social-icon-rss span::before {
-	content: "";
-	font-family: "Ionicons";
+	content: "\f09e";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -198,3 +198,16 @@ h6,
 .h6 {
 	font-size: $h6-font-size;
 }
+
+%icon-base {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: inherit;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+}

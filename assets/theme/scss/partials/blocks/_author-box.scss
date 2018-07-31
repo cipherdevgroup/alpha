@@ -47,17 +47,17 @@
 }
 
 .social-icon-facebook span {
-	@include icon-before( $ionicon-var-social-facebook );
+	@include brand-icon-before( $fa-var-facebook-f );
 }
 
 .social-icon-twitter span {
-	@include icon-before( $ionicon-var-social-twitter );
+	@include brand-icon-before( $fa-var-twitter );
 }
 
 .social-icon-gplus span {
-	@include icon-before( $ionicon-var-social-googleplus );
+	@include brand-icon-before( $fa-var-google-plus-g );
 }
 
 .social-icon-rss span {
-	@include icon-before( $ionicon-var-social-rss );
+	@include icon-before( $fa-var-rss );
 }

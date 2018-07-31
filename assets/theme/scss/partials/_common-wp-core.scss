@@ -14,7 +14,7 @@
 	}
 
 	button[type=submit] {
-		@include icon-before( $ionicon-var-search, 0 );
+		@include icon-before( $fa-var-search, 0 );
 		border-bottom-left-radius: 0;
 		border-top-left-radius: 0;
 		bottom: 0;

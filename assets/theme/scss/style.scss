@@ -26,11 +26,11 @@
 @import "variables/misc";
 @import "variables/typography";
 @import "variables/z-index";
-@import "vendor/ionicons/ionicons-variables";
+@import "vendor/fontawesome/variables";
+
 
 // Load Global Settings
 @import "settings/susy";
-@import "settings/ionicons";
 
 /*
 HTML5 Reset
@@ -48,12 +48,6 @@ Defaults
 Structure and Layout
 ----------------------------------------------------------------------------- */
 @import "partials/layout";
-
-/*
-Icons
------------------------------------------------------------------------------ */
-@import "vendor/ionicons/ionicons-font";
-@import "partials/icons";
 
 
 /*

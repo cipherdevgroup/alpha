@@ -20,9 +20,9 @@
     "url": "https://github.com/cipherdevgroup/alpha.git"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "accessible-menu": "GaryJones/accessible-menu#master",
     "carelib": "cipherdevgroup/carelib#2.0.0",
-    "ionicons": "^2.0.1",
     "normalize.css": "^8.0.0",
     "sass-mediaqueries": "^1.6.1",
     "skip-link-focus": "^1.0.0",
@@ -30,7 +30,7 @@
     "vanilla-fitvids": "^1.1.0"
   },
   "devDependencies": {
-    "load-project-config": "~0.2.0",
-    "cipher-theme-config": "cipherdevgroup/cipher-theme-config"
+    "cipher-theme-config": "cipherdevgroup/cipher-theme-config",
+    "load-project-config": "~0.2.0"
   }
 }

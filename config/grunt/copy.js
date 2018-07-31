@@ -28,12 +28,12 @@ module.exports = {
 			{
 				expand: true,
 				flatten: false,
-				cwd: '<%= paths.node %>ionicons/scss',
+				cwd: '<%= paths.node %>@fortawesome/fontawesome-free/scss',
 				src: [
-					'*.scss',
-					'**/*.scss'
+					'_variables.scss',
+					'_shims.scss'
 				],
-				dest: '<%= paths.cssVend %>ionicons/'
+				dest: '<%= paths.cssVend %>fontawesome/'
 			}
 		]
 	},
@@ -59,15 +59,6 @@ module.exports = {
 				flatten: true,
 				src: [
 					'<%= paths.fontsSrc %>**/*'
-				],
-				dest: '<%= paths.fonts %>'
-			},
-			{
-				expand: true,
-				flatten: true,
-				cwd: '<%= paths.node %>',
-				src: [
-					'ionicons/fonts/*'
 				],
 				dest: '<%= paths.fonts %>'
 			}
