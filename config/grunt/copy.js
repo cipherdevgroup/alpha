@@ -31,7 +31,6 @@ module.exports = {
 				cwd: '<%= paths.node %>@fortawesome/fontawesome-free/scss',
 				src: [
 					'_variables.scss',
-					'_shims.scss'
 				],
 				dest: '<%= paths.cssVend %>fontawesome/'
 			}

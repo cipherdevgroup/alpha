@@ -677,6 +677,9 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	border: 0;
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
