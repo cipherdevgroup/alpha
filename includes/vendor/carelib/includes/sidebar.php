@@ -6,7 +6,7 @@
  * HTML5-ready sidebars instead of the default WordPress unordered lists.
  *
  * @package   CareLib
- * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @license   GPL-2.0+
  * @since     1.0.0
  */

@@ -9,8 +9,8 @@
  * framework file rather than the default `framework.php`.
  *
  * @package   Alpha\CoreTemplates
- * @author    WP Site Care
- * @copyright Copyright (c) 2017, WP Site Care, LLC
+ * @author    Cipher Development
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @see       /includes/vendor/carelib/inc/template-global.php
  * @uses      carelib_framework()
  * @since     1.0.0

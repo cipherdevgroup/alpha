@@ -3,7 +3,7 @@
  * Provides compatibility with WooCommerce.
  *
  * @package   Alpha\Actions\WooCommerce
- * @copyright Copyright (c) 2017, WP Site Care, LLC
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @license   GPL-2.0+
  * @since     1.0.0
  */

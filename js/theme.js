@@ -263,7 +263,7 @@
  * Merge existing menus into an a11y-compliant, off-canvas mobile menu.
  *
  * @version   0.2.0
- * @copyright Copyright (c) 2017, WP Site Care, LLC
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @license   MIT
  */
 function AlphaMobileMenu( $ ) {

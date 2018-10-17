@@ -3,8 +3,8 @@
  * Functions used to hook global template parts and other markup elements.
  *
  * @package   Alpha\Functions\Hooks
- * @author    WP Site Care
- * @copyright Copyright (c) 2017, WP Site Care, LLC
+ * @author    Cipher Development
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @since     1.0.0
  */
 

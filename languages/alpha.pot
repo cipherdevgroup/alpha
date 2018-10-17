@@ -1,4 +1,4 @@
-# <!=Copyright (C) 2018 WP Site Care
+# <!=Copyright (C) 2018 Cipher Development
 # This file is distributed under the GPL-2.0+.=!>
 msgid ""
 msgstr ""
@@ -323,7 +323,7 @@ msgid "Apologies, but no entries were found."
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "The WP Site Care Starter Theme."
+msgid "The Cipher Development Starter Theme."
 msgstr ""
 
 #: includes/theme-setup.php:86

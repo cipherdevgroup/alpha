@@ -3,7 +3,7 @@
  * Helper functions used for loading templates.
  *
  * @package    CareLib
- * @copyright  Copyright (c) 2016, WP Site Care, LLC
+ * @copyright  Copyright (c) 2018, Cipher Development, LLC
  * @license    GPL-2.0+
  * @since      1.0.0
  */

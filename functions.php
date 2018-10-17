@@ -4,8 +4,8 @@
  *
  * @package    Alpha
  * @subpackage Alpha\Functions
- * @author     WP Site Care
- * @copyright  Copyright (c) 2017, WP Site Care, LLC
+ * @author     Cipher Development
+ * @copyright  Copyright (c) 2018, Cipher Development, LLC
  * @since      1.0.0
  */
 
@@ -56,7 +56,7 @@ if ( is_admin() ) {
 }
 
 /**
- * A hook within the global scope; common to all WP Site Care themes.
+ * A hook within the global scope; common to all Cipher Development themes.
  *
  * This is meant for plugins and child themes to execute code after the parent
  * theme setup has been completed.

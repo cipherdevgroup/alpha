@@ -6,7 +6,7 @@
  * can extend this class and do something even cooler.
  *
  * @package   CareLib
- * @copyright Copyright (c) 2016, WP Site Care, LLC
+ * @copyright Copyright (c) 2018, Cipher Development, LLC
  * @license   GPL-2.0+
  * @since     1.0.0
  */
