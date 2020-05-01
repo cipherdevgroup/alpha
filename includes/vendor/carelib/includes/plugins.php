@@ -11,7 +11,7 @@
 /**
  * Determine if Beaver Builder is enabled within the current loop.
  *
- * @since  0.1.0
+ * @since  2.0.0
  * @access public
  * @return bool True if Beaver Builder is enabled.
  */
@@ -26,9 +26,29 @@ function carelib_is_beaver_enabled() {
 }
 
 /**
+ * Determine if Elementor is enabled for a given post.
+ *
+ * @since  2.2.0
+ * @access public
+ * @param  bool $post_id The ID of the post to check.
+ * @return bool True if Elementor is enabled.
+ */
+function carelib_is_built_with_elementor( $post_id = false ) {
+	if ( ! defined( 'ELEMENTOR_VERSION' ) ) {
+		return false;
+	}
+
+	if ( ! $post_id ) {
+		$post_id = get_the_ID();
+	}
+
+	return (bool) get_post_meta( $post_id, '_elementor_edit_mode', true );
+}
+
+/**
  * Determine if WooCommerce is installed and activated.
  *
- * @since  0.1.0
+ * @since  2.0.0
  * @access public
  * @return bool True if WooCommerce is active.
  */

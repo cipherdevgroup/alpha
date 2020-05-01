@@ -235,7 +235,6 @@ function carelib_archive_description( $desc ) {
 	return apply_filters( 'carelib_archive_description', $desc );
 }
 
-
 /**
  * Helper function to build a newer/older or paginated navigation element within
  * a loop of multiple entries. This takes care of all the annoying formatting
@@ -271,7 +270,7 @@ function carelib_get_posts_navigation( $args = array() ) {
 
 	$args = wp_parse_args( $args, $defaults );
 
-	if ( function_exists( 'the_posts_pagination' ) && 'pagination' === $args['nav_type'] ) {
+	if ( 'pagination' === $args['nav_type'] ) {
 		$output = get_the_posts_pagination( $args );
 	} else {
 		$output  = '<nav ' . carelib_get_attr( 'nav', 'archive' ) . '>';

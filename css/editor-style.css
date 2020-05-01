@@ -6,7 +6,6 @@ Defaults
 *,
 input[type="search"] {
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
 
@@ -310,8 +309,7 @@ textarea {
 	   -moz-appearance: none;
 	        appearance: none;
 	border: 0;
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
+	border-radius: 3px;
 	font-size: 1.6rem;
 	font-weight: 400;
 	padding: 1rem;
@@ -405,8 +403,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 input[type="range"]::-webkit-slider-runnable-track {
 	background: #e0e0e0;
 	border: 0 none;
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
+	border-radius: 3px;
 	cursor: pointer;
 	height: 3px;
 	width: 100%;
@@ -417,8 +414,7 @@ input[type="range"]::-webkit-slider-thumb {
 	        appearance: none;
 	background: #1c1e1f;
 	border: 0 none;
-	-webkit-border-radius: 100%;
-	        border-radius: 100%;
+	border-radius: 100%;
 	cursor: pointer;
 	height: 28px;
 	margin-top: -1.4rem;
@@ -479,8 +475,7 @@ select {
 	background-image: url("images/select-bg.svg");
 	background-position: right 5px center;
 	background-repeat: no-repeat;
-	-webkit-background-size: 10px 10px;
-	        background-size: 10px;
+	background-size: 10px;
 	padding-right: 2rem;
 }
 
@@ -490,29 +485,25 @@ input[type="radio"] {
 	width: auto;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	color: #c7c6c6;
 	font-weight: 400;
 	opacity: 1;
 }
 
-input:-moz-placeholder,
-textarea:-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
 	color: #c7c6c6;
 	font-weight: 400;
 	opacity: 1;
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	color: #c7c6c6;
 	font-weight: 400;
 	opacity: 1;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
 	color: #c7c6c6;
 	font-weight: 400;
 	opacity: 1;
@@ -584,8 +575,7 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	border: 0;
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
+	border-radius: 3px;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.6rem;
@@ -679,8 +669,7 @@ Common Classes
 /* Avatar
 --------------------------------------------- */
 .avatar {
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
+	border-radius: 3px;
 	display: block;
 }
 

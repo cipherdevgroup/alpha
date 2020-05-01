@@ -10,159 +10,33 @@
  */
 
 /**
- * CareLib's main contextual function.
- *
- * This allows code to be used more than once without running hundreds of
- * conditional checks within the theme. It returns an array of contexts
- * based on what page a visitor is currently viewing on the site.
- *
- * @since  1.0.0
- * @access protected
- * @return array
- */
-function _carelib_get_context() {
-	$context   = array();
-	$object    = get_queried_object();
-	$object_id = get_queried_object_id();
-
-	if ( is_front_page() ) {
-		$context[] = 'home';
-
-		if ( ! is_home() ) {
-			$context[] = 'static-home';
-		}
-	} elseif ( is_home() ) {
-		$context[] = 'blog';
-	}
-
-	if ( carelib_is_plural() ) {
-		$context[] = 'plural';
-
-		if ( is_search() ) {
-			$context[] = 'search';
-		} elseif ( is_archive() ) {
-			$context[] = 'archive';
-
-			if ( is_post_type_archive() ) {
-				$post_type = get_query_var( 'post_type' );
-
-				if ( is_array( $post_type ) ) {
-					reset( $post_type );
-				}
-
-				$context[] = "archive-{$post_type}";
-			} elseif ( is_tax() || is_category() || is_tag() ) {
-				$context[] = 'taxonomy';
-				$context[] = "taxonomy-{$object->taxonomy}";
-				$context[] = "taxonomy-{$object->taxonomy}-" . sanitize_html_class( $object->slug, $object->term_id );
-			} elseif ( is_author() ) {
-				$context[] = 'user';
-			} elseif ( is_date() ) {
-				$context[] = 'date';
-			} elseif ( is_time() ) {
-				$context[] = 'time';
-			}
-		}
-	} else {
-		if ( is_singular() ) {
-			$context[] = 'singular';
-			$context[] = "singular-{$object->post_type}";
-			$context[] = "singular-{$object->post_type}-{$object_id}";
-		} elseif ( is_404() ) {
-			$context[] = 'error-404';
-		}
-	}
-
-	$context = (array) apply_filters( 'carelib_context', $context );
-
-	return array_map( 'esc_attr', array_unique( $context ) );
-}
-
-/**
- * Filter the WordPress body class with a better set of default classes.
- *
- * The goal of this is to create classes which are more consistently handled
- * and are backwards compatible with the original body class functionality
- * that existed prior to WordPress core adopting this feature.
+ * Filter the WordPress body class with extra default classes.
  *
  * @since  1.0.0
  * @access public
- * @param  array        $classes
- * @param  string|array $class
+ * @param  array $classes
  * @return array
  */
-function carelib_body_class_filter( $classes, $class ) {
-	// WordPress class for uses when WordPress isn't always the only system on the site.
-	$classes = array( 'wordpress' );
-
-	// Text direction.
-	$classes[] = is_rtl() ? 'rtl' : 'ltr';
-
-	// Locale and language.
-	$locale = get_locale();
-	$lang   = carelib_get_language( $locale );
-
-	if ( $locale !== $lang ) {
-		$classes[] = $lang;
+function carelib_body_class_filter( $classes ) {
+	if ( is_front_page() && ! is_home() ) {
+		$classes[] = 'static-home';
 	}
 
-	$classes[] = strtolower( str_replace( '_', '-', $locale ) );
+	if ( carelib_is_plural() ) {
+		$classes[] = 'plural';
 
-	// Check if the current theme is a parent or child theme.
-	$classes[] = is_child_theme() ? 'child-theme' : 'parent-theme';
-
-	// Multisite check adds the 'multisite' class and the blog ID.
-	if ( is_multisite() ) {
-		$classes[] = 'multisite';
-		$classes[] = 'blog-' . get_current_blog_id();
-	}
-
-	// Is the current user logged in.
-	$classes[] = is_user_logged_in() ? 'logged-in' : 'logged-out';
-
-	// WP admin bar.
-	if ( is_admin_bar_showing() ) {
-		$classes[] = 'admin-bar';
-	}
-
-	$context = _carelib_get_context();
-
-	if ( in_array( 'singular', $context, true ) ) {
-
-		// Get the queried post object.
-		$post = get_queried_object();
-
-		// Checks for custom template.
-		$template = str_replace(
-			array(
-				"{$post->post_type}-template-",
-				"{$post->post_type}-",
-			),
-			'',
-			basename( get_page_template_slug( $post ), '.php' )
-		);
-		if ( $template ) {
-			$classes[] = "{$post->post_type}-template-{$template}";
-		} else {
-			$classes[] = "{$post->post_type}-template-default";
+		if ( is_tax() || is_category() || is_tag() ) {
+			$classes[] = 'taxonomy';
 		}
+	} elseif ( is_singular() ) {
+		$classes[] = 'singular';
 	}
 
-	// Merge base contextual classes with $classes.
-	$classes = array_merge( $classes, $context );
-
-	// Theme layouts.
 	if ( carelib_has_layouts() ) {
 		$classes[] = sanitize_html_class( 'layout-' . carelib_get_theme_layout() );
 	}
 
-	// Input class.
-	if ( ! empty( $class ) ) {
-		$class   = is_array( $class ) ? $class : preg_split( '#\s+#', $class );
-		$classes = array_merge( $classes, $class );
-	}
-
-	return array_map( 'esc_attr', $classes );
+	return $classes;
 }
 
 /**

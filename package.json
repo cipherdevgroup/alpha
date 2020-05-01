@@ -3,7 +3,7 @@
   "capitalname": "Alpha",
   "textdomain": "alpha",
   "version": "0.1.0",
-  "copyright": "2017",
+  "copyright": "2020",
   "license": "GPL-2.0+",
   "private": true,
   "bugs": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
     "accessible-menu": "GaryJones/accessible-menu#master",
-    "carelib": "cipherdevgroup/carelib#2.0.0",
+    "carelib": "cipherdevgroup/carelib#master",
     "normalize.css": "^8.0.0",
     "sass-mediaqueries": "^1.6.1",
     "skip-link-focus": "^1.0.0",
@@ -30,7 +30,10 @@
     "vanilla-fitvids": "^1.1.0"
   },
   "devDependencies": {
-    "cipher-theme-config": "cipherdevgroup/cipher-theme-config",
+    "cipher-theme-config": "cipherdevgroup/cipher-theme-config#master",
     "load-project-config": "~0.2.0"
-  }
+  },
+  "browserslist": [
+  	"last 2 version"
+  ]
 }

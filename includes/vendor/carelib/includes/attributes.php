@@ -341,10 +341,11 @@ function carelib_attr_site_description( $attr ) {
  *
  * @since  1.0.0
  * @access public
- * @param  array $attr Existing attributes.
+ * @param  array  $attr Existing attributes.
+ * @param  string $context A specific context (e.g., 'primary').
  * @return array
  */
-function carelib_attr_post( $attr ) {
+function carelib_attr_post( $attr, $context ) {
 	$attr['id']    = 'post-0';
 	$attr['class'] = 'entry';
 
@@ -352,7 +353,7 @@ function carelib_attr_post( $attr ) {
 
 	if ( $post instanceof WP_Post ) {
 		$attr['id']    = 'post-' . get_the_ID();
-		$attr['class'] = join( ' ', get_post_class() );
+		$attr['class'] = join( ' ', get_post_class( $context ) );
 	}
 
 	return $attr;

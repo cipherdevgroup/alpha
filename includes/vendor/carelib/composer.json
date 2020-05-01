@@ -1,17 +1,17 @@
 {
-  "name"       : "wpsitecare/carelib",
+  "name"       : "cipherdevgroup/carelib",
   "description": "A collection of helpful functions to make creating an awesome theme more enjoyable.",
   "keywords"   : ["wordpress"],
-  "homepage"   : "https://github.com/wpsitecare/carelib",
+  "homepage"   : "https://github.com/cipherdevgroup/carelib",
   "license"    : "GPL-2.0+",
   "authors"    : [
     {
       "name"    : "Robert Neu",
-      "email"   : "rob@wpsitecare.com",
-      "homepage": "https://www.wpsitecare.com"
+      "email"   : "rob@cipherdevelopment.com",
+      "homepage": "https://cipherdevelopment.com"
     }
   ],
   "support"    : {
-    "issues": "https://github.com/wpsitecare/carelib/issues"
+    "issues": "https://github.com/cipherdevgroup/carelib/issues"
   }
 }

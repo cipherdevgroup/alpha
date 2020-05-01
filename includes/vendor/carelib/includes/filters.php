@@ -192,7 +192,7 @@ add_filter( 'carelib_attr_site-description', 'carelib_attr_site_description', 5 
  *
  * @see carelib_attr_post
  */
-add_filter( 'carelib_attr_post', 'carelib_attr_post', 5 );
+add_filter( 'carelib_attr_post', 'carelib_attr_post', 5, 2 );
 
 /**
  * Alternate for "post"
@@ -201,7 +201,7 @@ add_filter( 'carelib_attr_post', 'carelib_attr_post', 5 );
  *
  * @see carelib_attr_post
  */
-add_filter( 'carelib_attr_entry', 'carelib_attr_post', 5 );
+add_filter( 'carelib_attr_entry', 'carelib_attr_post', 5, 2 );
 
 /**
  * Callback defined in includes/attributes.php
@@ -273,7 +273,7 @@ add_filter( 'comments_template', 'carelib_comments_template', 5 );
  *
  * @see carelib_body_class_filter
  */
-add_filter( 'body_class', 'carelib_body_class_filter', 0, 2 );
+add_filter( 'body_class', 'carelib_body_class_filter', 0 );
 
 /**
  * Callback defined in includes/context.php
@@ -309,27 +309,6 @@ add_filter( 'locale_stylesheet_uri', 'carelib_locale_stylesheet_uri', 5 );
  * @see carelib_search_form_get_form
  */
 add_filter( 'get_search_form', 'carelib_search_form_get_form', 99 );
-
-/**
- * Callback defined in includes/tinymce.php
- *
- * @see carelib_tinymce_add_styleselect
- */
-add_filter( 'mce_buttons', 'carelib_tinymce_add_styleselect', 99 );
-
-/**
- * Callback defined in includes/tinymce.php
- *
- * @see carelib_tinymce_disable_styleselect
- */
-add_filter( 'mce_buttons_2', 'carelib_tinymce_disable_styleselect', 99 );
-
-/**
- * Callback defined in includes/tinymce.php
- *
- * @see carelib_tinymce_formats
- */
-add_filter( 'tiny_mce_before_init', 'carelib_tinymce_formats', 99 );
 
 /**
  * Callback defined in includes/layouts.php

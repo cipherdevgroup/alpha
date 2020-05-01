@@ -1,5 +1,9 @@
 # Changelog for CareLib
 
+# 2.1.0
+
+Allowed context to be passed into the post class in the default post attributes.
+
 # 2.0.0
 
 Welp, so much for back compat! 🤗
